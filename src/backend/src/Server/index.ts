@@ -1,6 +1,6 @@
 const http = require('http');
 const { Client } = require('pg');
-const createTable = require('./sql-functions/index.ts');
+const createTable = require('./sql-functions/index');
 
 const APP_POSTGRES_HOST: string = process.env.APP_POSTGRES_HOST || 'localhost';
 const APP_POSTGRES_PORT = process.env.APP_POSTGRES_PORT || '5432';
@@ -20,11 +20,14 @@ async function createDB(): Promise<void> {
   const time = new Date();
   try {
     console.log(`[server -> ${time.getTime()}]: Start creatind  db.`);
-    await client.query(createTable.createTebleEmails);
+    await client.query(createTable.createDatebase());
+    console.log(`[server -> ${time.getTime()}]: Created the db.`);
+    await client.query(await createTable.createTebleEmails());
     console.log(`[server -> ${time.getTime()}]: Here a table "Emails" was created.`);
-    await client.query(createTable.createTebleUsers);
+    await client.query(await createTable.createTebleUsers());
     console.log(`[server -> ${time.getTime()}]: Here a table "Users" was created.`);
   } catch (err: unknown) {
     console.log(`[server -> ${time.getTime()} createDB]: Something that wrong! ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
   };
-}
+};
+void createDB();

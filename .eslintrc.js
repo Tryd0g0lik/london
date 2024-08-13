@@ -41,12 +41,12 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "quotes": "off",
-    "import/extensions": [ // укзываем расширение файлов?
+    // укзываем расширение файлов?
+    "import/extensions": [
       "error",
-      "ignorePackages",
       {
-        "ts": "always",
-        "tsx": "always"
+        "ts": "never",
+        "tsx": "never"
       }
     ],
     "no-shadow": "off",

@@ -31,7 +31,7 @@
     "lint": "eslint . --ext jsx,ts,tsx",
     "cssstyle": "npx tailwindcss -i ./src/frontend/src/styles/style.css -o ./src/frontend/src/output.css --watch",
     "build:dev": "webpack --mode=development --config ./webpack.config.js",
-    "build:serv": "npm workspace backend run build:dev",
+    "build:serv": "npm --workspace=backend run build:dev",
     "watchs": "webpack --watch --mode=development --config ./webpack.config.js",
     "server:front": "webpack server --mode=development  --config ./webpack.config.js",
     "server:back": "forever -w ./dist/server/index.js",

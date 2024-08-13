@@ -1,3 +1,7 @@
+function createDatebase(): string {
+  return 'CREATE DATABASE IF NOT EXISTS london OWNER postgres';
+};
+
 function createTebleEmails(): string {
   const createTEmails: string = `
     CREATE TABLE IF NOT EXISTS emails (
@@ -33,4 +37,4 @@ function createTebleUsers(): string {
   )`;
   return creeateTUsers;
 }
-export default { createTebleEmails, createTebleUsers };
+export default { createDatebase, createTebleEmails, createTebleUsers };
