@@ -1,1 +1,1 @@
-require('Server');
+require('./server/index.ts');

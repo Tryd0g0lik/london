@@ -1,0 +1,12 @@
+{
+	"name": "backend",
+	"version": "0.1.0",
+	"main": "./src/index.ts",
+	"license": "MIT",
+	"scripts": {
+		"build": "webpack --mode=production --config ./webpack.config.js ",
+		"build:dev": "npx tsc",
+		"build:dev2": "npx tsc // && webpack --mode=development  --config ./webpack.config.js",
+		"build:prod": "webpack"
+	}
+}

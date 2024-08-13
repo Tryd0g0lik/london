@@ -1,12 +1,12 @@
 {
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"outDir": "../../dist/server",
 		// "allowSyntheticDefaultImports": true,
 		"noImplicitAny": true,
 		"module": "CommonJS",
 		// "target": "ES5",
 		// "sourceMap": true,
-		// "outDir": "../../../dist",
 		// "allowSyntheticDefaultImports": true,
 		// "esModuleInterop": true,
 		// "noImplicitAny": true,
@@ -19,7 +19,12 @@
 		"directory",
 		"dist"
 	],
-	"files": [
-		"./src/Server/index.ts",
+	// "files": [
+	// 	"./src/Server/index.ts",
+	// 	"./src/Server/sql-functions/index.ts",
+	// ]б
+	"include": [
+		"./src/server/*",
+		"./src/server/**/*",
 	]
 }
