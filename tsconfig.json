@@ -1,0 +1,50 @@
+	// https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "noImplicitAny": true,
+    "module": "ES6",
+    "target": "ES2020",
+    "rootDirs": [
+      "./src"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    // "noImplicitReturns": true,
+    // "noUnusedLocals": false,
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "strict": true,
+    // "noImplicitAny": true,
+    // "strictPropertyInitialization": false,
+    // "skipLibCheck": true,
+    // "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@InterfacesB": [
+        "src/backend/interfaces.ts"
+      ],
+      // "@Interfaces": [
+      //   "src/interface.ts"
+      // ],
+      // "@htmlTemplates/*": [
+      //   "src/scripts/templates/*"
+      // ],
+      // "@Service/*": [
+      //   "src/scripts/chat/*"
+      // ]
+    }
+  },
+  "exclude": [
+    "./node_modules/**/*.js",
+    "*.config.js",
+    "**/dist",
+  ]
+}

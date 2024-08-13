@@ -1,0 +1,7 @@
+# project
+.env
+archive
+dist
+node_modules
+**/node_modules
+*.md

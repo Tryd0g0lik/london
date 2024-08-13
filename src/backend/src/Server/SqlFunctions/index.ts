@@ -1,0 +1,41 @@
+// src\backend\server\SqlFunctions\index.ts
+// const { E } = require("@InterfacesB");
+
+
+
+async function createTebleEmails(): Promise<string> {
+	const createTEmails = `
+	CREATE TABLE IF NOT EXISTS emails (
+		id SERIAL PRIMARY KEY,
+		emails VARCHAR(50) NOT NULL UNIQUE,
+		activated BOOLEAN DEFAULT FALSE,
+		`;
+	return createTEmails;
+}
+
+/**
+ * @param email_id: integer is the table emails's id.
+ * @param first_name: string. It has default value  'NULL'.
+ * @param last_name: string. It's  'NOT NULL'.
+ * @param is_active: boolean. It has default value  'false'. User's status is
+ * active (it's value the true) or not.
+ * @param is_activated: boolean. It has default value  'false'. User's account is
+ * activated (it's values the true) or not
+ * @param send_message: boolean. It has default value  'false'. Sent  message to the user's email for a activation.
+ * @returns
+ */
+async function  createTebleUsers(): Promise<string> {
+	const creeateTUsers = `
+	CREATE TABLE IF NOT EXISTS users (
+	id SERIAL PRIMARY KEY,
+	email_id INTEGER UNIQUE NOT NULL,
+	FOREIGN KEY (email_id) REFERENCES emails(id),
+	first_name VARCHAR(30) DEFAULT NULL,
+	last_name VARCHAR(30) NOT NULL,
+	is_active BOOLEAN DEAFULT FALSE,
+	is_activated BOOLEAN DEFAULT FALSE,
+	send_message BOOLEAN DEFAULTS FALSE
+	)`;
+	return creeateTUsers;
+}
+export default { createTebleEmails, createTebleUsers };
