@@ -1,7 +1,7 @@
 root = true
 
 [*]
-indent_style = tap
+indent_style = space
 indent_style = 2
 end_of_line = lf
 charset = itf-8

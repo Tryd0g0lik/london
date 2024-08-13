@@ -1,4 +1,4 @@
-	// https://www.typescriptlang.org/tsconfig
+// https://www.typescriptlang.org/tsconfig
 {
   "compilerOptions": {
     "jsx": "react",
@@ -8,6 +8,7 @@
     "rootDirs": [
       "./src"
     ],
+
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "sourceMap": true,
@@ -15,6 +16,7 @@
     "strict": true,
     "skipLibCheck": true,
     "outDir": "dist",
+    "strictNullChecks": true,
     // "noImplicitReturns": true,
     // "noUnusedLocals": false,
     // "allowSyntheticDefaultImports": true,
@@ -31,20 +33,15 @@
       "@InterfacesB": [
         "src/backend/interfaces.ts"
       ],
-      // "@Interfaces": [
-      //   "src/interface.ts"
-      // ],
-      // "@htmlTemplates/*": [
-      //   "src/scripts/templates/*"
-      // ],
-      // "@Service/*": [
-      //   "src/scripts/chat/*"
-      // ]
     }
   },
   "exclude": [
     "./node_modules/**/*.js",
     "*.config.js",
     "**/dist",
+    "*eslintrc.*"
+  ],
+  "include": [
+    "src/**/*"
   ]
 }
