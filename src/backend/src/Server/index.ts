@@ -8,11 +8,7 @@ const APP_POSTGRES_PORT = (process.env.APP_POSTGRES_PORT as string | unknown) ||
 const APP_POSTGRES_DB_NAME = (process.env.APP_POSTGRES_DB_NAME as string | unknown) || 'london';
 const APP_POSTGRES_USER = (process.env.APP_POSTGRES_USER as string | unknown) || 'postgres';
 const APP_POSTGRES_DB_PASS = (process.env.APP_POSTGRES_DB_PASS as string | unknown) || '123';
-// const APP_SERVER_PORT = (process.env.APP_POSTGRES_PORT as string | unknown) || '7070';
-// function logTime(): string {
-//   const time = new Date();
-//   return `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
-// }
+
 function envResultBool(): boolean {
   const resultBool = (!(typeof APP_POSTGRES_HOST).includes('string')
     ? false
