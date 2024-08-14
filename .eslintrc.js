@@ -60,7 +60,8 @@ module.exports = {
       "anonymous": "always",
       "named": "never",
     }],
-
+    "no-new": "off",
+    "no-new-wrappers": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/semi": "off",
     "@stylistic/semi": ["error", "always", { "omitLastInOneLineBlock": false }],
