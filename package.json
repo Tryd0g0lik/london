@@ -34,7 +34,7 @@
     "build:serv": "npm --workspace=backend run build:dev",
     "watchs": "webpack --watch --mode=development --config ./webpack.config.js",
     "server:front": "webpack server --mode=development  --config ./webpack.config.js",
-    "server:back": "forever -w ./dist/server/index.js",
+    "server:back": "forever  ./dist/server/index.js",
     "lint:write": "eslint --debug src/ --fix",
     "pushing": "git push https://github.com/Tryd0g0lik/london.git master",
     "husk": "npm prepare",

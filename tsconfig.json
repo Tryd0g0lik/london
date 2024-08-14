@@ -31,8 +31,11 @@
     "baseUrl": ".",
     "paths": {
       "@InterfacesB": [
-        "src/backend/interfaces.ts"
+        "src/backend/interfaces.ts",
       ],
+      // "@Logs": [
+      //   "src/backend/src/server/logs/index.ts",
+      // ]
     }
   },
   "exclude": [
@@ -42,6 +45,7 @@
     "*eslintrc.*"
   ],
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/backend/src/server/**/*"
   ]
 }

@@ -1,0 +1,47 @@
+16:25:0:1 ==> [server]: START
+16:25:0:2 ==> [server]: Start the "Client" connection.
+16:25:0:32 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+16:25:0:32 ==> [server -> Client2]: Start the  "Client" connection.
+16:25:0:59 ==> [server]: "Emails" was created .
+16:25:0:59 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "DEAFULT")
+16:25:0:60 ==> [server]: "Emails" returning FALSE.
+16:25:0:60 ==> [server]: END
+16:25:10:79 ==> [server]: START
+16:25:10:80 ==> [server]: Start the "Client" connection.
+16:25:10:11 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+16:25:10:11 ==> [server -> Client2]: Start the  "Client" connection.
+16:25:10:36 ==> [server]: "Emails" was created .
+16:25:10:37 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "DEAFULT")
+16:25:10:37 ==> [server]: "Emails" returning FALSE.
+16:25:10:37 ==> [server]: END
+16:27:38:15 ==> [server]: START
+16:27:38:16 ==> [server]: Start the "Client" connection.
+16:27:38:48 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+16:27:38:48 ==> [server -> Client2]: Start the  "Client" connection.
+16:27:38:73 ==> [server]: "Emails" was created .
+16:27:38:34 ==> [server]: "Users" was created .
+16:27:38:34 ==> [server]: The end the "Client" connection.
+16:27:38:34 ==> [server]: END
+16:28:34:4 ==> [server]: START
+16:28:34:6 ==> [server]: Start the "Client" connection.
+16:28:34:36 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+16:28:34:36 ==> [server -> Client2]: Start the  "Client" connection.
+16:28:34:63 ==> [server]: "Emails" was created .
+16:28:34:63 ==> [server]: "Users" was created .
+16:28:34:63 ==> [server]: The end the "Client" connection.
+16:28:34:63 ==> [server]: END
+16:29:58:51 ==> [server]: START
+16:29:58:52 ==> [server]: Start the "Client" connection.
+16:29:58:83 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+16:29:58:83 ==> [server -> Client2]: Start the  "Client" connection.
+16:29:58:9 ==> [server]: "Emails" was created .
+16:29:58:9 ==> [server]: "Users" was created .
+16:29:58:9 ==> [server]: The end the "Client" connection.
+16:29:58:10 ==> [server]: END

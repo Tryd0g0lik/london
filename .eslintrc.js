@@ -56,7 +56,10 @@ module.exports = {
     }],
     "@typescript-eslint/space-before-function-paren": "off",
     // пробел перед скобкой именованной, анонимной футнкции и прочее
-    "@stylistic/space-before-function-paren": ["error", "never"],
+    "@stylistic/space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+    }],
 
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/semi": "off",
@@ -66,8 +69,8 @@ module.exports = {
     "@typescript-eslint/semi": "off",
     "react/display-name": "off",
     "indent": "off",
-    // "@typescript-eslint/indent": ["error", 2],
-    '@stylistic/ts/indent': ['error', 2],
+    "@typescript-eslint/indent": ["error", 2],
+    // '@stylistic/ts/indent': ['error', 2, { "ignoredNodes": ["ConditionalExpression"] }],
     "@typescript-eslint/no-explicit-any": ["error", { fixToUnknown: false, ignoreRestArgs: true }],
     "@typescript-eslint/no-var-requires": "off",
     // ключевое слово при импорте
@@ -94,7 +97,6 @@ module.exports = {
     "@typescript-eslint/default-param-last": "off",
 
     "@typescript-eslint/prefer-nullish-coalescing": "off", //["error", { ignoreTernaryTests: true }]
-
 
   },
   "ignorePatterns": [

@@ -1,0 +1,38 @@
+{
+  // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+  // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+  // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm start",
+      "name": "npm ren server:back",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "npm ren server:back",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "type": "node",
+      // forever -w ./dist/server/index.js
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "dist/server/index.js",
+      "cwd": "${workspaceFolder}",
+      // "args": [
+      //   "${env:USERNAME}"
+      // ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
-function createDatebase(): string {
-  return 'CREATE DATABASE IF NOT EXISTS london OWNER postgres';
+export function createDatebase(): string {
+  return 'CREATE DATABASE london OWNER postgres;';
 };
 
-function createTebleEmails(): string {
+export function createTebleEmails(): string {
   const createTEmails: string = `
     CREATE TABLE IF NOT EXISTS emails (
       id SERIAL PRIMARY KEY,
       emails VARCHAR(50) NOT NULL UNIQUE,
-      activated BOOLEAN DEFAULT FALSE,`;
+      activated BOOLEAN DEFAULT FALSE);`;
 
   return createTEmails;
 };
@@ -23,7 +23,7 @@ function createTebleEmails(): string {
  * @param send_message: boolean. It has default value  'false'. Sent  message to the user's email for a activation.
  * @returns
  */
-function createTebleUsers(): string {
+export function createTebleUsers(): string {
   const creeateTUsers = `
     CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
@@ -31,10 +31,9 @@ function createTebleUsers(): string {
     FOREIGN KEY (email_id) REFERENCES emails(id),
     first_name VARCHAR(30) DEFAULT NULL,
     last_name VARCHAR(30) NOT NULL,
-    is_active BOOLEAN DEAFULT FALSE,
+    is_active BOOLEAN DEFAULT FALSE,
     is_activated BOOLEAN DEFAULT FALSE,
-    send_message BOOLEAN DEFAULTS FALSE
-  )`;
+    send_message BOOLEAN DEFAULT FALSE);`;
   return creeateTUsers;
 }
-export default { createDatebase, createTebleEmails, createTebleUsers };
+// module.exports = { createDatebase, createTebleEmails, createTebleUsers };

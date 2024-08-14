@@ -81,8 +81,6 @@ module.exports = {
     ]
   },
 
-
-
   plugins: [
     new TsconfigPathsPlugin(),
     new BundleTracker({
@@ -98,7 +96,7 @@ module.exports = {
     new webpack.SourceMapDevToolPlugin({
       test: /\.tsx?$/,
       filename: './dist/maps/[file].map.[query]',
-      include: path.resolve(__dirname, 'src/'),
+      include: path.resolve(__dirname, 'src'),
     }),
 
     new ESLintPlugin({
@@ -144,8 +142,10 @@ module.exports = {
     ],
 
 		alias: {
-			"@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
+      // "@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
+      // "@Logs": path.resolve(__dirname, "src/backend/src/server/logs/index.ts"),
     }
   },
 
 };
+

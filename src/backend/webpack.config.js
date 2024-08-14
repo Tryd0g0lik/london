@@ -22,18 +22,20 @@ module.exports = {
 				test: /\.(tsx|jsx|ts|js)$/,
 				use: [
 					// https://webpack.js.org/guides/typescript/
-					{
-						loader: "babel-loader",
-						options: {
-							configFile: path.resolve(__dirname, "../../babel.config.js"),
-						}
-					},
-					// {
-					// 	test: /\.tsx?$/,
-					// 	use: "ts-loader",
-					// 	exclude: /node_modules/,
-					// },
-
+          // {
+          // 	loader: "babel-loader",
+          // 	options: {
+          // 		configFile: path.resolve(__dirname, "../../babel.config.js"),
+          // 	}
+          // },
+          {
+            // test: /\.tsx?$/,
+            loader: "ts-loader",
+            exclude: /node_modules/,
+            options: {
+              configFile: path.resolve(__dirname, "./tsconfig.json")
+            },
+          },
 				],
 				// loader: "ts-loader",
 				// options: {
@@ -47,6 +49,18 @@ module.exports = {
 			},
 
 		],
-	}
+  },
+  resolve: {
+    extensions: [".tsx", ".jsx", ".ts", ".js", ".svg"],
+    modules: [
+      path.resolve(__dirname, "../../.browserslistrc"),
+      path.resolve(__dirname, "node_modules"),
+      path.resolve(__dirname, "dist")
+    ],
 
+    alias: {
+      "@InterfacesB": [path.resolve(__dirname, "src/backend/interfaces.ts")],
+      "@Logs": [path.resolve(__dirname, "src/server/logs/index.ts")],
+    }
+  },
 }
