@@ -1,7 +1,7 @@
 // https://www.typescriptlang.org/tsconfig
 {
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "noImplicitAny": true,
     "module": "ES6",
     "target": "ES2020",
@@ -30,12 +30,9 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@InterfacesB": [
-        "src/backend/interfaces.ts",
+      "@Interfaces": [
+        "src/frontend/src/account/interfaces.ts"
       ],
-      // "@Logs": [
-      //   "src/backend/src/server/logs/index.ts",
-      // ]
     }
   },
   "exclude": [

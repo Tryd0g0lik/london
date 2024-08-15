@@ -142,6 +142,9 @@ module.exports = {
     ],
 
 		alias: {
+      "@Interfaces": [
+        path.resolve(__dirname, "src/frontend/src/account/interfaces.ts")
+      ],
       // "@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
       // "@Logs": path.resolve(__dirname, "src/backend/src/server/logs/index.ts"),
     }

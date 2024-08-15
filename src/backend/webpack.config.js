@@ -60,7 +60,7 @@ module.exports = {
 
     alias: {
       "@Logs": [path.resolve(__dirname, "src/server/logs/index.ts")],
-      "@Interfaces": [path.resolve(__dirname, "../../../interfaces.ts")],
+
     }
   },
 }
