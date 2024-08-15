@@ -9,7 +9,10 @@
     "paths": {
       "@Logs": [
         "src/server/logs/index.ts",
-      ]
+      ],
+      "@Interfaces": [
+        "../../../interfaces.ts"
+      ],
     }
 	},
 	"exclude": [

@@ -1,6 +1,7 @@
 ./webpack.config.js
 ./postcss.config.js
 */*eslintrc.js
+**/tsconfig.json
 ./src/index.ts
 babel.config.js
 dist/

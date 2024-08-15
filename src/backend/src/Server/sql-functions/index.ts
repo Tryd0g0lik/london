@@ -37,3 +37,39 @@ export function createTebleUsers(): string {
   return creeateTUsers;
 }
 // module.exports = { createDatebase, createTebleEmails, createTebleUsers };
+interface NewSqlLine {
+  email: string
+  firstName: string
+  lastName: string
+};
+
+export function addNewLine(props: NewSqlLine): string {
+  const {
+    email,
+    firstName,
+    lastName
+  } = props;
+  const createNewLine = `
+    WITH new_email AS (
+      INSERT INTO emails (
+        id, emails, activated
+      )
+      values (
+        DEFAULT,
+        ${email},
+        DEFAULT
+      )
+      RETURNING id
+    )
+    INSERT INTO users (id, email_id, first_name, last_name, is_active, is_activated, send_message)
+    values (
+    default,
+    (select id from new_email),
+    ${firstName},
+    ${lastName},
+    default,
+    default,
+    default
+    );`;
+  return createNewLine;
+}

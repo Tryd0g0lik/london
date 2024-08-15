@@ -1,12 +1,14 @@
 const http_ = require('http');
 
 const express = require('express');
+
 // const pg_ = require('pg');
 const log = require('./logs/index');
 const APP_SERVER_PORT = (process.env.APP_SERVER_PORT as string | unknown) || 7070;
 const APP_POSTGRES_HOST_ = (process.env.APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const app = express();
-
+// Middleware для обработки JSON
+app.use(express.json());
 // const fortune = (ctx: typeof http_.request,
 //   body: string = '',
 //   status: number = 200): void => {
@@ -62,13 +64,24 @@ app.get('/api/v1/clients/', (req: unknown, res: unknown) => {
   const body = JSON.stringify({ data: true });
   fortune(res, body);
 });
-app.get('/api/v1/clients/:id/', () => { });
 app.post('/api/v1/clients/add/', () => { });
-app.post('/api/v1/clients/add/', () => { });
-app.put('/api/v1/clients/:id/', () => { });
-app.delete('/api/v1/clients/:id/', () => { });
+app.router('api/v1/clients/:id/')
+  .get(async function (req: unknown, res: unknown, next: unknown) { })
+  .post(async function (req: unknown, res: unknown, next: unknown) { })
+  .delete(async function (req: unknown, res: unknown, next: unknown) { })
+  .put(async function (req: unknown, res: unknown, next: unknown) {
+    // Установка данных
+    app.set('myData', { name: 'John', age: 30 });
+    // Получение данных из app.set or 'undefined'
+    const data = app.get('myData');
+    // Отправка данных в формате JSON
+    // res.json(data);
+  });
 
-app.listen(APP_SERVER_PORT, APP_POSTGRES_HOST_, () => {
+// app.listen(APP_SERVER_PORT, APP_POSTGRES_HOST_, () => {
+//   log(`[server -> listen]: Server starte to listen the PORT ${APP_SERVER_PORT as string}`);
+//   console.log(`[server]: Server starte to listen the PORT ${APP_SERVER_PORT as string}`);
+// });
+http.createServer(app).listen(80, () => {
   log(`[server -> listen]: Server starte to listen the PORT ${APP_SERVER_PORT as string}`);
-  console.log(`[server]: Server starte to listen the PORT ${APP_SERVER_PORT as string}`);
 });
