@@ -33,6 +33,9 @@
       "@Interfaces": [
         "src/frontend/src/account/interfaces.ts"
       ],
+      "@Components/*": [
+        "src/frontend/src/account/components/*"
+      ]
     }
   },
   "exclude": [

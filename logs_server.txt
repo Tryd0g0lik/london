@@ -46,3 +46,56 @@
 16:29:58:9 ==> [server]: The end the "Client" connection.
 16:29:58:10 ==> [server]: END
 19:28:25:2 ==> [server -> listen]: Server starte to listen the PORT 7070
+14:34:8:10 ==> [server -> listen]: Server starte to listen the PORT 7070
+14:44:26:68 ==> [server]: START
+14:44:26:69 ==> [server]: Start the "Client" connection.
+14:44:26:69 ==> [server -> listen]: Server starte to listen the PORT 7070
+14:44:28:84 ==> [server -> ERROR1]: 'createDBTable' Something that wrong!
+     ERR-MEASSAGE: Cannot read properties of undefined (reading 'message')
+14:44:28:84 ==> [server]: The end the "Client" connection.
+14:44:28:84 ==> [server]: createDBTable returning FALSE.
+15:7:12:20 ==> [server]: START
+15:7:12:20 ==> [server]: Start the "Client" connection.
+15:7:12:21 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:7:12:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:7:12:54 ==> [server]: The end the "Client" connection.
+15:7:12:54 ==> [server]: createDBTable returning FALSE.
+15:9:4:47 ==> [server]: START
+15:9:4:48 ==> [server]: Start the "Client" connection.
+15:9:4:49 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:9:4:80 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:9:4:80 ==> [server]: The end the "Client" connection.
+15:9:4:80 ==> [server]: createDBTable returning FALSE.
+15:10:27:0 ==> [server]: START
+15:10:27:1 ==> [server]: Start the "Client" connection.
+15:10:27:1 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:10:27:34 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:10:27:34 ==> [server]: createDBTable returning FALSE.
+15:10:27:34 ==> [server]: The end the "Client" connection.
+15:11:45:75 ==> [server]: START
+15:11:45:76 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:11:45:76 ==> [server]: Start the "Client" connection.
+15:11:45:10 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:11:45:10 ==> [server]: The end the "Client" connection.
+15:11:45:10 ==> [server]: createDBTable returning FALSE.
+15:15:24:42 ==> [server]: START
+15:15:24:43 ==> [server]: Start the "Client" connection.
+15:15:24:43 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:15:24:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:15:24:76 ==> [server]: The end the "Client" connection.
+15:15:24:76 ==> [server]: createDBTable returning FALSE.
+15:17:46:82 ==> [server]: START
+15:17:46:82 ==> [server]: Start the "Client" connection.
+15:17:46:82 ==> [server -> listen]: Server starte to listen the PORT 7070
+15:17:46:15 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:17:46:15 ==> [server]: Start the "Client" connection.
+15:17:46:20 ==> [server]: "Emails" created .
+15:17:46:73 ==> [server]: "Users" created .
+15:17:46:73 ==> [server]: The end the "Client" connection.
+15:17:46:74 ==> [server]: END

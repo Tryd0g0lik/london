@@ -13,7 +13,7 @@ module.exports = {
   entry: './src/index.ts',
   mode: 'none',
   output: {
-    path: path.resolve(__dirname, 'dist'), // '../static'
+    path: path.resolve(__dirname, 'dist/frontend'), // '../static'
     filename: 'main-[id]-[hash].js',
 
     clean: true,
@@ -52,9 +52,9 @@ module.exports = {
         ],
 
       },
-      /*{
+      {
         test: /\.svg$/,
-        include: path.resolve(__dirname, 'src/pic/svg'),
+        include: path.resolve(__dirname, 'src/fontend/account/pic'),
 
         type: 'asset/inline',
         generator: {
@@ -63,7 +63,7 @@ module.exports = {
 
       },
 
-      {
+      /*{
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
@@ -91,7 +91,7 @@ module.exports = {
     new SpriteLoaderPlugin(), // svg
 
     new HtmlWebpackPlugin({
-      template: 'src/public/index.html' //'../templates/index.html'
+      template: 'src/frontend/public/index.html' //'../templates/index.html'
     }),
     new webpack.SourceMapDevToolPlugin({
       test: /\.tsx?$/,
@@ -105,7 +105,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: 'dist/css/style.css'
+      filename: 'css/style.css'
     }),
   ],
   watchOptions: {
@@ -116,20 +116,20 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'dist'), // '../static'
+      directory: path.resolve(__dirname, 'dist/frontend'), // '../static'
 
     },
 
 
     watchFiles: [
-      'dist',
+      'dist/frontend',
     ],
     hot: true, // Включение горячей перезагрузки
     liveReload: true, // Включение live-reload
 
     compress: true,
     historyApiFallback: true,
-    open: true, // Автоматическое открытие браузера
+    // open: true, // Автоматическое открытие браузера
     // port: 8080
   },
 
@@ -144,6 +144,9 @@ module.exports = {
 		alias: {
       "@Interfaces": [
         path.resolve(__dirname, "src/frontend/src/account/interfaces.ts")
+      ],
+      "@Components": [
+        path.resolve(__dirname, "src/frontend/src/account/components")
       ],
       // "@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
       // "@Logs": path.resolve(__dirname, "src/backend/src/server/logs/index.ts"),

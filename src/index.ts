@@ -1,1 +1,2 @@
-console.log('Hallo Word!')
+import "./frontend/src/account/index"
+

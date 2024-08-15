@@ -1,5 +1,6 @@
-import React, { JSX } from "react";
-import { useNavigate, createBrowserRouter, RouterProvider, RelativeRoutingType } from 'react-router-dom';
+import React, { JSX, useState } from "react";
+import { useNavigate, Navigate, createBrowserRouter, RouterProvider, RelativeRoutingType } from 'react-router-dom';
+import { RegistrationPageFC } from './RegistrerPage'
 import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';
 
@@ -8,9 +9,21 @@ const Router = createBrowserRouter([
   {
     path: Pages.Home,
     element: <HomePageFC />
-  }
+  },
+  {
+    path: Pages.Regisration,
+    element: <RegistrationPageFC />
+  },
+  {
+    path: Pages.Index,
+    element: <Navigate to={Pages.Home} />
+  },
 ]);
 
+
 export function PagesFC(): JSX.Element {
-  return <></>
+
+  // const [htmlReact, useUseState] = useState();
+
+  return < RouterProvider router={Router} />
 }

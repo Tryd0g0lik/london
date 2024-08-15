@@ -1,7 +1,7 @@
 const http = require('http');
 const pg = require('pg');
-const { createDatebase, createTebleEmails, createTebleUsers } = require('./sql-functions/index');
-const lg = require('./logs/index');
+const { createDatebase, createTebleEmails, createTebleUsers } = require('../sql-functions/index');
+const lg = require('../logs/index');
 
 const APP_POSTGRES_HOST = (process.env.APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const APP_POSTGRES_PORT = (process.env.APP_POSTGRES_PORT as string | unknown) || '5432';
@@ -50,10 +50,12 @@ async function connextDB(): Promise<boolean> {
     return true;
   } catch (err: unknown) {
     console.log('[server]: ERRRRor1.');
-    lg(`[server -> ERROR1]: 'createDBTable' Something that wrong!
+    lg(`[server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
-
-    if (((err as ErrorEvent).message).includes('уже существует')) {
+    console.log('[server]: ERRRRor1.1 ', (err as ErrorEvent).message);
+    console.log('[server]: ERRRRor1.2 ', ('уже существует').includes(String((err as ErrorEvent).message)));
+    console.log('[server]: ERRRRor1.2.1 ', (String((err as ErrorEvent).message)).includes('уже существует'));
+    if ((String((err as ErrorEvent).message)).includes('уже существует')) {
       return true;
     }
     clientDB.end();
@@ -87,8 +89,8 @@ async function createDBTable(): Promise<boolean> {
   } catch (err: unknown) {
     lg(`[server -> ERROR]: 'Emails' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
-    console.log(`[Emails!!!] ${((err as ErrorEvent).message).includes('уже существует')}`);
-    if (!((err as ErrorEvent).message).includes('уже существует')) {
+    console.log(`[Emails!!!] ${(String((err as ErrorEvent).message)).includes('уже существует')}`);
+    if (!(String((err as ErrorEvent).message)).includes('уже существует')) {
       lg('[server]: "Emails" returning FALSE.');
       return false;
     }
@@ -102,7 +104,7 @@ async function createDBTable(): Promise<boolean> {
     return true;
   } catch (err: unknown) {
     console.log(`[Users!!!] ${('уже существует').includes((err as ErrorEvent).message)}`);
-    if (('уже существует').includes((err as ErrorEvent).message)) {
+    if ((String((err as ErrorEvent).message)).includes('уже существует')) {
       lg('[server]: "Users" was created .');
       return true;
     }
@@ -113,7 +115,7 @@ async function createDBTable(): Promise<boolean> {
   }
 };
 
-async function prymaryInstalation(): Promise<void> {
+export async function prymaryInstalation(): Promise<void> {
   lg('[server]: START');
   const resp = await connextDB();
   if (resp) {

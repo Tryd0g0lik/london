@@ -1,0 +1,187 @@
+html,
+body,
+div,
+object,
+ifreine,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+addr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+ol,
+ul,
+li,
+fieldset,
+form,
+ladel,
+legent,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcapcion,
+footer,
+header,
+hgroup,
+menu,
+var,
+output,
+ruby,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  font-size: 16px;
+  vertical-align: baseline;
+  box-sizing: content-box;
+  font-family: 'Arial', 'sans-serif', 'Helvetica';
+  position: relative;
+}
+
+form,
+input,
+button {
+  box-sizing: content-box;
+  background-color: transparent;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcapcion,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol {
+  padding-left: 0;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 0;
+  list-style: square;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  height: auto;
+  background: #fff;
+}
+
+body,
+div,
+footer,
+header,
+menu address,
+article,
+aside,
+blockquote,
+dd,
+div,
+dl,
+dt,
+details,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hr,
+li,
+legend,
+nav,
+noscript,
+ol,
+output,
+optgroup,
+option,
+p,
+pre,
+section,
+summary,
+table {
+  box-sizing: border-box;
+}

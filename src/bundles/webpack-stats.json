@@ -1,0 +1,23 @@
+{
+  "status": "done",
+  "assets": {
+    "css/style.css": {
+      "name": "css/style.css",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\css\\style.css"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\index.html"
+    },
+    "main-main-c459ecaa83fc081337ad.js": {
+      "name": "main-main-c459ecaa83fc081337ad.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-c459ecaa83fc081337ad.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "css/style.css",
+      "main-main-c459ecaa83fc081337ad.js"
+    ]
+  }
+}

@@ -32,10 +32,12 @@ export function createTebleUsers(): string {
     first_name VARCHAR(30) DEFAULT NULL,
     last_name VARCHAR(30) NOT NULL,
     is_active BOOLEAN DEFAULT FALSE,
+    is_authenticated BOOLEAN DEFAULT FALSE,
     is_activated BOOLEAN DEFAULT FALSE,
     send_message BOOLEAN DEFAULT FALSE);`;
   return creeateTUsers;
 }
+
 // module.exports = { createDatebase, createTebleEmails, createTebleUsers };
 interface NewSqlLine {
   email: string

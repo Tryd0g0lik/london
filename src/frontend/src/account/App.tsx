@@ -2,6 +2,8 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { PagesFC } from './components/Pages'
 import './App.css';
+import "./styles/styles_zero.css";
+import "./styles/style.css";
 const root = document.getElementById('root');
 
 if (!root) {
@@ -9,16 +11,16 @@ if (!root) {
 }
 createRoot(root).render(
   <StrictMode>
-  <PagesFC />
+    <PagesFC />
   </StrictMode>
 );
 
 console.log('Good lack work');
 
-function App() {
-  return (
-    <></>
-  );
-}
+// function App() {
+//   return (
+//     <></>
+//   );
+// }
 
-export default App;
+// export default App;

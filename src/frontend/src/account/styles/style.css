@@ -1,0 +1,13 @@
+.nav-item ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.nav-item.dropdown li {
+  display: none;
+
+  list-style: none;
+}
