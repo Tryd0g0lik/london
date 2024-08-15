@@ -1,5 +1,5 @@
-import React, { JSX, useState } from "react";
-import { useNavigate, Navigate, createBrowserRouter, RouterProvider, RelativeRoutingType } from 'react-router-dom';
+import { JSX, } from "react";
+import { Navigate, createBrowserRouter, RouterProvider, } from 'react-router-dom';
 import { RegistrationPageFC } from './RegistrerPage'
 import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';

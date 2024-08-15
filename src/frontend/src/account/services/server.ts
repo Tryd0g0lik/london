@@ -21,7 +21,9 @@ export default async function add(body_: string): Promise<void> {
   const answer = await fetch(urls, params);
   if (answer.ok) {
     const dataJson = answer.json();
+    return dataJson
   }
+
 }
 
 

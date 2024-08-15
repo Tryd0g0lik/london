@@ -1,9 +1,9 @@
-import React, { JSX, useEffect } from 'react';
+import React, { JSX, } from 'react';
 import { RegisterPageFC } from './FormRegisrate';
 
 const handlerFormRegigter = (event: React.MouseEvent): void => {
   event.preventDefault();
-  const target = (event.target as HTMLFormElement);
+  // const target = (event.target as HTMLFormElement);
 
   // const categoryUSerNumber = Number(target.dataset.category);
   // /* ------ */
