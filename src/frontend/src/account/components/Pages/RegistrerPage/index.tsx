@@ -24,3 +24,4 @@ export function RegistrationPageFC(): JSX.Element {
     </section>
   )
 }
+

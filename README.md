@@ -55,7 +55,7 @@ void prymaryInstalation();
 с целью добавить новую строчку в две таблицы db.
 
 5. создано дерево файлов по маршруту `src\frontend\src\account`  работы с модулем `account`. \
-`src\frontend\src\account\components\Pages\index.tsx` создал роутер , для изменени контента страницы без перезагрузки. \
+`src\frontend\src\account\components\Pages\index.tsx` создал роутер , для изменени контента страницы. \
 Подготовлен `fetch` запрос с методом POST.  Разместил в обработчике событий. \
 `src\frontend\src\account\services\cookies.ts` функцияя `getCookie` для кенерации куки в `params['headers']['X-CSRFToken']` из `fetch`
 

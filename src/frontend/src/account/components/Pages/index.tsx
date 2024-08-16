@@ -1,4 +1,4 @@
-import { JSX, } from "react";
+import React from "react";
 import { Navigate, createBrowserRouter, RouterProvider, } from 'react-router-dom';
 import { RegistrationPageFC } from './RegistrerPage'
 import { Pages } from '@Interfaces';
@@ -21,7 +21,7 @@ const Router = createBrowserRouter([
 ]);
 
 
-export function PagesFC(): JSX.Element {
+export function PagesFC(): React.JSX.Element {
 
   // const [htmlReact, useUseState] = useState();
 
