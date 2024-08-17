@@ -90,11 +90,27 @@ export function selectAllEmail(): string {
 }
 
 /**
- *Находим одно пользователя у которого совпаба.т id email
- * @param emaiID
+ * У нас есть email, надо получить пользователя
+ * @param email: string
  */
-export function selectOneUser(emaiID: number): string {
-  const selectEmailId = `SELECT * FROM Users
-  WHERE email_id = ${emaiID}`;
+export function selectSingleUser(email: string): string {
+  const selectEmailId = `WITH user_email AS (
+    SELECT id FROM emails WHERE emails = '${email}'
+    )
+    SELECT * FROM users WHERE email_id = (SELECT id FROM user_email);`;
   return selectEmailId;
+}
+
+/**
+ * @param tableName Таблица в которой менять
+ * @param column Колонка в которой ячейка для действий
+ * @param index Пользователь/строка по которой ячейка
+ * @param newValue Новые данные для внесения
+ * @returns string
+ */
+export function changeValueOneCell(tableName: string, column: string, index: number, newValue: string | boolean = false): string {
+  const updateOneCell = `UPDATE ${tableName}
+  SET ${column} = ${newValue}
+  WHERE id = ${index} ;`;
+  return updateOneCell;
 }

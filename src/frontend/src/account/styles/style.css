@@ -20,3 +20,32 @@ div.form {
   width: 350px;
   ;
 }
+
+#root.active .dropdown li {
+  display: inherit;
+}
+
+/* submenu */
+ul {
+  display: flex;
+}
+
+.active .dropdown ul {
+  display: flex;
+  position: absolute;
+  background: var(--fallback-b1, oklch(var(--b1)/1));
+  z-index: 2;
+  left: 0;
+  bottom: -80px;
+  width: 350px;
+  flex-wrap: wrap;
+}
+
+.active li.nav-item.dropdown {
+  position: relative;
+}
+
+
+.active .nav-item.dropdown li {
+  display: block;
+}

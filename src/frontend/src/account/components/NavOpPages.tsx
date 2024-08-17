@@ -23,27 +23,40 @@ export function NavFC(): JSX.Element {
           <li className="nav-item dropdown">
             <ul>
             <li className="nav-item">
-              <a href="/account/" className="nav-link
+                <a href="/profile" className="nav-link
               dropdown-toggle" tada-togle="dropdown" role="button"
                 aria-haspopup="true" aria-expanded="false">
                 Профиль
               </a>
+
               <div className="dropdown-memu">
-                <a className="dropdown-item" href="/account/">
-                  Мои объявления
-                </a>
-                <a className="dropdown-item" href="/account/profile_change/">
-                  Изменить личные данные
-                </a>
-                <a href="/account/password_change/" className="dropdown-item">
-                  Изменить пароль
-                </a>
-                <a href="/account/profile_dalete/" className="dropdown-item">
-                  Удалить
-                </a>
-                <a className="dropdown-item" href="/account/logout/">
-                  Выход
-                </a>
+                  <ul>
+                    <li className="nav-item">
+                      <a className="dropdown-item" href="/profile">
+                        Мои объявления
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="dropdown-item" href="/profile/profile_change/">
+                        Изменить личные данные
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="/profile/password_change/" className="dropdown-item">
+                        Изменить пароль
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="/profile/profile_dalete/" className="dropdown-item">
+                        Удалить
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="dropdown-item" href="/profile/logout/">
+                        Выход
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </li>
             </ul>

@@ -8,7 +8,10 @@ const { prymaryInstalation } = require('./installation');
 const REACT_APP_SERVER_PORT = (process.env.REACT_APP_SERVER_PORT as string | unknown) || 7070;
 const REACT_APP_POSTGRES_HOST_ = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const app = express();
-prymaryInstalation();
+/** DB
+ * prymaryInstalation(); // Устанавливаем базу данных. Закомментировано СПЕЦИАЛЬНО
+ */
+
 // Middleware для обработки JSON
 app.use(cors());
 app.use(express.json());

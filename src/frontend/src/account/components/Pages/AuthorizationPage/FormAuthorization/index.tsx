@@ -3,7 +3,7 @@ import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { add } from '@Services/fetches';
 // import getCookie from '@Services/cookies';
-import { createSessionId } from '@Services/coockieSessionId';
+import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
 /**
  * Обработчик клика по кнопке из формы - отправляем данные в базу
@@ -53,14 +53,20 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     coockie
   });
   // отправляем в базу данных
-  const responce = await add(bodyStr, '/api/v1/inlogin/');
+  const responce = await add(bodyStr, '/api/v1/inlogin/') as { message: string, sessionId?: string };
   if (!responce) {
+    // That did not find it
     const result = messageForUser(1, ['Вы вошли', 'Что-то не получилось']);
     form.insertAdjacentHTML('afterend', result.outerHTML);
     return false;
   }
   const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
+
+  //It new session key is  insade to the brawser
+  setSessionIdInCookie((responce).sessionId as string)
+
+  window.location.pathname = '/profile';
   return true;
 };
 

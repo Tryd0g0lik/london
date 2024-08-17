@@ -19,7 +19,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
   dataJson: propsForClient): Promise<boolean> {
   lg('[server -> clients]: Before connection.');
   const client = new Client({
-    useclientsr: REACT_APP_POSTGRES_USER,
+    user: REACT_APP_POSTGRES_USER,
     host: REACT_APP_POSTGRES_HOST,
     port: REACT_APP_POSTGRES_PORT,
     database: REACT_APP_POSTGRES_DB_NAME,
@@ -29,6 +29,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
   try {
     client.connect();
     // This's result from checker 'Проверит emails на дубли.
+
     const result = await checkerDubleEmails(dataJson.email, client);
     console.log('RESULT: ', result);
     if (result) {
@@ -36,6 +37,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
       console.log('[server -> clients]: Такой ольщователь уже существует');
       return false;
     }
+
     await lg('[server -> clients]: That is a connection. Before sending.');
     await client.query(fun(dataJson));
     lg('[server -> clients]: data was save');

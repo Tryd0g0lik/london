@@ -2,7 +2,8 @@ export enum Pages {
   Home = '/',
   Index = '/index',
   Regisration = '/registration',
-  InLogin = '/inlogin'
+  InLogin = '/inlogin',
+  Profile = '/profile',
 }
 
 export enum FetchMethod {
@@ -22,3 +23,4 @@ export interface FetchParams {
   }
   mode?: 'no-cors' | 'cors',
 }
+

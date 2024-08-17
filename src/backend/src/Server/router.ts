@@ -1,7 +1,7 @@
 const { Router, Application, Request, Response, NextFunction } = require('express');
 const { Client } = require('pg');
 const { helper } = require('./validators');
-const { addNewLine, selectOneUser } = require('./sql-functions/index');
+const { addNewLine, selectSingleUser, changeValueOneCell } = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
 const { getCookie } = require('./getCookies');
@@ -12,7 +12,15 @@ interface propsForClient {
   readonly firstName?: string
   readonly lastName?: string
   readonly passwords: string
+  password?: string
+  coockie?: { sessionId: string }
 };
+
+const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
+const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
+const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as string | unknown) || 'london';
+const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
+const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 export function getRouter(appObj: typeof Application): typeof router {
   router.get('api/v1/clients/:id/', (req: Request, res: Response, next: typeof NextFunction) => { });
@@ -21,22 +29,47 @@ export function getRouter(appObj: typeof Application): typeof router {
 
   router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     const clientData = req.body as unknown as propsForClient;
-    const coockie = req.cookie;
+    const coockie = clientData.coockie;
     await log(`[server -> router]: inlogin: ${JSON.stringify(clientData)}`);
-    const props = {
-      email: clientData.email,
-      password: clientData.passwords
-    };
+
     const statusCode: number = 200;
-    const sessionId = coockie.sessionId;
-    await log(`[server -> router]: coockie: ${coockie}`);
-    // helper  Возвращает массив с одной строкой/клиентом из таблицы 'Emails'
-    const result = await helper(clientData.email, clients);
-    if (result.length < 1) {
-      res.status(404).json({ message: 'Пользователь не найден' });
+    await log(`[server -> router]: inlogin coockie: ${coockie.sessionId}`);
+
+    /* --------------- That is see the email's id ---------------  */
+    const client = new Client({
+      user: REACT_APP_POSTGRES_USER,
+      host: REACT_APP_POSTGRES_HOST,
+      port: REACT_APP_POSTGRES_PORT,
+      database: REACT_APP_POSTGRES_DB_NAME,
+      password: REACT_APP_POSTGRES_DB_PASS
+    });
+    client.connect();
+    const respArr = await client.query(selectSingleUser(clientData.email));
+    await log(`[server -> router]: inlogin Received data where is a length =>: ${(respArr.rows).length}`);
+    await log(`[server -> router]: inlogin Received data where PAssword User =>: ${(clientData.password)}`);
+    await log(`[server -> router]: inlogin Received data where ALL DB =>: ${(JSON.stringify(respArr.rows[0]))}`);
+    await log(`[server -> router]: inlogin clientData data ALL =>: ${JSON.stringify(clientData)}`);
+    /* This's a password's filter */
+    const result = await respArr.rows.filter(((item: propsForClient) => item.password === clientData.password));
+    await log(`[server -> router]: inlogin Filter LENGTH =>: ${(result.length)}`);
+    if (result.length === 0) {
+      await log(`[server -> router]: inlogin Not found a password. RESULT =>: ${result}`);
+      client.end();
+      res.status(404).json({ massage: 'Not founded' });
       return false;
+    }
+    await log(`[server -> router]: inlogin Filter LENGTH2 =>: ${(result.length)}`);
+    // making the aictve status in db
+    await client.query(changeValueOneCell('Users', 'is_active', result[0].id, true));
+    client.end();
+    /* --------------- if we is find the use in db ---------------  */
+    const props = {
+      message: 'OK',
+      sessionId: coockie.sessionId
     };
-    clients(selectOneUser());
+    await log(`[server -> router]: inlogin That User is found: ${result.firstname}`);
+    // Response is sent
+    res.status(200).json(props);
   });
 
   // router.get('/api/v1/clients/', (req: Request, res: Response) => {
