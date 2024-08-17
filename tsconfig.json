@@ -35,7 +35,10 @@
       ],
       "@Components/*": [
         "src/frontend/src/account/components/*"
-      ]
+      ],
+      "@Services/*": [
+        "src/frontend/src/account/services/*"
+      ],
     }
   },
   "exclude": [

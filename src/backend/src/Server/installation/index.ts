@@ -3,22 +3,22 @@ const pg = require('pg');
 const { createDatebase, createTebleEmails, createTebleUsers } = require('../sql-functions/index');
 const lg = require('../logs/index');
 
-const APP_POSTGRES_HOST = (process.env.APP_POSTGRES_HOST as string | unknown) || 'localhost';
-const APP_POSTGRES_PORT = (process.env.APP_POSTGRES_PORT as string | unknown) || '5432';
-const APP_POSTGRES_DB_NAME = (process.env.APP_POSTGRES_DB_NAME as string | unknown) || 'london';
-const APP_POSTGRES_USER = (process.env.APP_POSTGRES_USER as string | unknown) || 'postgres';
-const APP_POSTGRES_DB_PASS = (process.env.APP_POSTGRES_DB_PASS as string | unknown) || '123';
+const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
+const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
+const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as string | unknown) || 'london';
+const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
+const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 function envResultBool(): boolean {
-  const resultBool = (!(typeof APP_POSTGRES_HOST).includes('string')
+  const resultBool = (!(typeof REACT_APP_POSTGRES_HOST).includes('string')
     ? false
-    : (!(typeof APP_POSTGRES_PORT).includes('string')
+    : (!(typeof REACT_APP_POSTGRES_PORT).includes('string')
       ? false
-      : (!(typeof APP_POSTGRES_DB_NAME).includes('string')
+      : (!(typeof REACT_APP_POSTGRES_DB_NAME).includes('string')
         ? false
-        : (!(typeof APP_POSTGRES_USER).includes('string')
+        : (!(typeof REACT_APP_POSTGRES_USER).includes('string')
           ? false
-          : (!!(typeof APP_POSTGRES_DB_PASS).includes('string'))
+          : (!!(typeof REACT_APP_POSTGRES_DB_PASS).includes('string'))
         ))));
   return resultBool;
 }
@@ -33,10 +33,10 @@ async function connextDB(): Promise<boolean> {
 
   lg('[server]: Start the "Client" connection.');
   const clientDB = await new pg.Client({
-    user: APP_POSTGRES_USER,
-    password: APP_POSTGRES_DB_PASS,
-    host: APP_POSTGRES_HOST,
-    port: Number(APP_POSTGRES_PORT),
+    user: REACT_APP_POSTGRES_USER,
+    password: REACT_APP_POSTGRES_DB_PASS,
+    host: REACT_APP_POSTGRES_HOST,
+    port: Number(REACT_APP_POSTGRES_PORT),
     database: 'postgres'
   });
   clientDB.connect();
@@ -52,8 +52,6 @@ async function connextDB(): Promise<boolean> {
     console.log('[server]: ERRRRor1.');
     lg(`[server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
-    console.log('[server]: ERRRRor1.1 ', (err as ErrorEvent).message);
-    console.log('[server]: ERRRRor1.2 ', ('уже существует').includes(String((err as ErrorEvent).message)));
     console.log('[server]: ERRRRor1.2.1 ', (String((err as ErrorEvent).message)).includes('уже существует'));
     if ((String((err as ErrorEvent).message)).includes('уже существует')) {
       return true;
@@ -76,11 +74,11 @@ async function createDBTable(): Promise<boolean> {
   }
   lg('[server]: Start the "Client" connection.');
   const client = await new pg.Client({
-    user: APP_POSTGRES_USER,
-    host: APP_POSTGRES_HOST,
-    port: APP_POSTGRES_PORT,
-    database: APP_POSTGRES_DB_NAME,
-    password: APP_POSTGRES_DB_PASS
+    user: REACT_APP_POSTGRES_USER,
+    host: REACT_APP_POSTGRES_HOST,
+    port: REACT_APP_POSTGRES_PORT,
+    database: REACT_APP_POSTGRES_DB_NAME,
+    password: REACT_APP_POSTGRES_DB_PASS
   });
   client.connect();
   try {
@@ -96,6 +94,7 @@ async function createDBTable(): Promise<boolean> {
     }
     lg('[server]: "Emails" was created .');
   };
+
   try {
     await client.query(createTebleUsers());
     lg('[server]: "Users" created .');

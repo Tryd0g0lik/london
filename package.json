@@ -12,12 +12,17 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "express": "^4.19.2",
+    "fs": "^0.0.1-security",
     "husky": "^9.1.4",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "npx": "^10.2.2",
     "package.json": "^2.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
+    "smtp-server": "^3.13.4",
     "ts-loader": "^9.5.1",
     "tsc": "^2.0.4",
     "web-vitals": "^2.1.0"
@@ -27,16 +32,17 @@
     "yarn": ">=1.22.5"
   },
   "workspaces": [
-    "./src/backend"
+    "./src/backend",
+    "src/frontend"
   ],
   "scripts": {
     "lint": "eslint . --ext jsx,ts,tsx",
     "cssstyle": "npx tailwindcss -i ./src/frontend/src/styles/style.css -o ./src/frontend/src/output.css --watch",
-    "build:dev": "webpack --mode=development --config ./webpack.config.js",
-    "build:serv": "npm --workspace=backend run build:dev",
+    "build:front": "webpack --mode=development --config ./webpack.config.js",
+    "build:back": "npm --workspace=backend run build:dev",
     "watchs": "webpack --watch --mode=development --config ./webpack.config.js",
     "server:front": "webpack server --mode=development  --config ./webpack.config.js",
-    "server:back": "forever  ./dist/server/index.js",
+    "server:back": "forever -w ./dist/server/index.js",
     "lint:write": "eslint --debug src/ --fix",
     "pushing": "git push https://github.com/Tryd0g0lik/london.git master",
     "husk": "npm prepare",

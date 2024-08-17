@@ -23,6 +23,7 @@ async function calculateLines(file: unknown): Promise<number> {
   try {
     const data = await fs.promises.readFile(file, 'utf8');
     const lines = data.split('\n');
+    console.log(`[server -> log]: lines.length => ${lines.length} `);
     return lines.length;
   } catch (err: unknown) {
     const error = new Error((err as ErrorEvent).message);
@@ -32,7 +33,7 @@ async function calculateLines(file: unknown): Promise<number> {
 
 // Функция для удаления файла, если в нем более или равно 'maxLongth' строк
 // maxLongth макс число строк. По умолчанию 2000
-function deleteFileIfLarger(): void {
+function deleteFileIfLarger(): void { // НЕ РАБОЧИЙ - !!!
   fs.promise.unlink('logs_server.txt', (err: unknown) => {
     if (err) throw err;
   });
@@ -47,20 +48,21 @@ function writeNewLine(newLine: string): void {
 //  если  более или равно 'maxLongth' строк
 // maxLongth макс число строк. По умолчанию 2000
 async function logs(newLog: string, maxLongth = 2000): Promise<void> {
-  checkFile();
+  // checkFile();
   try {
-    const intgCurrent: number = await calculateLines('./logs_server.txt');
+    const intgCurrent: number = await calculateLines('./logs_server.txt'); // подсчитываем строки
+
     if (intgCurrent >= maxLongth) {
       // Запускаем функцию для удаления файла
       deleteFileIfLarger();
+      checkFile();
     }
+    checkFile();
     // Создаем запись
     writeNewLine(newLog);
   } catch (err: unknown) {
     console.log((err as ErrorEvent).message);
     writeNewLine((err as ErrorEvent).message);
-    // checkFile();
-    // await logs(newLog);
   }
 }
 module.exports = logs;

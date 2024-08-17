@@ -9,15 +9,15 @@
       "name": "index.html",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\index.html"
     },
-    "main-main-a9908ed75f4ed4e320e7.js": {
-      "name": "main-main-a9908ed75f4ed4e320e7.js",
-      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-a9908ed75f4ed4e320e7.js"
+    "main-main-3b258639e3c5cc2090a6.js": {
+      "name": "main-main-3b258639e3c5cc2090a6.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-3b258639e3c5cc2090a6.js"
     }
   },
   "chunks": {
     "main": [
       "css/style.css",
-      "main-main-a9908ed75f4ed4e320e7.js"
+      "main-main-3b258639e3c5cc2090a6.js"
     ]
   }
 }

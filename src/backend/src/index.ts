@@ -1,1 +1,2 @@
-require('./server/index.ts');
+// require('./server/index.ts');
+import './server/index.ts';

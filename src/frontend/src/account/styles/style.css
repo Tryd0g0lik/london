@@ -6,8 +6,14 @@
   gap: 0 5px;
 }
 
+.nav-item {
+  list-style-type: none;
+}
 .nav-item.dropdown li {
   display: none;
+}
 
-  list-style: none;
+.button {
+  width: 120px;
+  height: 15px;
 }

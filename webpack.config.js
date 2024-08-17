@@ -82,7 +82,7 @@ module.exports = {
   },
 
   plugins: [
-    new TsconfigPathsPlugin(),
+    new Dotenv(),
     new BundleTracker({
       path: path.join(__dirname, 'src/bundles'),
       filename: 'webpack-stats.json'
@@ -135,6 +135,7 @@ module.exports = {
 
   resolve: {
     extensions: [".tsx", ".jsx", ".ts", ".js", ".svg"],
+    plugins: [new TsconfigPathsPlugin(),],
     modules: [
       path.resolve(__dirname, "./.browserslistrc"),
       path.resolve(__dirname, "node_modules"),
@@ -147,6 +148,9 @@ module.exports = {
       ],
       "@Components": [
         path.resolve(__dirname, "src/frontend/src/account/components")
+      ],
+      "@Services": [
+        path.relative(__dirname, "src/frontend/src/account/services")
       ],
       // "@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
       // "@Logs": path.resolve(__dirname, "src/backend/src/server/logs/index.ts"),

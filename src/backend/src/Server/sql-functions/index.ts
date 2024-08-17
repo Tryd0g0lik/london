@@ -34,7 +34,8 @@ export function createTebleUsers(): string {
     is_active BOOLEAN DEFAULT FALSE,
     is_authenticated BOOLEAN DEFAULT FALSE,
     is_activated BOOLEAN DEFAULT FALSE,
-    send_message BOOLEAN DEFAULT FALSE);`;
+    send_message BOOLEAN DEFAULT FALSE),
+    password VARCHAR(150) NOT NULL;`;
   return creeateTUsers;
 }
 
@@ -43,35 +44,47 @@ interface NewSqlLine {
   email: string
   firstName: string
   lastName: string
+  passwords: string
 };
 
 export function addNewLine(props: NewSqlLine): string {
   const {
     email,
     firstName,
-    lastName
+    lastName,
+    passwords
   } = props;
   const createNewLine = `
     WITH new_email AS (
-      INSERT INTO emails (
+      INSERT INTO Emails (
         id, emails, activated
       )
       values (
         DEFAULT,
-        ${email},
+        '${email}',
         DEFAULT
       )
       RETURNING id
     )
-    INSERT INTO users (id, email_id, first_name, last_name, is_active, is_activated, send_message)
+    INSERT INTO Users (id, email_id, first_name, last_name, is_active, is_activated, send_message, password)
     values (
-    default,
-    (select id from new_email),
-    ${firstName},
-    ${lastName},
-    default,
-    default,
-    default
+      default,
+      (select id from new_email),
+      '${firstName}',
+      '${lastName}',
+      default,
+      default,
+      default,
+      '${passwords}'
     );`;
   return createNewLine;
+}
+
+/**
+ *
+ * @returns
+ */
+export function selectAllEmail(): string {
+  const selectElmails = 'SELECT emails FROM Emails';
+  return selectElmails;
 }

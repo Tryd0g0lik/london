@@ -5,12 +5,15 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "webpack --mode=production --config ./webpack.config.js ",
-		"build:dev": "npx tsc",
-		"build:dev2": "npx tsc // && webpack --mode=development  --config ./webpack.config.js",
+    "build:dev": "npx tsc",
 		"build:prod": "webpack"
 	},
 	"devDependencies": {
 		"tsc": "^2.0.4",
 		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"frontend": "^0.1.0",
+		"package.json": "^2.0.1"
 	}
 }

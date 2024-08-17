@@ -19,6 +19,5 @@ export interface FetchParams {
     'X-CSRFToken': string,
     'Content-Type': 'application/json'
   }
-  mode?: 'no-cors',
+  mode?: 'no-cors' | 'cors',
 }
-

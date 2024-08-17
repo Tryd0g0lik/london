@@ -7,7 +7,7 @@ module.exports = {
 	entry: path.resolve(__dirname, "./src/index.ts"),
 	mode: process.env.MODE_ENV || "none",
 	output: {
-		path: path.resolve(__dirname, "../../dist/server"),
+    path: path.resolve(__dirname, "./dist/server"),
 		filename: "main-[id]-[hash].js",
 		clean: true,
 	},

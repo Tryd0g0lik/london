@@ -21,6 +21,7 @@ export function NavFC(): JSX.Element {
           </li>
           {/* {% if user.is_authenticated %} */}
           <li className="nav-item dropdown">
+            <ul>
             <li className="nav-item">
               <a href="/account/" className="nav-link
               dropdown-toggle" tada-togle="dropdown" role="button"
@@ -45,6 +46,7 @@ export function NavFC(): JSX.Element {
                 </a>
               </div>
             </li>
+            </ul>
           </li>
           {/* {% else %} */}
           <li className="nav-item">
