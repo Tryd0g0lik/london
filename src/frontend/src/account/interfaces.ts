@@ -2,6 +2,7 @@ export enum Pages {
   Home = '/',
   Index = '/index',
   Regisration = '/registration',
+  InLogin = '/inlogin'
 }
 
 export enum FetchMethod {

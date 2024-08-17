@@ -1,4 +1,4 @@
-function getCookie(name): string | null {
+function getCookie(name: string): string | null {
   let cookieValue = null;
   if ((document.cookie !== undefined) && (document.cookie !== '')) {
     const cookies = document.cookie.split(';');
@@ -14,3 +14,7 @@ function getCookie(name): string | null {
   return cookieValue;
 }
 export default getCookie;
+
+//  мер использования
+// // const csrfToken = getCookie('csrftoken');
+// // console.log(csrfToken);

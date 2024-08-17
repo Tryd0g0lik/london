@@ -1,1864 +1,1057 @@
-5:39:0:11 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"QCr-HSM-Y9T-2wT"}
-5:39:0:11 ==> [server -> clients]: Before connection.
-5:39:0:11 ==> [server -> router]: Before saving into the db
-5:39:0:12 ==> [server -> router]: After saving into the db
-5:39:0:38 ==> [server -> clients]: Note: This is email already has.
-5:39:28:13 ==> [server]: START
-5:39:28:14 ==> [server]: Start the "Client" connection.
-5:39:28:14 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:39:28:49 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:39:28:49 ==> [server]: Start the "Client" connection.
-5:39:28:76 ==> [server]: "Emails" created .
-5:39:28:76 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:39:28:76 ==> [server]: "Emails" returning FALSE.
-5:39:28:77 ==> [server]: END
-5:42:19:88 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"QCr-HSM-Y9T-2wT"}
-5:42:19:89 ==> [server -> clients]: Before connection.
-5:42:19:89 ==> [server -> router]: Before saving into the db
-5:42:19:89 ==> [server -> router]: After saving into the db
-5:42:19:95 ==> [server -> clients]: Note: This is email already has.
-5:42:45:91 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"QCr-HSM-Y9T-2wT"}
-5:42:45:91 ==> [server -> router]: Before saving into the db
-5:42:45:92 ==> [server -> clients]: Before connection.
-5:42:45:92 ==> [server -> router]: After saving into the db
-5:42:45:18 ==> [server -> clients]: Note: This is email already has.
-5:43:11:30 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"QCr-HSM-Y9T-2wT"}
-5:43:11:30 ==> [server -> router]: Before saving into the db
-5:43:11:31 ==> [server -> clients]: Before connection.
-5:43:11:31 ==> [server -> router]: After saving into the db
-5:43:11:57 ==> [server -> clients]: Note: This is email already has.
-5:44:9:78 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"uYt-dD2-JTm-bLY"}
-5:44:9:79 ==> [server -> clients]: Before connection.
-5:44:9:79 ==> [server -> router]: Before saving into the db
-5:44:9:79 ==> [server -> router]: After saving into the db
-5:44:9:4 ==> [server -> clients]: That is a connection. Before sending.
-5:44:9:7 ==> [server -> clients]: data was save
-5:47:7:52 ==> [server]: START
-5:47:7:52 ==> [server]: Start the "Client" connection.
-5:47:7:53 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:47:7:86 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:47:7:87 ==> [server]: Start the "Client" connection.
-5:47:7:13 ==> [server]: "Emails" created .
-5:47:7:13 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:47:7:13 ==> [server]: "Emails" returning FALSE.
-5:47:7:13 ==> [server]: END
-5:47:20:69 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"uYt-dD2-JTm-bLY"}
-5:47:20:70 ==> [server -> router]: Before saving into the db
-5:47:20:70 ==> [server -> router]: After saving into the db
-5:47:20:70 ==> [server -> clients]: Before connection.
-5:47:20:2 ==> [server -> clients]: Note: This is email already has.
-5:49:52:87 ==> [server]: START
-5:49:52:88 ==> [server]: Start the "Client" connection.
-5:49:52:88 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:49:52:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:49:52:26 ==> [server]: Start the "Client" connection.
-5:49:52:53 ==> [server]: "Emails" created .
-5:49:52:53 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:49:52:53 ==> [server]: "Emails" returning FALSE.
-5:49:52:53 ==> [server]: END
-5:50:1:99 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"uYt-dD2-JTm-bLY"}
-5:50:1:99 ==> [server -> router]: Before saving into the db
-5:50:1:0 ==> [server -> clients]: Before connection.
-5:50:1:0 ==> [server -> router]: After saving into the db
-5:50:1:29 ==> [server -> clients]: Note: This is email already has.
-5:53:59:47 ==> [server]: START
-5:53:59:48 ==> [server]: Start the "Client" connection.
-5:53:59:48 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:53:59:80 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:53:59:81 ==> [server]: Start the "Client" connection.
-5:53:59:7 ==> [server]: "Emails" created .
-5:53:59:8 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:53:59:8 ==> [server]: "Emails" returning FALSE.
-5:53:59:8 ==> [server]: END
-5:54:10:42 ==> [server]: START
-5:54:10:43 ==> [server]: Start the "Client" connection.
-5:54:10:43 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:54:10:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:54:10:79 ==> [server]: Start the "Client" connection.
-5:54:10:7 ==> [server]: "Emails" created .
-5:54:10:8 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:54:10:8 ==> [server]: "Emails" returning FALSE.
-5:54:10:8 ==> [server]: END
-5:54:14:38 ==> [server]: START
-5:54:14:39 ==> [server]: Start the "Client" connection.
-5:54:14:39 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:54:14:76 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:54:14:76 ==> [server]: Start the "Client" connection.
-5:54:15:8 ==> [server]: "Emails" created .
-5:54:15:9 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:54:15:9 ==> [server]: "Emails" returning FALSE.
-5:54:15:10 ==> [server]: END
-5:54:16:39 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"uYt-dD2-JTm-bLY"}
-5:54:16:40 ==> [server -> router]: Before saving into the db
-5:54:16:40 ==> [server -> clients]: Before connection.
-5:54:16:40 ==> [server -> router]: After saving into the db
-5:54:16:82 ==> [server -> clients]: Note: This is email already has.
-5:55:55:91 ==> [server]: START
-5:55:55:92 ==> [server]: Start the "Client" connection.
-5:55:55:92 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:55:56:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:55:56:26 ==> [server]: Start the "Client" connection.
-5:55:56:55 ==> [server]: "Emails" created .
-5:55:56:56 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:55:56:56 ==> [server]: "Emails" returning FALSE.
-5:55:56:57 ==> [server]: END
-5:56:11:87 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"Y5d-suG-Sut-Z4u"}
-5:56:11:87 ==> [server -> router]: Before saving into the db
-5:56:11:87 ==> [server -> clients]: Before connection.
-5:56:11:88 ==> [server -> router]: After saving into the db
-5:56:11:16 ==> [server -> clients]: Note: This is email already has.
-5:56:41:90 ==> [server]: START
-5:56:41:91 ==> [server]: Start the "Client" connection.
-5:56:41:91 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:56:41:23 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:56:41:24 ==> [server]: Start the "Client" connection.
-5:56:41:51 ==> [server]: "Emails" created .
-5:56:41:51 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:56:41:51 ==> [server]: "Emails" returning FALSE.
-5:56:41:51 ==> [server]: END
-5:57:20:47 ==> [server]: START
-5:57:20:48 ==> [server]: Start the "Client" connection.
-5:57:20:48 ==> [server -> listen]: Server starte to listen the PORT 7070
-5:57:20:81 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-5:57:20:82 ==> [server]: Start the "Client" connection.
-5:57:20:8 ==> [server]: "Emails" created .
-5:57:20:9 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-5:57:20:9 ==> [server]: "Emails" returning FALSE.
-5:57:20:9 ==> [server]: END
-5:58:6:64 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"Y5d-suG-Sut-Z4u"}
-5:58:6:64 ==> [server -> clients]: Before connection.
-5:58:6:65 ==> [server -> router]: Before saving into the db
-5:58:6:65 ==> [server -> router]: After saving into the db
-5:58:6:95 ==> [server -> clients]: That is a connection. Before sending.
-5:58:6:97 ==> [server -> clients]: data was save
-6:21:55:18 ==> [server]: START
-6:21:55:20 ==> [server]: Start the "Client" connection.
-6:21:55:20 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:21:55:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:21:55:54 ==> [server]: Start the "Client" connection.
-6:21:55:81 ==> [server]: "Emails" created .
-6:21:55:82 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:21:55:82 ==> [server]: END
-6:21:55:82 ==> [server]: "Emails" returning FALSE.
-6:22:2:65 ==> [server]: START
-6:22:2:66 ==> [server]: Start the "Client" connection.
-6:22:2:66 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:22:2:0 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:22:2:0 ==> [server]: Start the "Client" connection.
-6:22:2:26 ==> [server]: "Emails" created .
-6:22:2:27 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:22:2:27 ==> [server]: "Emails" returning FALSE.
-6:22:2:28 ==> [server]: END
-6:22:5:55 ==> [server]: START
-6:22:5:57 ==> [server]: Start the "Client" connection.
-6:22:5:57 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:22:5:88 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:22:5:88 ==> [server]: Start the "Client" connection.
-6:22:5:22 ==> [server]: "Emails" created .
-6:22:5:23 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:22:5:23 ==> [server]: "Emails" returning FALSE.
-6:22:5:24 ==> [server]: END
-6:22:24:70 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:22:24:74 ==> [server -> router]: Before saving into the db
-6:22:24:74 ==> [server -> clients]: Before connection.
-6:22:24:74 ==> [server -> router]: After saving into the db
-6:22:24:4 ==> [server -> clients]: Note: This is email already has.
-6:27:6:42 ==> [server]: Start the "Client" connection.
-6:27:6:43 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:27:6:44 ==> [server]: START
-6:27:6:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:27:6:79 ==> [server]: Start the "Client" connection.
-6:27:6:6 ==> [server]: "Emails" created .
-6:27:6:7 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:27:6:7 ==> [server]: "Emails" returning FALSE.
-6:27:6:8 ==> [server]: END
-6:27:11:97 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:27:11:1 ==> [server -> router]: Before saving into the db
-6:27:11:1 ==> [server -> clients]: Before connection.
-6:27:11:2 ==> [server -> router]: After saving into the db
-6:27:11:35 ==> [server -> clients]: Note: This is email already has.
-6:27:28:6 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:27:28:8 ==> [server -> router]: Before saving into the db
-6:27:28:8 ==> [server -> clients]: Before connection.
-6:27:28:9 ==> [server -> router]: After saving into the db
-6:27:28:35 ==> [server -> clients]: That is a connection. Before sending.
-6:27:28:36 ==> [server -> clients]: That is a connection. Before sending.
-6:27:28:38 ==> [server -> clients]: data was save
-6:27:59:93 ==> [server]: START
-6:27:59:94 ==> [server]: Start the "Client" connection.
-6:27:59:94 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:27:59:29 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:27:59:30 ==> [server]: Start the "Client" connection.
-6:27:59:56 ==> [server]: "Emails" created .
-6:27:59:56 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:27:59:57 ==> [server]: "Emails" returning FALSE.
-6:27:59:57 ==> [server]: END
-6:28:6:83 ==> [server]: START
-6:28:6:84 ==> [server]: Start the "Client" connection.
-6:28:6:85 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:28:6:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:28:6:19 ==> [server]: Start the "Client" connection.
-6:28:6:45 ==> [server]: "Emails" created .
-6:28:6:46 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:28:6:46 ==> [server]: "Emails" returning FALSE.
-6:28:6:46 ==> [server]: END
-6:28:16:42 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:28:16:47 ==> [server -> router]: Before saving into the db
-6:28:16:47 ==> [server -> clients]: Before connection.
-6:28:16:47 ==> [server -> router]: After saving into the db
-6:28:16:75 ==> [server -> clients]: That is a connection. Before sending.
-6:28:16:75 ==> [server -> clients]: That is a connection. Before sending.
-6:28:16:77 ==> [server -> clients]: data was save
-6:28:24:90 ==> [server]: START
-6:28:24:92 ==> [server]: Start the "Client" connection.
-6:28:24:92 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:28:24:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:28:24:26 ==> [server]: Start the "Client" connection.
-6:28:24:52 ==> [server]: "Emails" created .
-6:28:24:53 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:28:24:54 ==> [server]: "Emails" returning FALSE.
-6:28:24:54 ==> [server]: END
-6:28:28:39 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:28:28:43 ==> [server -> router]: Before saving into the db
-6:28:28:43 ==> [server -> clients]: Before connection.
-6:28:28:44 ==> [server -> router]: After saving into the db
-6:28:28:72 ==> [server -> clients]: Note: This is email already has.
-6:28:35:54 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xsasnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:28:35:56 ==> [server -> router]: Before saving into the db
-6:28:35:57 ==> [server -> clients]: Before connection.
-6:28:35:57 ==> [server -> router]: After saving into the db
-6:28:35:83 ==> [server -> clients]: That is a connection. Before sending.
-6:28:35:84 ==> [server -> clients]: That is a connection. Before PASSS.
-6:28:35:86 ==> [server -> clients]: data was save
-6:29:1:51 ==> [server]: START
-6:29:1:52 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:29:1:52 ==> [server]: Start the "Client" connection.
-6:29:1:87 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:29:1:87 ==> [server]: Start the "Client" connection.
-6:29:1:18 ==> [server]: "Emails" created .
-6:29:1:19 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:29:1:19 ==> [server]: "Emails" returning FALSE.
-6:29:1:19 ==> [server]: END
-6:29:1:37 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xsasnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:29:1:40 ==> [server -> router]: Before saving into the db
-6:29:1:40 ==> [server -> clients]: Before connection.
-6:29:1:40 ==> [server -> router]: After saving into the db
-6:29:1:68 ==> [server -> clients]: Note: This is email already has.
-6:29:10:59 ==> [server]: START
-6:29:10:60 ==> [server]: Start the "Client" connection.
-6:29:10:61 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:29:10:95 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:29:10:95 ==> [server]: Start the "Client" connection.
-6:29:10:24 ==> [server]: "Emails" created .
-6:29:10:25 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:29:10:25 ==> [server]: "Emails" returning FALSE.
-6:29:10:26 ==> [server]: END
-6:29:17:93 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xwsasnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:29:17:97 ==> [server -> router]: Before saving into the db
-6:29:17:97 ==> [server -> clients]: Before connection.
-6:29:17:97 ==> [server -> router]: After saving into the db
-6:29:17:26 ==> [server -> clients]: That is a connection. Before sending.
-6:29:17:26 ==> [server -> clients]: That is a connection. Before PASSS.
-6:29:17:29 ==> [server -> clients]: data was save
-6:30:22:90 ==> [server]: START
-6:30:22:91 ==> [server]: Start the "Client" connection.
-6:30:22:92 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:30:22:24 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:30:22:25 ==> [server]: Start the "Client" connection.
-6:30:22:51 ==> [server]: "Emails" created .
-6:30:22:51 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:30:22:52 ==> [server]: "Emails" returning FALSE.
-6:30:22:52 ==> [server]: END
-6:30:29:88 ==> [server]: START
-6:30:29:89 ==> [server]: Start the "Client" connection.
-6:30:29:90 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:30:30:24 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:30:30:25 ==> [server]: Start the "Client" connection.
-6:30:30:51 ==> [server]: "Emails" created .
-6:30:30:52 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:30:30:52 ==> [server]: "Emails" returning FALSE.
-6:30:30:53 ==> [server]: END
-6:30:34:82 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xswsasnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:30:34:86 ==> [server -> router]: Before saving into the db
-6:30:34:86 ==> [server -> clients]: Before connection.
-6:30:34:87 ==> [server -> router]: After saving into the db
-6:30:35:14 ==> [server -> clients]: That is a connection. Before sending.
-6:30:35:15 ==> [server -> clients]: That is a connection. Before PASSS.
-6:30:35:17 ==> [server -> clients]: data was save
-6:31:24:64 ==> [server]: START
-6:31:24:66 ==> [server]: Start the "Client" connection.
-6:31:24:66 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:31:24:99 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:31:24:99 ==> [server]: Start the "Client" connection.
-6:31:24:26 ==> [server]: "Emails" created .
-6:31:24:27 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:31:24:27 ==> [server]: "Emails" returning FALSE.
-6:31:24:28 ==> [server]: END
-6:31:28:84 ==> [server]: START
-6:31:28:85 ==> [server]: Start the "Client" connection.
-6:31:28:86 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:31:29:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:31:29:20 ==> [server]: Start the "Client" connection.
-6:31:29:46 ==> [server]: "Emails" created .
-6:31:29:47 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:31:29:48 ==> [server]: "Emails" returning FALSE.
-6:31:29:48 ==> [server]: END
-6:31:34:99 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xswsasdsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:31:34:3 ==> [server -> router]: Before saving into the db
-6:31:34:4 ==> [server -> router]: JSON.PASSW => yL7-Biy-Vjv-tk8
-6:31:34:4 ==> [server -> clients]: Before connection.
-6:31:34:4 ==> [server -> router]: After saving into the db
-6:31:34:31 ==> [server -> clients]: That is a connection. Before sending.
-6:31:34:32 ==> [server -> clients]: That is a connection. Before PASSS.
-6:31:34:35 ==> [server -> clients]: data was save
-6:32:29:97 ==> [server]: START
-6:32:29:98 ==> [server]: Start the "Client" connection.
-6:32:29:98 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:32:29:30 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:32:29:31 ==> [server]: Start the "Client" connection.
-6:32:29:58 ==> [server]: "Emails" created .
-6:32:29:58 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:32:29:59 ==> [server]: "Emails" returning FALSE.
-6:32:29:59 ==> [server]: END
-6:32:34:44 ==> [server]: START
-6:32:34:46 ==> [server]: Start the "Client" connection.
-6:32:34:46 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:32:34:80 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:32:34:81 ==> [server]: Start the "Client" connection.
-6:32:34:10 ==> [server]: "Emails" created .
-6:32:34:11 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:32:34:12 ==> [server]: "Emails" returning FALSE.
-6:32:34:12 ==> [server]: END
-6:32:38:2 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xdswsasdsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:32:38:6 ==> [server -> router]: Before saving into the db
-6:32:38:6 ==> [server -> router]: JSON.PASSW => yL7-Biy-Vjv-tk8
-6:32:38:7 ==> [server -> clients]: Before connection.
-6:32:38:7 ==> [server -> router]: After saving into the db
-6:32:38:36 ==> [server -> clients]: That is a connection. Before sending.
-6:32:38:37 ==> [server -> clients]: That is a connection. Before PASSS.
-6:32:38:40 ==> [server -> clients]: data was save
-6:33:3:71 ==> [server]: START
-6:33:3:72 ==> [server]: Start the "Client" connection.
-6:33:3:73 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:33:3:8 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:33:3:8 ==> [server]: Start the "Client" connection.
-6:33:3:35 ==> [server]: "Emails" created .
-6:33:3:35 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:33:3:36 ==> [server]: "Emails" returning FALSE.
-6:33:3:36 ==> [server]: END
-6:33:9:28 ==> [server]: START
-6:33:9:29 ==> [server]: Start the "Client" connection.
-6:33:9:30 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:33:9:63 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:33:9:64 ==> [server]: Start the "Client" connection.
-6:33:9:92 ==> [server]: "Emails" created .
-6:33:9:92 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:33:9:93 ==> [server]: "Emails" returning FALSE.
-6:33:9:93 ==> [server]: END
-6:33:11:35 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xsdswsasdsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:33:11:40 ==> [server -> router]: Before saving into the db
-6:33:11:40 ==> [server -> router]: JSON.PASSW => yL7-Biy-Vjv-tk8
-6:33:11:40 ==> [server -> clients]: Before connection.
-6:33:11:41 ==> [server -> router]: After saving into the db
-6:33:11:68 ==> [server -> clients]: That is a connection. Before sending.
-6:33:11:69 ==> [server -> clients]: That is a connection. Before PASSS.
-6:33:11:72 ==> [server -> clients]: data was save
-6:33:24:92 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xssdswsasdsnd--mail-v6d.ru","passwords":"yL7-Biy-Vjv-tk8"}
-6:33:24:95 ==> [server -> router]: Before saving into the db
-6:33:24:96 ==> [server -> router]: JSON.PASSW => yL7-Biy-Vjv-tk8
-6:33:24:96 ==> [server -> clients]: Before connection.
-6:33:24:96 ==> [server -> router]: After saving into the db
-6:33:24:23 ==> [server -> clients]: That is a connection. Before sending.
-6:33:24:24 ==> [server -> clients]: That is a connection. Before PASSS.
-6:33:24:28 ==> [server -> clients]: data was save
-6:34:2:77 ==> [server]: START
-6:34:2:78 ==> [server]: Start the "Client" connection.
-6:34:2:79 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:34:2:13 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:34:2:14 ==> [server]: Start the "Client" connection.
-6:34:2:40 ==> [server]: "Emails" created .
-6:34:2:40 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:34:2:41 ==> [server]: "Emails" returning FALSE.
-6:34:2:41 ==> [server]: END
-6:34:9:21 ==> [server]: START
-6:34:9:22 ==> [server]: Start the "Client" connection.
-6:34:9:23 ==> [server -> listen]: Server starte to listen the PORT 7070
-6:34:9:53 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-6:34:9:54 ==> [server]: Start the "Client" connection.
-6:34:9:80 ==> [server]: "Emails" created .
-6:34:9:80 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-6:34:9:81 ==> [server]: "Emails" returning FALSE.
-6:34:9:81 ==> [server]: END
-6:34:29:38 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"BLU-jcE-txT-fxi"}
-6:34:29:43 ==> [server -> router]: Before saving into the db
-6:34:29:44 ==> [server -> router]: JSON.PASSW => BLU-jcE-txT-fxi
-6:34:29:44 ==> [server -> clients]: Before connection.
-6:34:29:44 ==> [server -> router]: After saving into the db
-6:34:29:70 ==> [server -> clients]: That is a connection. Before sending.
-6:34:29:74 ==> [server -> clients]: data was save
-6:36:36:39 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--maswil-v6d.ru","passwords":"BLU-jcE-txT-fxi"}
-6:36:36:41 ==> [server -> router]: Before saving into the db
-6:36:36:42 ==> [server -> router]: JSON.PASSW => BLU-jcE-txT-fxi
-6:36:36:42 ==> [server -> clients]: Before connection.
-6:36:36:42 ==> [server -> router]: After saving into the db
-6:36:36:73 ==> [server -> clients]: That is a connection. Before sending.
-6:36:36:76 ==> [server -> clients]: data was save
-6:54:26:33 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"c32-WwK-4Tm-wCx"}
-6:54:26:35 ==> [server -> router]: Before saving into the db
-6:54:26:35 ==> [server -> router]: JSON.PASSW => c32-WwK-4Tm-wCx
-6:54:26:36 ==> [server -> clients]: Before connection.
-6:54:26:36 ==> [server -> router]: After saving into the db
-6:54:26:61 ==> [server -> clients]: Note: This is email already has.
-6:54:36:21 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"c32-WwK-4Tm-wCx"}
-6:54:36:23 ==> [server -> router]: Before saving into the db
-6:54:36:23 ==> [server -> router]: JSON.PASSW => c32-WwK-4Tm-wCx
-6:54:36:24 ==> [server -> clients]: Before connection.
-6:54:36:24 ==> [server -> router]: After saving into the db
-6:54:36:49 ==> [server -> clients]: Note: This is email already has.
-6:56:40:15 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"ysQ-CQ7-2SH-ZMh"}
-6:56:40:17 ==> [server -> router]: Before saving into the db
-6:56:40:17 ==> [server -> router]: JSON.PASSW => ysQ-CQ7-2SH-ZMh
-6:56:40:18 ==> [server -> clients]: Before connection.
-6:56:40:18 ==> [server -> router]: After saving into the db
-6:56:40:44 ==> [server -> clients]: Note: This is email already has.
-6:56:45:17 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"ysQ-CQ7-2SH-ZMh"}
-6:56:45:20 ==> [server -> router]: Before saving into the db
-6:56:45:20 ==> [server -> router]: JSON.PASSW => ysQ-CQ7-2SH-ZMh
-6:56:45:20 ==> [server -> clients]: Before connection.
-6:56:45:21 ==> [server -> router]: After saving into the db
-6:56:45:45 ==> [server -> clients]: Note: This is email already has.
-6:58:30:95 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"zDS-GL4-bfa-c4s"}
-6:58:30:97 ==> [server -> router]: Before saving into the db
-6:58:30:98 ==> [server -> router]: JSON.PASSW => zDS-GL4-bfa-c4s
-6:58:30:98 ==> [server -> clients]: Before connection.
-6:58:30:98 ==> [server -> router]: After saving into the db
-6:58:30:28 ==> [server -> clients]: Note: This is email already has.
-6:58:42:57 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"zDS-GL4-bfa-c4s"}
-6:58:42:60 ==> [server -> router]: Before saving into the db
-6:58:42:60 ==> [server -> clients]: Before connection.
-6:58:42:60 ==> [server -> router]: JSON.PASSW => zDS-GL4-bfa-c4s
-6:58:42:60 ==> [server -> router]: After saving into the db
-6:58:42:86 ==> [server -> clients]: Note: This is email already has.
-6:59:24:75 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"zDS-GL4-bfa-c4s"}
-6:59:24:77 ==> [server -> router]: Before saving into the db
-6:59:24:78 ==> [server -> router]: JSON.PASSW => zDS-GL4-bfa-c4s
-6:59:24:78 ==> [server -> clients]: Before connection.
-6:59:24:78 ==> [server -> router]: After saving into the db
-6:59:24:4 ==> [server -> clients]: Note: This is email already has.
-7:2:33:26 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:2:33:28 ==> [server -> router]: Before saving into the db
-7:2:33:28 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:2:33:28 ==> [server -> clients]: Before connection.
-7:2:33:29 ==> [server -> router]: After saving into the db
-7:2:33:53 ==> [server -> clients]: Note: This is email already has.
-7:2:39:44 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:2:39:47 ==> [server -> router]: Before saving into the db
-7:2:39:47 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:2:39:47 ==> [server -> clients]: Before connection.
-7:2:39:48 ==> [server -> router]: After saving into the db
-7:2:39:76 ==> [server -> clients]: Note: This is email already has.
-7:2:47:0 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:2:47:2 ==> [server -> router]: Before saving into the db
-7:2:47:2 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:2:47:2 ==> [server -> clients]: Before connection.
-7:2:47:3 ==> [server -> router]: After saving into the db
-7:2:47:30 ==> [server -> clients]: Note: This is email already has.
-7:3:53:61 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:3:53:64 ==> [server -> router]: Before saving into the db
-7:3:53:64 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:3:53:64 ==> [server -> clients]: Before connection.
-7:3:53:65 ==> [server -> router]: After saving into the db
-7:3:53:5 ==> [server -> clients]: Note: This is email already has.
-7:4:21:98 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:4:21:1 ==> [server -> router]: Before saving into the db
-7:4:21:1 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:4:21:1 ==> [server -> clients]: Before connection.
-7:4:21:2 ==> [server -> router]: After saving into the db
-7:4:21:27 ==> [server -> clients]: Note: This is email already has.
-7:4:57:51 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"asT-jL8-iW9-Lqi"}
-7:4:57:54 ==> [server -> router]: Before saving into the db
-7:4:57:54 ==> [server -> router]: JSON.PASSW => asT-jL8-iW9-Lqi
-7:4:57:55 ==> [server -> clients]: Before connection.
-7:4:57:55 ==> [server -> router]: After saving into the db
-7:4:57:80 ==> [server -> clients]: Note: This is email already has.
-7:5:56:35 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:5:56:38 ==> [server -> router]: Before saving into the db
-7:5:56:38 ==> [server -> router]: JSON.PASSW => B2V-AcQ-ZFq-Dmq
-7:5:56:38 ==> [server -> clients]: Before connection.
-7:5:56:38 ==> [server -> router]: After saving into the db
-7:5:56:63 ==> [server -> clients]: Note: This is email already has.
-7:7:5:93 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:7:5:95 ==> [server -> router]: Before saving into the db
-7:7:5:95 ==> [server -> router]: JSON.PASSW => B2V-AcQ-ZFq-Dmq
-7:7:5:96 ==> [server -> clients]: Before connection.
-7:7:5:96 ==> [server -> router]: After saving into the db
-7:7:5:21 ==> [server -> clients]: Note: This is email already has.
-7:8:12:18 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:8:12:20 ==> [server -> router]: Before saving into the db
-7:8:12:21 ==> [server -> router]: JSON.PASSW => B2V-AcQ-ZFq-Dmq
-7:8:12:21 ==> [server -> clients]: Before connection.
-7:8:12:21 ==> [server -> router]: After saving into the db
-7:8:12:46 ==> [server -> clients]: Note: This is email already has.
-7:10:14:0 ==> [server]: START
-7:10:14:2 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:10:14:2 ==> [server]: Start the "Client" connection.
-7:10:14:33 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:10:14:33 ==> [server]: Start the "Client" connection.
-7:10:14:61 ==> [server]: "Emails" created .
-7:10:14:62 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:10:14:62 ==> [server]: "Emails" returning FALSE.
-7:10:14:62 ==> [server]: END
-7:10:19:71 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:10:19:72 ==> [server -> router]: Before saving into the db
-7:10:19:74 ==> [server -> clients]: Before connection.
-7:10:19:4 ==> [server -> clients]: Note: This is email already has.
-7:10:19:4 ==> [server -> router]: statusCODE => false
-7:10:19:6 ==> [server -> router]: After saving into the db
-7:10:28:42 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:10:28:43 ==> [server -> router]: Before saving into the db
-7:10:28:44 ==> [server -> clients]: Before connection.
-7:10:28:80 ==> [server -> clients]: Note: This is email already has.
-7:10:28:80 ==> [server -> router]: statusCODE => false
-7:10:28:81 ==> [server -> router]: After saving into the db
-7:10:44:38 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"B2V-AcQ-ZFq-Dmq"}
-7:10:44:39 ==> [server -> router]: Before saving into the db
-7:10:44:40 ==> [server -> clients]: Before connection.
-7:10:44:67 ==> [server -> router]: statusCODE => false
-7:10:44:68 ==> [server -> clients]: Note: This is email already has.
-7:10:44:68 ==> [server -> router]: After saving into the db
-7:13:24:58 ==> [server]: START
-7:13:24:59 ==> [server]: Start the "Client" connection.
-7:13:24:60 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:13:24:93 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:13:24:94 ==> [server]: Start the "Client" connection.
-7:13:25:20 ==> [server]: "Emails" created .
-7:13:25:21 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:13:25:21 ==> [server]: "Emails" returning FALSE.
-7:13:25:21 ==> [server]: END
-7:13:31:81 ==> [server]: START
-7:13:31:83 ==> [server]: Start the "Client" connection.
-7:13:31:83 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:13:31:17 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:13:31:17 ==> [server]: Start the "Client" connection.
-7:13:31:59 ==> [server]: "Emails" created .
-7:13:31:60 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:13:31:60 ==> [server]: "Emails" returning FALSE.
-7:13:31:61 ==> [server]: END
-7:13:33:21 ==> [server]: START
-7:13:33:22 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:13:33:22 ==> [server]: Start the "Client" connection.
-7:13:33:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:13:33:54 ==> [server]: Start the "Client" connection.
-7:13:33:81 ==> [server]: "Emails" created .
-7:13:33:82 ==> [server]: "Emails" returning FALSE.
-7:13:33:82 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:13:33:82 ==> [server]: END
-7:13:45:59 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королева","email":"work80@xn--mail-v6d.ru","passwords":"c2r-9hC-9vt-JpZ"}
-7:13:45:60 ==> [server -> router]: Before saving into the db
-7:13:45:61 ==> [server -> clients]: Before connection.
-7:13:45:89 ==> [server -> clients]: Note: This is email already has.
-7:13:45:90 ==> [server -> router]: statusCODE => false
-7:13:45:92 ==> [server -> router]: After saving into the db
-7:15:42:97 ==> [server]: START
-7:15:42:98 ==> [server]: Start the "Client" connection.
-7:15:42:99 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:15:42:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:15:42:42 ==> [server]: Start the "Client" connection.
-7:15:42:73 ==> [server]: "Emails" created .
-7:15:42:74 ==> [server]: "Emails" returning FALSE.
-7:15:42:75 ==> [server]: END
-7:15:42:75 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:15:48:22 ==> [server]: START
-7:15:48:24 ==> [server]: Start the "Client" connection.
-7:15:48:24 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:15:48:59 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:15:48:60 ==> [server]: Start the "Client" connection.
-7:15:48:89 ==> [server]: "Emails" created .
-7:15:48:90 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:15:48:91 ==> [server]: "Emails" returning FALSE.
-7:15:48:91 ==> [server]: END
-7:15:50:46 ==> [server]: START
-7:15:50:48 ==> [server]: Start the "Client" connection.
-7:15:50:49 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:15:50:87 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:15:50:87 ==> [server]: Start the "Client" connection.
-7:15:50:15 ==> [server]: "Emails" created .
-7:15:50:16 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:15:50:16 ==> [server]: "Emails" returning FALSE.
-7:15:50:16 ==> [server]: END
-7:15:54:38 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"kL6-i75-su9-4VQ"}
-7:15:54:39 ==> [server -> router]: Before saving into the db
-7:15:54:41 ==> [server -> clients]: Before connection.
-7:15:54:69 ==> [server -> clients]: Note: This is email already has.
-7:15:54:70 ==> [server -> router]: statusCODE => false
-7:15:54:72 ==> [server -> router]: After saving into the db
-7:20:8:48 ==> [server]: Start the "Client" connection.
-7:20:8:51 ==> [server]: START
-7:20:8:52 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:20:8:48 ==> [server]: Start the "Client" connection.
-7:20:8:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:20:8:97 ==> [server]: "Emails" created .
-7:20:8:99 ==> [server]: "Emails" returning FALSE.
-7:20:8:99 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:20:8:0 ==> [server]: END
-7:20:29:98 ==> [server]: START
-7:20:29:99 ==> [server]: Start the "Client" connection.
-7:20:29:99 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:20:29:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:20:29:33 ==> [server]: Start the "Client" connection.
-7:20:29:63 ==> [server]: "Emails" created .
-7:20:29:64 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:20:29:64 ==> [server]: "Emails" returning FALSE.
-7:20:29:65 ==> [server]: END
-7:20:31:40 ==> [server]: START
-7:20:31:41 ==> [server]: Start the "Client" connection.
-7:20:31:41 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:20:31:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:20:31:75 ==> [server]: Start the "Client" connection.
-7:20:32:2 ==> [server]: "Emails" created .
-7:20:32:3 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:20:32:4 ==> [server]: "Emails" returning FALSE.
-7:20:32:4 ==> [server]: END
-7:20:38:96 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"kaR-e8g-8hF-FQa"}
-7:20:38:96 ==> [server -> router]: Before saving into the db
-7:20:38:98 ==> [server -> clients]: Before connection.
-7:20:38:32 ==> [server -> clients]: Note: This is email already has.
-7:20:38:32 ==> [server -> router]: statusCODE => false
-7:20:38:34 ==> [server -> router]: After saving into the db
-7:21:21:97 ==> [server]: START
-7:21:21:0 ==> [server]: Start the "Client" connection.
-7:21:21:1 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:21:21:43 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:21:21:44 ==> [server]: Start the "Client" connection.
-7:21:21:72 ==> [server]: "Emails" created .
-7:21:21:74 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:21:21:74 ==> [server]: "Emails" returning FALSE.
-7:21:21:75 ==> [server]: END
-7:21:25:45 ==> [server]: START
-7:21:25:47 ==> [server]: Start the "Client" connection.
-7:21:25:47 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:21:25:85 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:21:25:85 ==> [server]: Start the "Client" connection.
-7:21:25:13 ==> [server]: "Emails" created .
-7:21:25:14 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:21:25:15 ==> [server]: "Emails" returning FALSE.
-7:21:25:15 ==> [server]: END
-7:21:27:17 ==> [server]: START
-7:21:27:19 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:21:27:19 ==> [server]: Start the "Client" connection.
-7:21:27:58 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:21:27:59 ==> [server]: Start the "Client" connection.
-7:21:27:85 ==> [server]: "Emails" created .
-7:21:27:86 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:21:27:87 ==> [server]: "Emails" returning FALSE.
-7:21:27:87 ==> [server]: END
-7:21:31:37 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"M7b-rp9-HzA-Fk3"}
-7:21:31:38 ==> [server -> router]: Before saving into the db
-7:21:31:40 ==> [server -> clients]: Before connection.
-7:21:31:69 ==> [server -> clients]: Note: This is email already has.
-7:21:31:69 ==> [server -> router]: statusCODE => false
-7:21:31:72 ==> [server -> router]: After saving into the db
-7:21:38:86 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"M7b-rp9-HzA-Fk3"}
-7:21:38:87 ==> [server -> router]: Before saving into the db
-7:21:38:88 ==> [server -> clients]: Before connection.
-7:21:38:15 ==> [server -> clients]: Note: This is email already has.
-7:21:38:16 ==> [server -> router]: statusCODE => false
-7:21:38:17 ==> [server -> router]: After saving into the db
-7:21:45:86 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--maisl-v6d.ru","passwords":"M7b-rp9-HzA-Fk3"}
-7:21:45:87 ==> [server -> router]: Before saving into the db
-7:21:45:89 ==> [server -> clients]: Before connection.
-7:21:45:15 ==> [server -> clients]: That is a connection. Before sending.
-7:21:45:19 ==> [server -> clients]: data was save
-7:21:45:19 ==> [server -> router]: statusCODE => true
-7:21:45:21 ==> [server -> router]: After saving into the db
-7:24:0:44 ==> [server]: START
-7:24:0:46 ==> [server]: Start the "Client" connection.
-7:24:0:46 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:24:0:77 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:24:0:77 ==> [server]: Start the "Client" connection.
-7:24:0:3 ==> [server]: "Emails" created .
-7:24:0:4 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:24:0:5 ==> [server]: "Emails" returning FALSE.
-7:24:0:5 ==> [server]: END
-7:24:12:11 ==> [server]: START
-7:24:12:13 ==> [server]: Start the "Client" connection.
-7:24:12:13 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:24:12:45 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:24:12:45 ==> [server]: Start the "Client" connection.
-7:24:12:71 ==> [server]: "Emails" created .
-7:24:12:72 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:24:12:72 ==> [server]: "Emails" returning FALSE.
-7:24:12:72 ==> [server]: END
-7:24:30:77 ==> [server]: START
-7:24:30:78 ==> [server]: Start the "Client" connection.
-7:24:30:79 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:24:30:11 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:24:30:12 ==> [server]: Start the "Client" connection.
-7:24:30:38 ==> [server]: "Emails" created .
-7:24:30:39 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:24:30:39 ==> [server]: END
-7:24:30:40 ==> [server]: "Emails" returning FALSE.
-7:24:52:81 ==> [server]: START
-7:24:52:83 ==> [server]: Start the "Client" connection.
-7:24:52:84 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:24:52:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:24:52:19 ==> [server]: Start the "Client" connection.
-7:24:52:47 ==> [server]: "Emails" created .
-7:24:52:48 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:24:52:49 ==> [server]: "Emails" returning FALSE.
-7:24:52:49 ==> [server]: END
-7:25:40:15 ==> [server]: START
-7:25:40:16 ==> [server]: Start the "Client" connection.
-7:25:40:17 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:25:40:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:25:40:50 ==> [server]: Start the "Client" connection.
-7:25:40:77 ==> [server]: "Emails" created .
-7:25:40:78 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:25:40:78 ==> [server]: "Emails" returning FALSE.
-7:25:40:78 ==> [server]: END
-7:29:38:78 ==> [server]: START
-7:29:38:80 ==> [server]: Start the "Client" connection.
-7:29:38:80 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:29:38:23 ==> [server]: Start the "Client" connection.
-7:29:38:23 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:29:38:55 ==> [server]: "Emails" created .
-7:29:38:56 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:29:38:57 ==> [server]: "Emails" returning FALSE.
-7:29:38:57 ==> [server]: END
-7:29:45:54 ==> [server]: START
-7:29:45:55 ==> [server]: Start the "Client" connection.
-7:29:45:56 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:29:45:91 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:29:45:92 ==> [server]: Start the "Client" connection.
-7:29:45:20 ==> [server]: "Emails" created .
-7:29:45:21 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:29:45:21 ==> [server]: "Emails" returning FALSE.
-7:29:45:22 ==> [server]: END
-7:29:47:88 ==> [server]: START
-7:29:47:90 ==> [server]: Start the "Client" connection.
-7:29:47:90 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:29:47:22 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:29:47:22 ==> [server]: Start the "Client" connection.
-7:29:47:49 ==> [server]: "Emails" created .
-7:29:47:50 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:29:47:51 ==> [server]: "Emails" returning FALSE.
-7:29:47:51 ==> [server]: END
-7:29:58:52 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--mail-v6d.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:29:58:53 ==> [server -> router]: Before saving into the db
-7:29:58:55 ==> [server -> clients]: Before connection.
-7:29:58:84 ==> [server -> clients]: Note: This is email already has.
-7:29:58:84 ==> [server -> router]: statusCODE => false
-7:29:58:86 ==> [server -> router]: After saving into the db
-7:30:8:43 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@xn--maiel-v6d.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:30:8:44 ==> [server -> router]: Before saving into the db
-7:30:8:45 ==> [server -> clients]: Before connection.
-7:30:8:72 ==> [server -> clients]: That is a connection. Before sending.
-7:30:8:75 ==> [server -> clients]: data was save
-7:30:8:76 ==> [server -> router]: statusCODE => true
-7:30:8:78 ==> [server -> router]: After saving into the db
-7:30:21:21 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королев","email":"work80@mail.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:30:21:22 ==> [server -> router]: Before saving into the db
-7:30:21:24 ==> [server -> clients]: Before connection.
-7:30:21:51 ==> [server -> clients]: That is a connection. Before sending.
-7:30:21:57 ==> [server -> clients]: data was save
-7:30:21:57 ==> [server -> router]: statusCODE => true
-7:30:21:59 ==> [server -> router]: After saving into the db
-7:31:3:21 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королева","email":"work80@xn--mail-v6d.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:31:3:22 ==> [server -> router]: Before saving into the db
-7:31:3:23 ==> [server -> clients]: Before connection.
-7:31:3:56 ==> [server -> clients]: Note: This is email already has.
-7:31:3:56 ==> [server -> router]: statusCODE => false
-7:31:3:58 ==> [server -> router]: After saving into the db
-7:31:21:26 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королева","email":"work80@xn--mail-v6d.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:31:21:27 ==> [server -> router]: Before saving into the db
-7:31:21:28 ==> [server -> clients]: Before connection.
-7:31:21:55 ==> [server -> clients]: Note: This is email already has.
-7:31:21:56 ==> [server -> router]: statusCODE => false
-7:31:21:57 ==> [server -> router]: After saving into the db
-7:31:30:2 ==> [server -> router]: clientData: {"firstName":"Денис","lastName":"Королева","email":"work80@xn--miail-v6d.ru","passwords":"b7m-pHA-rfY-NS2"}
-7:31:30:3 ==> [server -> router]: Before saving into the db
-7:31:30:4 ==> [server -> clients]: Before connection.
-7:31:30:31 ==> [server -> clients]: That is a connection. Before sending.
-7:31:30:33 ==> [server -> clients]: data was save
-7:31:30:34 ==> [server -> router]: statusCODE => true
-7:31:30:35 ==> [server -> router]: After saving into the db
-7:33:43:40 ==> [server]: START
-7:33:43:42 ==> [server]: Start the "Client" connection.
-7:33:43:42 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:33:43:76 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:33:43:76 ==> [server]: Start the "Client" connection.
-7:33:43:4 ==> [server]: "Emails" created .
-7:33:43:6 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:33:43:6 ==> [server]: "Emails" returning FALSE.
-7:33:43:7 ==> [server]: END
-7:33:58:23 ==> [server]: START
-7:33:58:25 ==> [server]: Start the "Client" connection.
-7:33:58:26 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:33:58:60 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:33:58:60 ==> [server]: Start the "Client" connection.
-7:33:58:88 ==> [server]: "Emails" created .
-7:33:58:90 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:33:58:90 ==> [server]: "Emails" returning FALSE.
-7:33:58:90 ==> [server]: END
-7:40:7:35 ==> [server]: START
-7:40:7:37 ==> [server]: Start the "Client" connection.
-7:40:7:37 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:40:7:70 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:40:7:71 ==> [server]: Start the "Client" connection.
-7:40:7:97 ==> [server]: "Emails" created .
-7:40:7:98 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:40:7:98 ==> [server]: "Emails" returning FALSE.
-7:40:7:98 ==> [server]: END
-7:40:17:23 ==> [server]: START
-7:40:17:25 ==> [server]: Start the "Client" connection.
-7:40:17:26 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:40:17:65 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:40:17:66 ==> [server]: Start the "Client" connection.
-7:40:17:95 ==> [server]: "Emails" created .
-7:40:17:97 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:40:17:97 ==> [server]: "Emails" returning FALSE.
-7:40:17:98 ==> [server]: END
-7:40:27:85 ==> [server]: START
-7:40:27:87 ==> [server]: Start the "Client" connection.
-7:40:27:87 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:40:27:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:40:27:18 ==> [server]: Start the "Client" connection.
-7:40:27:55 ==> [server]: "Emails" created .
-7:40:27:57 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:40:27:57 ==> [server]: "Emails" returning FALSE.
-7:40:27:58 ==> [server]: END
-7:41:0:95 ==> [server]: START
-7:41:0:97 ==> [server]: Start the "Client" connection.
-7:41:0:97 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:41:0:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:41:0:32 ==> [server]: Start the "Client" connection.
-7:41:0:60 ==> [server]: "Emails" created .
-7:41:0:61 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:41:0:61 ==> [server]: END
-7:41:0:62 ==> [server]: "Emails" returning FALSE.
-7:42:2:29 ==> [server]: Start the "Client" connection.
-7:42:2:30 ==> [server]: START
-7:42:2:30 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:42:2:66 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:42:2:66 ==> [server]: Start the "Client" connection.
-7:42:2:94 ==> [server]: "Emails" created .
-7:42:2:95 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:42:2:96 ==> [server]: END
-7:42:2:96 ==> [server]: "Emails" returning FALSE.
-7:42:59:58 ==> [server]: START
-7:42:59:59 ==> [server]: Start the "Client" connection.
-7:42:59:59 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:42:59:91 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:42:59:91 ==> [server]: Start the "Client" connection.
-7:42:59:17 ==> [server]: "Emails" created .
-7:42:59:19 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:42:59:19 ==> [server]: END
-7:42:59:19 ==> [server]: "Emails" returning FALSE.
-7:43:7:93 ==> [server]: START
-7:43:7:94 ==> [server]: Start the "Client" connection.
-7:43:7:94 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:43:8:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:43:8:26 ==> [server]: Start the "Client" connection.
-7:43:8:53 ==> [server]: "Emails" created .
-7:43:8:54 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:43:8:54 ==> [server]: "Emails" returning FALSE.
-7:43:8:55 ==> [server]: END
-7:43:25:99 ==> [server]: START
-7:43:25:1 ==> [server]: Start the "Client" connection.
-7:43:25:1 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:43:25:37 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:43:25:38 ==> [server]: Start the "Client" connection.
-7:43:25:65 ==> [server]: "Emails" created .
-7:43:25:66 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:43:25:66 ==> [server]: "Emails" returning FALSE.
-7:43:25:67 ==> [server]: END
-7:43:53:17 ==> [server]: Start the "Client" connection.
-7:43:53:18 ==> [server]: START
-7:43:53:19 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:43:53:64 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:43:53:64 ==> [server]: Start the "Client" connection.
-7:43:53:92 ==> [server]: "Emails" created .
-7:43:53:93 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:43:53:93 ==> [server]: "Emails" returning FALSE.
-7:43:53:94 ==> [server]: END
-7:44:15:46 ==> [server]: START
-7:44:15:48 ==> [server]: Start the "Client" connection.
-7:44:15:49 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:44:15:91 ==> [server]: Start the "Client" connection.
-7:44:15:92 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:44:15:26 ==> [server]: "Emails" created .
-7:44:15:27 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:44:15:27 ==> [server]: "Emails" returning FALSE.
-7:44:15:28 ==> [server]: END
-7:44:56:76 ==> [server]: START
-7:44:56:78 ==> [server]: Start the "Client" connection.
-7:44:56:78 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:44:56:12 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:44:56:13 ==> [server]: Start the "Client" connection.
-7:44:56:39 ==> [server]: "Emails" created .
-7:44:56:40 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:44:56:40 ==> [server]: "Emails" returning FALSE.
-7:44:56:41 ==> [server]: END
-7:49:35:64 ==> [server]: START
-7:49:35:65 ==> [server]: Start the "Client" connection.
-7:49:35:66 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:49:35:98 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:49:35:98 ==> [server]: Start the "Client" connection.
-7:49:35:28 ==> [server]: "Emails" created .
-7:49:35:30 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:49:35:30 ==> [server]: "Emails" returning FALSE.
-7:49:35:31 ==> [server]: END
-7:50:31:89 ==> [server]: START
-7:50:31:90 ==> [server]: Start the "Client" connection.
-7:50:31:91 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:50:31:24 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:50:31:24 ==> [server]: Start the "Client" connection.
-7:50:31:51 ==> [server]: "Emails" created .
-7:50:31:52 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:50:31:52 ==> [server]: "Emails" returning FALSE.
-7:50:31:53 ==> [server]: END
-7:52:21:14 ==> [server]: START
-7:52:21:15 ==> [server]: Start the "Client" connection.
-7:52:21:15 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:52:21:49 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:52:21:50 ==> [server]: Start the "Client" connection.
-7:52:21:77 ==> [server]: "Emails" created .
-7:52:21:78 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:52:21:79 ==> [server]: END
-7:52:21:79 ==> [server]: "Emails" returning FALSE.
-7:56:50:70 ==> [server]: Start the "Client" connection.
-7:56:50:71 ==> [server]: START
-7:56:50:72 ==> [server -> listen]: Server starte to listen the PORT 7070
-7:56:50:8 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-7:56:50:8 ==> [server]: Start the "Client" connection.
-7:56:50:35 ==> [server]: "Emails" created .
-7:56:50:36 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-7:56:50:37 ==> [server]: "Emails" returning FALSE.
-7:56:50:37 ==> [server]: END
-8:1:52:99 ==> [server]: START
-8:1:52:1 ==> [server]: Start the "Client" connection.
-8:1:52:1 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:1:52:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:1:52:43 ==> [server]: Start the "Client" connection.
-8:1:52:72 ==> [server]: "Emails" created .
-8:1:52:74 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:1:52:74 ==> [server]: END
-8:1:52:75 ==> [server]: "Emails" returning FALSE.
-8:1:52:95 ==> [server]: START
-8:1:52:97 ==> [server]: Start the "Client" connection.
-8:1:52:98 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:1:52:49 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:1:52:50 ==> [server]: Start the "Client" connection.
-8:1:52:84 ==> [server]: "Emails" created .
-8:1:52:86 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:1:52:86 ==> [server]: "Emails" returning FALSE.
-8:1:52:87 ==> [server]: END
-8:5:29:95 ==> [server]: Start the "Client" connection.
-8:5:29:97 ==> [server]: START
-8:5:29:97 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:5:29:34 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:5:29:34 ==> [server]: Start the "Client" connection.
-8:5:29:72 ==> [server]: "Emails" created .
-8:5:29:74 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:5:29:75 ==> [server]: "Emails" returning FALSE.
-8:5:29:75 ==> [server]: END
-8:5:40:81 ==> [server]: START
-8:5:40:83 ==> [server]: Start the "Client" connection.
-8:5:40:83 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:5:40:22 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:5:40:23 ==> [server]: Start the "Client" connection.
-8:5:40:54 ==> [server]: "Emails" created .
-8:5:40:56 ==> [server]: "Emails" returning FALSE.
-8:5:40:56 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:5:40:57 ==> [server]: END
-8:9:15:9 ==> [server]: START
-8:9:15:11 ==> [server]: Start the "Client" connection.
-8:9:15:11 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:9:15:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:9:15:55 ==> [server]: Start the "Client" connection.
-8:9:15:85 ==> [server]: "Emails" created .
-8:9:15:87 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:9:15:88 ==> [server]: "Emails" returning FALSE.
-8:9:15:88 ==> [server]: END
-8:9:44:19 ==> [server]: START
-8:9:44:20 ==> [server]: Start the "Client" connection.
-8:9:44:20 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:9:44:55 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:9:44:55 ==> [server]: Start the "Client" connection.
-8:9:44:83 ==> [server]: "Emails" created .
-8:9:44:85 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:9:44:85 ==> [server]: "Emails" returning FALSE.
-8:9:44:86 ==> [server]: END
-8:10:20:0 ==> [server]: START
-8:10:20:1 ==> [server]: Start the "Client" connection.
-8:10:20:2 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:10:20:35 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:10:20:36 ==> [server]: Start the "Client" connection.
-8:10:20:72 ==> [server]: "Emails" created .
-8:10:20:74 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:10:20:75 ==> [server]: "Emails" returning FALSE.
-8:10:20:76 ==> [server]: END
-8:10:23:82 ==> [server]: START
-8:10:23:84 ==> [server]: Start the "Client" connection.
-8:10:23:85 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:10:23:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:10:23:21 ==> [server]: Start the "Client" connection.
-8:10:23:48 ==> [server]: "Emails" created .
-8:10:23:50 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:10:23:50 ==> [server]: "Emails" returning FALSE.
-8:10:23:51 ==> [server]: END
-8:10:55:23 ==> [server]: Start the "Client" connection.
-8:10:55:24 ==> [server]: START
-8:10:55:25 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:10:55:61 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:10:55:62 ==> [server]: Start the "Client" connection.
-8:10:55:94 ==> [server]: "Emails" created .
-8:10:55:96 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:10:55:97 ==> [server]: "Emails" returning FALSE.
-8:10:55:97 ==> [server]: END
-8:11:21:52 ==> [server]: START
-8:11:21:53 ==> [server]: Start the "Client" connection.
-8:11:21:54 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:11:21:88 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:11:21:88 ==> [server]: Start the "Client" connection.
-8:11:21:18 ==> [server]: "Emails" created .
-8:11:21:20 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:11:21:20 ==> [server]: "Emails" returning FALSE.
-8:11:21:21 ==> [server]: END
-8:11:37:95 ==> [server]: START
-8:11:37:97 ==> [server]: Start the "Client" connection.
-8:11:37:97 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:11:37:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:11:37:33 ==> [server]: Start the "Client" connection.
-8:11:37:61 ==> [server]: "Emails" created .
-8:11:37:63 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:11:37:63 ==> [server]: "Emails" returning FALSE.
-8:11:37:64 ==> [server]: END
-8:13:26:32 ==> [server]: START
-8:13:26:34 ==> [server]: Start the "Client" connection.
-8:13:26:34 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:13:26:71 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:13:26:71 ==> [server]: Start the "Client" connection.
-8:13:26:0 ==> [server]: "Emails" created .
-8:13:26:2 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:13:26:3 ==> [server]: "Emails" returning FALSE.
-8:13:26:3 ==> [server]: END
-8:13:31:46 ==> [server]: Start the "Client" connection.
-8:13:31:47 ==> [server]: START
-8:13:31:48 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:13:31:83 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:13:31:83 ==> [server]: Start the "Client" connection.
-8:13:31:10 ==> [server]: "Emails" created .
-8:13:31:13 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:13:31:13 ==> [server]: END
-8:13:31:14 ==> [server]: "Emails" returning FALSE.
-8:13:59:40 ==> [server]: START
-8:13:59:41 ==> [server]: Start the "Client" connection.
-8:13:59:42 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:13:59:77 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:13:59:78 ==> [server]: Start the "Client" connection.
-8:13:59:8 ==> [server]: "Emails" created .
-8:13:59:9 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:13:59:10 ==> [server]: "Emails" returning FALSE.
-8:13:59:10 ==> [server]: END
-8:14:15:37 ==> [server]: START
-8:14:15:38 ==> [server]: Start the "Client" connection.
-8:14:15:38 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:14:15:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:14:15:75 ==> [server]: Start the "Client" connection.
-8:14:15:4 ==> [server]: "Emails" created .
-8:14:15:6 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:14:15:7 ==> [server]: "Emails" returning FALSE.
-8:14:15:7 ==> [server]: END
-8:14:18:87 ==> [server]: START
-8:14:18:89 ==> [server]: Start the "Client" connection.
-8:14:18:90 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:14:18:28 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:14:18:29 ==> [server]: Start the "Client" connection.
-8:14:19:72 ==> [server]: "Emails" created .
-8:14:19:74 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:14:19:75 ==> [server]: "Emails" returning FALSE.
-8:14:19:75 ==> [server]: END
-8:14:21:69 ==> [server]: START
-8:14:21:71 ==> [server]: Start the "Client" connection.
-8:14:21:72 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:14:21:11 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:14:21:12 ==> [server]: Start the "Client" connection.
-8:14:21:50 ==> [server]: "Emails" created .
-8:14:21:52 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:14:21:53 ==> [server]: "Emails" returning FALSE.
-8:14:21:53 ==> [server]: END
-8:14:45:16 ==> [server]: START
-8:14:45:17 ==> [server]: Start the "Client" connection.
-8:14:45:18 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:14:45:53 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:14:45:53 ==> [server]: Start the "Client" connection.
-8:14:45:82 ==> [server]: "Emails" created .
-8:14:45:84 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:14:45:84 ==> [server]: "Emails" returning FALSE.
-8:14:45:85 ==> [server]: END
-8:15:0:40 ==> [server]: START
-8:15:0:42 ==> [server]: Start the "Client" connection.
-8:15:0:43 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:15:0:80 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:15:0:81 ==> [server]: Start the "Client" connection.
-8:15:1:11 ==> [server]: "Emails" created .
-8:15:1:13 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:15:1:13 ==> [server]: "Emails" returning FALSE.
-8:15:1:14 ==> [server]: END
-8:15:3:67 ==> [server]: START
-8:15:3:69 ==> [server]: Start the "Client" connection.
-8:15:3:70 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:15:3:7 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:15:3:8 ==> [server]: Start the "Client" connection.
-8:15:3:36 ==> [server]: "Emails" created .
-8:15:3:38 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:15:3:39 ==> [server]: "Emails" returning FALSE.
-8:15:3:39 ==> [server]: END
-8:17:56:28 ==> [server]: START
-8:17:56:30 ==> [server]: Start the "Client" connection.
-8:17:56:30 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:17:56:66 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:17:56:67 ==> [server]: Start the "Client" connection.
-8:17:56:1 ==> [server]: "Emails" created .
-8:17:56:3 ==> [server]: "Emails" returning FALSE.
-8:17:56:3 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:17:56:4 ==> [server]: END
-8:17:59:16 ==> [server]: START
-8:17:59:18 ==> [server]: Start the "Client" connection.
-8:17:59:18 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:17:59:63 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:17:59:64 ==> [server]: Start the "Client" connection.
-8:17:59:12 ==> [server]: START
-8:17:59:14 ==> [server]: Start the "Client" connection.
-8:17:59:14 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:17:59:57 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:17:59:58 ==> [server]: Start the "Client" connection.
-8:18:0:9 ==> [server]: "Emails" created .
-8:18:0:11 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:18:0:12 ==> [server]: "Emails" returning FALSE.
-8:18:0:13 ==> [server]: END
-8:18:3:15 ==> [server]: START
-8:18:3:16 ==> [server]: Start the "Client" connection.
-8:18:3:17 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:18:3:57 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:18:3:58 ==> [server]: Start the "Client" connection.
-8:18:3:88 ==> [server]: "Emails" created .
-8:18:3:91 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:18:3:93 ==> [server]: "Emails" returning FALSE.
-8:18:3:94 ==> [server]: END
-8:18:12:60 ==> [server]: Start the "Client" connection.
-8:18:12:62 ==> [server]: START
-8:18:12:63 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:18:12:2 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:18:12:3 ==> [server]: Start the "Client" connection.
-8:18:12:33 ==> [server]: "Emails" created .
-8:18:12:35 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:18:12:35 ==> [server]: "Emails" returning FALSE.
-8:18:12:36 ==> [server]: END
-8:18:16:25 ==> [server]: START
-8:18:16:26 ==> [server]: Start the "Client" connection.
-8:18:16:27 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:18:16:62 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:18:16:63 ==> [server]: Start the "Client" connection.
-8:18:16:92 ==> [server]: "Emails" created .
-8:18:16:94 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:18:16:94 ==> [server]: "Emails" returning FALSE.
-8:18:16:95 ==> [server]: END
-8:18:18:53 ==> [server]: START
-8:18:18:55 ==> [server]: Start the "Client" connection.
-8:18:18:55 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:18:18:89 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:18:18:90 ==> [server]: Start the "Client" connection.
-8:18:18:17 ==> [server]: "Emails" created .
-8:18:18:19 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:18:18:20 ==> [server]: "Emails" returning FALSE.
-8:18:18:20 ==> [server]: END
-8:22:31:84 ==> [server]: START
-8:22:31:86 ==> [server]: Start the "Client" connection.
-8:22:31:86 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:22:31:35 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:22:31:36 ==> [server]: Start the "Client" connection.
-8:22:31:80 ==> [server]: "Emails" created .
-8:22:31:81 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:22:31:81 ==> [server]: "Emails" returning FALSE.
-8:22:31:83 ==> [server]: END
-8:24:30:99 ==> [server]: START
-8:24:30:1 ==> [server]: Start the "Client" connection.
-8:24:30:4 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:24:30:60 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:24:30:61 ==> [server]: Start the "Client" connection.
-8:24:30:97 ==> [server]: "Emails" created .
-8:24:30:99 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:24:30:99 ==> [server]: "Emails" returning FALSE.
-8:24:30:0 ==> [server]: END
-8:24:34:18 ==> [server]: START
-8:24:34:21 ==> [server]: Start the "Client" connection.
-8:24:34:22 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:24:34:61 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:24:34:62 ==> [server]: Start the "Client" connection.
-8:24:34:92 ==> [server]: "Emails" created .
-8:24:34:94 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:24:34:95 ==> [server]: "Emails" returning FALSE.
-8:24:34:96 ==> [server]: END
-8:27:11:5 ==> [server]: START
-8:27:11:7 ==> [server]: Start the "Client" connection.
-8:27:11:9 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:11:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:11:48 ==> [server]: Start the "Client" connection.
-8:27:11:81 ==> [server]: "Emails" created .
-8:27:11:83 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:11:84 ==> [server]: "Emails" returning FALSE.
-8:27:11:85 ==> [server]: END
-8:27:16:57 ==> [server]: START
-8:27:16:59 ==> [server]: Start the "Client" connection.
-8:27:16:59 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:16:95 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:16:96 ==> [server]: Start the "Client" connection.
-8:27:16:28 ==> [server]: "Emails" created .
-8:27:16:30 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:16:30 ==> [server]: "Emails" returning FALSE.
-8:27:16:31 ==> [server]: END
-8:27:19:82 ==> [server]: START
-8:27:19:84 ==> [server]: Start the "Client" connection.
-8:27:19:84 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:19:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:19:19 ==> [server]: Start the "Client" connection.
-8:27:19:51 ==> [server]: "Emails" created .
-8:27:19:53 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:19:53 ==> [server]: "Emails" returning FALSE.
-8:27:19:54 ==> [server]: END
-8:27:40:74 ==> [server]: START
-8:27:40:76 ==> [server]: Start the "Client" connection.
-8:27:40:77 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:40:11 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:40:12 ==> [server]: Start the "Client" connection.
-8:27:40:41 ==> [server]: "Emails" created .
-8:27:40:44 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:40:44 ==> [server]: "Emails" returning FALSE.
-8:27:40:45 ==> [server]: END
-8:27:49:30 ==> [server]: START
-8:27:49:32 ==> [server]: Start the "Client" connection.
-8:27:49:33 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:49:74 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:49:75 ==> [server]: Start the "Client" connection.
-8:27:49:6 ==> [server]: "Emails" created .
-8:27:49:8 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:49:9 ==> [server]: "Emails" returning FALSE.
-8:27:49:10 ==> [server]: END
-8:27:51:48 ==> [server]: START
-8:27:51:50 ==> [server]: Start the "Client" connection.
-8:27:51:51 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:27:51:88 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:27:51:89 ==> [server]: Start the "Client" connection.
-8:27:52:19 ==> [server]: "Emails" created .
-8:27:52:22 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:27:52:22 ==> [server]: "Emails" returning FALSE.
-8:27:52:23 ==> [server]: END
-8:28:30:48 ==> [server]: START
-8:28:30:50 ==> [server]: Start the "Client" connection.
-8:28:30:51 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:28:30:86 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:28:30:87 ==> [server]: Start the "Client" connection.
-8:28:31:17 ==> [server]: "Emails" created .
-8:28:31:19 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:28:31:20 ==> [server]: "Emails" returning FALSE.
-8:28:31:21 ==> [server]: END
-8:28:36:26 ==> [server]: START
-8:28:36:28 ==> [server]: Start the "Client" connection.
-8:28:36:28 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:28:36:66 ==> [server]: Start the "Client" connection.
-8:28:36:67 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:28:36:97 ==> [server]: "Emails" created .
-8:28:36:99 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:28:36:0 ==> [server]: "Emails" returning FALSE.
-8:28:36:0 ==> [server]: END
-8:28:38:77 ==> [server]: START
-8:28:38:78 ==> [server]: Start the "Client" connection.
-8:28:38:79 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:28:38:14 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:28:38:15 ==> [server]: Start the "Client" connection.
-8:28:38:43 ==> [server]: "Emails" created .
-8:28:38:44 ==> [server]: "Emails" returning FALSE.
-8:28:38:45 ==> [server]: END
-8:28:38:46 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:31:59:73 ==> [server]: START
-8:31:59:75 ==> [server]: Start the "Client" connection.
-8:31:59:76 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:31:59:17 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:31:59:18 ==> [server]: Start the "Client" connection.
-8:31:59:48 ==> [server]: "Emails" created .
-8:31:59:50 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:31:59:50 ==> [server]: "Emails" returning FALSE.
-8:31:59:51 ==> [server]: END
-8:32:55:83 ==> [server]: START
-8:32:55:85 ==> [server]: Start the "Client" connection.
-8:32:55:86 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:32:55:38 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:32:55:39 ==> [server]: Start the "Client" connection.
-8:32:55:74 ==> [server]: "Emails" created .
-8:32:55:76 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:32:55:77 ==> [server]: "Emails" returning FALSE.
-8:32:55:77 ==> [server]: END
-8:33:11:15 ==> [server]: START
-8:33:11:16 ==> [server]: Start the "Client" connection.
-8:33:11:17 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:33:11:60 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:33:11:61 ==> [server]: Start the "Client" connection.
-8:33:11:91 ==> [server]: "Emails" created .
-8:33:11:93 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:33:11:94 ==> [server]: "Emails" returning FALSE.
-8:33:11:94 ==> [server]: END
-8:33:17:17 ==> [server]: START
-8:33:17:18 ==> [server]: Start the "Client" connection.
-8:33:17:18 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:33:17:87 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:33:17:88 ==> [server]: Start the "Client" connection.
-8:33:17:39 ==> [server]: "Emails" created .
-8:33:17:43 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:33:17:44 ==> [server]: "Emails" returning FALSE.
-8:33:17:45 ==> [server]: END
-8:37:51:25 ==> [server]: START
-8:37:51:27 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:37:51:28 ==> [server]: Start the "Client" connection.
-8:37:51:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:37:51:75 ==> [server]: Start the "Client" connection.
-8:37:51:6 ==> [server]: "Emails" created .
-8:37:51:8 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:37:51:8 ==> [server]: "Emails" returning FALSE.
-8:37:51:9 ==> [server]: END
-8:40:19:98 ==> [server]: START
-8:40:19:1 ==> [server]: Start the "Client" connection.
-8:40:19:1 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:40:19:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:40:19:51 ==> [server]: Start the "Client" connection.
-8:40:19:80 ==> [server]: "Emails" created .
-8:40:19:83 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:40:19:84 ==> [server]: "Emails" returning FALSE.
-8:40:19:84 ==> [server]: END
-8:41:55:32 ==> [server]: START
-8:41:55:34 ==> [server]: Start the "Client" connection.
-8:41:55:35 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:41:55:94 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:41:55:94 ==> [server]: Start the "Client" connection.
-8:41:55:27 ==> [server]: "Emails" created .
-8:41:55:29 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:41:55:30 ==> [server]: "Emails" returning FALSE.
-8:41:55:31 ==> [server]: END
-8:41:58:70 ==> [server]: START
-8:41:58:72 ==> [server]: Start the "Client" connection.
-8:41:58:73 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:41:58:10 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:41:58:11 ==> [server]: Start the "Client" connection.
-8:41:58:42 ==> [server]: "Emails" created .
-8:41:58:44 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:41:58:45 ==> [server]: "Emails" returning FALSE.
-8:41:58:46 ==> [server]: END
-8:42:51:36 ==> [server]: START
-8:42:51:38 ==> [server]: Start the "Client" connection.
-8:42:51:39 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:42:51:78 ==> [server]: Start the "Client" connection.
-8:42:51:79 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:42:51:13 ==> [server]: "Emails" created .
-8:42:51:15 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:42:51:16 ==> [server]: END
-8:42:51:17 ==> [server]: "Emails" returning FALSE.
-8:43:19:96 ==> [server]: START
-8:43:19:98 ==> [server]: Start the "Client" connection.
-8:43:19:98 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:43:19:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:43:19:41 ==> [server]: Start the "Client" connection.
-8:43:19:76 ==> [server]: "Emails" created .
-8:43:19:79 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:43:19:80 ==> [server]: END
-8:43:19:81 ==> [server]: "Emails" returning FALSE.
-8:43:22:78 ==> [server]: START
-8:43:22:80 ==> [server]: Start the "Client" connection.
-8:43:22:80 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:43:22:19 ==> [server]: Start the "Client" connection.
-8:43:22:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:43:22:49 ==> [server]: "Emails" created .
-8:43:22:51 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:43:22:52 ==> [server]: "Emails" returning FALSE.
-8:43:22:52 ==> [server]: END
-8:43:41:37 ==> [server -> router]: clientData: {"firstName":"root","lastName":"root","email":"work80@mail.xn--ru-tmca","passwords":"password"}
-8:43:41:38 ==> [server -> router]: Before saving into the db
-8:43:41:41 ==> [server -> clients]: Before connection.
-8:43:41:82 ==> [server -> clients]: That is a connection. Before sending.
-8:43:41:90 ==> [server -> clients]: data was save
-8:43:41:91 ==> [server -> router]: statusCODE => true
-8:43:41:95 ==> [server -> router]: After saving into the db
-8:44:0:23 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"Boris","email":"tryd0g0lik80@gmail.c","passwords":"password"}
-8:44:0:26 ==> [server -> router]: Before saving into the db
-8:44:0:28 ==> [server -> clients]: Before connection.
-8:44:0:58 ==> [server -> clients]: That is a connection. Before sending.
-8:44:0:62 ==> [server -> clients]: data was save
-8:44:0:63 ==> [server -> router]: statusCODE => true
-8:44:0:65 ==> [server -> router]: After saving into the db
-8:44:30:63 ==> [server]: START
-8:44:30:65 ==> [server]: Start the "Client" connection.
-8:44:30:65 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:44:30:1 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:44:30:2 ==> [server]: Start the "Client" connection.
-8:44:30:32 ==> [server]: "Emails" created .
-8:44:30:34 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:44:30:35 ==> [server]: "Emails" returning FALSE.
-8:44:30:36 ==> [server]: END
-8:44:36:63 ==> [server]: START
-8:44:36:65 ==> [server]: Start the "Client" connection.
-8:44:36:66 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:44:36:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:44:36:5 ==> [server]: Start the "Client" connection.
-8:44:36:35 ==> [server]: "Emails" created .
-8:44:36:37 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:44:36:37 ==> [server]: "Emails" returning FALSE.
-8:44:36:38 ==> [server]: END
-8:44:39:92 ==> [server]: START
-8:44:39:93 ==> [server]: Start the "Client" connection.
-8:44:39:94 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:44:39:29 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:44:39:30 ==> [server]: Start the "Client" connection.
-8:44:39:60 ==> [server]: "Emails" created .
-8:44:39:62 ==> [server]: "Emails" returning FALSE.
-8:44:39:63 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:44:39:63 ==> [server]: END
-8:45:48:6 ==> [server]: START
-8:45:48:8 ==> [server]: Start the "Client" connection.
-8:45:48:9 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:45:48:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:45:48:48 ==> [server]: Start the "Client" connection.
-8:45:48:80 ==> [server]: "Emails" created .
-8:45:48:82 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:45:48:83 ==> [server]: "Emails" returning FALSE.
-8:45:48:84 ==> [server]: END
-8:45:53:7 ==> [server]: START
-8:45:53:9 ==> [server]: Start the "Client" connection.
-8:45:53:10 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:45:53:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:45:53:48 ==> [server]: Start the "Client" connection.
-8:45:53:80 ==> [server]: "Emails" created .
-8:45:53:83 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:45:53:83 ==> [server]: "Emails" returning FALSE.
-8:45:53:84 ==> [server]: END
-8:45:56:3 ==> [server]: START
-8:45:56:5 ==> [server]: Start the "Client" connection.
-8:45:56:5 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:45:56:39 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:45:56:40 ==> [server]: Start the "Client" connection.
-8:45:56:68 ==> [server]: "Emails" created .
-8:45:56:70 ==> [server]: "Emails" returning FALSE.
-8:45:56:70 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:45:56:71 ==> [server]: END
-8:46:4:65 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"work80@xn--mail-v6d.ru","email":"work80@mail.ru","passwords":"WxU-Lty-uS8-kdH"}
-8:46:4:66 ==> [server -> router]: Before saving into the db
-8:46:4:70 ==> [server -> clients]: Before connection.
-8:46:4:13 ==> [server -> clients]: Note: This is email already has.
-8:46:4:13 ==> [server -> router]: statusCODE => false
-8:46:4:17 ==> [server -> router]: After saving into the db
-8:46:12:5 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"work80@xn--mail-v6d.ru","email":"work80@xn--mail-m5d.ru","passwords":"WxU-Lty-uS8-kdH"}
-8:46:12:6 ==> [server -> router]: Before saving into the db
-8:46:12:9 ==> [server -> clients]: Before connection.
-8:46:12:37 ==> [server -> clients]: That is a connection. Before sending.
-8:46:12:53 ==> [server -> router]: statusCODE => true
-8:46:12:55 ==> [server -> clients]: data was save
-8:46:12:56 ==> [server -> router]: After saving into the db
-8:46:57:23 ==> [server]: START
-8:46:57:25 ==> [server]: Start the "Client" connection.
-8:46:57:25 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:46:57:63 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:46:57:64 ==> [server]: Start the "Client" connection.
-8:46:57:94 ==> [server]: "Emails" created .
-8:46:57:95 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:46:57:96 ==> [server]: "Emails" returning FALSE.
-8:46:57:96 ==> [server]: END
-8:47:0:43 ==> [server]: START
-8:47:0:45 ==> [server]: Start the "Client" connection.
-8:47:0:46 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:47:1:98 ==> [server]: START
-8:47:1:2 ==> [server]: Start the "Client" connection.
-8:47:1:3 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:47:1:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:47:1:49 ==> [server]: Start the "Client" connection.
-8:47:1:80 ==> [server]: "Emails" created .
-8:47:1:83 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:47:1:84 ==> [server]: "Emails" returning FALSE.
-8:47:1:85 ==> [server]: END
-8:47:3:87 ==> [server]: START
-8:47:3:89 ==> [server]: Start the "Client" connection.
-8:47:3:90 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:47:3:37 ==> [server]: Start the "Client" connection.
-8:47:3:38 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:47:3:73 ==> [server]: "Emails" created .
-8:47:3:76 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:47:3:77 ==> [server]: "Emails" returning FALSE.
-8:47:3:78 ==> [server]: END
-8:47:7:49 ==> [server]: START
-8:47:7:51 ==> [server]: Start the "Client" connection.
-8:47:7:51 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:47:7:92 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:47:7:92 ==> [server]: Start the "Client" connection.
-8:47:7:23 ==> [server]: "Emails" created .
-8:47:7:26 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:47:7:27 ==> [server]: "Emails" returning FALSE.
-8:47:7:27 ==> [server]: END
-8:48:6:67 ==> [server]: START
-8:48:6:69 ==> [server]: Start the "Client" connection.
-8:48:6:70 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:48:6:15 ==> [server]: Start the "Client" connection.
-8:48:6:16 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:48:6:45 ==> [server]: "Emails" created .
-8:48:6:48 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:48:6:49 ==> [server]: "Emails" returning FALSE.
-8:48:6:50 ==> [server]: END
-8:49:26:26 ==> [server]: START
-8:49:26:28 ==> [server]: Start the "Client" connection.
-8:49:26:29 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:49:26:69 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:49:26:70 ==> [server]: Start the "Client" connection.
-8:49:27:0 ==> [server]: "Emails" created .
-8:49:27:2 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:49:27:3 ==> [server]: "Emails" returning FALSE.
-8:49:27:4 ==> [server]: END
-8:49:30:84 ==> [server]: Start the "Client" connection.
-8:49:30:86 ==> [server]: START
-8:49:30:87 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:49:30:24 ==> [server]: Start the "Client" connection.
-8:49:30:25 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:49:30:56 ==> [server]: "Emails" created .
-8:49:30:58 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:49:30:59 ==> [server]: "Emails" returning FALSE.
-8:49:30:60 ==> [server]: END
-8:50:3:93 ==> [server]: START
-8:50:3:95 ==> [server]: Start the "Client" connection.
-8:50:3:95 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:50:3:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:50:3:33 ==> [server]: Start the "Client" connection.
-8:50:3:62 ==> [server]: "Emails" created .
-8:50:3:65 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:50:3:65 ==> [server]: END
-8:50:3:66 ==> [server]: "Emails" returning FALSE.
-8:50:20:84 ==> [server]: START
-8:50:20:86 ==> [server]: Start the "Client" connection.
-8:50:20:87 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:50:20:41 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:50:20:42 ==> [server]: Start the "Client" connection.
-8:50:20:71 ==> [server]: "Emails" created .
-8:50:20:73 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:50:20:74 ==> [server]: "Emails" returning FALSE.
-8:50:20:75 ==> [server]: END
-8:50:39:67 ==> [server]: START
-8:50:39:69 ==> [server]: Start the "Client" connection.
-8:50:39:69 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:50:39:3 ==> [server]: Start the "Client" connection.
-8:50:39:3 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:50:39:31 ==> [server]: "Emails" created .
-8:50:39:33 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:50:39:34 ==> [server]: "Emails" returning FALSE.
-8:50:39:34 ==> [server]: END
-8:50:50:84 ==> [server]: START
-8:50:50:86 ==> [server]: Start the "Client" connection.
-8:50:50:87 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:50:50:21 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:50:50:22 ==> [server]: Start the "Client" connection.
-8:50:50:66 ==> [server]: "Emails" created .
-8:50:50:69 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:50:50:70 ==> [server]: "Emails" returning FALSE.
-8:50:50:71 ==> [server]: END
-8:50:56:4 ==> [server]: START
-8:50:56:5 ==> [server]: Start the "Client" connection.
-8:50:56:6 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:50:56:61 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:50:56:62 ==> [server]: Start the "Client" connection.
-8:50:56:92 ==> [server]: "Emails" created .
-8:50:56:94 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:50:56:95 ==> [server]: "Emails" returning FALSE.
-8:50:56:95 ==> [server]: END
-8:52:25:5 ==> [server]: START
-8:52:25:7 ==> [server]: Start the "Client" connection.
-8:52:25:7 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:52:25:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:52:25:41 ==> [server]: Start the "Client" connection.
-8:52:25:68 ==> [server]: "Emails" created .
-8:52:25:70 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:52:25:71 ==> [server]: "Emails" returning FALSE.
-8:52:25:72 ==> [server]: END
-8:52:31:97 ==> [server]: START
-8:52:31:99 ==> [server]: Start the "Client" connection.
-8:52:31:99 ==> [server -> listen]: Server starte to listen the PORT 7070
-8:52:31:35 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-8:52:31:36 ==> [server]: Start the "Client" connection.
-8:52:31:63 ==> [server]: "Emails" created .
-8:52:31:66 ==> [server -> ERROR]: 'Users' Something that wrong!
-     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
-8:52:31:66 ==> [server]: "Emails" returning FALSE.
-8:52:31:67 ==> [server]: END
+10:17:34:20 ==> [server]: START
+10:17:34:21 ==> [server]: Start the "Client" connection.
+10:17:34:21 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:17:34:60 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:17:34:61 ==> [server]: Start the "Client" connection.
+10:17:34:90 ==> [server]: "Emails" created .
+10:17:34:90 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:17:34:91 ==> [server]: "Emails" returning FALSE.
+10:17:34:91 ==> [server]: END
+10:19:10:96 ==> [server]: START
+10:19:10:98 ==> [server]: Start the "Client" connection.
+10:19:10:98 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:19:11:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:19:11:33 ==> [server]: Start the "Client" connection.
+10:19:11:60 ==> [server]: "Emails" created .
+10:19:11:61 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:19:11:62 ==> [server]: "Emails" returning FALSE.
+10:19:11:62 ==> [server]: END
+10:21:23:34 ==> [server]: START
+10:21:23:35 ==> [server]: Start the "Client" connection.
+10:21:23:35 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:21:23:84 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:21:23:84 ==> [server]: Start the "Client" connection.
+10:21:23:15 ==> [server]: "Emails" created .
+10:21:23:16 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:21:23:16 ==> [server]: "Emails" returning FALSE.
+10:21:23:17 ==> [server]: END
+10:21:47:61 ==> [server]: START
+10:21:47:62 ==> [server]: Start the "Client" connection.
+10:21:47:62 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:21:47:3 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:21:47:4 ==> [server]: Start the "Client" connection.
+10:21:47:44 ==> [server]: "Emails" created .
+10:21:47:45 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:21:47:45 ==> [server]: "Emails" returning FALSE.
+10:21:47:46 ==> [server]: END
+10:23:19:65 ==> [server]: START
+10:23:19:67 ==> [server]: Start the "Client" connection.
+10:23:19:68 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:23:19:17 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:23:19:17 ==> [server]: Start the "Client" connection.
+10:23:19:74 ==> [server]: "Emails" created .
+10:23:19:74 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:23:19:77 ==> [server]: "Emails" returning FALSE.
+10:23:19:77 ==> [server]: END
+10:23:20:63 ==> [server]: START
+10:23:20:64 ==> [server]: Start the "Client" connection.
+10:23:20:65 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:23:20:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:23:20:5 ==> [server]: Start the "Client" connection.
+10:23:20:51 ==> [server]: "Emails" created .
+10:23:20:52 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:23:20:53 ==> [server]: "Emails" returning FALSE.
+10:23:20:53 ==> [server]: END
+10:23:47:36 ==> [server]: START
+10:23:47:37 ==> [server]: Start the "Client" connection.
+10:23:47:37 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:23:47:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:23:47:76 ==> [server]: Start the "Client" connection.
+10:23:47:4 ==> [server]: "Emails" created .
+10:23:47:5 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:23:47:5 ==> [server]: "Emails" returning FALSE.
+10:23:47:6 ==> [server]: END
+10:24:18:97 ==> [server]: START
+10:24:18:99 ==> [server]: Start the "Client" connection.
+10:24:18:99 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:24:18:36 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:24:18:36 ==> [server]: Start the "Client" connection.
+10:24:18:67 ==> [server]: "Emails" created .
+10:24:18:68 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:24:18:68 ==> [server]: "Emails" returning FALSE.
+10:24:18:68 ==> [server]: END
+10:27:36:39 ==> [server]: START
+10:27:36:40 ==> [server]: Start the "Client" connection.
+10:27:36:40 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:27:36:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:27:36:79 ==> [server]: Start the "Client" connection.
+10:27:36:7 ==> [server]: "Emails" created .
+10:27:36:8 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:27:36:8 ==> [server]: END
+10:27:36:9 ==> [server]: "Emails" returning FALSE.
+10:28:26:9 ==> [server]: START
+10:28:26:10 ==> [server]: Start the "Client" connection.
+10:28:26:11 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:28:26:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:28:26:48 ==> [server]: Start the "Client" connection.
+10:28:26:81 ==> [server]: "Emails" created .
+10:28:26:82 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:28:26:82 ==> [server]: "Emails" returning FALSE.
+10:28:26:83 ==> [server]: END
+10:30:44:51 ==> [server]: START
+10:30:44:52 ==> [server]: Start the "Client" connection.
+10:30:44:53 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:30:44:86 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:30:44:87 ==> [server]: Start the "Client" connection.
+10:30:44:23 ==> [server]: "Emails" created .
+10:30:44:24 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:30:44:24 ==> [server]: "Emails" returning FALSE.
+10:30:44:25 ==> [server]: END
+10:31:6:67 ==> [server]: START
+10:31:6:68 ==> [server]: Start the "Client" connection.
+10:31:6:68 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:31:6:5 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:31:6:6 ==> [server]: Start the "Client" connection.
+10:31:7:50 ==> [server]: "Emails" created .
+10:31:7:51 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:31:7:52 ==> [server]: "Emails" returning FALSE.
+10:31:7:52 ==> [server]: END
+10:31:47:87 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5"}
+10:31:47:88 ==> [server -> router]: coockie: undefined
+10:31:48:39 ==> [server]: START
+10:31:48:40 ==> [server]: Start the "Client" connection.
+10:31:48:40 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:31:48:82 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5"}
+10:31:48:86 ==> [server -> router]: coockie: undefined
+10:44:2:5 ==> [server]: START
+10:44:2:6 ==> [server]: Start the "Client" connection.
+10:44:2:7 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:44:2:53 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:44:2:53 ==> [server]: Start the "Client" connection.
+10:44:2:91 ==> [server]: "Emails" created .
+10:44:2:92 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:44:2:92 ==> [server]: "Emails" returning FALSE.
+10:44:2:93 ==> [server]: END
+10:44:35:11 ==> [server]: START
+10:44:35:13 ==> [server]: Start the "Client" connection.
+10:44:35:14 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:44:35:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:44:35:48 ==> [server]: Start the "Client" connection.
+10:44:35:78 ==> [server]: "Emails" created .
+10:44:35:78 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:44:35:79 ==> [server]: END
+10:44:35:79 ==> [server]: "Emails" returning FALSE.
+10:45:37:58 ==> [server]: START
+10:45:37:59 ==> [server]: Start the "Client" connection.
+10:45:37:60 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:45:37:12 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:45:37:13 ==> [server]: Start the "Client" connection.
+10:45:37:46 ==> [server]: "Emails" created .
+10:45:37:47 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:45:37:48 ==> [server]: "Emails" returning FALSE.
+10:45:37:49 ==> [server]: END
+10:46:0:10 ==> [server]: START
+10:46:0:11 ==> [server]: Start the "Client" connection.
+10:46:0:11 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:46:0:52 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:46:0:52 ==> [server]: Start the "Client" connection.
+10:46:0:86 ==> [server]: "Emails" created .
+10:46:0:86 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:46:0:87 ==> [server]: "Emails" returning FALSE.
+10:46:0:87 ==> [server]: END
+10:47:26:75 ==> [server]: Start the "Client" connection.
+10:47:26:76 ==> [server]: START
+10:47:26:77 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:47:27:15 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:47:27:16 ==> [server]: Start the "Client" connection.
+10:47:27:46 ==> [server]: "Emails" created .
+10:47:27:47 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:47:27:48 ==> [server]: "Emails" returning FALSE.
+10:47:27:48 ==> [server]: END
+10:47:47:99 ==> [server]: START
+10:47:47:1 ==> [server]: Start the "Client" connection.
+10:47:47:1 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:47:47:75 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:47:47:76 ==> [server]: Start the "Client" connection.
+10:47:47:25 ==> [server]: "Emails" created .
+10:47:47:27 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:47:47:28 ==> [server]: END
+10:47:47:28 ==> [server]: "Emails" returning FALSE.
+10:48:30:38 ==> [server]: START
+10:48:30:40 ==> [server]: Start the "Client" connection.
+10:48:30:40 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:48:30:89 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:48:30:90 ==> [server]: Start the "Client" connection.
+10:48:30:30 ==> [server]: "Emails" created .
+10:48:30:31 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:48:30:32 ==> [server]: "Emails" returning FALSE.
+10:48:30:32 ==> [server]: END
+10:48:46:24 ==> [server]: START
+10:48:46:27 ==> [server]: Start the "Client" connection.
+10:48:46:27 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:48:46:73 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:48:46:73 ==> [server]: Start the "Client" connection.
+10:48:46:13 ==> [server]: "Emails" created .
+10:48:46:14 ==> [server]: "Emails" returning FALSE.
+10:48:46:14 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:48:46:15 ==> [server]: END
+10:49:24:65 ==> [server]: START
+10:49:24:68 ==> [server]: Start the "Client" connection.
+10:49:24:68 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:49:24:14 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:49:24:15 ==> [server]: Start the "Client" connection.
+10:49:24:58 ==> [server]: "Emails" created .
+10:49:24:59 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:49:24:59 ==> [server]: "Emails" returning FALSE.
+10:49:24:60 ==> [server]: END
+10:50:44:85 ==> [server]: START
+10:50:44:86 ==> [server]: Start the "Client" connection.
+10:50:44:87 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:50:44:33 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:50:44:34 ==> [server]: Start the "Client" connection.
+10:50:44:75 ==> [server]: "Emails" created .
+10:50:44:76 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:50:44:76 ==> [server]: "Emails" returning FALSE.
+10:50:44:77 ==> [server]: END
+10:50:53:26 ==> [server]: START
+10:50:53:28 ==> [server]: Start the "Client" connection.
+10:50:53:29 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:50:53:74 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:50:53:74 ==> [server]: Start the "Client" connection.
+10:50:53:13 ==> [server]: "Emails" created .
+10:50:53:14 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:50:53:15 ==> [server]: "Emails" returning FALSE.
+10:50:53:15 ==> [server]: END
+10:51:44:49 ==> [server]: START
+10:51:44:52 ==> [server]: Start the "Client" connection.
+10:51:44:53 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:51:44:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:51:44:4 ==> [server]: Start the "Client" connection.
+10:51:44:11 ==> [server]: "Emails" created .
+10:51:44:13 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:51:44:13 ==> [server]: "Emails" returning FALSE.
+10:51:44:13 ==> [server]: END
+10:51:54:25 ==> [server]: START
+10:51:54:28 ==> [server]: Start the "Client" connection.
+10:51:54:29 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:51:54:77 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:51:54:78 ==> [server]: Start the "Client" connection.
+10:51:54:18 ==> [server]: "Emails" created .
+10:51:54:19 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:51:54:20 ==> [server]: "Emails" returning FALSE.
+10:51:54:20 ==> [server]: END
+10:52:9:92 ==> [server]: START
+10:52:9:94 ==> [server]: Start the "Client" connection.
+10:52:9:94 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:52:10:36 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:52:10:36 ==> [server]: Start the "Client" connection.
+10:52:10:66 ==> [server]: "Emails" created .
+10:52:10:67 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:52:10:68 ==> [server]: "Emails" returning FALSE.
+10:52:10:68 ==> [server]: END
+10:52:43:18 ==> [server]: START
+10:52:43:20 ==> [server]: Start the "Client" connection.
+10:52:43:21 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:52:43:63 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:52:43:64 ==> [server]: Start the "Client" connection.
+10:52:43:2 ==> [server]: "Emails" created .
+10:52:43:3 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:52:43:4 ==> [server]: "Emails" returning FALSE.
+10:52:43:4 ==> [server]: END
+10:52:45:72 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:52:45:73 ==> [server -> router]: coockie: undefined
+10:52:46:21 ==> [server]: START
+10:52:46:22 ==> [server]: Start the "Client" connection.
+10:52:46:23 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:52:46:56 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:52:46:58 ==> [server -> router]: coockie: undefined
+10:53:5:16 ==> [server]: START
+10:53:5:17 ==> [server]: Start the "Client" connection.
+10:53:5:18 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:53:5:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:53:5:54 ==> [server]: Start the "Client" connection.
+10:53:5:84 ==> [server]: "Emails" created .
+10:53:5:85 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:53:5:86 ==> [server]: "Emails" returning FALSE.
+10:53:5:86 ==> [server]: END
+10:53:20:39 ==> [server]: START
+10:53:20:42 ==> [server]: Start the "Client" connection.
+10:53:20:42 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:53:20:85 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:53:20:85 ==> [server]: Start the "Client" connection.
+10:53:20:22 ==> [server]: "Emails" created .
+10:53:20:23 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:53:20:24 ==> [server]: "Emails" returning FALSE.
+10:53:20:24 ==> [server]: END
+10:53:33:15 ==> [server]: START
+10:53:33:16 ==> [server]: Start the "Client" connection.
+10:53:33:17 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:53:33:59 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:53:33:59 ==> [server]: Start the "Client" connection.
+10:53:33:89 ==> [server]: "Emails" created .
+10:53:33:90 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:53:33:91 ==> [server]: "Emails" returning FALSE.
+10:53:33:91 ==> [server]: END
+10:53:38:66 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:53:38:67 ==> [server -> router]: coockie: undefined
+10:53:38:20 ==> [server]: START
+10:53:38:22 ==> [server]: Start the "Client" connection.
+10:53:38:23 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:53:38:47 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:53:38:48 ==> [server -> router]: coockie: undefined
+10:54:25:88 ==> [server]: START
+10:54:25:89 ==> [server]: Start the "Client" connection.
+10:54:25:90 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:54:25:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:54:25:26 ==> [server]: Start the "Client" connection.
+10:54:25:57 ==> [server]: "Emails" created .
+10:54:25:58 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:54:25:58 ==> [server]: "Emails" returning FALSE.
+10:54:25:59 ==> [server]: END
+10:54:29:75 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:54:29:75 ==> [server -> router]: coockie: undefined
+10:54:29:25 ==> [server]: START
+10:54:29:26 ==> [server]: Start the "Client" connection.
+10:54:29:27 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:54:29:69 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","sessionId":{"sessionId":null}}
+10:54:29:70 ==> [server -> router]: coockie: undefined
+10:55:21:22 ==> [server]: START
+10:55:21:24 ==> [server]: Start the "Client" connection.
+10:55:21:24 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:55:21:68 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:55:21:69 ==> [server]: Start the "Client" connection.
+10:55:21:12 ==> [server]: "Emails" created .
+10:55:21:13 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:55:21:14 ==> [server]: "Emails" returning FALSE.
+10:55:21:14 ==> [server]: END
+10:55:29:64 ==> [server]: START
+10:55:29:66 ==> [server]: Start the "Client" connection.
+10:55:29:67 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:55:29:12 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:55:29:13 ==> [server]: Start the "Client" connection.
+10:55:29:49 ==> [server]: "Emails" created .
+10:55:29:50 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:55:29:51 ==> [server]: "Emails" returning FALSE.
+10:55:29:51 ==> [server]: END
+10:55:32:44 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:55:32:45 ==> [server -> router]: coockie: undefined
+10:55:33:95 ==> [server]: START
+10:55:33:97 ==> [server]: Start the "Client" connection.
+10:55:33:97 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:55:33:32 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:55:33:35 ==> [server -> router]: coockie: undefined
+10:57:55:6 ==> [server]: START
+10:57:55:7 ==> [server]: Start the "Client" connection.
+10:57:55:8 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:57:55:44 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:57:55:44 ==> [server]: Start the "Client" connection.
+10:57:55:72 ==> [server]: "Emails" created .
+10:57:55:73 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:57:55:74 ==> [server]: "Emails" returning FALSE.
+10:57:55:74 ==> [server]: END
+10:57:59:64 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:57:59:65 ==> [server -> router]: coockie: undefined
+10:57:59:25 ==> [server]: START
+10:57:59:26 ==> [server]: Start the "Client" connection.
+10:57:59:26 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:57:59:43 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:57:59:44 ==> [server -> router]: coockie: undefined
+10:58:32:9 ==> [server]: START
+10:58:32:10 ==> [server]: Start the "Client" connection.
+10:58:32:11 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:58:32:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:58:32:48 ==> [server]: Start the "Client" connection.
+10:58:32:84 ==> [server]: "Emails" created .
+10:58:32:86 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:58:32:86 ==> [server]: "Emails" returning FALSE.
+10:58:32:87 ==> [server]: END
+10:58:34:78 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:58:34:79 ==> [server -> router]: coockie: undefined
+10:58:34:80 ==> [server -> router]: clientData: undefined
+10:58:37:25 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:58:37:26 ==> [server -> router]: coockie: undefined
+10:58:37:27 ==> [server -> router]: clientData: undefined
+10:59:22:36 ==> [server]: START
+10:59:22:37 ==> [server]: Start the "Client" connection.
+10:59:22:38 ==> [server -> listen]: Server starte to listen the PORT 7070
+10:59:22:72 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:59:22:73 ==> [server]: Start the "Client" connection.
+10:59:22:2 ==> [server]: "Emails" created .
+10:59:22:4 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+10:59:22:4 ==> [server]: "Emails" returning FALSE.
+10:59:22:5 ==> [server]: END
+10:59:24:83 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+10:59:24:84 ==> [server -> router]: coockie: undefined
+10:59:24:84 ==> [server -> router]: clientData: undefined
+11:1:8:45 ==> [server]: START
+11:1:8:46 ==> [server]: Start the "Client" connection.
+11:1:8:47 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:1:8:93 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:1:8:94 ==> [server]: Start the "Client" connection.
+11:1:8:31 ==> [server]: "Emails" created .
+11:1:8:32 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:1:8:33 ==> [server]: "Emails" returning FALSE.
+11:1:8:33 ==> [server]: END
+11:1:15:68 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:1:15:69 ==> [server -> router]: coockie: undefined
+11:1:15:70 ==> [server -> router]: clientData: undefined
+11:1:22:18 ==> [server]: START
+11:1:22:19 ==> [server]: Start the "Client" connection.
+11:1:22:20 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:1:22:56 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:1:22:57 ==> [server]: Start the "Client" connection.
+11:1:22:86 ==> [server]: "Emails" created .
+11:1:22:87 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:1:22:88 ==> [server]: "Emails" returning FALSE.
+11:1:22:89 ==> [server]: END
+11:1:22:71 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:1:22:72 ==> [server -> router]: coockie: undefined
+11:1:22:73 ==> [server -> router]: clientData: undefined
+11:1:25:6 ==> [server]: START
+11:1:25:7 ==> [server]: Start the "Client" connection.
+11:1:25:8 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:1:25:52 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:1:25:52 ==> [server]: Start the "Client" connection.
+11:1:25:92 ==> [server]: "Emails" created .
+11:1:25:94 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:1:25:94 ==> [server]: "Emails" returning FALSE.
+11:1:25:95 ==> [server]: END
+11:1:28:1 ==> [server]: START
+11:1:28:4 ==> [server]: Start the "Client" connection.
+11:1:28:5 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:1:28:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:1:28:51 ==> [server]: Start the "Client" connection.
+11:1:28:88 ==> [server]: "Emails" created .
+11:1:28:90 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:1:28:90 ==> [server]: "Emails" returning FALSE.
+11:1:28:91 ==> [server]: END
+11:1:30:8 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:1:30:9 ==> [server -> router]: coockie: undefined
+11:1:30:10 ==> [server -> router]: clientData: undefined
+11:2:0:77 ==> [server]: START
+11:2:0:79 ==> [server]: Start the "Client" connection.
+11:2:0:79 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:2:0:36 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:0:36 ==> [server]: Start the "Client" connection.
+11:2:0:80 ==> [server]: "Emails" created .
+11:2:0:81 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:2:0:82 ==> [server]: "Emails" returning FALSE.
+11:2:0:82 ==> [server]: END
+11:2:19:59 ==> [server]: START
+11:2:19:61 ==> [server]: Start the "Client" connection.
+11:2:19:62 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:2:19:12 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:19:13 ==> [server]: Start the "Client" connection.
+11:2:19:72 ==> [server]: "Emails" created .
+11:2:19:73 ==> [server]: "Emails" returning FALSE.
+11:2:19:73 ==> [server]: END
+11:2:19:74 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:2:37:52 ==> [server]: START
+11:2:37:55 ==> [server]: Start the "Client" connection.
+11:2:37:56 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:2:37:2 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:37:2 ==> [server]: Start the "Client" connection.
+11:2:37:55 ==> [server]: "Emails" created .
+11:2:37:56 ==> [server]: "Emails" returning FALSE.
+11:2:37:57 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:2:37:57 ==> [server]: END
+11:2:39:50 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:2:39:51 ==> [server -> router]: coockie: undefined
+11:2:39:52 ==> [server -> router]: clientData: undefined
+11:2:47:70 ==> [server]: START
+11:2:47:73 ==> [server]: Start the "Client" connection.
+11:2:47:74 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:2:47:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:47:21 ==> [server]: Start the "Client" connection.
+11:2:47:59 ==> [server]: "Emails" created .
+11:2:47:61 ==> [server]: "Emails" returning FALSE.
+11:2:47:61 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:2:47:62 ==> [server]: END
+11:2:47:93 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:2:47:94 ==> [server -> router]: coockie: undefined
+11:2:47:96 ==> [server -> router]: clientData: undefined
+11:2:50:41 ==> [server]: START
+11:2:50:43 ==> [server]: Start the "Client" connection.
+11:2:50:44 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:2:50:95 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:50:95 ==> [server]: Start the "Client" connection.
+11:2:50:30 ==> [server]: "Emails" created .
+11:2:50:32 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:2:50:32 ==> [server]: END
+11:2:50:32 ==> [server]: "Emails" returning FALSE.
+11:2:55:84 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:2:55:85 ==> [server -> router]: coockie: undefined
+11:2:55:86 ==> [server -> router]: clientData: undefined
+11:6:57:65 ==> [server]: Start the "Client" connection.
+11:6:57:68 ==> [server]: START
+11:6:57:69 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:6:57:28 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":null}}
+11:6:57:31 ==> [server -> router]: coockie: undefined
+11:6:57:34 ==> [server -> router]: clientData: undefined
+11:6:57:41 ==> [server]: Start the "Client" connection.
+11:6:57:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:6:57:94 ==> [server]: "Emails" created .
+11:6:57:96 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:6:57:98 ==> [server]: "Emails" returning FALSE.
+11:6:57:0 ==> [server]: END
+11:6:58:3 ==> [server]: START
+11:6:58:4 ==> [server]: Start the "Client" connection.
+11:6:58:5 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:6:58:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:6:58:49 ==> [server]: Start the "Client" connection.
+11:6:58:82 ==> [server]: "Emails" created .
+11:6:58:84 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:6:58:84 ==> [server]: "Emails" returning FALSE.
+11:6:58:85 ==> [server]: END
+11:12:14:35 ==> [server]: START
+11:12:14:37 ==> [server]: Start the "Client" connection.
+11:12:14:38 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:12:14:88 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:12:14:88 ==> [server]: Start the "Client" connection.
+11:12:14:34 ==> [server]: "Emails" created .
+11:12:14:35 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:12:14:35 ==> [server]: "Emails" returning FALSE.
+11:12:14:36 ==> [server]: END
+11:12:15:66 ==> [server]: START
+11:12:15:69 ==> [server]: Start the "Client" connection.
+11:12:15:70 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:12:15:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:12:15:19 ==> [server]: Start the "Client" connection.
+11:12:15:57 ==> [server]: "Emails" created .
+11:12:15:58 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:12:15:59 ==> [server]: END
+11:12:15:60 ==> [server]: "Emails" returning FALSE.
+11:12:38:13 ==> [server]: START
+11:12:38:15 ==> [server]: Start the "Client" connection.
+11:12:38:16 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:12:38:67 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:12:38:67 ==> [server]: Start the "Client" connection.
+11:12:38:13 ==> [server]: "Emails" created .
+11:12:38:14 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:12:38:15 ==> [server]: "Emails" returning FALSE.
+11:12:38:15 ==> [server]: END
+11:12:47:99 ==> [server]: START
+11:12:47:0 ==> [server]: Start the "Client" connection.
+11:12:47:1 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:12:47:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:12:47:50 ==> [server]: Start the "Client" connection.
+11:12:47:91 ==> [server]: "Emails" created .
+11:12:47:93 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:12:47:93 ==> [server]: "Emails" returning FALSE.
+11:12:47:94 ==> [server]: END
+11:13:8:87 ==> [server]: START
+11:13:8:89 ==> [server]: Start the "Client" connection.
+11:13:8:89 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:13:8:43 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:13:8:43 ==> [server]: Start the "Client" connection.
+11:13:8:90 ==> [server]: "Emails" created .
+11:13:8:91 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:13:8:93 ==> [server]: "Emails" returning FALSE.
+11:13:8:93 ==> [server]: END
+11:13:33:14 ==> [server]: Start the "Client" connection.
+11:13:33:16 ==> [server]: START
+11:13:33:17 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:13:33:68 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:13:33:68 ==> [server]: Start the "Client" connection.
+11:13:33:9 ==> [server]: "Emails" created .
+11:13:33:11 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:13:33:11 ==> [server]: END
+11:13:33:12 ==> [server]: "Emails" returning FALSE.
+11:13:34:21 ==> [server]: START
+11:13:34:23 ==> [server]: Start the "Client" connection.
+11:13:34:23 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:13:34:72 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:13:34:73 ==> [server]: Start the "Client" connection.
+11:13:34:3 ==> [server]: "Emails" created .
+11:13:34:4 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:13:34:5 ==> [server]: "Emails" returning FALSE.
+11:13:34:5 ==> [server]: END
+11:13:55:37 ==> [server]: Start the "Client" connection.
+11:13:55:40 ==> [server]: START
+11:13:55:40 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:13:55:0 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:13:55:1 ==> [server]: Start the "Client" connection.
+11:13:55:56 ==> [server]: "Emails" created .
+11:13:55:58 ==> [server]: "Emails" returning FALSE.
+11:13:55:58 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:13:55:58 ==> [server]: END
+11:13:56:70 ==> [server]: START
+11:13:56:73 ==> [server]: Start the "Client" connection.
+11:13:56:74 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:13:56:21 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:13:56:22 ==> [server]: Start the "Client" connection.
+11:13:56:53 ==> [server]: "Emails" created .
+11:13:56:54 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:13:56:54 ==> [server]: "Emails" returning FALSE.
+11:13:56:55 ==> [server]: END
+11:15:14:4 ==> [server]: START
+11:15:14:7 ==> [server]: Start the "Client" connection.
+11:15:14:8 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:15:14:54 ==> [server]: Start the "Client" connection.
+11:15:14:55 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:15:14:0 ==> [server]: "Emails" created .
+11:15:14:1 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:15:14:2 ==> [server]: "Emails" returning FALSE.
+11:15:14:2 ==> [server]: END
+11:15:39:5 ==> [server]: START
+11:15:39:6 ==> [server]: Start the "Client" connection.
+11:15:39:7 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:15:39:46 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:15:39:46 ==> [server]: Start the "Client" connection.
+11:15:39:76 ==> [server]: "Emails" created .
+11:15:39:77 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:15:39:78 ==> [server]: "Emails" returning FALSE.
+11:15:39:78 ==> [server]: END
+11:15:53:74 ==> [server]: START
+11:15:53:75 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:15:53:76 ==> [server]: Start the "Client" connection.
+11:15:53:10 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:15:53:10 ==> [server]: Start the "Client" connection.
+11:15:53:39 ==> [server]: "Emails" created .
+11:15:53:40 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:15:53:41 ==> [server]: "Emails" returning FALSE.
+11:15:53:41 ==> [server]: END
+11:16:15:33 ==> [server]: START
+11:16:15:35 ==> [server]: Start the "Client" connection.
+11:16:15:35 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:16:15:72 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:16:15:73 ==> [server]: Start the "Client" connection.
+11:16:15:5 ==> [server]: "Emails" created .
+11:16:15:6 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:16:15:6 ==> [server]: "Emails" returning FALSE.
+11:16:15:7 ==> [server]: END
+11:18:2:36 ==> [server]: Start the "Client" connection.
+11:18:2:39 ==> [server]: START
+11:18:2:39 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:18:2:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:18:2:78 ==> [server]: Start the "Client" connection.
+11:18:2:8 ==> [server]: "Emails" created .
+11:18:2:9 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:18:2:10 ==> [server]: "Emails" returning FALSE.
+11:18:2:10 ==> [server]: END
+11:18:24:90 ==> [server]: Start the "Client" connection.
+11:18:24:92 ==> [server]: START
+11:18:24:93 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:18:24:50 ==> [server]: Start the "Client" connection.
+11:18:24:51 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:18:24:7 ==> [server]: "Emails" created .
+11:18:24:8 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:18:24:8 ==> [server]: "Emails" returning FALSE.
+11:18:24:9 ==> [server]: END
+11:18:55:63 ==> [server]: START
+11:18:55:67 ==> [server]: Start the "Client" connection.
+11:18:55:68 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:18:55:14 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:18:55:15 ==> [server]: Start the "Client" connection.
+11:18:55:56 ==> [server]: "Emails" created .
+11:18:55:58 ==> [server]: "Emails" returning FALSE.
+11:18:55:58 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:18:55:59 ==> [server]: END
+11:19:51:25 ==> [server]: Start the "Client" connection.
+11:19:51:27 ==> [server]: START
+11:19:51:28 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:19:51:72 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:19:51:72 ==> [server]: Start the "Client" connection.
+11:19:51:11 ==> [server]: "Emails" created .
+11:19:51:12 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:19:51:13 ==> [server]: "Emails" returning FALSE.
+11:19:51:13 ==> [server]: END
+11:19:58:18 ==> [server]: START
+11:19:58:19 ==> [server]: Start the "Client" connection.
+11:19:58:20 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:19:58:58 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:19:58:58 ==> [server]: Start the "Client" connection.
+11:19:58:91 ==> [server]: "Emails" created .
+11:19:58:93 ==> [server]: "Emails" returning FALSE.
+11:19:58:93 ==> [server]: END
+11:19:58:94 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:20:14:66 ==> [server]: START
+11:20:14:68 ==> [server]: Start the "Client" connection.
+11:20:14:68 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:20:14:21 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:20:14:22 ==> [server]: Start the "Client" connection.
+11:20:14:70 ==> [server]: "Emails" created .
+11:20:14:72 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:20:14:72 ==> [server]: "Emails" returning FALSE.
+11:20:14:73 ==> [server]: END
+11:20:17:54 ==> [server]: START
+11:20:17:57 ==> [server]: Start the "Client" connection.
+11:20:17:61 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:20:17:12 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:20:17:13 ==> [server]: Start the "Client" connection.
+11:20:17:56 ==> [server]: "Emails" created .
+11:20:17:58 ==> [server]: "Emails" returning FALSE.
+11:20:17:58 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:20:17:59 ==> [server]: END
+11:20:28:18 ==> [server]: START
+11:20:28:20 ==> [server]: Start the "Client" connection.
+11:20:28:21 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:20:28:64 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:20:28:65 ==> [server]: Start the "Client" connection.
+11:20:28:0 ==> [server]: "Emails" created .
+11:20:28:1 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:20:28:2 ==> [server]: "Emails" returning FALSE.
+11:20:28:2 ==> [server]: END
+11:21:51:43 ==> [server]: START
+11:21:51:46 ==> [server]: Start the "Client" connection.
+11:21:51:46 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:21:51:96 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:21:51:97 ==> [server]: Start the "Client" connection.
+11:21:51:35 ==> [server]: "Emails" created .
+11:21:51:37 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:21:51:37 ==> [server]: "Emails" returning FALSE.
+11:21:51:38 ==> [server]: END
+11:22:2:87 ==> [server]: START
+11:22:2:93 ==> [server]: Start the "Client" connection.
+11:22:2:94 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:22:2:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:22:2:42 ==> [server]: Start the "Client" connection.
+11:22:2:84 ==> [server]: "Emails" created .
+11:22:2:86 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:22:2:86 ==> [server]: "Emails" returning FALSE.
+11:22:2:87 ==> [server]: END
+11:22:3:56 ==> [server]: START
+11:22:3:59 ==> [server]: Start the "Client" connection.
+11:22:3:60 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:22:3:3 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:22:3:4 ==> [server]: Start the "Client" connection.
+11:22:3:39 ==> [server]: "Emails" created .
+11:22:3:41 ==> [server]: "Emails" returning FALSE.
+11:22:3:41 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:22:3:42 ==> [server]: END
+11:22:12:41 ==> [server]: START
+11:22:12:43 ==> [server]: Start the "Client" connection.
+11:22:12:43 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:22:12:92 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:22:12:93 ==> [server]: Start the "Client" connection.
+11:22:12:37 ==> [server]: "Emails" created .
+11:22:12:38 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:22:12:39 ==> [server]: "Emails" returning FALSE.
+11:22:12:39 ==> [server]: END
+11:22:16:5 ==> [server]: START
+11:22:16:7 ==> [server]: Start the "Client" connection.
+11:22:16:8 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:22:16:58 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:22:16:58 ==> [server]: Start the "Client" connection.
+11:22:16:2 ==> [server]: "Emails" created .
+11:22:16:4 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:22:16:4 ==> [server]: "Emails" returning FALSE.
+11:22:16:5 ==> [server]: END
+11:23:4:76 ==> [server]: Start the "Client" connection.
+11:23:4:79 ==> [server]: START
+11:23:4:79 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:23:5:27 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:23:5:27 ==> [server]: Start the "Client" connection.
+11:23:5:75 ==> [server]: "Emails" created .
+11:23:5:77 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:23:5:78 ==> [server]: "Emails" returning FALSE.
+11:23:5:78 ==> [server]: END
+11:23:9:47 ==> [server]: START
+11:23:9:49 ==> [server]: Start the "Client" connection.
+11:23:9:49 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:23:9:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:23:9:5 ==> [server]: Start the "Client" connection.
+11:23:9:41 ==> [server]: "Emails" created .
+11:23:9:43 ==> [server]: "Emails" returning FALSE.
+11:23:9:44 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:23:9:44 ==> [server]: END
+11:23:10:15 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":"0199ae93-92a8-4da1-b6c1-c3593fea586a"}}
+11:23:10:15 ==> [server -> router]: coockie: undefined
+11:23:10:17 ==> [server -> router]: clientData: undefined
+11:24:16:97 ==> [server]: START
+11:24:16:98 ==> [server]: Start the "Client" connection.
+11:24:16:99 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:24:16:15 ==> [server -> router]: inlogin: {"email":"work80@xn--mail-v6d.ru","password":"2dA-Bcx-BZF-kf5","coockie":{"sessionId":"0199ae93-92a8-4da1-b6c1-c3593fea586a"}}
+11:24:16:19 ==> [server -> router]: coockie: undefined
+11:24:16:20 ==> [server -> router]: clientData: undefined
+11:24:16:33 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:24:16:34 ==> [server]: Start the "Client" connection.
+11:24:16:61 ==> [server]: "Emails" created .
+11:24:16:63 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:24:16:63 ==> [server]: "Emails" returning FALSE.
+11:24:16:64 ==> [server]: END
+11:25:6:74 ==> [server]: START
+11:25:6:76 ==> [server]: Start the "Client" connection.
+11:25:6:76 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:25:6:11 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:25:6:12 ==> [server]: Start the "Client" connection.
+11:25:6:43 ==> [server]: "Emails" created .
+11:25:6:44 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:25:6:44 ==> [server]: "Emails" returning FALSE.
+11:25:6:45 ==> [server]: END
+11:27:26:97 ==> [server]: Start the "Client" connection.
+11:27:26:99 ==> [server]: START
+11:27:26:99 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:27:26:33 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:27:26:34 ==> [server]: Start the "Client" connection.
+11:27:26:62 ==> [server]: "Emails" created .
+11:27:26:63 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:27:26:64 ==> [server]: "Emails" returning FALSE.
+11:27:26:64 ==> [server]: END
+11:32:41:44 ==> [server]: START
+11:32:41:46 ==> [server]: Start the "Client" connection.
+11:32:41:47 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:32:41:86 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:32:41:87 ==> [server]: Start the "Client" connection.
+11:32:41:17 ==> [server]: "Emails" created .
+11:32:41:18 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:32:41:19 ==> [server]: END
+11:32:41:19 ==> [server]: "Emails" returning FALSE.
+11:33:30:13 ==> [server]: START
+11:33:30:15 ==> [server]: Start the "Client" connection.
+11:33:30:15 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:33:30:51 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:33:30:52 ==> [server]: Start the "Client" connection.
+11:33:30:79 ==> [server]: "Emails" created .
+11:33:30:81 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:33:30:81 ==> [server]: "Emails" returning FALSE.
+11:33:30:82 ==> [server]: END
+11:36:43:80 ==> [server]: START
+11:36:43:82 ==> [server]: Start the "Client" connection.
+11:36:43:82 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:36:43:33 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:36:43:34 ==> [server]: Start the "Client" connection.
+11:36:43:63 ==> [server]: "Emails" created .
+11:36:43:64 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:36:43:65 ==> [server]: "Emails" returning FALSE.
+11:36:43:66 ==> [server]: END
+11:36:59:30 ==> [server]: START
+11:36:59:31 ==> [server]: Start the "Client" connection.
+11:36:59:32 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:36:59:83 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:36:59:84 ==> [server]: Start the "Client" connection.
+11:36:59:15 ==> [server]: "Emails" created .
+11:36:59:16 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:36:59:17 ==> [server]: "Emails" returning FALSE.
+11:36:59:18 ==> [server]: END
+11:39:44:61 ==> [server]: Start the "Client" connection.
+11:39:44:63 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:39:44:63 ==> [server]: START
+11:39:45:16 ==> [server]: Start the "Client" connection.
+11:39:45:17 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:39:45:63 ==> [server]: "Emails" created .
+11:39:45:65 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:39:45:66 ==> [server]: "Emails" returning FALSE.
+11:39:45:66 ==> [server]: END
+11:40:48:1 ==> [server]: START
+11:40:48:2 ==> [server]: Start the "Client" connection.
+11:40:48:3 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:40:48:38 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:40:48:39 ==> [server]: Start the "Client" connection.
+11:40:48:67 ==> [server]: "Emails" created .
+11:40:48:68 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:40:48:69 ==> [server]: "Emails" returning FALSE.
+11:40:48:70 ==> [server]: END
+11:41:5:82 ==> [server]: START
+11:41:5:84 ==> [server]: Start the "Client" connection.
+11:41:5:85 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:41:5:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:41:5:21 ==> [server]: Start the "Client" connection.
+11:41:5:51 ==> [server]: "Emails" created .
+11:41:5:52 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:41:5:53 ==> [server]: END
+11:41:5:53 ==> [server]: "Emails" returning FALSE.
+11:42:10:10 ==> [server]: START
+11:42:10:12 ==> [server]: Start the "Client" connection.
+11:42:10:12 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:42:10:49 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:42:10:50 ==> [server]: Start the "Client" connection.
+11:42:10:81 ==> [server]: "Emails" created .
+11:42:10:83 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:42:10:84 ==> [server]: "Emails" returning FALSE.
+11:42:10:84 ==> [server]: END
+11:44:50:68 ==> [server]: START
+11:44:50:69 ==> [server]: Start the "Client" connection.
+11:44:50:70 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:44:50:5 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:44:50:6 ==> [server]: Start the "Client" connection.
+11:44:50:36 ==> [server]: "Emails" created .
+11:44:50:37 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:44:50:38 ==> [server]: "Emails" returning FALSE.
+11:44:50:39 ==> [server]: END
+11:47:9:19 ==> [server]: START
+11:47:9:21 ==> [server]: Start the "Client" connection.
+11:47:9:22 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:47:9:76 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:47:9:77 ==> [server]: Start the "Client" connection.
+11:47:9:17 ==> [server]: "Emails" created .
+11:47:9:19 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:47:9:19 ==> [server]: "Emails" returning FALSE.
+11:47:9:20 ==> [server]: END
+11:47:37:86 ==> [server]: START
+11:47:37:88 ==> [server]: Start the "Client" connection.
+11:47:37:89 ==> [server -> listen]: Server starte to listen the PORT 7070
+11:47:37:25 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:47:37:25 ==> [server]: Start the "Client" connection.
+11:47:37:54 ==> [server]: "Emails" created .
+11:47:37:56 ==> [server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: ",")
+11:47:37:56 ==> [server]: "Emails" returning FALSE.
+11:47:37:57 ==> [server]: END

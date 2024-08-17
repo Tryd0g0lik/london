@@ -88,3 +88,13 @@ export function selectAllEmail(): string {
   const selectElmails = 'SELECT emails FROM Emails';
   return selectElmails;
 }
+
+/**
+ *Находим одно пользователя у которого совпаба.т id email
+ * @param emaiID
+ */
+export function selectOneUser(emaiID: number): string {
+  const selectEmailId = `SELECT * FROM Users
+  WHERE email_id = ${emaiID}`;
+  return selectEmailId;
+}

@@ -1,22 +1,10 @@
 import React, { JSX } from 'react';
 import { NavFC } from '@Components/NavOpPages';
-import { add } from '@Services/fetches';
 import { isValidEmail } from '@Services/validators/emal_validators'
-
-// int - число. 0 зарегистрированб 1- не зарегистрирован.
-function messageForUser(int: number): HTMLParagraphElement {
-  const oldP = document.getElementById('note');
-  if (oldP !== null) {
-    (oldP as HTMLElement).innerHTML = '';
-  }
-  const p = document.createElement('p');
-  p.id = 'note';
-  p.style.paddingTop = 15 + 'px';
-  p.style.color = (int === 0) ? 'green' : 'red';
-  p.innerText = (int === 0) ? "Зарегистрирован" : "Не зарегистрирован";
-  return p;
-}
-
+import { add } from '@Services/fetches';
+// import getCookie from '@Services/cookies';
+import { createSessionId } from '@Services/coockieSessionId';
+import { messageForUser } from '@Services/messengerForm';
 /**
  * Обработчик клика по кнопке из формы - отправляем данные в базу
  * @param event
@@ -38,8 +26,8 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     return false;
   };
 
-  const emails = ((form as HTMLFormElement)[2] as HTMLInputElement).value;
-  const password = ((form as HTMLFormElement)[3] as HTMLInputElement).value;
+  const emails = ((form as HTMLFormElement)[0] as HTMLInputElement).value;
+  const password = ((form as HTMLFormElement)[1] as HTMLInputElement).value;
 
   // here is the emails checking
   const trueFalse = isValidEmail(emails);
@@ -55,31 +43,24 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     return false;
   }
 
+  const coockieId = createSessionId();
+  const coockie = {
+    sessionId: coockieId
+  };
   const bodyStr = JSON.stringify({
-    'email': emails,
-    'password': password,
+    email: emails,
+    password: password,
+    coockie
   });
   // отправляем в базу данных
-  const responce = await add(bodyStr);
+  const responce = await add(bodyStr, '/api/v1/inlogin/');
   if (!responce) {
-    const result = messageForUser(1);
+    const result = messageForUser(1, ['Вы вошли', 'Что-то не получилось']);
     form.insertAdjacentHTML('afterend', result.outerHTML);
     return false;
   }
-  const result = messageForUser(0);
+  const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
-
-  ((form as HTMLFormElement)[0] as HTMLInputElement).value = '';
-  ((form as HTMLFormElement)[1] as HTMLInputElement).value = '';
-  // const categoryUSerNumber = Number(target.dataset.category);
-  // /* ------ */
-  // const navCategories = Array.from(document.querySelectorAll('.catalog-categories.nav.justify-content-center .nav-item a'));
-  // navCategories.forEach((item) => {
-  //   (item as HTMLElement).classList.remove('active');
-  // });
-  // (target as HTMLElement).classList.add('active');
-
-  // setUserCategory(categoryUSerNumber);
   return true;
 };
 

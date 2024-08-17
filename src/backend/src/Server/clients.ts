@@ -19,7 +19,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
   dataJson: propsForClient): Promise<boolean> {
   lg('[server -> clients]: Before connection.');
   const client = new Client({
-    user: REACT_APP_POSTGRES_USER,
+    useclientsr: REACT_APP_POSTGRES_USER,
     host: REACT_APP_POSTGRES_HOST,
     port: REACT_APP_POSTGRES_PORT,
     database: REACT_APP_POSTGRES_DB_NAME,

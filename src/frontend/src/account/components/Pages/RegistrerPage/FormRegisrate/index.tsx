@@ -2,20 +2,8 @@ import React, { JSX } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { add } from '@Services/fetches';
 import { isValidEmail } from '@Services/validators/emal_validators'
+import { messageForUser } from '@Services/messengerForm';
 
-// int - число. 0 зарегистрированб 1- не зарегистрирован.
-function messageForUser(int: number): HTMLParagraphElement {
-  const oldP = document.getElementById('note');
-  if (oldP !== null) {
-    (oldP as HTMLElement).innerHTML = '';
-  }
-  const p = document.createElement('p');
-  p.id = 'note';
-  p.style.paddingTop = 15 + 'px';
-  p.style.color = (int === 0) ? 'green' : 'red';
-  p.innerText = (int === 0) ? "Зарегистрирован" : "Не зарегистрирован";
-  return p;
-}
 
 /**
  * Обработчик клика по кнопке из формы - отправляем данные в базу
@@ -75,11 +63,11 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
   // отправляем в базу данных
   const responce = await add(bodyStr);
   if (!responce) {
-    const result = messageForUser(1);
+    const result = messageForUser(1, ["Зарегистрирован", "Не зарегистрирован"]);
     form.insertAdjacentHTML('afterend', result.outerHTML);
     return false;
   }
-  const result = messageForUser(0);
+  const result = messageForUser(0, ["Зарегистрирован", "Не зарегистрирован"]);
   form.insertAdjacentHTML('afterend', result.outerHTML);
 
   ((form as HTMLFormElement)[0] as HTMLInputElement).value = '';

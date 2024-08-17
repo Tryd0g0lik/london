@@ -15,7 +15,9 @@ const params: FetchParams = {
 }
 
 
-export async function add(body_: string): Promise<object | boolean> {
+export async function add(body_: string,
+  pathnameStr = '/api/v1/clients/add/'
+): Promise<object | boolean | string> {
   params['headers'] = {
     'X-CSRFToken': getCookie('csrftoken') as string,
     'Content-Type': 'application/json'
@@ -23,7 +25,6 @@ export async function add(body_: string): Promise<object | boolean> {
   params['body'] = body_;
 
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
-  const pathnameStr = '/api/v1/clients/add/';
   const url = urlStr + pathnameStr;
   const answer = await fetch(url, params);
   if (answer.ok) {
@@ -33,3 +34,8 @@ export async function add(body_: string): Promise<object | boolean> {
   return false
 }
 
+/**
+ *
+//  * @param nody_ для актива
+ */
+// export async function activation(nody_: string)

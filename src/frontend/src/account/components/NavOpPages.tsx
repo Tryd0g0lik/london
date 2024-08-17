@@ -50,12 +50,12 @@ export function NavFC(): JSX.Element {
           </li>
           {/* {% else %} */}
           <li className="nav-item">
-            <a href="/account/login/">Вход</a>
+            <a href="/inlogin">Вход</a>
           </li>
           {/* {% endif %} */}
 
           <li className="nav-item">
-            <a href="/about/" className="nav-link root" tada-togle="dropdown-item">
+            <a href="/about" className="nav-link root" tada-togle="dropdown-item">
               О сайте
             </a>
           </li>

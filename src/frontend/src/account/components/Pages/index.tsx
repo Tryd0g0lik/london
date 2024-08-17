@@ -3,7 +3,7 @@ import { Navigate, createBrowserRouter, RouterProvider, } from 'react-router-dom
 import { RegistrationPageFC } from './RegistrerPage'
 import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';
-
+import { AuthorizatorPageFC } from './AuthorizationPage'
 
 const Router = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ const Router = createBrowserRouter([
     path: Pages.Index,
     element: <Navigate to={Pages.Home} />
   },
+  {
+    path: Pages.InLogin,
+    element: <AuthorizatorPageFC />
+  }
 ]);
 
 

@@ -1,15 +1,16 @@
 const { Router, Application, Request, Response, NextFunction } = require('express');
 const { Client } = require('pg');
 const { helper } = require('./validators');
-const { addNewLine } = require('./sql-functions/index');
+const { addNewLine, selectOneUser } = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
+const { getCookie } = require('./getCookies');
 const router = Router();
 // const jwt = require('jsonwebtoken'); // для отправки сообщщения на почту
 interface propsForClient {
   readonly email: string
-  readonly firstName: string
-  readonly lastName: string
+  readonly firstName?: string
+  readonly lastName?: string
   readonly passwords: string
 };
 
@@ -18,20 +19,36 @@ export function getRouter(appObj: typeof Application): typeof router {
   router.delete('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
   router.put('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
 
-  router.post('api/v1/clients/', function (req: Request, res: Response, next: typeof NextFunction) { });
-
-  router.get('/api/v1/clients/', (req: Request, res: Response) => {
-    log('[server -> router]: clients');
-    const body = JSON.stringify({ data: true });
-    fortune(res, body);
+  router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    const clientData = req.body as unknown as propsForClient;
+    const coockie = req.cookie;
+    await log(`[server -> router]: inlogin: ${JSON.stringify(clientData)}`);
+    const props = {
+      email: clientData.email,
+      password: clientData.passwords
+    };
+    const statusCode: number = 200;
+    const sessionId = coockie.sessionId;
+    await log(`[server -> router]: coockie: ${coockie}`);
+    // helper  Возвращает массив с одной строкой/клиентом из таблицы 'Emails'
+    const result = await helper(clientData.email, clients);
+    if (result.length < 1) {
+      res.status(404).json({ message: 'Пользователь не найден' });
+      return false;
+    };
+    clients(selectOneUser());
   });
 
+  // router.get('/api/v1/clients/', (req: Request, res: Response) => {
+  //   log('[server -> router]: clients');
+  //   const body = JSON.stringify({ data: true });
+  //   fortune(res, body);
+  // });
+
+  // registration
   router.post('/api/v1/clients/add/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction): Promise<void> => {
     const clientData = req.body as unknown as propsForClient;
     await log(`[server -> router]: clientData: ${JSON.stringify(clientData)}`);
-    // db
-    // await log(`[server -> router]: JSON.parse=> ${clientData.passwords}`);
-    // const clientDataJson = JSON.parse(clientData as string);
     const props = {
       email: clientData.email,
       firstName: clientData.firstName,
