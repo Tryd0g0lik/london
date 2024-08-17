@@ -46,9 +46,11 @@ export function getRouter(appObj: typeof Application): typeof router {
     client.connect();
     const respArr = await client.query(selectSingleUser(clientData.email));
     await log(`[server -> router]: inlogin Received data where is a length =>: ${(respArr.rows).length}`);
-    await log(`[server -> router]: inlogin Received data where PAssword User =>: ${(clientData.password)}`);
-    await log(`[server -> router]: inlogin Received data where ALL DB =>: ${(JSON.stringify(respArr.rows[0]))}`);
-    await log(`[server -> router]: inlogin clientData data ALL =>: ${JSON.stringify(clientData)}`);
+    if ((respArr.rows).length === 0) {
+      client.end();
+      res.status(404).json({ massage: 'Not founded' });
+      return false;
+    }
     /* This's a password's filter */
     const result = await respArr.rows.filter(((item: propsForClient) => item.password === clientData.password));
     await log(`[server -> router]: inlogin Filter LENGTH =>: ${(result.length)}`);
@@ -69,7 +71,7 @@ export function getRouter(appObj: typeof Application): typeof router {
     };
     await log(`[server -> router]: inlogin That User is found: ${result.firstname}`);
     // Response is sent
-    res.status(200).json(props);
+    res.status(statusCode).json(props);
   });
 
   // router.get('/api/v1/clients/', (req: Request, res: Response) => {

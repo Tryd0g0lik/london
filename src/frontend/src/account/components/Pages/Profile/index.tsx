@@ -1,15 +1,9 @@
 import React, { useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
+import { checkerCoockieKey } from '@Services/coockieSessionId';
 export function ProfileFC(): React.JSX.Element {
-  // coockie
-  // sessionId
   useEffect((): void => {
-    const root = document.getElementById('root') as HTMLElement || null;
-    if (root !== null) {
-      root.className = 'active';
-    }
-
-
+      checkerCoockieKey();
   }, []);
 
   return <>

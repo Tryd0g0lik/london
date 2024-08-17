@@ -1,7 +1,10 @@
-import React, { JSX } from 'react';
+import React, { JSX, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { doActiveReferences } from '@Services/menuServise'
 export function NavFC(): JSX.Element {
+  useEffect(() => {
+    doActiveReferences();
+  });
   const navigate = useNavigate();
 
   const handleGoHome = () => {
@@ -9,6 +12,7 @@ export function NavFC(): JSX.Element {
   };
   return (
     <>
+      <span className="loading loading-bars loading-xs"></span>
       <div className="nav-item">
         <ul className="col menu menu-horizontal bg-base-200 rounded-box">
           <li onClick={handleGoHome} className="nav-item">

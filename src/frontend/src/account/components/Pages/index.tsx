@@ -5,7 +5,7 @@ import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';
 import { ProfileFC } from "./Profile";
 import { AuthorizatorPageFC } from './AuthorizationPage'
-import { isElementOfType } from "react-dom/test-utils";
+// import { isElementOfType } from "react-dom/test-utils";
 
 const Router = createBrowserRouter([
   {

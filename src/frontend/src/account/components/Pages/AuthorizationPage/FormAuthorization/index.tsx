@@ -2,6 +2,7 @@ import React, { JSX } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { add } from '@Services/fetches';
+import { checkerCoockieKey } from '@Services/coockieSessionId';
 // import getCookie from '@Services/cookies';
 import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
@@ -12,6 +13,7 @@ import { messageForUser } from '@Services/messengerForm';
  */
 const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean> => {
   event.preventDefault();
+
   if ((event.type) && !(event.type !== 'Clicks')) {
     return false;
   };
@@ -42,7 +44,7 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     // Подготовить сообщение об ошибке для пользователя.
     return false;
   }
-
+  // COOCKIE
   const coockieId = createSessionId();
   const coockie = {
     sessionId: coockieId
@@ -63,13 +65,25 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
   const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
 
-  //It new session key is  insade to the brawser
-  setSessionIdInCookie((responce).sessionId as string)
+  //It new session key is  insade to the browser
+  setSessionIdInCookie(coockie.sessionId);
 
-  window.location.pathname = '/profile';
+  /* it's a loader on the two seccond */
+  const loader = document.getElementsByClassName('loading');
+  if (loader.length === 0) {
+    return false;
+  }
+  const className = (loader[0] as HTMLElement).className;
+  (loader[0] as HTMLElement).className = `${className} active`;
+  // that now add the clacc 'active' (for 'div.#root')
+  checkerCoockieKey();
+  setTimeout(() => {
+
+    window.location.pathname = '/profile';
+  }, 2000);
   return true;
 };
-
+// sessionId=30b48d52-7558-482d-9e21-07496225a462; max-age=86400;  domain=127.0.0.1 Path=/ samesite=strict
 export function PermissionPageFC(): JSX.Element {
 
   return (
