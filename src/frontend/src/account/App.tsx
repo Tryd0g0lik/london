@@ -2,8 +2,9 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { PagesFC } from './components/Pages'
 import './App.css';
-import "./styles/styles_zero.css";
-import "./styles/style.css";
+// import "./styles/styles_zero.css";
+// import "./styles/style.css";
+import "./output.css";
 const root = document.getElementById('root');
 
 if (!root) {

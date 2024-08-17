@@ -35,6 +35,7 @@ module.exports = {
         exclude: [
 					path.resolve(__dirname, "node_modules"),
 					path.resolve(__dirname, "src/backend"),
+
         ]
 
       },
@@ -50,7 +51,9 @@ module.exports = {
           'postcss-loader',
 
         ],
-
+        exclude: [
+          path.resolve(__dirname, 'src/frontend/src/account/styles')
+        ]
       },
       {
         test: /\.svg$/,

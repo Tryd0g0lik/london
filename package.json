@@ -37,7 +37,7 @@
   ],
   "scripts": {
     "lint": "eslint . --ext jsx,ts,tsx",
-    "cssstyle": "npx tailwindcss -i ./src/frontend/src/styles/style.css -o ./src/frontend/src/output.css --watch",
+    "cssstyle": "npx tailwindcss -i ./src/frontend/src/account/styles/style.css -o ./src/frontend/src/account/output.css --watch",
     "build:front": "webpack --mode=development --config ./webpack.config.js",
     "build:back": "npm --workspace=backend run build:dev",
     "watchs": "webpack --watch --mode=development --config ./webpack.config.js",
@@ -103,7 +103,7 @@
     "style-loader": "^3.3.4",
     "styled-components": "^6.1.8",
     "svg-sprite-loader": "^6.0.11",
-    "tailwindcss": "^3.4.3",
+    "tailwindcss": "^3.4.10",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript-eslint": "^0.0.1-alpha.0",
     "url-loader": "^4.1.1",

@@ -10,7 +10,7 @@ export function NavFC(): JSX.Element {
   return (
     <>
       <div className="nav-item">
-        <ul className="col nav justify-content-end border">
+        <ul className="col menu menu-horizontal bg-base-200 rounded-box">
           <li onClick={handleGoHome} className="nav-item">
             <a href="./index" className="nav-link" >
               Главная
