@@ -82,6 +82,7 @@ async function createDBTable(): Promise<boolean> {
   });
   client.connect();
   try {
+    /* ------ The table Email ------ */
     await client.query(createTebleEmails());
     lg('[server]: "Emails" created .');
   } catch (err: unknown) {
@@ -96,6 +97,7 @@ async function createDBTable(): Promise<boolean> {
   };
 
   try {
+    /* ------ The table Users ------ */
     await client.query(createTebleUsers());
     lg('[server]: "Users" created .');
     client.end();

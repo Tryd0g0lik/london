@@ -15,7 +15,7 @@ export enum FetchMethod {
 }
 
 export interface FetchParams {
-  method: FetchMethod.POST,
+  method: FetchMethod,
   body?: string,
   headers?: {
     'X-CSRFToken': string,

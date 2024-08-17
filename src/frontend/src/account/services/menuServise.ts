@@ -1,6 +1,6 @@
 export async function doActiveReferences(): Promise<boolean> {
 
-  const links = document.querySelectorAll<HTMLAnchorElement>('.menu > li');
+  const links = document.querySelectorAll<HTMLAnchorElement>('.menu > .nav-item.dropdown');
   if (links.length === 0) {
     return false
   }

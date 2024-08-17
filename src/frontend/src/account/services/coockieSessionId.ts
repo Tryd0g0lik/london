@@ -125,6 +125,10 @@ function setCookie(name: string, value: string, options: CookieOptions = {}): vo
  * @returns
  */
 export function getCookie(name: string) {
-  let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+  // eslint-disable-next-line
+  const res = name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)";
+  const reg = "(?:^|; )" + res;
+  const regMax = new RegExp(reg);
+  let matches = document.cookie.match(regMax);
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }

@@ -23,11 +23,15 @@ const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string |
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 export function getRouter(appObj: typeof Application): typeof router {
-  router.get('api/v1/clients/:id/', (req: Request, res: Response, next: typeof NextFunction) => { });
+  router.get('/api/v1/clients/:id/', (req: Request, res: Response, next: typeof NextFunction) => {
+    // const sessionId = req.params.id;
+
+  });
   router.delete('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
   router.put('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
 
   router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    /* -------------- That is activation's block ------------------ */
     const clientData = req.body as unknown as propsForClient;
     const coockie = clientData.coockie;
     await log(`[server -> router]: inlogin: ${JSON.stringify(clientData)}`);
@@ -63,6 +67,10 @@ export function getRouter(appObj: typeof Application): typeof router {
     await log(`[server -> router]: inlogin Filter LENGTH2 =>: ${(result.length)}`);
     // making the aictve status in db
     await client.query(changeValueOneCell('Users', 'is_active', result[0].id, true));
+    await log(`[server -> router]: inlogin Filter LENGTH3 =>: ${(coockie.sessionId)}`);
+    // making the aictve status in db
+    await client.query(changeValueOneCell('Users', 'session_id', result[0].id, coockie.sessionId));
+    await log(`[server -> router]: inlogin Filter LENGTH4 =>: ${(coockie.sessionId)}`);
     client.end();
     /* --------------- if we is find the use in db ---------------  */
     const props = {

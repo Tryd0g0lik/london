@@ -69,6 +69,10 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
   }
   const result = messageForUser(0, ["Зарегистрирован", "Не зарегистрирован"]);
   form.insertAdjacentHTML('afterend', result.outerHTML);
+  setTimeout(() => {
+
+    window.location.pathname = '/inlogin';
+  }, 1000);
 
   ((form as HTMLFormElement)[0] as HTMLInputElement).value = '';
   ((form as HTMLFormElement)[1] as HTMLInputElement).value = '';

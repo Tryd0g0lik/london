@@ -1,3 +1,4 @@
+const log = require('../logs/index');
 export function createDatebase(): string {
   return 'CREATE DATABASE london OWNER postgres;';
 };
@@ -34,8 +35,10 @@ export function createTebleUsers(): string {
     is_active BOOLEAN DEFAULT FALSE,
     is_authenticated BOOLEAN DEFAULT FALSE,
     is_activated BOOLEAN DEFAULT FALSE,
-    send_message BOOLEAN DEFAULT FALSE),
-    password VARCHAR(150) NOT NULL;`;
+    send_message BOOLEAN DEFAULT FALSE,
+    password VARCHAR(150) NOT NULL,
+    session_id VARCHAR(150) UNIQUE
+    );`;
   return creeateTUsers;
 }
 
@@ -66,7 +69,7 @@ export function addNewLine(props: NewSqlLine): string {
       )
       RETURNING id
     )
-    INSERT INTO Users (id, email_id, first_name, last_name, is_active, is_activated, send_message, password)
+    INSERT INTO Users (id, email_id, first_name, last_name, is_active, is_activated, send_message, password, session_id )
     values (
       default,
       (select id from new_email),
@@ -75,7 +78,8 @@ export function addNewLine(props: NewSqlLine): string {
       default,
       default,
       default,
-      '${passwords}'
+      '${passwords}',
+      default
     );`;
   return createNewLine;
 }
@@ -108,9 +112,16 @@ export function selectSingleUser(email: string): string {
  * @param newValue Новые данные для внесения
  * @returns string
  */
-export function changeValueOneCell(tableName: string, column: string, index: number, newValue: string | boolean = false): string {
+export function changeValueOneCell(tableName: string, column: string, index: number, newValue: string | boolean): string {
+  if ((typeof newValue) === 'boolean') {
+    const updateOneCell = `UPDATE ${tableName}
+    SET ${column} = ${newValue}
+    WHERE id = ${index};`;
+    return updateOneCell;
+  };
+  log(`[server -> sql]: inlogin Filter SQL4 =>: ${newValue}`);
   const updateOneCell = `UPDATE ${tableName}
-  SET ${column} = ${newValue}
-  WHERE id = ${index} ;`;
+    SET ${column} = '${newValue}'
+    WHERE id = ${index};`;
   return updateOneCell;
 }

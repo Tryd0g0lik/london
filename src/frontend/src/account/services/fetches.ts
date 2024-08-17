@@ -9,7 +9,7 @@ env_ = process.env.REACT_APP_PROTOCOL_OF_URL;
 const PROTOCOL = (env_ === undefined) ? 'http' : env_.slice(0);
 env_ = undefined;
 
-const params: FetchParams = {
+let params: FetchParams = {
   method: FetchMethod.POST,
   mode: 'cors' as 'cors',
 }
@@ -39,3 +39,26 @@ export async function add(body_: string,
 //  * @param nody_ для актива
  */
 // export async function activation(nody_: string)
+params = {
+  method: FetchMethod.GET,
+  mode: 'cors' as 'cors'
+}
+
+export async function get(body_: string,
+  pathnameStr = '/api/v1/clients/add/'
+): Promise<object | boolean | string> {
+  params['headers'] = {
+    'X-CSRFToken': getCookie('csrftoken') as string,
+    'Content-Type': 'application/json'
+  };
+  params['body'] = body_;
+
+  const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
+  const url = urlStr + pathnameStr;
+  const answer = await fetch(url, params);
+  if (answer.ok) {
+    const dataJson = answer.json();
+    return dataJson
+  }
+  return false
+}
