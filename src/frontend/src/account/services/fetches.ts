@@ -7,9 +7,11 @@ env_ = process.env.REACT_APP_SERVER_PORT;
 const PORT = (env_ === undefined) ? '7070' : env_.slice(0);
 env_ = process.env.REACT_APP_PROTOCOL_OF_URL;
 const PROTOCOL = (env_ === undefined) ? 'http' : env_.slice(0);
+env_ = process.env.REACT_APP_SET_TTIMOUT;
+const REACT_APP_SET_TTIMOUT = (env_ === undefined) ? 2000 : env_.slice(0);
 env_ = undefined;
 
-let params: FetchParams = {
+const params: FetchParams = {
   method: FetchMethod.POST,
   mode: 'cors' as 'cors',
 }
@@ -23,10 +25,15 @@ export async function add(body_: string,
     'Content-Type': 'application/json'
   };
   params['body'] = body_;
-
+  const paramsCopy = {}
+  Object.assign(paramsCopy, params);
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
-  const answer = await fetch(url, params);
+  const registrateTimout = setTimeout(() => {
+    return false
+  }, REACT_APP_SET_TTIMOUT as number);
+  const answer = await fetch(url, paramsCopy);
+  clearTimeout(registrateTimout);
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson
@@ -39,23 +46,30 @@ export async function add(body_: string,
 //  * @param nody_ для актива
  */
 // export async function activation(nody_: string)
-params = {
-  method: FetchMethod.GET,
-  mode: 'cors' as 'cors'
-}
+
 
 export async function get(body_: string,
   pathnameStr = '/api/v1/clients/add/'
 ): Promise<object | boolean | string> {
-  params['headers'] = {
-    'X-CSRFToken': getCookie('csrftoken') as string,
-    'Content-Type': 'application/json'
-  };
-  params['body'] = body_;
-
+  // const paramsCopy = {} as FetchParams
+  // Object.assign(paramsCopy, params);
+  // paramsCopy.method = FetchMethod.GET;
+  // // paramsCopy['body'] = body_;
+  // paramsCopy['headers'] = {
+  // // 'X-CSRFToken': getCookie('csrftoken') as string,
+  //   'Content-Type': 'application/json'
+  // };
+  // paramsCopy.mode = 'no-cors';
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
-  const answer = await fetch(url, params);
+  const registrateTimout = setTimeout(() => {
+    return false
+  }, REACT_APP_SET_TTIMOUT as number);
+  const answer = await fetch(url, {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' }
+  });
+  clearTimeout(registrateTimout);
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson

@@ -4005,9 +4005,6 @@ details.collapse summary::-webkit-details-marker {
   transition-duration: 150ms;
 }
 
-.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
-  a-z-a--z0-9: \\-\\. $;
-}
 
 .nav-item ul {
   display: flex;
@@ -4086,4 +4083,16 @@ ul {
 
 .menu>.dropdown>ul>li {
   z-index: 2;
+}
+.profil.form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0 10px;
+}
+
+
+.profile-name input[type="checkbox"] {
+  width: 45px;
+  height: 8px;
 }

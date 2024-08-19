@@ -1,6 +1,7 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*/
 .nav-item ul {
   display: flex;
   flex-wrap: nowrap;
@@ -45,23 +46,22 @@ ul {
   background: var(--fallback-b1, oklch(var(--b1)/1));
   flex-wrap: wrap;
   }
-  
+
   #root.active a[href="/inlogin"] {
     display: none;
   }
-  
+
   .dropdown .dropdown-memu {
     position: absolute;
   left: 0;
   bottom: -50px;
     width: max-content;
   }
-  
-  
+
   .dropdown-memu {
     display: none;
   }
-  
+
   .nav-item.active .dropdown-memu {
     display: inherit;
 }
@@ -76,4 +76,17 @@ ul {
 }
 .menu>.dropdown>ul>li {
   z-index: 2;
+}
+.profil.form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0 10px;
+  padding-left: 25px;
+}
+
+.profile-name .input[type="checkbox"] {
+
+  width: 39px;
+  height: 11px;
 }

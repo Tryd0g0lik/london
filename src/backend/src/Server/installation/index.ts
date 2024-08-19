@@ -1,6 +1,6 @@
 const http = require('http');
 const pg = require('pg');
-const { createDatebase, createTebleEmails, createTebleUsers } = require('../sql-functions/index');
+const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL } = require('../sql-functions/index');
 const lg = require('../logs/index');
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
@@ -83,7 +83,7 @@ async function createDBTable(): Promise<boolean> {
   client.connect();
   try {
     /* ------ The table Email ------ */
-    await client.query(createTebleEmails());
+    await client.query(createTebleEmailsSQL());
     lg('[server]: "Emails" created .');
   } catch (err: unknown) {
     lg(`[server -> ERROR]: 'Emails' Something that wrong!
@@ -98,7 +98,7 @@ async function createDBTable(): Promise<boolean> {
 
   try {
     /* ------ The table Users ------ */
-    await client.query(createTebleUsers());
+    await client.query(createTebleUsersSQL());
     lg('[server]: "Users" created .');
     client.end();
     lg('[server]: The end the "Client" connection.');

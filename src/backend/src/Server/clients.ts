@@ -1,6 +1,6 @@
 const { Client } = require('pg');
 const lg = require('./logs/index');
-const { checkerDubleEmails } = require('./validators');
+// const { checkerDubleEmails } = require('./validators');
 export interface propsForClient {
   readonly email: string
   readonly firstName?: string
@@ -28,25 +28,16 @@ export async function clients(fun: (props: propsForClient) => boolean,
 
   try {
     client.connect();
-    // This's result from checker 'Проверит emails на дубли.
-
-    const result = await checkerDubleEmails(dataJson.email, client);
-    console.log('RESULT: ', result);
-    if (result) {
-      lg('[server -> clients]: Note: This is email already has.');
-      console.log('[server -> clients]: Такой ольщователь уже существует');
-      return false;
-    }
-
+    lg('[server -> clients]: Connection now.');
     await lg('[server -> clients]: That is a connection. Before sending.');
-    await client.query(fun(dataJson));
-    lg('[server -> clients]: data was save');
+    const response = await client.query(fun(dataJson));
+    lg('[server -> clients]: data was received');
     client.end();
+    return response;
   } catch (err: unknown) {
     client.end();
     lg(`[server -> clients]: Here procces do not be connection or save.
       ERROR => ${(err as Error).message}`);
     return false;
   };
-  return true;
 }

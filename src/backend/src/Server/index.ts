@@ -30,5 +30,5 @@ const router = getRouter(app);
 app.use('/', router);
 
 app.listen(REACT_APP_SERVER_PORT, () => {
-  log(`[server -> listen]: Server starte to listen the PORT ${REACT_APP_SERVER_PORT as string}`);
+  log(`[server -> listen]: Server start to listen the PORT ${REACT_APP_SERVER_PORT as string}`);
 });

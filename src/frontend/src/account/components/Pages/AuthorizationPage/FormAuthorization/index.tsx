@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { add } from '@Services/fetches';
@@ -76,7 +76,6 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
   const className = (loader[0] as HTMLElement).className;
   (loader[0] as HTMLElement).className = `${className} active`;
   // that now add the clacc 'active' (for 'div.#root')
-  checkerCoockieKey();
   setTimeout(() => {
 
     window.location.pathname = '/profile';
@@ -85,7 +84,9 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
 };
 // sessionId=30b48d52-7558-482d-9e21-07496225a462; max-age=86400;  domain=127.0.0.1 Path=/ samesite=strict
 export function PermissionPageFC(): JSX.Element {
-
+  useEffect(() => {
+    checkerCoockieKey();
+  });
   return (
     <>
       <NavFC />

@@ -5,34 +5,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "npm start",
-      "name": "npm ren server:back",
-      "request": "launch",
-      "type": "node-terminal"
-    },
-    {
-      "name": "npm ren server:back",
-      "request": "launch",
-      "runtimeArgs": [
-        "run-script",
-        "debug"
-      ],
-      "runtimeExecutable": "npm",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "node"
-    },
-    {
       "type": "node",
-      // forever -w ./dist/server/index.js
+      "request": "attach",
+      "name": "Attach to Forever",
+      "port": 7070, // Порт для отладки
+      "restart": true,
+      "timeout": 30000,
+      "protocol": "inspector"
+    },
+    {
+      "type": "chrome",
       "request": "launch",
-      "name": "Launch Program",
-      "program": "dist/server/index.js",
-      "cwd": "${workspaceFolder}",
-      // "args": [
-      //   "${env:USERNAME}"
-      // ]
-    }
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8080", // Замените на ваш URL
+      "webRoot": "${workspaceFolder}/src/frontend/src/account", // Путь к вашему исходному коду
+      "sourceMaps": true,
+      "restart": true,
+      "skipFiles": [
+        "node_modules",
+        "**/node_modules",
+      ]
+    },
+
   ]
 }

@@ -1,5 +1,6 @@
-import React, { JSX } from 'react';
+import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
+import { checkerCoockieKey } from '@Services/coockieSessionId';
 import { add } from '@Services/fetches';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { messageForUser } from '@Services/messengerForm';
@@ -11,7 +12,8 @@ import { messageForUser } from '@Services/messengerForm';
  * @returns
  */
 const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> => {
-  event.preventDefault();
+
+
   if ((event.type) && !(event.type !== 'Clicks')) {
     return false;
   };
@@ -53,7 +55,7 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
     // Подготовить сообщение об ошибке для пользователя.
     return false;
   }
-
+  event.preventDefault();
   const bodyStr = JSON.stringify({
     'firstName': firstName,
     'lastName': lastName,
@@ -70,7 +72,6 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
   const result = messageForUser(0, ["Зарегистрирован", "Не зарегистрирован"]);
   form.insertAdjacentHTML('afterend', result.outerHTML);
   setTimeout(() => {
-
     window.location.pathname = '/inlogin';
   }, 1000);
 
@@ -93,7 +94,9 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
 };
 
 export function RegisterPageFC(): JSX.Element {
-
+  useEffect(() => {
+    checkerCoockieKey();
+  });
   return (
     <>
       <NavFC />

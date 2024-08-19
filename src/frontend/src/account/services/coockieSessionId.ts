@@ -8,7 +8,7 @@ const REACT_APP_POSTGRES_HOST = (env) ? env : "localhost";
 export function setSessionIdInCookie(sessionId: string): void {
   const cookieName = 'sessionId';
   const cookieValue = sessionId;
-  // const maxAge = 60 * 60 * 24 + 600000; // Время жизни cookie в секундах (например, 1 день)
+  // const maxAge = String(60 * 60 * 24); // Время жизни cookie в секундах (например, 1 день)
 
   let now = new Date();
   const options = {
@@ -49,11 +49,15 @@ export function createSessionId(): string {
 }
 
 /**
- *
- * @param prop true - удалить ключ-coockie + класс 'active'
+ * Если видим ключа 'sessionId' - coockie ,
+ * Смотрим класс 'active'.
+ * Если нету, добавляем.
+ * 
+ * Если не видим ключа 'sessionId' - coockie ,
+   Смотрим класс 'active' и удаляем его.
  * @returns
  */
-export async function checkerCoockieKey(prop = false): Promise<boolean> {
+export async function checkerCoockieKey(): Promise<boolean> {
 
   const trueFalse = checkCookieExists('sessionId');
   const root = document.getElementById('root');
@@ -114,7 +118,7 @@ function setCookie(name: string, value: string, options: CookieOptions = {}): vo
       updatedCookie += "=" + optionValue;
     }
   }
-
+  //  "sessionId=f835abe5-2cd4-4dd4-b797-b3da92ffd005; path=/; expires=1723938402215; domain=localhost; secure=false; sameSite=Strict"
 
   document.cookie = updatedCookie;
 }
@@ -126,9 +130,10 @@ function setCookie(name: string, value: string, options: CookieOptions = {}): vo
  */
 export function getCookie(name: string) {
   // eslint-disable-next-line
-  const res = name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)";
-  const reg = "(?:^|; )" + res;
-  const regMax = new RegExp(reg);
-  let matches = document.cookie.match(regMax);
+  let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+  // const res = name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)";
+  // const reg = "(?:^|; )" + res;
+  // const regMax = new RegExp(reg);
+  // let matches = document.cookie.match(regMax);
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }

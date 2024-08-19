@@ -3,7 +3,7 @@ export function createDatebase(): string {
   return 'CREATE DATABASE london OWNER postgres;';
 };
 
-export function createTebleEmails(): string {
+export function createTebleEmailsSQL(): string {
   const createTEmails: string = `
     CREATE TABLE IF NOT EXISTS emails (
       id SERIAL PRIMARY KEY,
@@ -24,7 +24,7 @@ export function createTebleEmails(): string {
  * @param send_message: boolean. It has default value  'false'. Sent  message to the user's email for a activation.
  * @returns
  */
-export function createTebleUsers(): string {
+export function createTebleUsersSQL(): string {
   const creeateTUsers = `
     CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
@@ -48,9 +48,10 @@ interface NewSqlLine {
   firstName: string
   lastName: string
   passwords: string
+
 };
 
-export function addNewLine(props: NewSqlLine): string {
+export function addNewLineSQL(props: NewSqlLine): string {
   const {
     email,
     firstName,
@@ -103,6 +104,21 @@ export function selectSingleUser(email: string): string {
     )
     SELECT * FROM users WHERE email_id = (SELECT id FROM user_email);`;
   return selectEmailId;
+}
+
+interface Propse {
+  column: string
+  value: string
+}
+/**
+ *
+ * @param column : cell
+ * @param value : value
+ * @returns single object
+ */
+export function selectOneParamQSL(props: Propse): string {
+  const selectOneParam = `SELECT * FROM users WHERE  ${props.column} = '${props.value}';`;
+  return selectOneParam;
 }
 
 /**

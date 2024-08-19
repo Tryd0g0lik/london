@@ -1,10 +1,14 @@
 const { Router, Application, Request, Response, NextFunction } = require('express');
 const { Client } = require('pg');
 const { helper } = require('./validators');
-const { addNewLine, selectSingleUser, changeValueOneCell } = require('./sql-functions/index');
+const {
+  addNewLineSQL, selectSingleUser,
+  changeValueOneCell, selectOneParamQSL
+} = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
 const { getCookie } = require('./getCookies');
+const { checkerDubleEmails } = require('./validators');
 const router = Router();
 // const jwt = require('jsonwebtoken'); // для отправки сообщщения на почту
 interface propsForClient {
@@ -23,14 +27,37 @@ const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string |
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 export function getRouter(appObj: typeof Application): typeof router {
-  router.get('/api/v1/clients/:id/', (req: Request, res: Response, next: typeof NextFunction) => {
-    // const sessionId = req.params.id;
-
+  router.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin  That request was received from Profile 1 =>: ${req}`);
+    const sessionId = req.params.sessionId;
+    const result = await clients(selectOneParamQSL, { column: 'session_id', value: sessionId });
+    console.log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    if (result.rows.length === 0) {
+      res.status(404).json({ message: 'Not Founded' });
+      return false;
+    }
+    await log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    res.status(200).json({
+      message: 'OK',
+      id: result.rows[0].id,
+      firstName: result.rows[0].first_name,
+      lastName: result.rows[0].last_name
+    });
+    await log('[server -> router]: inlogin  That Profile SENDED');
+    return true;
   });
-  router.delete('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
-  router.put('api/v1/clients/:id/', function (req: Request, res: Response, next: typeof NextFunction) { });
-
+  router.delete('/api/v1/clients/:id', async (req: typeof Request, res: Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin  That request was received from Profile 3 =>: ${(JSON.stringify(req))}`);
+  });
+  router.put('api/v1/clients/:id', async (req: typeof Request, res: Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin  That request was received from Profile 5 =>: ${(JSON.stringify(req))}`);
+  });
+  // router.post('/api/v1/clients/:id', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+  //   await log(`[server -> router]: inlogin  That request was received from Profile 7 =>: ${req}`);
+  //   const sessionId = req.params.id;
+  // });
   router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
     /* -------------- That is activation's block ------------------ */
     const clientData = req.body as unknown as propsForClient;
     const coockie = clientData.coockie;
@@ -78,6 +105,7 @@ export function getRouter(appObj: typeof Application): typeof router {
       sessionId: coockie.sessionId
     };
     await log(`[server -> router]: inlogin That User is found: ${result.firstname}`);
+    await log(`[server -> router]: inlogin That SessionID: ${props.sessionId}`);
     // Response is sent
     res.status(statusCode).json(props);
   });
@@ -90,6 +118,8 @@ export function getRouter(appObj: typeof Application): typeof router {
 
   // registration
   router.post('/api/v1/clients/add/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction): Promise<void> => {
+    await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
+    await log(`[server -> router]: clientData 1: ${JSON.stringify(req.body)}`);
     const clientData = req.body as unknown as propsForClient;
     await log(`[server -> router]: clientData: ${JSON.stringify(clientData)}`);
     const props = {
@@ -101,10 +131,19 @@ export function getRouter(appObj: typeof Application): typeof router {
     let statusCode: number = 200;
     let statusText = 'Client added successfully';
     try {
+      const result = await checkerDubleEmails(clientData.email);
+      console.log('[[server -> router]: RESULT => ', result);
+      if (result) {
+        log('[server -> router]: Note: This is email already has.');
+        console.log('[server -> router]: Такой ольщователь уже существует');
+        statusCode = 404;
+      }
+
       await log('[server -> router]: Before saving into the db');
-      const response = await clients(addNewLine, props); // true/false
-      await log(`[server -> router]: statusCODE => ${response}`);
+      const response = await clients(addNewLineSQL, props); // Returns: propsForClient[]/false
+
       if (!response) {
+        await log(`[server -> router]: statusCODE => ${response}`);
         statusCode = 404;
       }
       log('[server -> router]: After saving into the db');
