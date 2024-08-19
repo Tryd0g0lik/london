@@ -56,8 +56,16 @@ export function getRouter(appObj: typeof Application): typeof router {
   //   await log(`[server -> router]: inlogin  That request was received from Profile 7 =>: ${req}`);
   //   const sessionId = req.params.id;
   // });
+
+  /**
+   * This is path fro a start/zero/basis authorization's mode.
+   */
   router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
+    const props = {
+      message: 'OK',
+      sessionId: ''
+    };
     /* -------------- This is activation's block ------------------ */
     const clientData = req.body as unknown as propsForClient;
     const coockie = clientData.coockie;
@@ -96,21 +104,54 @@ export function getRouter(appObj: typeof Application): typeof router {
     // making the aictve status in db
     await client.query(changeValueOneCellSQL('Users', 'is_active', result[0].id, true));
     await log(`[server -> router]: inlogin Filter LENGTH3 =>: ${(coockie.sessionId)}`);
+    props.sessionId = coockie.sessionId;
     // making the aictve status in db
-    await client.query(changeValueOneCellSQL('Users', 'session_id', result[0].id, coockie.sessionId));
+    if ((typeof (result[0].session_id) === 'string' &&
+      (result[0].session_id).length === 0)) {
+      await client.query(changeValueOneCellSQL('Users', 'session_id', result[0].id, coockie.sessionId));
+    } else {
+      props.sessionId = result[0].session_id;
+    }
+
     await log(`[server -> router]: inlogin Filter LENGTH4 =>: ${(coockie.sessionId)}`);
     client.end();
     /* --------------- if we is find the use in db ---------------  */
-    const props = {
-      message: 'OK',
-      sessionId: coockie.sessionId
-    };
+
     await log(`[server -> router]: inlogin That User is found: ${result.firstname}`);
     await log(`[server -> router]: inlogin That SessionID: ${props.sessionId}`);
     // Response is sent
     res.status(statusCode).json(props);
   });
 
+  /**
+   * From an Authorization's form with the request was received.
+   */
+  router.post('/api/v1/inlogin/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    const clientData = req.body as unknown as propsForClient;
+    const coockie = clientData.coockie;
+    await log(`[server -> router]: inlogin:sessionId: ${JSON.stringify(clientData)}`);
+
+    await log(`[server -> router]: inlogin:sessionId coockie: ${coockie.sessionId}`);
+    const respArr = await clients(selectSingleUserSQL, clientData.email);
+    await log(`[server -> router]: inlogin:sessionId Received data where is a length =>: ${(respArr.rows).length}`);
+    if ((respArr.rows).length === 0) {
+      res.status(404).json({ massage: 'Not founded' });
+      return false;
+    }
+    const result = await respArr.rows.filter(((item: propsForClient) => item.password === clientData.password));
+    await log(`[server -> router]: inlogin:sessionId Filter LENGTH =>: ${(result.length)}`);
+    if (result.length === 0) {
+      await log(`[server -> router]: inlogin:sessionId Not found. Message was sent a 404 code.
+        RESULT =>: ${result}`);
+      res.status(404).json({ massage: 'Not founded' });
+      return false;
+    }
+    await log(`[server -> router]: inlogin:sessionId Not found a password. RESULT =>: ${result}`);
+    res.status(200).json({ massage: 'OK', sessionId: result[0].session_id });
+    await log(`[server -> router]: inlogin:sessionId Message was sent a 200code .
+      That SessionID: ${result[0].session_id}`);
+    return false;
+  });
   // router.get('/api/v1/clients/', (req: Request, res: Response) => {
   //   log('[server -> router]: clients');
   //   const body = JSON.stringify({ data: true });

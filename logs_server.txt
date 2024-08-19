@@ -1,412 +1,79 @@
-9:57:42:72 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-9:57:42:72 ==> [server -> router]: clientData 1: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"DHXp2;M^<j,@L7Q1"}
-9:57:42:73 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"DHXp2;M^<j,@L7Q1"}
-9:57:42:2 ==> [server -> router]: Before saving into the db
-9:57:42:4 ==> [server -> clients]: Before connection.
-9:57:42:4 ==> [server -> clients]: Connection now.
-9:57:42:4 ==> [server -> clients]: That is a connection. Before sending.
-9:57:42:61 ==> [server -> clients]: data was received
-9:57:42:61 ==> [server -> router]: After saving into the db
-9:58:2:31 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-9:58:2:31 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"58b9737c-112c-4a82-b3eb-f355743ea452"}}
-9:58:2:32 ==> [server -> router]: inlogin coockie: 58b9737c-112c-4a82-b3eb-f355743ea452
-9:58:2:59 ==> [server -> router]: inlogin Received data where is a length =>: 1
-9:58:2:59 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-9:58:2:60 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-9:58:2:3 ==> [server -> router]: inlogin Filter LENGTH3 =>: 58b9737c-112c-4a82-b3eb-f355743ea452
-9:58:2:4 ==> [server -> sql]: inlogin Filter SQL4 =>: 58b9737c-112c-4a82-b3eb-f355743ea452
-9:58:2:4 ==> [server -> router]: inlogin Filter LENGTH4 =>: 58b9737c-112c-4a82-b3eb-f355743ea452
-9:58:2:5 ==> [server -> router]: inlogin That User is found: undefined
-9:58:2:5 ==> [server -> router]: inlogin That SessionID: 58b9737c-112c-4a82-b3eb-f355743ea452
-9:58:4:51 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-9:58:4:52 ==> [server -> clients]: Before connection.
-9:58:4:52 ==> [server -> clients]: Connection now.
-9:58:4:53 ==> [server -> clients]: That is a connection. Before sending.
-9:58:4:79 ==> [server -> clients]: data was received
-9:58:4:79 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"58b9737c-112c-4a82-b3eb-f355743ea452"}
-9:58:4:80 ==> [server -> router]: inlogin  That Profile SENDED
-9:58:4:86 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-9:58:4:86 ==> [server -> clients]: Before connection.
-9:58:4:87 ==> [server -> clients]: Connection now.
-9:58:4:87 ==> [server -> clients]: That is a connection. Before sending.
-9:58:4:12 ==> [server -> clients]: data was received
-9:58:4:13 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"58b9737c-112c-4a82-b3eb-f355743ea452"}
-9:58:4:14 ==> [server -> router]: inlogin  That Profile SENDED
-9:58:57:99 ==> [server]: START
-9:58:57:0 ==> [server]: Start the "Client" connection.
-9:58:57:0 ==> [server -> listen]: Server start to listen the PORT 7070
-9:58:57:35 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+12:46:7:84 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
+12:46:7:87 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"ffd8ffa8-0346-4da1-965c-735e9c94acb0"}}
+12:46:7:88 ==> [server -> router]: inlogin coockie: ffd8ffa8-0346-4da1-965c-735e9c94acb0
+12:46:7:26 ==> [server -> router]: inlogin Received data where is a length =>: 1
+12:46:7:27 ==> [server -> router]: inlogin Filter LENGTH =>: 1
+12:46:7:28 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
+12:46:7:30 ==> [server -> router]: inlogin Filter LENGTH3 =>: ffd8ffa8-0346-4da1-965c-735e9c94acb0
+12:46:7:30 ==> [server -> router]: inlogin Filter LENGTH4 =>: ffd8ffa8-0346-4da1-965c-735e9c94acb0
+12:46:7:31 ==> [server -> router]: inlogin That User is found: undefined
+12:46:7:32 ==> [server -> router]: inlogin That SessionID: a3570747-8485-4d1c-bfa4-755af8faabc3
+12:46:29:36 ==> [server -> router]: inlogin:sessionId: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"ffd8ffa8-0346-4da1-965c-735e9c94acb0"}}
+12:46:29:37 ==> [server -> router]: inlogin:sessionId coockie: ffd8ffa8-0346-4da1-965c-735e9c94acb0
+12:46:29:39 ==> [server -> clients]: Before connection.
+12:46:29:39 ==> [server -> clients]: Connection now.
+12:46:29:39 ==> [server -> clients]: That is a connection. Before sending.
+12:46:29:71 ==> [server -> clients]: data was received
+12:46:29:71 ==> [server -> router]: inlogin:sessionId Received data where is a length =>: 1
+12:46:29:72 ==> [server -> router]: inlogin:sessionId Filter LENGTH =>: 1
+12:46:29:72 ==> [server -> router]: inlogin:sessionId Not found a password. RESULT =>: [object Object]
+12:46:29:74 ==> [server -> router]: inlogin:sessionId Message was sent a 200code .
+      That SessionID: a3570747-8485-4d1c-bfa4-755af8faabc3
+12:47:8:36 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:47:8:38 ==> [server -> clients]: Before connection.
+12:47:8:38 ==> [server -> clients]: Connection now.
+12:47:8:38 ==> [server -> clients]: That is a connection. Before sending.
+12:47:8:68 ==> [server -> clients]: data was received
+12:47:8:68 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:47:8:70 ==> [server -> router]: inlogin  That Profile SENDED
+12:47:11:2 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:47:11:4 ==> [server -> clients]: Before connection.
+12:47:11:4 ==> [server -> clients]: Connection now.
+12:47:11:4 ==> [server -> clients]: That is a connection. Before sending.
+12:47:11:34 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:47:11:36 ==> [server -> clients]: data was received
+12:47:11:36 ==> [server -> router]: inlogin  That Profile SENDED
+12:50:44:55 ==> [server]: START
+12:50:44:57 ==> [server]: Start the "Client" connection.
+12:50:44:57 ==> [server -> listen]: Server start to listen the PORT 7070
+12:50:44:91 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-9:58:57:36 ==> [server]: Start the "Client" connection.
-9:58:57:62 ==> [server]: "Emails" created .
-9:58:57:63 ==> [server]: "Users" created .
-9:58:57:63 ==> [server]: The end the "Client" connection.
-9:58:57:64 ==> [server]: END
-10:8:17:46 ==> [server]: Start the "Client" connection.
-10:8:17:47 ==> [server]: START
-10:8:17:47 ==> [server -> listen]: Server start to listen the PORT 7070
-10:8:17:81 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+12:50:44:92 ==> [server]: Start the "Client" connection.
+12:50:44:19 ==> [server]: "Emails" created .
+12:50:44:19 ==> [server]: "Users" created .
+12:50:44:20 ==> [server]: The end the "Client" connection.
+12:50:44:20 ==> [server]: END
+12:53:30:43 ==> [server]: START
+12:53:30:44 ==> [server]: Start the "Client" connection.
+12:53:30:44 ==> [server -> listen]: Server start to listen the PORT 7070
+12:53:30:79 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-10:8:17:81 ==> [server]: Start the "Client" connection.
-10:8:17:9 ==> [server]: "Emails" created .
-10:8:17:10 ==> [server]: "Users" created .
-10:8:17:10 ==> [server]: The end the "Client" connection.
-10:8:17:11 ==> [server]: END
-10:10:29:11 ==> [server]: START
-10:10:29:12 ==> [server]: Start the "Client" connection.
-10:10:29:12 ==> [server -> listen]: Server start to listen the PORT 7070
-10:10:29:45 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+12:53:30:80 ==> [server]: Start the "Client" connection.
+12:53:30:7 ==> [server]: "Emails" created .
+12:53:30:8 ==> [server]: "Users" created .
+12:53:30:8 ==> [server]: The end the "Client" connection.
+12:53:30:9 ==> [server]: END
+12:54:42:84 ==> [server]: START
+12:54:42:85 ==> [server]: Start the "Client" connection.
+12:54:42:85 ==> [server -> listen]: Server start to listen the PORT 7070
+12:54:42:18 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-10:10:29:46 ==> [server]: Start the "Client" connection.
-10:10:29:73 ==> [server]: "Emails" created .
-10:10:29:73 ==> [server]: "Users" created .
-10:10:29:74 ==> [server]: The end the "Client" connection.
-10:10:29:74 ==> [server]: END
-10:27:31:52 ==> [server]: START
-10:27:31:53 ==> [server]: Start the "Client" connection.
-10:27:31:54 ==> [server -> listen]: Server start to listen the PORT 7070
-10:27:31:88 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:27:31:89 ==> [server]: Start the "Client" connection.
-10:27:32:17 ==> [server]: "Emails" created .
-10:27:32:18 ==> [server]: "Users" created .
-10:27:32:18 ==> [server]: The end the "Client" connection.
-10:27:32:19 ==> [server]: END
-10:31:0:28 ==> [server]: START
-10:31:0:29 ==> [server]: Start the "Client" connection.
-10:31:0:29 ==> [server -> listen]: Server start to listen the PORT 7070
-10:31:0:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:31:0:78 ==> [server]: Start the "Client" connection.
-10:31:1:6 ==> [server]: "Emails" created .
-10:31:1:6 ==> [server]: "Users" created .
-10:31:1:7 ==> [server]: END
-10:31:1:7 ==> [server]: The end the "Client" connection.
-10:31:25:81 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:31:25:82 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"9b1be062-6c67-4457-96ab-4f60f45ea829"}}
-10:31:25:82 ==> [server -> router]: inlogin coockie: 9b1be062-6c67-4457-96ab-4f60f45ea829
-10:31:26:10 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:31:26:11 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:31:26:12 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:31:26:14 ==> [server -> router]: inlogin Filter LENGTH3 =>: 9b1be062-6c67-4457-96ab-4f60f45ea829
-10:31:26:14 ==> [server -> sql]: inlogin Filter SQL4 =>: 9b1be062-6c67-4457-96ab-4f60f45ea829
-10:31:26:15 ==> [server -> router]: inlogin Filter LENGTH4 =>: 9b1be062-6c67-4457-96ab-4f60f45ea829
-10:31:26:15 ==> [server -> router]: inlogin That User is found: undefined
-10:31:26:16 ==> [server -> router]: inlogin That SessionID: 9b1be062-6c67-4457-96ab-4f60f45ea829
-10:31:28:46 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:31:28:48 ==> [server -> clients]: Before connection.
-10:31:28:48 ==> [server -> clients]: Connection now.
-10:31:28:49 ==> [server -> clients]: That is a connection. Before sending.
-10:31:28:74 ==> [server -> clients]: data was received
-10:31:28:74 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"9b1be062-6c67-4457-96ab-4f60f45ea829"}
-10:31:28:76 ==> [server -> router]: inlogin  That Profile SENDED
-10:31:28:81 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:31:28:82 ==> [server -> clients]: Before connection.
-10:31:28:82 ==> [server -> clients]: Connection now.
-10:31:28:83 ==> [server -> clients]: That is a connection. Before sending.
-10:31:28:9 ==> [server -> clients]: data was received
-10:31:28:10 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"9b1be062-6c67-4457-96ab-4f60f45ea829"}
-10:31:28:11 ==> [server -> router]: inlogin  That Profile SENDED
-10:32:53:77 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:32:53:78 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"f460b496-c047-4cb9-aee8-7e4a1c46f8b0"}}
-10:32:53:79 ==> [server -> router]: inlogin coockie: f460b496-c047-4cb9-aee8-7e4a1c46f8b0
-10:32:53:6 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:32:53:7 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:32:53:8 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:32:53:9 ==> [server -> router]: inlogin Filter LENGTH3 =>: f460b496-c047-4cb9-aee8-7e4a1c46f8b0
-10:32:53:9 ==> [server -> sql]: inlogin Filter SQL4 =>: f460b496-c047-4cb9-aee8-7e4a1c46f8b0
-10:32:53:10 ==> [server -> router]: inlogin Filter LENGTH4 =>: f460b496-c047-4cb9-aee8-7e4a1c46f8b0
-10:32:53:10 ==> [server -> router]: inlogin That User is found: undefined
-10:32:53:11 ==> [server -> router]: inlogin That SessionID: f460b496-c047-4cb9-aee8-7e4a1c46f8b0
-10:34:15:93 ==> [server]: START
-10:34:15:94 ==> [server]: Start the "Client" connection.
-10:34:15:94 ==> [server -> listen]: Server start to listen the PORT 7070
-10:34:15:27 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:34:15:27 ==> [server]: Start the "Client" connection.
-10:34:15:59 ==> [server]: "Emails" created .
-10:34:15:59 ==> [server]: "Users" created .
-10:34:15:60 ==> [server]: The end the "Client" connection.
-10:34:15:60 ==> [server]: END
-10:35:21:11 ==> [server]: START
-10:35:21:13 ==> [server]: Start the "Client" connection.
-10:35:21:13 ==> [server -> listen]: Server start to listen the PORT 7070
-10:35:21:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:35:21:48 ==> [server]: Start the "Client" connection.
-10:35:21:76 ==> [server]: "Emails" created .
-10:35:21:77 ==> [server]: "Users" created .
-10:35:21:77 ==> [server]: The end the "Client" connection.
-10:35:21:77 ==> [server]: END
-10:37:2:48 ==> [server]: START
-10:37:2:49 ==> [server]: Start the "Client" connection.
-10:37:2:50 ==> [server -> listen]: Server start to listen the PORT 7070
-10:37:2:83 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:37:2:83 ==> [server]: Start the "Client" connection.
-10:37:2:9 ==> [server]: "Emails" created .
-10:37:2:10 ==> [server]: "Users" created .
-10:37:2:10 ==> [server]: The end the "Client" connection.
-10:37:2:11 ==> [server]: END
-10:37:48:34 ==> [server]: START
-10:37:48:35 ==> [server]: Start the "Client" connection.
-10:37:48:35 ==> [server -> listen]: Server start to listen the PORT 7070
-10:37:48:74 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:37:48:75 ==> [server]: Start the "Client" connection.
-10:37:48:4 ==> [server]: "Emails" created .
-10:37:48:4 ==> [server]: "Users" created .
-10:37:48:4 ==> [server]: The end the "Client" connection.
-10:37:48:5 ==> [server]: END
-10:38:20:92 ==> [server]: START
-10:38:20:94 ==> [server]: Start the "Client" connection.
-10:38:20:94 ==> [server -> listen]: Server start to listen the PORT 7070
-10:38:20:29 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:38:20:30 ==> [server]: Start the "Client" connection.
-10:38:20:56 ==> [server]: "Emails" created .
-10:38:20:57 ==> [server]: "Users" created .
-10:38:20:57 ==> [server]: The end the "Client" connection.
-10:38:20:58 ==> [server]: END
-10:38:27:21 ==> [server]: START
-10:38:27:22 ==> [server]: Start the "Client" connection.
-10:38:27:22 ==> [server -> listen]: Server start to listen the PORT 7070
-10:38:27:56 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:38:27:57 ==> [server]: Start the "Client" connection.
-10:38:27:83 ==> [server]: "Emails" created .
-10:38:27:84 ==> [server]: "Users" created .
-10:38:27:84 ==> [server]: The end the "Client" connection.
-10:38:27:85 ==> [server]: END
-10:39:18:89 ==> [server]: START
-10:39:18:90 ==> [server]: Start the "Client" connection.
-10:39:18:91 ==> [server -> listen]: Server start to listen the PORT 7070
-10:39:18:23 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:39:18:23 ==> [server]: Start the "Client" connection.
-10:39:18:49 ==> [server]: "Emails" created .
-10:39:18:52 ==> [server]: "Users" created .
-10:39:18:52 ==> [server]: The end the "Client" connection.
-10:39:18:52 ==> [server]: END
-10:39:27:9 ==> [server]: START
-10:39:27:10 ==> [server]: Start the "Client" connection.
-10:39:27:11 ==> [server -> listen]: Server start to listen the PORT 7070
-10:39:27:44 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:39:27:45 ==> [server]: Start the "Client" connection.
-10:39:27:74 ==> [server]: "Emails" created .
-10:39:27:76 ==> [server]: "Users" created .
-10:39:27:76 ==> [server]: The end the "Client" connection.
-10:39:27:77 ==> [server]: END
-10:39:30:1 ==> [server]: START
-10:39:30:2 ==> [server]: Start the "Client" connection.
-10:39:30:3 ==> [server -> listen]: Server start to listen the PORT 7070
-10:39:30:38 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:39:30:38 ==> [server]: Start the "Client" connection.
-10:39:30:66 ==> [server]: "Emails" created .
-10:39:30:68 ==> [server]: "Users" created .
-10:39:30:69 ==> [server]: The end the "Client" connection.
-10:39:30:69 ==> [server]: END
-10:40:32:92 ==> [server]: START
-10:40:32:94 ==> [server]: Start the "Client" connection.
-10:40:32:94 ==> [server -> listen]: Server start to listen the PORT 7070
-10:40:32:29 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:40:32:29 ==> [server]: Start the "Client" connection.
-10:40:32:57 ==> [server]: "Emails" created .
-10:40:32:57 ==> [server]: "Users" created .
-10:40:32:58 ==> [server]: The end the "Client" connection.
-10:40:32:58 ==> [server]: END
-10:41:27:46 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:41:27:47 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"90a1f956-02ca-43d5-9acd-340f1ed69938"}}
-10:41:27:47 ==> [server -> router]: inlogin coockie: 90a1f956-02ca-43d5-9acd-340f1ed69938
-10:41:27:78 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:41:27:79 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:41:27:79 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:41:27:81 ==> [server -> router]: inlogin Filter LENGTH3 =>: 90a1f956-02ca-43d5-9acd-340f1ed69938
-10:41:27:82 ==> [server -> sql]: inlogin Filter SQL4 =>: 90a1f956-02ca-43d5-9acd-340f1ed69938
-10:41:27:83 ==> [server -> router]: inlogin Filter LENGTH4 =>: 90a1f956-02ca-43d5-9acd-340f1ed69938
-10:41:27:83 ==> [server -> router]: inlogin That User is found: undefined
-10:41:27:84 ==> [server -> router]: inlogin That SessionID: 90a1f956-02ca-43d5-9acd-340f1ed69938
-10:42:3:78 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:42:3:78 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"bd6c95cb-490a-45d6-b50f-3b37137ffeb7"}}
-10:42:3:79 ==> [server -> router]: inlogin coockie: bd6c95cb-490a-45d6-b50f-3b37137ffeb7
-10:42:3:11 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:42:3:12 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:42:3:12 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:42:3:13 ==> [server -> router]: inlogin Filter LENGTH3 =>: bd6c95cb-490a-45d6-b50f-3b37137ffeb7
-10:42:3:14 ==> [server -> sql]: inlogin Filter SQL4 =>: bd6c95cb-490a-45d6-b50f-3b37137ffeb7
-10:42:3:15 ==> [server -> router]: inlogin Filter LENGTH4 =>: bd6c95cb-490a-45d6-b50f-3b37137ffeb7
-10:42:3:15 ==> [server -> router]: inlogin That User is found: undefined
-10:42:3:16 ==> [server -> router]: inlogin That SessionID: bd6c95cb-490a-45d6-b50f-3b37137ffeb7
-10:42:5:88 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:42:5:89 ==> [server -> clients]: Before connection.
-10:42:5:89 ==> [server -> clients]: Connection now.
-10:42:5:90 ==> [server -> clients]: That is a connection. Before sending.
-10:42:5:24 ==> [server -> clients]: data was received
-10:42:5:25 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"bd6c95cb-490a-45d6-b50f-3b37137ffeb7"}
-10:42:5:26 ==> [server -> router]: inlogin  That Profile SENDED
-10:42:5:31 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:42:5:32 ==> [server -> clients]: Before connection.
-10:42:5:32 ==> [server -> clients]: Connection now.
-10:42:5:33 ==> [server -> clients]: That is a connection. Before sending.
-10:42:5:58 ==> [server -> clients]: data was received
-10:42:5:59 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"bd6c95cb-490a-45d6-b50f-3b37137ffeb7"}
-10:42:5:60 ==> [server -> router]: inlogin  That Profile SENDED
-10:42:28:81 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:42:28:82 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"6fb54e92-0d5b-44f7-b5e4-f57e2335356b"}}
-10:42:28:82 ==> [server -> router]: inlogin coockie: 6fb54e92-0d5b-44f7-b5e4-f57e2335356b
-10:42:28:22 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:42:28:23 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:42:28:24 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:42:28:25 ==> [server -> router]: inlogin Filter LENGTH3 =>: 6fb54e92-0d5b-44f7-b5e4-f57e2335356b
-10:42:28:26 ==> [server -> sql]: inlogin Filter SQL4 =>: 6fb54e92-0d5b-44f7-b5e4-f57e2335356b
-10:42:28:27 ==> [server -> router]: inlogin Filter LENGTH4 =>: 6fb54e92-0d5b-44f7-b5e4-f57e2335356b
-10:42:28:27 ==> [server -> router]: inlogin That User is found: undefined
-10:42:28:28 ==> [server -> router]: inlogin That SessionID: 6fb54e92-0d5b-44f7-b5e4-f57e2335356b
-10:42:30:42 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:42:30:44 ==> [server -> clients]: Before connection.
-10:42:30:44 ==> [server -> clients]: Connection now.
-10:42:30:45 ==> [server -> clients]: That is a connection. Before sending.
-10:42:30:72 ==> [server -> clients]: data was received
-10:42:30:73 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"6fb54e92-0d5b-44f7-b5e4-f57e2335356b"}
-10:42:30:75 ==> [server -> router]: inlogin  That Profile SENDED
-10:42:30:82 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:42:30:83 ==> [server -> clients]: Before connection.
-10:42:30:83 ==> [server -> clients]: Connection now.
-10:42:30:84 ==> [server -> clients]: That is a connection. Before sending.
-10:42:30:11 ==> [server -> clients]: data was received
-10:42:30:11 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"6fb54e92-0d5b-44f7-b5e4-f57e2335356b"}
-10:42:30:12 ==> [server -> router]: inlogin  That Profile SENDED
-10:43:26:75 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
-10:43:26:76 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"DHXp2;M^<j,@L7Q1","coockie":{"sessionId":"b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1"}}
-10:43:26:77 ==> [server -> router]: inlogin coockie: b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1
-10:43:26:5 ==> [server -> router]: inlogin Received data where is a length =>: 1
-10:43:26:6 ==> [server -> router]: inlogin Filter LENGTH =>: 1
-10:43:26:6 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
-10:43:26:7 ==> [server -> router]: inlogin Filter LENGTH3 =>: b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1
-10:43:26:9 ==> [server -> sql]: inlogin Filter SQL4 =>: b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1
-10:43:26:9 ==> [server -> router]: inlogin Filter LENGTH4 =>: b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1
-10:43:26:10 ==> [server -> router]: inlogin That User is found: undefined
-10:43:26:11 ==> [server -> router]: inlogin That SessionID: b4a12c6e-1aa1-4ed8-8deb-bcc17ec072d1
-10:48:16:54 ==> [server]: START
-10:48:16:56 ==> [server]: Start the "Client" connection.
-10:48:16:56 ==> [server -> listen]: Server start to listen the PORT 7070
-10:48:16:2 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:48:16:2 ==> [server]: Start the "Client" connection.
-10:48:16:32 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:48:16:34 ==> [server -> clients]: Before connection.
-10:48:16:35 ==> [server -> clients]: Connection now.
-10:48:16:35 ==> [server -> clients]: That is a connection. Before sending.
-10:48:16:38 ==> [server]: "Emails" created .
-10:48:16:39 ==> [server]: "Users" created .
-10:48:16:40 ==> [server]: The end the "Client" connection.
-10:48:16:40 ==> [server]: END
-10:48:16:64 ==> [server -> clients]: data was received
-10:48:16:71 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:48:16:72 ==> [server -> clients]: Before connection.
-10:48:16:72 ==> [server -> clients]: Connection now.
-10:48:16:73 ==> [server -> clients]: That is a connection. Before sending.
-10:48:16:12 ==> [server -> clients]: data was received
-10:50:59:60 ==> [server]: Start the "Client" connection.
-10:50:59:62 ==> [server]: START
-10:50:59:62 ==> [server -> listen]: Server start to listen the PORT 7070
-10:50:59:97 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:50:59:97 ==> [server]: Start the "Client" connection.
-10:50:59:25 ==> [server]: "Emails" created .
-10:50:59:26 ==> [server]: "Users" created .
-10:50:59:26 ==> [server]: The end the "Client" connection.
-10:50:59:26 ==> [server]: END
-10:51:24:93 ==> [server]: START
-10:51:24:94 ==> [server]: Start the "Client" connection.
-10:51:24:95 ==> [server -> listen]: Server start to listen the PORT 7070
-10:51:24:27 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:51:24:28 ==> [server]: Start the "Client" connection.
-10:51:24:56 ==> [server]: "Emails" created .
-10:51:24:56 ==> [server]: "Users" created .
-10:51:24:57 ==> [server]: The end the "Client" connection.
-10:51:24:57 ==> [server]: END
-10:51:45:51 ==> [server]: START
-10:51:45:52 ==> [server]: Start the "Client" connection.
-10:51:45:53 ==> [server -> listen]: Server start to listen the PORT 7070
-10:51:45:85 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:51:45:85 ==> [server]: Start the "Client" connection.
-10:51:45:13 ==> [server]: "Emails" created .
-10:51:45:14 ==> [server]: "Users" created .
-10:51:45:14 ==> [server]: The end the "Client" connection.
-10:51:45:15 ==> [server]: END
-10:51:56:36 ==> [server]: START
-10:51:56:37 ==> [server]: Start the "Client" connection.
-10:51:56:37 ==> [server -> listen]: Server start to listen the PORT 7070
-10:51:56:68 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:51:56:69 ==> [server]: Start the "Client" connection.
-10:51:56:94 ==> [server]: "Emails" created .
-10:51:56:95 ==> [server]: "Users" created .
-10:51:56:96 ==> [server]: The end the "Client" connection.
-10:51:56:96 ==> [server]: END
-10:54:3:96 ==> [server]: START
-10:54:3:98 ==> [server]: Start the "Client" connection.
-10:54:3:98 ==> [server -> listen]: Server start to listen the PORT 7070
-10:54:3:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:54:3:43 ==> [server]: Start the "Client" connection.
-10:54:3:75 ==> [server]: "Emails" created .
-10:54:3:76 ==> [server]: "Users" created .
-10:54:3:76 ==> [server]: The end the "Client" connection.
-10:54:3:76 ==> [server]: END
-10:54:3:32 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:54:3:34 ==> [server -> clients]: Before connection.
-10:54:3:35 ==> [server -> clients]: Connection now.
-10:54:3:35 ==> [server -> clients]: That is a connection. Before sending.
-10:54:3:63 ==> [server -> clients]: data was received
-10:54:3:68 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:54:3:69 ==> [server -> clients]: Before connection.
-10:54:3:70 ==> [server -> clients]: Connection now.
-10:54:3:70 ==> [server -> clients]: That is a connection. Before sending.
-10:54:3:96 ==> [server -> clients]: data was received
-10:56:26:99 ==> [server]: START
-10:56:26:0 ==> [server]: Start the "Client" connection.
-10:56:26:1 ==> [server -> listen]: Server start to listen the PORT 7070
-10:56:26:39 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-10:56:26:40 ==> [server]: Start the "Client" connection.
-10:56:26:80 ==> [server]: "Emails" created .
-10:56:26:81 ==> [server]: "Users" created .
-10:56:26:82 ==> [server]: The end the "Client" connection.
-10:56:26:82 ==> [server]: END
-10:56:26:46 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:56:26:48 ==> [server -> clients]: Before connection.
-10:56:26:49 ==> [server -> clients]: Connection now.
-10:56:26:49 ==> [server -> clients]: That is a connection. Before sending.
-10:56:26:77 ==> [server -> clients]: data was received
-10:56:26:81 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
-10:56:26:82 ==> [server -> clients]: Before connection.
-10:56:26:82 ==> [server -> clients]: Connection now.
-10:56:26:83 ==> [server -> clients]: That is a connection. Before sending.
-10:56:26:10 ==> [server -> clients]: data was received
-11:1:33:30 ==> [server]: START
-11:1:33:32 ==> [server]: Start the "Client" connection.
-11:1:33:32 ==> [server -> listen]: Server start to listen the PORT 7070
-11:1:33:65 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-11:1:33:66 ==> [server]: Start the "Client" connection.
-11:1:33:93 ==> [server]: "Emails" created .
-11:1:33:93 ==> [server]: "Users" created .
-11:1:33:94 ==> [server]: The end the "Client" connection.
-11:1:33:94 ==> [server]: END
-11:2:0:35 ==> [server]: START
-11:2:0:36 ==> [server]: Start the "Client" connection.
-11:2:0:36 ==> [server -> listen]: Server start to listen the PORT 7070
-11:2:0:70 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
-     ERR-MEASSAGE: база данных "london" уже существует
-11:2:0:70 ==> [server]: Start the "Client" connection.
-11:2:0:96 ==> [server]: "Emails" created .
-11:2:0:97 ==> [server]: "Users" created .
-11:2:0:97 ==> [server]: The end the "Client" connection.
-11:2:0:98 ==> [server]: END
+12:54:42:18 ==> [server]: Start the "Client" connection.
+12:54:42:49 ==> [server]: "Emails" created .
+12:54:42:50 ==> [server]: "Users" created .
+12:54:42:50 ==> [server]: The end the "Client" connection.
+12:54:42:51 ==> [server]: END
+12:55:6:69 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:55:6:72 ==> [server -> clients]: Before connection.
+12:55:6:73 ==> [server -> clients]: Connection now.
+12:55:6:73 ==> [server -> clients]: That is a connection. Before sending.
+12:55:6:1 ==> [server -> clients]: data was received
+12:55:6:2 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:55:6:6 ==> [server -> router]: inlogin  That Profile SENDED
+12:55:6:11 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:55:6:12 ==> [server -> clients]: Before connection.
+12:55:6:12 ==> [server -> clients]: Connection now.
+12:55:6:13 ==> [server -> clients]: That is a connection. Before sending.
+12:55:6:51 ==> [server -> clients]: data was received
+12:55:6:51 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:55:6:52 ==> [server -> router]: inlogin  That Profile SENDED

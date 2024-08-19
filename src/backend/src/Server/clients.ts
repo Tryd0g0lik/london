@@ -14,7 +14,12 @@ const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as st
 const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
-// Клиент - для работы с db. Данный размещаем в строке SQL, через 'client.query'.
+/**
+ * Клиент - для работы с db. Данный размещаем в строке SQL, через 'client.query'.
+ * The entrypoint's sintax `clients(selectSingleUserSQL, clientData.email);`.\
+ * This 'selectSingleUserSQL' is SQL-string from the 'server/sql-functions' and \
+ * `dataJson` data mode JSON.
+ */
 export async function clients(fun: (props: propsForClient) => boolean,
   dataJson: propsForClient): Promise<boolean> {
   lg('[server -> clients]: Before connection.');

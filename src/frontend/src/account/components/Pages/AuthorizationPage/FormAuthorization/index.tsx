@@ -1,7 +1,7 @@
 import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
-import { add } from '@Services/fetches';
+import { add, get } from '@Services/fetches';
 import { checkerCoockieKey } from '@Services/coockieSessionId';
 // import getCookie from '@Services/cookies';
 import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
@@ -55,7 +55,7 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     coockie
   });
   // отправляем в базу данных
-  const responce = await add(bodyStr, '/api/v1/inlogin/') as { message: string, sessionId?: string };
+  let responce = await add(bodyStr, '/api/v1/inlogin/') as { message: string, sessionId?: string };
   if (!responce) {
     // That did not find it
     const result = messageForUser(1, ['Вы вошли', 'Что-то не получилось']);
@@ -65,8 +65,14 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
   const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
 
-  //It new session key is  insade to the browser
-  setSessionIdInCookie(coockie.sessionId);
+  responce = await add(bodyStr, `/api/v1/inlogin/${coockie.sessionId}`) as { message: string, sessionId?: string };
+  if (typeof responce === 'boolean') {
+    //It new session key is  insade to the browser
+    setSessionIdInCookie(coockie.sessionId);
+  } else {
+    //It old session key is  insade to the browser
+    setSessionIdInCookie(responce.sessionId as string);
+  }
 
   /* it's a loader on the two seccond */
   const loader = document.getElementsByClassName('loading');

@@ -4103,3 +4103,6 @@ ul {
 .profil .switchs {
   display: none;
 }
+#root.active .profil .switchs {
+  display: flex;
+}

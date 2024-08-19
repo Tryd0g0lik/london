@@ -8,11 +8,11 @@ const REACT_APP_POSTGRES_HOST = (env) ? env : "localhost";
 export function setSessionIdInCookie(sessionId: string): void {
   const cookieName = 'sessionId';
   const cookieValue = sessionId;
-  // const maxAge = String(60 * 60 * 24); // Время жизни cookie в секундах (например, 1 день)
+  const maxAge = 60 * 60 * 24; // Время жизни cookie в секундах (например, 1 день)
 
   let now = new Date();
   const options = {
-    expires: String(now.getTime()),
+    expires: String(maxAge - now.getTime()),
     path: '/',
     domain: REACT_APP_POSTGRES_HOST,
     secure: false,
@@ -52,7 +52,7 @@ export function createSessionId(): string {
  * Если видим ключа 'sessionId' - coockie ,
  * Смотрим класс 'active'.
  * Если нету, добавляем.
- * 
+ *
  * Если не видим ключа 'sessionId' - coockie ,
    Смотрим класс 'active' и удаляем его.
  * @returns
