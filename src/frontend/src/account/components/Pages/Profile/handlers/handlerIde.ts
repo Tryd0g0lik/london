@@ -1,5 +1,8 @@
 // import React from 'react';
 import { FieldInnerHtml } from '@Interfaces';
+import { add } from '@Services/fetches';
+import { getCookie } from '@Services/coockieSessionId';
+import { messageForUser } from '@Services/messengerForm';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *
@@ -31,14 +34,15 @@ export async function handlerIdeFC(): Promise<boolean> {
  * @returns HTMLLableElement
  */
 function basisRedactField(props: FieldInnerHtml): HTMLElement {
-  const { text = '' } = props;
+  const { dataNameX, text = '' } = props;
   const label = document.createElement('label');
   const input = document.createElement('input');
 
+
   label.htmlFor = "text";
   label.className = "input input-bordered flex items-center gap-2";
-
-  input.id = 'text';
+  input.setAttribute('namex', dataNameX);
+  input.id = dataNameX;
   input.name = 'text';
   input.type = 'text';
   input.maxLength = 50;
@@ -68,10 +72,48 @@ const changeHtmlInner = (target: HTMLElement) => {
       // Here receive the content from the field;
       const contentOfFieldOld = (displayedContentOfFieldArr.length > 0) ?
         (displayedContentOfFieldArr[0] as HTMLElement).outerText : '';
-      (elementArr[index] as HTMLDivElement).insertAdjacentElement('beforeend', basisRedactField({ text: contentOfFieldOld }) as unknown as HTMLElement)
-    } else {
-      (elementArr[index] as HTMLDivElement).innerHTML = '';
+
+      /* ------ Setimeout -------
+      This's a place when we need to get an atribute 'data-namex' from
+      parent html's tage */
+
+      let atributeTimeout: ReturnType<typeof setTimeout> | null = null;
+
+      const namexChecker = (item: HTMLElement): boolean => {
+
+        clearTimeout(atributeTimeout!)
+        const atribute = item.hasAttribute('data-namex');
+        if (atribute) {
+          // clearTimeout(atributeTimeout)
+          // const dataName = item.getAttribute('namex');
+          // if (typeof dataName !== 'string') {
+          //   return false;
+          // }
+          // /* ------- endSetimeout ------ */
+          // (elementArr[index] as HTMLDivElement).insertAdjacentElement('beforeend', basisRedactField({ dataNameX: dataName, text: contentOfFieldOld }) as unknown as HTMLElement);
+
+          // // That is handler of keyboard-event from the Input's field.
+          // const inputHtml = (elementArr[index] as HTMLElement).querySelector('.switchs-rewrite input');
+          // if (inputHtml === null) {
+          //   return false;
+          // }
+          // (inputHtml as HTMLElement).removeEventListener('keypress', handlerEventOfInput);
+          // (inputHtml as HTMLElement).addEventListener('keypress', handlerEventOfInput);
+        } else {
+          // (atributeTimeout) = setTimeout(() => {
+          //   item = item.parentElement as HTMLElement;
+          //   namexChecker(item);
+          // }, 100);
+          (elementArr[index] as HTMLDivElement).innerHTML = '';
+        }
+        return true;
+      }
+      namexChecker(item as HTMLElement);
     }
+    /* Then. this an atribute 'data-namex' us need  insert into
+    the new html's  <input>-tage */
+
+
   });
 };
 
@@ -122,10 +164,36 @@ const helperForHandlerSwhitches = () => {
   return handlerSwhitches;
 }
 
-
-// const helperForHandlerEventOfInput = () => {
-//   const handlerEventOfInput = (event: MouseEvent) => {
-
-//   }
-//   return handlerEventOfInput;
-// }
+/**
+ * This is function for received data of an Input field. It sending \
+ * POST-request into the server.
+ * @param event
+ * @returns fooald
+ */
+const handlerEventOfInput = async (event: KeyboardEvent): Promise<boolean> => {
+  if (((event.key).toLowerCase() !== 'enter') ||
+    ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
+    return false;
+  }
+  const target = event.currentTarget as HTMLInputElement;
+  const newValueOfInput = target.value;
+  /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
+  const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('namex') : '';
+  const body_ = JSON.stringify({
+    typeField: atributeDataNameX,
+    newValueofField: newValueOfInput
+  })
+  /* --------------- Here us a cookie is to get ------------------ */
+  const sessionId = getCookie('sessionId');
+  const p = messageForUser(0, ['Не сохранился', 'Сохранился'])
+  const label = (target.parentElement as HTMLElement);
+  if (sessionId === undefined) {
+    /* here is a not found */
+    label.insertAdjacentHTML('afterend', p.outerHTML);
+    return false;
+  }
+  /* here is found */
+  label.insertAdjacentHTML('afterend', p.outerHTML);
+  await add(body_, 'api/v1/clients/:id')
+  return true;
+}

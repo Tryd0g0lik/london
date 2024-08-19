@@ -27,4 +27,5 @@ export interface FetchParams {
 
 export interface FieldInnerHtml {
   text?: string
+  dataNameX: string
 }

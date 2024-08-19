@@ -16,12 +16,12 @@ export function ProfileFC(): React.JSX.Element {
   return <>
     <NavFC />
     <div className='profile form'>
-      <div className='profilename, profile-FirstName'>
+      <div data-namex='firstName' className='profilename, profile-FirstName'>
         <input type="checkbox" className="switchs toggle toggle-xs" defaultChecked />
         <div></div>
         <div className='switchs-rewrite'></div>
       </div>
-      <div className='profilename, profile-LastName'>
+      <div data-namex='lastName' className='profilename, profile-LastName'>
         <input type="checkbox" className="switchs  toggle toggle-xs" defaultChecked />
         <div></div>
         <div className='switchs-rewrite'></div>
