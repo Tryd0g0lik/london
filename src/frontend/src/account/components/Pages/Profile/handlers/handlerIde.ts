@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Кдик на рубильник - получаем сласс "active" на рубильнике-события
- * 
+ *
  * @returns
  */
 export async function handlerIdeFC(): Promise<boolean> {

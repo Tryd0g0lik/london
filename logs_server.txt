@@ -350,3 +350,23 @@
 10:51:56:95 ==> [server]: "Users" created .
 10:51:56:96 ==> [server]: The end the "Client" connection.
 10:51:56:96 ==> [server]: END
+10:54:3:96 ==> [server]: START
+10:54:3:98 ==> [server]: Start the "Client" connection.
+10:54:3:98 ==> [server -> listen]: Server start to listen the PORT 7070
+10:54:3:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:54:3:43 ==> [server]: Start the "Client" connection.
+10:54:3:75 ==> [server]: "Emails" created .
+10:54:3:76 ==> [server]: "Users" created .
+10:54:3:76 ==> [server]: The end the "Client" connection.
+10:54:3:76 ==> [server]: END
+10:54:3:32 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:54:3:34 ==> [server -> clients]: Before connection.
+10:54:3:35 ==> [server -> clients]: Connection now.
+10:54:3:35 ==> [server -> clients]: That is a connection. Before sending.
+10:54:3:63 ==> [server -> clients]: data was received
+10:54:3:68 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:54:3:69 ==> [server -> clients]: Before connection.
+10:54:3:70 ==> [server -> clients]: Connection now.
+10:54:3:70 ==> [server -> clients]: That is a connection. Before sending.
+10:54:3:96 ==> [server -> clients]: data was received
