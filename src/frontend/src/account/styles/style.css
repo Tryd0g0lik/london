@@ -1,7 +1,7 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-*/
+
 .nav-item ul {
   display: flex;
   flex-wrap: nowrap;
@@ -89,4 +89,8 @@ ul {
 
   width: 39px;
   height: 11px;
+}
+/* Swiths */
+.profil .switchs {
+  display: none;
 }

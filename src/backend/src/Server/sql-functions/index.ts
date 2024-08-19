@@ -98,7 +98,7 @@ export function selectAllEmail(): string {
  * У нас есть email, надо получить пользователя
  * @param email: string
  */
-export function selectSingleUser(email: string): string {
+export function selectSingleUserSQL(email: string): string {
   const selectEmailId = `WITH user_email AS (
     SELECT id FROM emails WHERE emails = '${email}'
     )

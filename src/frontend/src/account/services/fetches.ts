@@ -63,6 +63,7 @@ export async function get(body_: string,
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
   const registrateTimout = setTimeout(() => {
+    /* Somewhing what wrong with a feth's request */
     return false
   }, REACT_APP_SET_TTIMOUT as number);
   const answer = await fetch(url, {

@@ -2,7 +2,7 @@ const { Router, Application, Request, Response, NextFunction } = require('expres
 const { Client } = require('pg');
 const { helper } = require('./validators');
 const {
-  addNewLineSQL, selectSingleUser,
+  addNewLineSQL, selectSingleUserSQL,
   changeValueOneCell, selectOneParamQSL
 } = require('./sql-functions/index');
 const log = require('./logs/index');
@@ -58,7 +58,7 @@ export function getRouter(appObj: typeof Application): typeof router {
   // });
   router.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
-    /* -------------- That is activation's block ------------------ */
+    /* -------------- This is activation's block ------------------ */
     const clientData = req.body as unknown as propsForClient;
     const coockie = clientData.coockie;
     await log(`[server -> router]: inlogin: ${JSON.stringify(clientData)}`);
@@ -75,7 +75,8 @@ export function getRouter(appObj: typeof Application): typeof router {
       password: REACT_APP_POSTGRES_DB_PASS
     });
     client.connect();
-    const respArr = await client.query(selectSingleUser(clientData.email));
+
+    const respArr = await client.query(selectSingleUserSQL(clientData.email));
     await log(`[server -> router]: inlogin Received data where is a length =>: ${(respArr.rows).length}`);
     if ((respArr.rows).length === 0) {
       client.end();

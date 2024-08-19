@@ -4043,7 +4043,6 @@ div.form {
 }
 
 /* submenu */
-
 ul {
   display: flex;
 }
@@ -4077,6 +4076,7 @@ ul {
   position: relative;
 }
 
+
 .active .nav-item.dropdown li {
   display: block;
 }
@@ -4084,15 +4084,22 @@ ul {
 .menu>.dropdown>ul>li {
   z-index: 2;
 }
+
 .profil.form {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 0 10px;
+  padding-left: 25px;
 }
 
+.profile-name .input[type="checkbox"] {
 
-.profile-name input[type="checkbox"] {
-  width: 45px;
-  height: 8px;
+  width: 39px;
+  height: 11px;
+}
+
+/* Swiths */
+.profil .switchs {
+  display: none;
 }

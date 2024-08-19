@@ -19,11 +19,11 @@ export function ProfileFC(): React.JSX.Element {
     <div className='profil form'>
       <div className='profile-name, profile-FirstName'>
 
-        <input type="checkbox" className="toggle toggle-xs" defaultChecked />
+        <input type="checkbox" className="switchs toggle toggle-xs" defaultChecked />
         <div></div>
       </div>
       <div className='profile-name, profile-LastName'>
-        <input type="checkbox" className="toggle toggle-xs" defaultChecked />
+        <input type="checkbox" className="switchs  toggle toggle-xs" defaultChecked />
         <div></div>
       </div>
     </div>
