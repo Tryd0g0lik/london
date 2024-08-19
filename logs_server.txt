@@ -370,3 +370,43 @@
 10:54:3:70 ==> [server -> clients]: Connection now.
 10:54:3:70 ==> [server -> clients]: That is a connection. Before sending.
 10:54:3:96 ==> [server -> clients]: data was received
+10:56:26:99 ==> [server]: START
+10:56:26:0 ==> [server]: Start the "Client" connection.
+10:56:26:1 ==> [server -> listen]: Server start to listen the PORT 7070
+10:56:26:39 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:56:26:40 ==> [server]: Start the "Client" connection.
+10:56:26:80 ==> [server]: "Emails" created .
+10:56:26:81 ==> [server]: "Users" created .
+10:56:26:82 ==> [server]: The end the "Client" connection.
+10:56:26:82 ==> [server]: END
+10:56:26:46 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:56:26:48 ==> [server -> clients]: Before connection.
+10:56:26:49 ==> [server -> clients]: Connection now.
+10:56:26:49 ==> [server -> clients]: That is a connection. Before sending.
+10:56:26:77 ==> [server -> clients]: data was received
+10:56:26:81 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:56:26:82 ==> [server -> clients]: Before connection.
+10:56:26:82 ==> [server -> clients]: Connection now.
+10:56:26:83 ==> [server -> clients]: That is a connection. Before sending.
+10:56:26:10 ==> [server -> clients]: data was received
+11:1:33:30 ==> [server]: START
+11:1:33:32 ==> [server]: Start the "Client" connection.
+11:1:33:32 ==> [server -> listen]: Server start to listen the PORT 7070
+11:1:33:65 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:1:33:66 ==> [server]: Start the "Client" connection.
+11:1:33:93 ==> [server]: "Emails" created .
+11:1:33:93 ==> [server]: "Users" created .
+11:1:33:94 ==> [server]: The end the "Client" connection.
+11:1:33:94 ==> [server]: END
+11:2:0:35 ==> [server]: START
+11:2:0:36 ==> [server]: Start the "Client" connection.
+11:2:0:36 ==> [server -> listen]: Server start to listen the PORT 7070
+11:2:0:70 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:0:70 ==> [server]: Start the "Client" connection.
+11:2:0:96 ==> [server]: "Emails" created .
+11:2:0:97 ==> [server]: "Users" created .
+11:2:0:97 ==> [server]: The end the "Client" connection.
+11:2:0:98 ==> [server]: END

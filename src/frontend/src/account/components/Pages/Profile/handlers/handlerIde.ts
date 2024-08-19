@@ -13,7 +13,7 @@ export async function handlerIdeFC(): Promise<boolean> {
   let index = 0;
   (switchs as HTMLDivElement).addEventListener('click', async (event: MouseEvent): Promise<boolean> => {
 
-    const target = event.target;
+    // const target = event.target;
 
     if ((event.type) && ((event.type).toLowerCase() !== 'click')) {
       return false;

@@ -128,7 +128,7 @@ export function selectOneParamQSL(props: Propse): string {
  * @param newValue Новые данные для внесения
  * @returns string
  */
-export function changeValueOneCell(tableName: string, column: string, index: number, newValue: string | boolean): string {
+export function changeValueOneCellSQL(tableName: string, column: string, index: number, newValue: string | boolean): string {
   if ((typeof newValue) === 'boolean') {
     const updateOneCell = `UPDATE ${tableName}
     SET ${column} = ${newValue}

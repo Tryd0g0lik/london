@@ -3,7 +3,7 @@ const { Client } = require('pg');
 const { helper } = require('./validators');
 const {
   addNewLineSQL, selectSingleUserSQL,
-  changeValueOneCell, selectOneParamQSL
+  changeValueOneCellSQL, selectOneParamQSL
 } = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
@@ -94,10 +94,10 @@ export function getRouter(appObj: typeof Application): typeof router {
     }
     await log(`[server -> router]: inlogin Filter LENGTH2 =>: ${(result.length)}`);
     // making the aictve status in db
-    await client.query(changeValueOneCell('Users', 'is_active', result[0].id, true));
+    await client.query(changeValueOneCellSQL('Users', 'is_active', result[0].id, true));
     await log(`[server -> router]: inlogin Filter LENGTH3 =>: ${(coockie.sessionId)}`);
     // making the aictve status in db
-    await client.query(changeValueOneCell('Users', 'session_id', result[0].id, coockie.sessionId));
+    await client.query(changeValueOneCellSQL('Users', 'session_id', result[0].id, coockie.sessionId));
     await log(`[server -> router]: inlogin Filter LENGTH4 =>: ${(coockie.sessionId)}`);
     client.end();
     /* --------------- if we is find the use in db ---------------  */

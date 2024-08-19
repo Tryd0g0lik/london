@@ -13,6 +13,10 @@
       "name": "main-main-196498f333b1e342eaf4.js",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-196498f333b1e342eaf4.js"
     },
+    "main-main-1f45c71383ef63422404.js": {
+      "name": "main-main-1f45c71383ef63422404.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-1f45c71383ef63422404.js"
+    },
     "main-main-2d163cd25e43e8b33d86.js": {
       "name": "main-main-2d163cd25e43e8b33d86.js",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-2d163cd25e43e8b33d86.js"
@@ -156,13 +160,21 @@
     "main.d9e04a5f90d6ae29f77c.hot-update.json": {
       "name": "main.d9e04a5f90d6ae29f77c.hot-update.json",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.d9e04a5f90d6ae29f77c.hot-update.json"
+    },
+    "main.f94966ba0cfdf63a7e25.hot-update.js": {
+      "name": "main.f94966ba0cfdf63a7e25.hot-update.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.f94966ba0cfdf63a7e25.hot-update.js"
+    },
+    "main.f94966ba0cfdf63a7e25.hot-update.json": {
+      "name": "main.f94966ba0cfdf63a7e25.hot-update.json",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.f94966ba0cfdf63a7e25.hot-update.json"
     }
   },
   "chunks": {
     "main": [
       "css/style.css",
-      "main-main-f94966ba0cfdf63a7e25.js",
-      "main.2d163cd25e43e8b33d86.hot-update.js"
+      "main-main-1f45c71383ef63422404.js",
+      "main.f94966ba0cfdf63a7e25.hot-update.js"
     ]
   },
   "error": "ModuleBuildError",
