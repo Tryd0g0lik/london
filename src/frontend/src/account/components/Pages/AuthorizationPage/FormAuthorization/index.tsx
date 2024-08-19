@@ -1,7 +1,7 @@
 import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
-import { add, get } from '@Services/fetches';
+import { add } from '@Services/fetches';
 import { checkerCoockieKey } from '@Services/coockieSessionId';
 // import getCookie from '@Services/cookies';
 import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
