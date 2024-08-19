@@ -33,10 +33,16 @@ async function calculateLines(file: unknown): Promise<number> {
 
 // Функция для удаления файла, если в нем более или равно 'maxLongth' строк
 // maxLongth макс число строк. По умолчанию 2000
-function deleteFileIfLarger(): void { // НЕ РАБОЧИЙ - !!!
-  fs.promise.unlink('logs_server.txt', (err: unknown) => {
-    if (err) throw err;
-  });
+async function deleteFileIfLarger(): Promise<void> {
+  // fs.promise.unlink('logs_server.txt', (err: unknown) => {
+  //   if (err) throw err;
+  // });
+  try {
+    await fs.promises.unlink('logs_server.txt');
+  } catch (err) {
+    console.error('Error deleting file:', err);
+    throw err; // Пробрасываем ошибку дальше
+  }
 }
 
 // Функция для записи новой строки в файл
@@ -51,10 +57,9 @@ async function logs(newLog: string, maxLongth = 2000): Promise<void> {
   // checkFile();
   try {
     const intgCurrent: number = await calculateLines('./logs_server.txt'); // подсчитываем строки
-
     if (intgCurrent >= maxLongth) {
       // Запускаем функцию для удаления файла
-      deleteFileIfLarger();
+      void deleteFileIfLarger();
       checkFile();
     }
     checkFile();
