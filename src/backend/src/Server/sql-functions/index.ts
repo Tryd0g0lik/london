@@ -106,18 +106,53 @@ export function selectSingleUserSQL(email: string): string {
   return selectEmailId;
 }
 
-interface Propse {
-  column: string
-  value: string
+interface Put {
+  email: string
+  newEmail: string
+  firstName: string
+  lastName: string
+  newPassword: string
+  emailId: number
 }
 /**
  *
+ * @param props
+ * @param email: string
+ * @param emailId: number
+ * @param newEmail: string
+ * @param firstName: string
+ * @param lastName: string
+ * @param newPassword: string
+ * @returns return string
+ */
+export function changeValueAllCellSQL(props: Put): string {
+  const { email, emailId, newEmail, firstName, lastName, newPassword } = props;
+  const changeValueAll = `UPDATE Emails
+SET emails = '${newEmail}'
+WHERE emails = '${email}';
+
+UPDATE Users
+SET first_name = '${firstName}',
+    last_name = '${lastName}',
+    passwords = '${newPassword}',
+    email_id = ${emailId}
+WHERE email_id = (SELECT id FROM Emails WHERE emails = '${email}');`;
+  return changeValueAll;
+}
+
+interface Propse {
+  column: string
+  value: string
+  table: 'users' | 'emails'
+}
+/**
+ * Sitantax: `clients(selectOneParamQSL, { column: 'session_id', value: params.sessionId })`
  * @param column : cell
  * @param value : value
  * @returns single object
  */
 export function selectOneParamQSL(props: Propse): string {
-  const selectOneParam = `SELECT * FROM users WHERE  ${props.column} = '${props.value}';`;
+  const selectOneParam = `SELECT * FROM ${table} WHERE  ${props.column} = '${props.value}';`;
   return selectOneParam;
 }
 

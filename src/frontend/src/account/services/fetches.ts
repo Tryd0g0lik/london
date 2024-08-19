@@ -1,5 +1,6 @@
-import getCookie from './cookies';
-import { FetchParams, FetchMethod } from '@Interfaces'
+// import getCookie from './cookies';
+import { getCookie } from '@Services/coockieSessionId';
+import { FetchParams, FetchMethod, Pages } from '@Interfaces'
 
 let env_ = process.env.REACT_APP_POSTGRES_HOST;
 const HOST = (env_ === undefined) ? 'localhost' : env_.slice(0) as string;
@@ -34,6 +35,28 @@ export async function add(body_: string,
   }, REACT_APP_SET_TTIMOUT as number);
   const answer = await fetch(url, paramsCopy);
   clearTimeout(registrateTimout);
+  if (answer.ok) {
+    const dataJson = answer.json();
+    return dataJson
+  }
+  return false
+}
+export async function put(body_: string,
+  pathnameStr = '/api/v1/clients/add/'
+): Promise<object | boolean | string> {
+  params['method'] = FetchMethod.PUT;
+  params['headers'] = {
+    'X-CSRFToken': getCookie('sessionId'),// getCookie('csrftoken') as string,
+    'Content-Type': 'application/json'
+  };
+  params['body'] = body_;
+  const paramsCopy = {}
+  Object.assign(paramsCopy, params);
+  const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
+  const url = urlStr + pathnameStr;
+
+  const answer = await fetch(url, paramsCopy);
+
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson
