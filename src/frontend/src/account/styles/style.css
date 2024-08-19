@@ -13,13 +13,13 @@
 .nav-item {
   list-style-type: none;
 }
+
 .nav-item.dropdown li {
   display: none;
 }
 
 div.form {
-  width: 350px;
-  ;
+  width: 510px;
 }
 
 #root.active .dropdown li {
@@ -27,6 +27,7 @@ div.form {
 }
 
 /* Loader */
+
 .loading {
   display: none;
 }
@@ -36,6 +37,7 @@ div.form {
   position: absolute;
   margin: calc(100% - 50% + 15%) auto;
 }
+
 /* submenu */
 ul {
   display: flex;
@@ -45,25 +47,25 @@ ul {
   display: flex;
   background: var(--fallback-b1, oklch(var(--b1)/1));
   flex-wrap: wrap;
-  }
+}
 
-  #root.active a[href="/inlogin"] {
-    display: none;
-  }
+#root.active a[href="/inlogin"] {
+  display: none;
+}
 
-  .dropdown .dropdown-memu {
-    position: absolute;
+.dropdown .dropdown-memu {
+  position: absolute;
   left: 0;
   bottom: -50px;
-    width: max-content;
+  width: max-content;
   }
 
-  .dropdown-memu {
-    display: none;
-  }
+.dropdown-memu {
+  display: none;
+}
 
-  .nav-item.active .dropdown-memu {
-    display: inherit;
+.nav-item.active .dropdown-memu {
+  display: inherit;
 }
 
 .active li.nav-item.dropdown {
@@ -74,23 +76,37 @@ ul {
 .active .nav-item.dropdown li {
   display: block;
 }
+
 .menu>.dropdown>ul>li {
   z-index: 2;
 }
-.profil.form {
+.profile.form {
   display: flex;
   flex-wrap: nowrap;
+
   justify-content: flex-start;
   gap: 0 10px;
   padding-left: 25px;
 }
 
-.profile-name .input[type="checkbox"] {
+.profilename .input[type="checkbox"] {
 
   width: 39px;
   height: 11px;
 }
+.profile>div {
+  width: 230px;
+}
 /* Swiths */
-.profil .switchs {
+.profile .switchs {
+  display: none;
+}
+#root.active .profile .switchs {
+  display: flex;
+}
+
+/*>input+div*/
+#root.active .profile .profile-LastName>.active+div,
+#root.active .profile .profile-FirstName>.active+div {
   display: none;
 }

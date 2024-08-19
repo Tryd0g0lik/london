@@ -17,8 +17,8 @@ export async function infoLoader(): Promise<boolean> {
   if ((typeof result) === 'boolean') {
     return false;
   }
-  const profile = document.querySelector('.profil');
-  const profileALL = document.querySelectorAll('.profil > div');
+  const profile = document.querySelector('.profile');
+  const profileALL = document.querySelectorAll('.profile > div');
   if (profileALL === null && profile === null) {
     return false;
   };

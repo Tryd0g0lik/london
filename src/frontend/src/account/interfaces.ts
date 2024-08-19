@@ -24,3 +24,7 @@ export interface FetchParams {
   mode?: 'no-cors' | 'cors',
 }
 
+
+export interface FieldInnerHtml {
+  text?: string
+}

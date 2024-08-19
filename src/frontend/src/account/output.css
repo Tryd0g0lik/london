@@ -4023,7 +4023,7 @@ details.collapse summary::-webkit-details-marker {
 }
 
 div.form {
-  width: 350px;
+  width: 510px;
 }
 
 #root.active .dropdown li {
@@ -4085,24 +4085,34 @@ ul {
   z-index: 2;
 }
 
-.profil.form {
+.profile.form {
   display: flex;
   flex-wrap: nowrap;
+
   justify-content: flex-start;
   gap: 0 10px;
   padding-left: 25px;
 }
 
-.profile-name .input[type="checkbox"] {
+.profilename .input[type="checkbox"] {
 
   width: 39px;
   height: 11px;
 }
 
+.profile>div {
+  width: 230px;
+}
 /* Swiths */
-.profil .switchs {
+.profile .switchs {
   display: none;
 }
-#root.active .profil .switchs {
+#root.active .profile .switchs {
   display: flex;
+}
+
+/*>input+div*/
+#root.active .profile .profile-LastName>.active+div,
+#root.active .profile .profile-FirstName>.active+div {
+  display: none;
 }
