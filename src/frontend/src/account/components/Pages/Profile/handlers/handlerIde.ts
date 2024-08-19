@@ -123,9 +123,9 @@ const helperForHandlerSwhitches = () => {
 }
 
 
-const helperForHandlerEventOfInput = () => {
-  const handlerEventOfInput = (event: MouseEvent) => {
+// const helperForHandlerEventOfInput = () => {
+//   const handlerEventOfInput = (event: MouseEvent) => {
 
-  }
-  return handlerEventOfInput;
-}
+//   }
+//   return handlerEventOfInput;
+// }

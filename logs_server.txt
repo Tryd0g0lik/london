@@ -510,3 +510,27 @@
 15:49:8:80 ==> [server -> clients]: data was received
 15:49:8:80 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
 15:49:8:82 ==> [server -> router]: inlogin  That Profile SENDED
+15:50:51:66 ==> [server]: START
+15:50:51:67 ==> [server]: Start the "Client" connection.
+15:50:51:67 ==> [server -> listen]: Server start to listen the PORT 7070
+15:50:51:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+15:50:51:4 ==> [server]: Start the "Client" connection.
+15:50:51:31 ==> [server]: "Emails" created .
+15:50:51:31 ==> [server]: "Users" created .
+15:50:51:32 ==> [server]: The end the "Client" connection.
+15:50:51:32 ==> [server]: END
+15:50:52:25 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+15:50:52:27 ==> [server -> clients]: Before connection.
+15:50:52:28 ==> [server -> clients]: Connection now.
+15:50:52:28 ==> [server -> clients]: That is a connection. Before sending.
+15:50:52:54 ==> [server -> clients]: data was received
+15:50:52:54 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+15:50:52:57 ==> [server -> router]: inlogin  That Profile SENDED
+15:50:52:61 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+15:50:52:62 ==> [server -> clients]: Before connection.
+15:50:52:63 ==> [server -> clients]: Connection now.
+15:50:52:63 ==> [server -> clients]: That is a connection. Before sending.
+15:50:52:89 ==> [server -> clients]: data was received
+15:50:52:89 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+15:50:52:91 ==> [server -> router]: inlogin  That Profile SENDED
