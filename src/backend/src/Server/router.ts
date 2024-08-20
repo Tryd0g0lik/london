@@ -139,7 +139,6 @@ export function getRouter(appObj: typeof Application): typeof router {
 
     await clients(changeValueAllCellSQL, { ...props }, false);
     await log('[server -> router]: PUT After a change 4/4  Before a clients/SQL');
-    // sendNotFound(res, respArr.rows);
     res.status(200).json(props);
     return true;
   });

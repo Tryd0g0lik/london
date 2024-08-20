@@ -20,6 +20,7 @@ export async function handlerIdeFC(): Promise<boolean> {
     return false;
   }
 
+  // Here, on switcher is hang the listener at 'click'
   Array.from(nameHtmlArr).forEach((item) => {
     (item as HTMLDivElement).removeEventListener('click', helperForHandlerSwhitches());
     (item as HTMLDivElement).addEventListener('click', helperForHandlerSwhitches());
@@ -96,9 +97,52 @@ the new html's  <input>-tage */
           if (inputHtml === null) {
             return false;
           }
+
+          /* ------- subHelper - look the under this a code ------ */
+          const subHelper = async (event: KeyboardEvent) => {
+            if (((event.key).toLowerCase() !== 'enter') ||
+              ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
+              return false;
+            }
+            await handlerEventOfInput(event);
+            // Input wich need the delete
+            const target = (event.target as HTMLElement);
+            if (target.tagName.toLowerCase() !== 'input') {
+              throw new Error('[profile -> UI dashoard]: Something whtat wrong!')
+            }
+            // receives a new content
+            const newContent = (target as HTMLInputElement).value;
+            // Here we going to the above by DOM-tree. It to the container for input's field (for redact);
+            let divHtml = (target.parentElement as HTMLLabelElement).parentElement;
+            if (divHtml === null) {
+              throw new Error('[profile -> UI dashoard2]: Something whtat wrong!')
+            }
+            divHtml.innerHTML = '';
+            // Here we gor to the parent from switcher.
+            if ((divHtml.parentElement as HTMLElement).hasAttribute('data-namex') === false) {
+              throw new Error('[profile -> UI dashoard3]: Something whtat wrong!')
+            }
+            // Here we go to below by DOM-tree. It move to switcher
+            const oldFieldOfClassName = (divHtml.parentElement as HTMLElement).querySelector('div>input[type="checkbox"]');
+            if (!oldFieldOfClassName) {
+              throw new Error('[profile -> UI dashoard]: Something whtat wrong!')
+            }
+            oldFieldOfClassName.className =
+              oldFieldOfClassName.className.replace(' active ', '');
+
+            // Here a content is update
+            divHtml = (divHtml.parentElement as HTMLElement).querySelector('div>div:first-of-type');
+            if (!divHtml) {
+              throw new Error('[profile -> UI dashoard]: Something whtat wrong!')
+            }
+            divHtml.innerHTML = newContent;
+            handlerIdeFC();
+
+          }
           // handler for sending request to the server
-          (inputHtml as HTMLElement).removeEventListener('keypress', handlerEventOfInput);
-          (inputHtml as HTMLElement).addEventListener('keypress', handlerEventOfInput);
+          (inputHtml as HTMLElement).removeEventListener('keypress', subHelper);
+          (inputHtml as HTMLElement).addEventListener('keypress', subHelper);
+          /* ------- endSubHelper ------ */
         } else {
           (atributeTimeout) = setTimeout(() => {
             item = item.parentElement as HTMLElement;
@@ -182,10 +226,7 @@ const helperForHandlerSwhitches = () => {
  * @returns fooald
  */
 const handlerEventOfInput = async (event: KeyboardEvent): Promise<boolean> => {
-  if (((event.key).toLowerCase() !== 'enter') ||
-    ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
-    return false;
-  }
+
   const target = event.currentTarget as HTMLInputElement;
   const newValueOfInput = target.value;
   /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
@@ -209,6 +250,7 @@ const handlerEventOfInput = async (event: KeyboardEvent): Promise<boolean> => {
   /* here is found */
   const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
   label.insertAdjacentHTML('afterend', p.outerHTML);
+
 
   return true;
 }

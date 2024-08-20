@@ -92,3 +92,1867 @@
 10:23:51:13 ==> [server -> clients]: That is a connection. Before sending.
 10:23:51:40 ==> [server -> clients]: data was save
 10:23:51:41 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+10:25:29:48 ==> [server]: START
+10:25:29:49 ==> [server]: Start the "Client" connection.
+10:25:29:50 ==> [server -> listen]: Server start to listen the PORT 7070
+10:25:29:95 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:25:29:95 ==> [server]: Start the "Client" connection.
+10:25:29:30 ==> [server]: "Emails" created .
+10:25:29:31 ==> [server]: "Users" created .
+10:25:29:31 ==> [server]: The end the "Client" connection.
+10:25:29:31 ==> [server]: END
+10:30:56:17 ==> [server]: START
+10:30:56:18 ==> [server]: Start the "Client" connection.
+10:30:56:19 ==> [server -> listen]: Server start to listen the PORT 7070
+10:30:56:21 ==> [server]: START
+10:30:56:22 ==> [server]: Start the "Client" connection.
+10:30:56:23 ==> [server -> listen]: Server start to listen the PORT 7070
+10:30:56:52 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:30:56:55 ==> [server -> clients]: Before connection.
+10:30:56:56 ==> [server -> clients]: Connection now.
+10:30:56:56 ==> [server -> clients]: That is a connection. Before sending.
+10:30:56:64 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:30:56:64 ==> [server]: Start the "Client" connection.
+10:30:56:85 ==> [server -> clients]: data was received
+10:30:56:85 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:30:56:89 ==> [server -> router]: inlogin  That Profile SENDED
+10:30:56:95 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:30:56:95 ==> [server]: "Emails" created .
+10:30:56:97 ==> [server]: "Users" created .
+10:30:56:97 ==> [server]: The end the "Client" connection.
+10:30:56:97 ==> [server]: END
+10:30:56:98 ==> [server -> clients]: Before connection.
+10:30:56:98 ==> [server -> clients]: Connection now.
+10:30:56:98 ==> [server -> clients]: That is a connection. Before sending.
+10:30:56:24 ==> [server -> clients]: data was received
+10:30:56:24 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:30:56:26 ==> [server -> router]: inlogin  That Profile SENDED
+10:35:32:20 ==> [server]: START
+10:35:32:22 ==> [server]: Start the "Client" connection.
+10:35:32:22 ==> [server -> listen]: Server start to listen the PORT 7070
+10:35:32:66 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:35:32:66 ==> [server]: Start the "Client" connection.
+10:35:32:2 ==> [server]: "Emails" created .
+10:35:32:3 ==> [server]: "Users" created .
+10:35:32:3 ==> [server]: The end the "Client" connection.
+10:35:32:4 ==> [server]: END
+10:35:47:42 ==> [server]: START
+10:35:47:44 ==> [server]: Start the "Client" connection.
+10:35:47:44 ==> [server -> listen]: Server start to listen the PORT 7070
+10:35:47:82 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:35:47:83 ==> [server]: Start the "Client" connection.
+10:35:47:12 ==> [server]: "Emails" created .
+10:35:47:12 ==> [server]: "Users" created .
+10:35:47:13 ==> [server]: The end the "Client" connection.
+10:35:47:13 ==> [server]: END
+10:45:24:57 ==> [server]: START
+10:45:24:59 ==> [server]: Start the "Client" connection.
+10:45:24:59 ==> [server -> listen]: Server start to listen the PORT 7070
+10:45:24:88 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:45:24:90 ==> [server -> clients]: Before connection.
+10:45:24:90 ==> [server -> clients]: Connection now.
+10:45:24:91 ==> [server -> clients]: That is a connection. Before sending.
+10:45:24:17 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:45:24:18 ==> [server]: Start the "Client" connection.
+10:45:24:28 ==> [server -> clients]: data was received
+10:45:24:29 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:45:24:33 ==> [server -> router]: inlogin  That Profile SENDED
+10:45:24:37 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:45:24:39 ==> [server -> clients]: Before connection.
+10:45:24:40 ==> [server -> clients]: Connection now.
+10:45:24:41 ==> [server -> clients]: That is a connection. Before sending.
+10:45:24:60 ==> [server]: "Emails" created .
+10:45:24:61 ==> [server]: "Users" created .
+10:45:24:61 ==> [server]: The end the "Client" connection.
+10:45:24:62 ==> [server]: END
+10:45:24:82 ==> [server -> clients]: data was received
+10:45:24:82 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:45:24:84 ==> [server -> router]: inlogin  That Profile SENDED
+10:46:22:63 ==> [server]: Start the "Client" connection.
+10:46:22:64 ==> [server]: START
+10:46:22:65 ==> [server -> listen]: Server start to listen the PORT 7070
+10:46:22:10 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:46:22:11 ==> [server]: Start the "Client" connection.
+10:46:22:42 ==> [server]: "Emails" created .
+10:46:22:43 ==> [server]: "Users" created .
+10:46:22:44 ==> [server]: The end the "Client" connection.
+10:46:22:44 ==> [server]: END
+10:47:23:13 ==> [server]: Start the "Client" connection.
+10:47:23:15 ==> [server]: START
+10:47:23:15 ==> [server -> listen]: Server start to listen the PORT 7070
+10:47:23:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:47:23:55 ==> [server]: Start the "Client" connection.
+10:47:23:92 ==> [server]: "Emails" created .
+10:47:23:93 ==> [server]: "Users" created .
+10:47:23:93 ==> [server]: END
+10:47:23:94 ==> [server]: The end the "Client" connection.
+10:48:37:32 ==> [server]: START
+10:48:37:33 ==> [server]: Start the "Client" connection.
+10:48:37:33 ==> [server -> listen]: Server start to listen the PORT 7070
+10:48:37:67 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:48:37:68 ==> [server]: Start the "Client" connection.
+10:48:37:95 ==> [server]: "Emails" created .
+10:48:37:95 ==> [server]: "Users" created .
+10:48:37:96 ==> [server]: The end the "Client" connection.
+10:48:37:96 ==> [server]: END
+10:48:41:49 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:48:41:51 ==> [server -> clients]: Before connection.
+10:48:41:52 ==> [server -> clients]: Connection now.
+10:48:41:52 ==> [server -> clients]: That is a connection. Before sending.
+10:48:41:85 ==> [server -> clients]: data was received
+10:48:41:85 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:48:41:88 ==> [server -> router]: inlogin  That Profile SENDED
+10:48:41:93 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:48:41:94 ==> [server -> clients]: Before connection.
+10:48:41:94 ==> [server -> clients]: Connection now.
+10:48:41:95 ==> [server -> clients]: That is a connection. Before sending.
+10:48:41:24 ==> [server -> clients]: data was received
+10:48:41:24 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:48:41:25 ==> [server -> router]: inlogin  That Profile SENDED
+10:48:43:37 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:48:43:38 ==> [server -> clients]: Before connection.
+10:48:43:39 ==> [server -> clients]: Connection now.
+10:48:43:41 ==> [server -> clients]: That is a connection. Before sending.
+10:48:43:98 ==> [server -> clients]: data was received
+10:48:43:99 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:48:44:1 ==> [server -> router]: inlogin  That Profile SENDED
+10:48:44:9 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:48:44:12 ==> [server -> clients]: Before connection.
+10:48:44:12 ==> [server -> clients]: Connection now.
+10:48:44:13 ==> [server -> clients]: That is a connection. Before sending.
+10:48:44:52 ==> [server -> clients]: data was received
+10:48:44:52 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:48:44:54 ==> [server -> router]: inlogin  That Profile SENDED
+10:51:5:20 ==> [server]: Start the "Client" connection.
+10:51:5:21 ==> [server]: START
+10:51:5:21 ==> [server -> listen]: Server start to listen the PORT 7070
+10:51:5:62 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:51:5:63 ==> [server]: Start the "Client" connection.
+10:51:5:97 ==> [server]: "Emails" created .
+10:51:5:98 ==> [server]: "Users" created .
+10:51:5:98 ==> [server]: The end the "Client" connection.
+10:51:5:99 ==> [server]: END
+10:52:14:19 ==> [server]: START
+10:52:14:20 ==> [server]: Start the "Client" connection.
+10:52:14:21 ==> [server -> listen]: Server start to listen the PORT 7070
+10:52:14:55 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:52:14:55 ==> [server]: Start the "Client" connection.
+10:52:15:86 ==> [server]: "Emails" created .
+10:52:15:87 ==> [server]: "Users" created .
+10:52:15:87 ==> [server]: The end the "Client" connection.
+10:52:15:88 ==> [server]: END
+10:52:19:50 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:19:53 ==> [server -> clients]: Before connection.
+10:52:19:53 ==> [server -> clients]: Connection now.
+10:52:19:54 ==> [server -> clients]: That is a connection. Before sending.
+10:52:19:90 ==> [server -> clients]: data was received
+10:52:19:91 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:19:93 ==> [server -> router]: inlogin  That Profile SENDED
+10:52:19:96 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:19:98 ==> [server -> clients]: Before connection.
+10:52:19:98 ==> [server -> clients]: Connection now.
+10:52:19:99 ==> [server -> clients]: That is a connection. Before sending.
+10:52:20:34 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:20:36 ==> [server -> clients]: data was received
+10:52:20:37 ==> [server -> router]: inlogin  That Profile SENDED
+10:52:22:34 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:22:36 ==> [server -> clients]: Before connection.
+10:52:22:37 ==> [server -> clients]: Connection now.
+10:52:22:37 ==> [server -> clients]: That is a connection. Before sending.
+10:52:22:70 ==> [server -> clients]: data was received
+10:52:22:70 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:22:71 ==> [server -> router]: inlogin  That Profile SENDED
+10:52:36:71 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:36:73 ==> [server -> clients]: Before connection.
+10:52:36:74 ==> [server -> clients]: Connection now.
+10:52:36:74 ==> [server -> clients]: That is a connection. Before sending.
+10:52:36:5 ==> [server -> clients]: data was received
+10:52:36:6 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:36:7 ==> [server -> router]: inlogin  That Profile SENDED
+10:52:41:64 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:41:67 ==> [server -> clients]: Before connection.
+10:52:41:67 ==> [server -> clients]: Connection now.
+10:52:41:68 ==> [server -> clients]: That is a connection. Before sending.
+10:52:41:93 ==> [server -> clients]: data was received
+10:52:41:93 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:41:94 ==> [server -> router]: inlogin  That Profile SENDED
+10:52:41:98 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:52:41:99 ==> [server -> clients]: Before connection.
+10:52:41:99 ==> [server -> clients]: Connection now.
+10:52:41:0 ==> [server -> clients]: That is a connection. Before sending.
+10:52:41:24 ==> [server -> clients]: data was received
+10:52:41:25 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:52:41:26 ==> [server -> router]: inlogin  That Profile SENDED
+10:53:48:26 ==> [server]: START
+10:53:48:27 ==> [server]: Start the "Client" connection.
+10:53:48:27 ==> [server -> listen]: Server start to listen the PORT 7070
+10:53:48:71 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:53:48:71 ==> [server]: Start the "Client" connection.
+10:53:48:2 ==> [server]: "Emails" created .
+10:53:48:3 ==> [server]: "Users" created .
+10:53:48:4 ==> [server]: The end the "Client" connection.
+10:53:48:4 ==> [server]: END
+10:53:48:61 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:53:48:63 ==> [server -> clients]: Before connection.
+10:53:48:64 ==> [server -> clients]: Connection now.
+10:53:48:64 ==> [server -> clients]: That is a connection. Before sending.
+10:53:48:95 ==> [server -> clients]: data was received
+10:53:48:96 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:53:48:99 ==> [server -> router]: inlogin  That Profile SENDED
+10:53:52:96 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:53:52:99 ==> [server -> clients]: Before connection.
+10:53:52:2 ==> [server -> clients]: That is a connection. Before sending.
+10:53:52:2 ==> [server -> clients]: Connection now.
+10:53:52:41 ==> [server -> clients]: data was received
+10:53:52:42 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:53:52:44 ==> [server -> router]: inlogin  That Profile SENDED
+10:53:52:58 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:53:52:59 ==> [server -> clients]: Before connection.
+10:53:52:61 ==> [server -> clients]: Connection now.
+10:53:52:61 ==> [server -> clients]: That is a connection. Before sending.
+10:53:52:94 ==> [server -> clients]: data was received
+10:53:52:94 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:53:52:96 ==> [server -> router]: inlogin  That Profile SENDED
+10:57:21:17 ==> [server]: START
+10:57:21:19 ==> [server]: Start the "Client" connection.
+10:57:21:19 ==> [server -> listen]: Server start to listen the PORT 7070
+10:57:21:56 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:57:21:57 ==> [server]: Start the "Client" connection.
+10:57:21:87 ==> [server]: "Emails" created .
+10:57:21:87 ==> [server]: "Users" created .
+10:57:21:88 ==> [server]: The end the "Client" connection.
+10:57:21:88 ==> [server]: END
+10:57:21:25 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:57:21:26 ==> [server -> clients]: Before connection.
+10:57:21:27 ==> [server -> clients]: Connection now.
+10:57:21:28 ==> [server -> clients]: That is a connection. Before sending.
+10:57:21:55 ==> [server -> clients]: data was received
+10:57:21:56 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:57:21:59 ==> [server -> router]: inlogin  That Profile SENDED
+10:57:21:63 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:57:21:65 ==> [server -> clients]: Before connection.
+10:57:21:65 ==> [server -> clients]: Connection now.
+10:57:21:65 ==> [server -> clients]: That is a connection. Before sending.
+10:57:21:17 ==> [server -> clients]: data was received
+10:57:21:18 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:57:21:22 ==> [server -> router]: inlogin  That Profile SENDED
+10:57:26:31 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:57:26:33 ==> [server -> clients]: Before connection.
+10:57:26:33 ==> [server -> clients]: Connection now.
+10:57:26:34 ==> [server -> clients]: That is a connection. Before sending.
+10:57:26:59 ==> [server -> clients]: data was received
+10:57:26:60 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:57:26:61 ==> [server -> router]: inlogin  That Profile SENDED
+10:57:26:64 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:57:26:66 ==> [server -> clients]: Before connection.
+10:57:26:66 ==> [server -> clients]: Connection now.
+10:57:26:67 ==> [server -> clients]: That is a connection. Before sending.
+10:57:26:91 ==> [server -> clients]: data was received
+10:57:26:92 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:57:26:93 ==> [server -> router]: inlogin  That Profile SENDED
+10:58:21:98 ==> [server]: START
+10:58:21:99 ==> [server]: Start the "Client" connection.
+10:58:21:0 ==> [server -> listen]: Server start to listen the PORT 7070
+10:58:21:35 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:58:21:36 ==> [server]: Start the "Client" connection.
+10:58:21:67 ==> [server]: "Emails" created .
+10:58:21:68 ==> [server]: "Users" created .
+10:58:21:69 ==> [server]: The end the "Client" connection.
+10:58:21:69 ==> [server]: END
+10:58:21:58 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:58:21:60 ==> [server -> clients]: Before connection.
+10:58:21:61 ==> [server -> clients]: That is a connection. Before sending.
+10:58:21:62 ==> [server -> clients]: Connection now.
+10:58:21:88 ==> [server -> clients]: data was received
+10:58:21:88 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:58:21:91 ==> [server -> router]: inlogin  That Profile SENDED
+10:58:21:95 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:58:21:96 ==> [server -> clients]: Before connection.
+10:58:21:97 ==> [server -> clients]: Connection now.
+10:58:21:97 ==> [server -> clients]: That is a connection. Before sending.
+10:58:22:23 ==> [server -> clients]: data was received
+10:58:22:24 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:58:22:25 ==> [server -> router]: inlogin  That Profile SENDED
+10:59:18:85 ==> [server]: START
+10:59:18:85 ==> [server]: Start the "Client" connection.
+10:59:18:86 ==> [server -> listen]: Server start to listen the PORT 7070
+10:59:18:89 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:59:18:91 ==> [server -> clients]: Before connection.
+10:59:18:92 ==> [server -> clients]: Connection now.
+10:59:18:92 ==> [server -> clients]: That is a connection. Before sending.
+10:59:19:19 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:59:19:19 ==> [server]: Start the "Client" connection.
+10:59:19:22 ==> [server -> clients]: data was received
+10:59:19:23 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:59:19:26 ==> [server -> router]: inlogin  That Profile SENDED
+10:59:19:30 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:59:19:31 ==> [server -> clients]: Before connection.
+10:59:19:32 ==> [server -> clients]: Connection now.
+10:59:19:32 ==> [server -> clients]: That is a connection. Before sending.
+10:59:19:60 ==> [server -> clients]: data was received
+10:59:19:60 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:59:19:62 ==> [server -> router]: inlogin  That Profile SENDED
+10:59:19:48 ==> [server]: "Emails" created .
+10:59:19:49 ==> [server]: "Users" created .
+10:59:19:50 ==> [server]: The end the "Client" connection.
+10:59:19:50 ==> [server]: END
+10:59:41:93 ==> [server]: START
+10:59:41:95 ==> [server]: Start the "Client" connection.
+10:59:41:95 ==> [server -> listen]: Server start to listen the PORT 7070
+10:59:41:29 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:59:41:30 ==> [server]: Start the "Client" connection.
+10:59:41:59 ==> [server]: "Emails" created .
+10:59:41:59 ==> [server]: "Users" created .
+10:59:41:60 ==> [server]: The end the "Client" connection.
+10:59:41:60 ==> [server]: END
+10:59:41:62 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:59:41:64 ==> [server -> clients]: Before connection.
+10:59:41:65 ==> [server -> clients]: Connection now.
+10:59:41:65 ==> [server -> clients]: That is a connection. Before sending.
+10:59:41:98 ==> [server -> clients]: data was received
+10:59:41:98 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:59:41:1 ==> [server -> router]: inlogin  That Profile SENDED
+10:59:41:5 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+10:59:41:7 ==> [server -> clients]: Before connection.
+10:59:41:7 ==> [server -> clients]: Connection now.
+10:59:41:7 ==> [server -> clients]: That is a connection. Before sending.
+10:59:41:35 ==> [server -> clients]: data was received
+10:59:41:35 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+10:59:41:36 ==> [server -> router]: inlogin  That Profile SENDED
+11:2:8:44 ==> [server]: START
+11:2:8:46 ==> [server]: Start the "Client" connection.
+11:2:8:46 ==> [server -> listen]: Server start to listen the PORT 7070
+11:2:8:60 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:2:8:63 ==> [server -> clients]: Before connection.
+11:2:8:63 ==> [server -> clients]: Connection now.
+11:2:8:64 ==> [server -> clients]: That is a connection. Before sending.
+11:2:8:85 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:2:8:86 ==> [server]: Start the "Client" connection.
+11:2:8:13 ==> [server]: "Emails" created .
+11:2:8:13 ==> [server]: "Users" created .
+11:2:8:14 ==> [server]: The end the "Client" connection.
+11:2:8:14 ==> [server]: END
+11:2:8:98 ==> [server -> clients]: data was received
+11:2:8:99 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:2:8:1 ==> [server -> router]: inlogin  That Profile SENDED
+11:2:8:5 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:2:8:7 ==> [server -> clients]: Before connection.
+11:2:8:7 ==> [server -> clients]: Connection now.
+11:2:8:7 ==> [server -> clients]: That is a connection. Before sending.
+11:2:8:32 ==> [server -> clients]: data was received
+11:2:8:33 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:2:8:34 ==> [server -> router]: inlogin  That Profile SENDED
+11:2:14:14 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:2:14:15 ==> [server -> clients]: Before connection.
+11:2:14:16 ==> [server -> clients]: Connection now.
+11:2:14:16 ==> [server -> clients]: That is a connection. Before sending.
+11:2:14:42 ==> [server -> clients]: data was received
+11:2:14:42 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:2:14:44 ==> [server -> router]: inlogin  That Profile SENDED
+11:2:14:47 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:2:14:48 ==> [server -> clients]: Before connection.
+11:2:14:49 ==> [server -> clients]: Connection now.
+11:2:14:49 ==> [server -> clients]: That is a connection. Before sending.
+11:2:14:79 ==> [server -> clients]: data was received
+11:2:14:79 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:2:14:81 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:13:55 ==> [server]: START
+11:3:13:56 ==> [server]: Start the "Client" connection.
+11:3:13:57 ==> [server -> listen]: Server start to listen the PORT 7070
+11:3:13:60 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:13:62 ==> [server -> clients]: Before connection.
+11:3:13:63 ==> [server -> clients]: Connection now.
+11:3:13:63 ==> [server -> clients]: That is a connection. Before sending.
+11:3:13:98 ==> [server -> clients]: data was received
+11:3:13:98 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:13:2 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:13:5 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:13:7 ==> [server -> clients]: Before connection.
+11:3:13:7 ==> [server -> clients]: Connection now.
+11:3:13:8 ==> [server -> clients]: That is a connection. Before sending.
+11:3:13:34 ==> [server -> clients]: data was received
+11:3:13:35 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:13:36 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:13:83 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:3:13:84 ==> [server]: Start the "Client" connection.
+11:3:13:10 ==> [server]: "Emails" created .
+11:3:13:11 ==> [server]: "Users" created .
+11:3:13:12 ==> [server]: The end the "Client" connection.
+11:3:13:12 ==> [server]: END
+11:3:15:5 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:15:7 ==> [server -> clients]: Before connection.
+11:3:15:7 ==> [server -> clients]: Connection now.
+11:3:15:8 ==> [server -> clients]: That is a connection. Before sending.
+11:3:15:34 ==> [server -> clients]: data was received
+11:3:15:34 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:15:35 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:15:39 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:15:40 ==> [server -> clients]: Before connection.
+11:3:15:41 ==> [server -> clients]: Connection now.
+11:3:15:41 ==> [server -> clients]: That is a connection. Before sending.
+11:3:15:67 ==> [server -> clients]: data was received
+11:3:15:67 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:15:69 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:20:21 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:3:20:21 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root"}
+11:3:20:22 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:3:20:23 ==> [server -> clients]: Before connection.
+11:3:20:24 ==> [server -> clients]: Connection now.
+11:3:20:24 ==> [server -> clients]: That is a connection. Before sending.
+11:3:20:53 ==> [server -> clients]: data was received
+11:3:20:54 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:3:20:55 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Kjuby","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:20:57 ==> [server -> clients]: Before connection.
+11:3:20:57 ==> [server -> clients]: Connection now.
+11:3:20:58 ==> [server -> clients]: That is a connection. Before sending.
+11:3:20:81 ==> [server -> clients]: data was received
+11:3:20:81 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:3:20:82 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:3:20:84 ==> [server -> clients]: Before connection.
+11:3:20:85 ==> [server -> clients]: Connection now.
+11:3:20:85 ==> [server -> clients]: That is a connection. Before sending.
+11:3:20:10 ==> [server -> clients]: data was received
+11:3:20:10 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Kjuby","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:3:20:13 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:3:20:13 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:3:20:14 ==> [server -> clients]: Before connection.
+11:3:20:14 ==> [server -> clients]: Connection now.
+11:3:20:14 ==> [server -> clients]: That is a connection. Before sending.
+11:3:20:39 ==> [server -> clients]: data was save
+11:3:20:39 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:3:54:89 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:54:90 ==> [server -> clients]: Before connection.
+11:3:54:91 ==> [server -> clients]: Connection now.
+11:3:54:91 ==> [server -> clients]: That is a connection. Before sending.
+11:3:54:18 ==> [server -> clients]: data was received
+11:3:54:18 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:54:20 ==> [server -> router]: inlogin  That Profile SENDED
+11:3:54:26 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:3:54:27 ==> [server -> clients]: Before connection.
+11:3:54:28 ==> [server -> clients]: Connection now.
+11:3:54:28 ==> [server -> clients]: That is a connection. Before sending.
+11:3:54:54 ==> [server -> clients]: data was received
+11:3:54:55 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:3:54:56 ==> [server -> router]: inlogin  That Profile SENDED
+11:4:40:52 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:4:40:53 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root2"}
+11:4:40:53 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:4:40:55 ==> [server -> clients]: Before connection.
+11:4:40:56 ==> [server -> clients]: Connection now.
+11:4:40:56 ==> [server -> clients]: That is a connection. Before sending.
+11:4:40:84 ==> [server -> clients]: data was received
+11:4:40:84 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:4:40:85 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:4:40:88 ==> [server -> clients]: Before connection.
+11:4:40:88 ==> [server -> clients]: Connection now.
+11:4:40:89 ==> [server -> clients]: That is a connection. Before sending.
+11:4:40:13 ==> [server -> clients]: data was received
+11:4:40:14 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:4:40:15 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:4:40:17 ==> [server -> clients]: Before connection.
+11:4:40:18 ==> [server -> clients]: Connection now.
+11:4:40:18 ==> [server -> clients]: That is a connection. Before sending.
+11:4:40:45 ==> [server -> clients]: data was received
+11:4:40:45 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:4:40:49 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:4:40:49 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root2","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:4:40:50 ==> [server -> clients]: Before connection.
+11:4:40:50 ==> [server -> clients]: Connection now.
+11:4:40:50 ==> [server -> clients]: That is a connection. Before sending.
+11:4:40:76 ==> [server -> clients]: data was save
+11:4:40:77 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:8:59:94 ==> [server]: START
+11:8:59:95 ==> [server]: Start the "Client" connection.
+11:8:59:95 ==> [server -> listen]: Server start to listen the PORT 7070
+11:8:59:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:8:59:27 ==> [server]: Start the "Client" connection.
+11:8:59:53 ==> [server]: "Emails" created .
+11:8:59:55 ==> [server]: "Users" created .
+11:8:59:55 ==> [server]: The end the "Client" connection.
+11:8:59:55 ==> [server]: END
+11:9:7:36 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:7:39 ==> [server -> clients]: Before connection.
+11:9:7:39 ==> [server -> clients]: Connection now.
+11:9:7:40 ==> [server -> clients]: That is a connection. Before sending.
+11:9:7:69 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:7:73 ==> [server -> clients]: data was received
+11:9:7:74 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:7:79 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:7:80 ==> [server -> clients]: Before connection.
+11:9:7:81 ==> [server -> clients]: Connection now.
+11:9:7:81 ==> [server -> clients]: That is a connection. Before sending.
+11:9:7:20 ==> [server -> clients]: data was received
+11:9:7:20 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:7:23 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:30:13 ==> [server]: START
+11:9:30:17 ==> [server]: Start the "Client" connection.
+11:9:30:17 ==> [server -> listen]: Server start to listen the PORT 7070
+11:9:30:57 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:9:30:58 ==> [server]: Start the "Client" connection.
+11:9:30:93 ==> [server]: "Emails" created .
+11:9:30:95 ==> [server]: "Users" created .
+11:9:30:96 ==> [server]: The end the "Client" connection.
+11:9:30:96 ==> [server]: END
+11:9:31:44 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:31:47 ==> [server -> clients]: Before connection.
+11:9:31:47 ==> [server -> clients]: Connection now.
+11:9:31:48 ==> [server -> clients]: That is a connection. Before sending.
+11:9:31:77 ==> [server -> clients]: data was received
+11:9:31:77 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:31:82 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:31:88 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:31:89 ==> [server -> clients]: Before connection.
+11:9:31:90 ==> [server -> clients]: Connection now.
+11:9:31:90 ==> [server -> clients]: That is a connection. Before sending.
+11:9:31:29 ==> [server -> clients]: data was received
+11:9:31:30 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:31:32 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:41:93 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:41:95 ==> [server -> clients]: Before connection.
+11:9:41:96 ==> [server -> clients]: Connection now.
+11:9:41:96 ==> [server -> clients]: That is a connection. Before sending.
+11:9:41:23 ==> [server -> clients]: data was received
+11:9:41:24 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:41:25 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:41:29 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:9:41:31 ==> [server -> clients]: Before connection.
+11:9:41:32 ==> [server -> clients]: Connection now.
+11:9:41:33 ==> [server -> clients]: That is a connection. Before sending.
+11:9:41:59 ==> [server -> clients]: data was received
+11:9:41:59 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:41:61 ==> [server -> router]: inlogin  That Profile SENDED
+11:9:48:43 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:9:48:44 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root3"}
+11:9:48:45 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:9:48:46 ==> [server -> clients]: Before connection.
+11:9:48:47 ==> [server -> clients]: Connection now.
+11:9:48:48 ==> [server -> clients]: That is a connection. Before sending.
+11:9:48:84 ==> [server -> clients]: data was received
+11:9:48:85 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:9:48:86 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root2","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:9:48:88 ==> [server -> clients]: Before connection.
+11:9:48:88 ==> [server -> clients]: Connection now.
+11:9:48:89 ==> [server -> clients]: That is a connection. Before sending.
+11:9:48:14 ==> [server -> clients]: data was received
+11:9:48:15 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:9:48:16 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:9:48:18 ==> [server -> clients]: Before connection.
+11:9:48:18 ==> [server -> clients]: Connection now.
+11:9:48:19 ==> [server -> clients]: That is a connection. Before sending.
+11:9:48:44 ==> [server -> clients]: data was received
+11:9:48:44 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root2","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:9:48:47 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:9:48:48 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root3","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:9:48:48 ==> [server -> clients]: Before connection.
+11:9:48:48 ==> [server -> clients]: Connection now.
+11:9:48:48 ==> [server -> clients]: That is a connection. Before sending.
+11:9:48:73 ==> [server -> clients]: data was save
+11:9:48:74 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:10:7:63 ==> [server]: Start the "Client" connection.
+11:10:7:66 ==> [server]: START
+11:10:7:66 ==> [server -> listen]: Server start to listen the PORT 7070
+11:10:7:9 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:10:7:10 ==> [server]: Start the "Client" connection.
+11:10:7:50 ==> [server]: "Emails" created .
+11:10:7:53 ==> [server]: "Users" created .
+11:10:7:54 ==> [server]: The end the "Client" connection.
+11:10:7:54 ==> [server]: END
+11:10:8:10 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:10:8:13 ==> [server -> clients]: Before connection.
+11:10:8:14 ==> [server -> clients]: That is a connection. Before sending.
+11:10:8:14 ==> [server -> clients]: Connection now.
+11:10:8:49 ==> [server -> clients]: data was received
+11:10:8:50 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root3","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:10:8:54 ==> [server -> router]: inlogin  That Profile SENDED
+11:10:8:62 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:10:8:64 ==> [server -> clients]: Before connection.
+11:10:8:65 ==> [server -> clients]: Connection now.
+11:10:8:66 ==> [server -> clients]: That is a connection. Before sending.
+11:10:8:99 ==> [server -> clients]: data was received
+11:10:8:0 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root3","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:10:8:2 ==> [server -> router]: inlogin  That Profile SENDED
+11:10:17:70 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:10:17:71 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root4"}
+11:10:17:72 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:10:17:73 ==> [server -> clients]: Before connection.
+11:10:17:74 ==> [server -> clients]: Connection now.
+11:10:17:74 ==> [server -> clients]: That is a connection. Before sending.
+11:10:17:99 ==> [server -> clients]: data was received
+11:10:17:0 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:10:17:0 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root3","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:10:17:2 ==> [server -> clients]: Before connection.
+11:10:17:2 ==> [server -> clients]: Connection now.
+11:10:17:3 ==> [server -> clients]: That is a connection. Before sending.
+11:10:17:27 ==> [server -> clients]: data was received
+11:10:17:28 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:10:17:28 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:10:17:30 ==> [server -> clients]: Before connection.
+11:10:17:30 ==> [server -> clients]: Connection now.
+11:10:17:31 ==> [server -> clients]: That is a connection. Before sending.
+11:10:17:56 ==> [server -> clients]: data was received
+11:10:17:56 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root3","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:10:17:60 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:10:17:60 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root4","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:10:17:61 ==> [server -> clients]: Before connection.
+11:10:17:61 ==> [server -> clients]: Connection now.
+11:10:17:62 ==> [server -> clients]: That is a connection. Before sending.
+11:10:17:85 ==> [server -> clients]: data was save
+11:10:17:86 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:11:10:85 ==> [server]: START
+11:11:10:87 ==> [server]: Start the "Client" connection.
+11:11:10:87 ==> [server -> listen]: Server start to listen the PORT 7070
+11:11:10:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:11:10:26 ==> [server]: Start the "Client" connection.
+11:11:10:56 ==> [server]: "Emails" created .
+11:11:10:57 ==> [server]: "Users" created .
+11:11:10:57 ==> [server]: The end the "Client" connection.
+11:11:10:58 ==> [server]: END
+11:11:23:93 ==> [server]: START
+11:11:23:94 ==> [server]: Start the "Client" connection.
+11:11:23:95 ==> [server -> listen]: Server start to listen the PORT 7070
+11:11:23:38 ==> [server]: Start the "Client" connection.
+11:11:23:39 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:11:23:80 ==> [server]: "Emails" created .
+11:11:23:82 ==> [server]: "Users" created .
+11:11:23:82 ==> [server]: The end the "Client" connection.
+11:11:23:83 ==> [server]: END
+11:11:23:28 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:11:23:32 ==> [server -> clients]: Before connection.
+11:11:23:32 ==> [server -> clients]: That is a connection. Before sending.
+11:11:23:33 ==> [server -> clients]: Connection now.
+11:11:23:63 ==> [server -> clients]: data was received
+11:11:23:63 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root4","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:11:23:67 ==> [server -> router]: inlogin  That Profile SENDED
+11:11:23:74 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:11:23:75 ==> [server -> clients]: Before connection.
+11:11:23:77 ==> [server -> clients]: Connection now.
+11:11:23:77 ==> [server -> clients]: That is a connection. Before sending.
+11:11:23:9 ==> [server -> clients]: data was received
+11:11:23:10 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root4","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:11:23:12 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:5:88 ==> [server]: Start the "Client" connection.
+11:12:5:89 ==> [server]: START
+11:12:5:90 ==> [server -> listen]: Server start to listen the PORT 7070
+11:12:5:21 ==> [server]: Start the "Client" connection.
+11:12:5:21 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:12:5:47 ==> [server]: "Emails" created .
+11:12:5:50 ==> [server]: "Users" created .
+11:12:5:50 ==> [server]: The end the "Client" connection.
+11:12:5:50 ==> [server]: END
+11:12:13:36 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:13:38 ==> [server -> clients]: Before connection.
+11:12:13:39 ==> [server -> clients]: Connection now.
+11:12:13:40 ==> [server -> clients]: That is a connection. Before sending.
+11:12:13:67 ==> [server -> clients]: data was received
+11:12:13:67 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root4","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:13:70 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:13:73 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:13:75 ==> [server -> clients]: Before connection.
+11:12:13:75 ==> [server -> clients]: Connection now.
+11:12:13:76 ==> [server -> clients]: That is a connection. Before sending.
+11:12:14:14 ==> [server -> clients]: data was received
+11:12:14:14 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root4","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:14:16 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:19:86 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:12:19:88 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root"}
+11:12:19:88 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:12:19:90 ==> [server -> clients]: Before connection.
+11:12:19:90 ==> [server -> clients]: Connection now.
+11:12:19:91 ==> [server -> clients]: That is a connection. Before sending.
+11:12:19:16 ==> [server -> clients]: data was received
+11:12:19:16 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:12:19:17 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root4","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:19:19 ==> [server -> clients]: Before connection.
+11:12:19:20 ==> [server -> clients]: Connection now.
+11:12:19:20 ==> [server -> clients]: That is a connection. Before sending.
+11:12:19:44 ==> [server -> clients]: data was received
+11:12:19:45 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:12:19:46 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:12:19:47 ==> [server -> clients]: Before connection.
+11:12:19:48 ==> [server -> clients]: Connection now.
+11:12:19:48 ==> [server -> clients]: That is a connection. Before sending.
+11:12:19:73 ==> [server -> clients]: data was received
+11:12:19:74 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root4","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:12:19:77 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:12:19:77 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:12:19:78 ==> [server -> clients]: Before connection.
+11:12:19:78 ==> [server -> clients]: Connection now.
+11:12:19:78 ==> [server -> clients]: That is a connection. Before sending.
+11:12:19:2 ==> [server -> clients]: data was save
+11:12:19:3 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:12:27:33 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:27:35 ==> [server -> clients]: Before connection.
+11:12:27:36 ==> [server -> clients]: Connection now.
+11:12:27:36 ==> [server -> clients]: That is a connection. Before sending.
+11:12:27:69 ==> [server -> clients]: data was received
+11:12:27:70 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:27:72 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:27:76 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:27:77 ==> [server -> clients]: Before connection.
+11:12:27:78 ==> [server -> clients]: Connection now.
+11:12:27:78 ==> [server -> clients]: That is a connection. Before sending.
+11:12:28:13 ==> [server -> clients]: data was received
+11:12:28:13 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:28:14 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:41:96 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:41:98 ==> [server -> clients]: Before connection.
+11:12:41:99 ==> [server -> clients]: Connection now.
+11:12:41:99 ==> [server -> clients]: That is a connection. Before sending.
+11:12:41:25 ==> [server -> clients]: data was received
+11:12:41:25 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:41:27 ==> [server -> router]: inlogin  That Profile SENDED
+11:12:41:30 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:12:41:32 ==> [server -> clients]: Before connection.
+11:12:41:33 ==> [server -> clients]: Connection now.
+11:12:41:34 ==> [server -> clients]: That is a connection. Before sending.
+11:12:41:59 ==> [server -> clients]: data was received
+11:12:41:60 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:12:41:61 ==> [server -> router]: inlogin  That Profile SENDED
+11:14:25:79 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:14:25:80 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root1"}
+11:14:25:80 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:14:25:82 ==> [server -> clients]: Before connection.
+11:14:25:82 ==> [server -> clients]: Connection now.
+11:14:25:83 ==> [server -> clients]: That is a connection. Before sending.
+11:14:26:8 ==> [server -> clients]: data was received
+11:14:26:9 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:14:26:10 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:14:26:11 ==> [server -> clients]: Before connection.
+11:14:26:12 ==> [server -> clients]: Connection now.
+11:14:26:12 ==> [server -> clients]: That is a connection. Before sending.
+11:14:26:36 ==> [server -> clients]: data was received
+11:14:26:37 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:14:26:38 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:14:26:40 ==> [server -> clients]: Before connection.
+11:14:26:40 ==> [server -> clients]: Connection now.
+11:14:26:40 ==> [server -> clients]: That is a connection. Before sending.
+11:14:26:65 ==> [server -> clients]: data was received
+11:14:26:66 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:14:26:69 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:14:26:70 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root1","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:14:26:70 ==> [server -> clients]: Before connection.
+11:14:26:70 ==> [server -> clients]: Connection now.
+11:14:26:71 ==> [server -> clients]: That is a connection. Before sending.
+11:14:26:96 ==> [server -> clients]: data was save
+11:14:26:96 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:17:32:96 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:17:32:99 ==> [server -> clients]: Before connection.
+11:17:32:99 ==> [server -> clients]: Connection now.
+11:17:32:0 ==> [server -> clients]: That is a connection. Before sending.
+11:17:32:25 ==> [server -> clients]: data was received
+11:17:32:25 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root1","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:17:32:27 ==> [server -> router]: inlogin  That Profile SENDED
+11:17:32:33 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:17:32:34 ==> [server -> clients]: Before connection.
+11:17:32:35 ==> [server -> clients]: Connection now.
+11:17:32:36 ==> [server -> clients]: That is a connection. Before sending.
+11:17:32:61 ==> [server -> clients]: data was received
+11:17:32:61 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root1","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:17:32:63 ==> [server -> router]: inlogin  That Profile SENDED
+11:19:5:95 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:19:5:96 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"dsd"}
+11:19:5:97 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:19:5:99 ==> [server -> clients]: Before connection.
+11:19:5:99 ==> [server -> clients]: Connection now.
+11:19:5:0 ==> [server -> clients]: That is a connection. Before sending.
+11:19:5:26 ==> [server -> clients]: data was received
+11:19:5:26 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:19:5:27 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root1","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:19:5:29 ==> [server -> clients]: Before connection.
+11:19:5:29 ==> [server -> clients]: Connection now.
+11:19:5:30 ==> [server -> clients]: That is a connection. Before sending.
+11:19:5:54 ==> [server -> clients]: data was received
+11:19:5:54 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:19:5:55 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:19:5:57 ==> [server -> clients]: Before connection.
+11:19:5:57 ==> [server -> clients]: Connection now.
+11:19:5:58 ==> [server -> clients]: That is a connection. Before sending.
+11:19:5:83 ==> [server -> clients]: data was received
+11:19:5:84 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root1","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:19:5:87 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:19:5:87 ==> [server -> clients]: Before connection.
+11:19:5:87 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"dsd","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:19:5:88 ==> [server -> clients]: That is a connection. Before sending.
+11:19:5:88 ==> [server -> clients]: Connection now.
+11:19:5:14 ==> [server -> clients]: data was save
+11:19:5:14 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:19:58:9 ==> [server]: START
+11:19:58:11 ==> [server]: Start the "Client" connection.
+11:19:58:11 ==> [server -> listen]: Server start to listen the PORT 7070
+11:19:58:52 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:19:58:53 ==> [server]: Start the "Client" connection.
+11:19:58:83 ==> [server]: "Emails" created .
+11:19:58:85 ==> [server]: The end the "Client" connection.
+11:19:58:87 ==> [server]: "Users" created .
+11:19:58:88 ==> [server]: END
+11:19:58:43 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:19:58:46 ==> [server -> clients]: Before connection.
+11:19:58:47 ==> [server -> clients]: Connection now.
+11:19:58:47 ==> [server -> clients]: That is a connection. Before sending.
+11:19:58:80 ==> [server -> clients]: data was received
+11:19:58:81 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsd","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:19:58:84 ==> [server -> router]: inlogin  That Profile SENDED
+11:19:58:91 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:19:58:93 ==> [server -> clients]: Before connection.
+11:19:58:94 ==> [server -> clients]: Connection now.
+11:19:58:94 ==> [server -> clients]: That is a connection. Before sending.
+11:19:58:30 ==> [server -> clients]: data was received
+11:19:58:31 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsd","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:19:58:33 ==> [server -> router]: inlogin  That Profile SENDED
+11:20:1:60 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:20:1:63 ==> [server -> clients]: Before connection.
+11:20:1:63 ==> [server -> clients]: Connection now.
+11:20:1:64 ==> [server -> clients]: That is a connection. Before sending.
+11:20:1:92 ==> [server -> clients]: data was received
+11:20:1:92 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsd","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:20:1:94 ==> [server -> router]: inlogin  That Profile SENDED
+11:20:1:97 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:20:1:99 ==> [server -> clients]: Before connection.
+11:20:1:99 ==> [server -> clients]: Connection now.
+11:20:2:0 ==> [server -> clients]: That is a connection. Before sending.
+11:20:2:26 ==> [server -> clients]: data was received
+11:20:2:27 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsd","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:20:2:28 ==> [server -> router]: inlogin  That Profile SENDED
+11:20:5:91 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:20:5:92 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root"}
+11:20:5:93 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:20:5:95 ==> [server -> clients]: Before connection.
+11:20:5:95 ==> [server -> clients]: Connection now.
+11:20:5:95 ==> [server -> clients]: That is a connection. Before sending.
+11:20:5:20 ==> [server -> clients]: data was received
+11:20:5:20 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:20:5:21 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsd","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:20:5:23 ==> [server -> clients]: Before connection.
+11:20:5:24 ==> [server -> clients]: Connection now.
+11:20:5:24 ==> [server -> clients]: That is a connection. Before sending.
+11:20:5:48 ==> [server -> clients]: data was received
+11:20:5:48 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:20:5:49 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:20:5:52 ==> [server -> clients]: Before connection.
+11:20:5:53 ==> [server -> clients]: Connection now.
+11:20:5:53 ==> [server -> clients]: That is a connection. Before sending.
+11:20:5:76 ==> [server -> clients]: data was received
+11:20:5:77 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"dsd","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:20:5:81 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:20:5:81 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:20:5:81 ==> [server -> clients]: Before connection.
+11:20:5:82 ==> [server -> clients]: Connection now.
+11:20:5:82 ==> [server -> clients]: That is a connection. Before sending.
+11:20:5:6 ==> [server -> clients]: data was save
+11:20:5:6 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:21:14:19 ==> [server]: Start the "Client" connection.
+11:21:14:21 ==> [server]: START
+11:21:14:21 ==> [server -> listen]: Server start to listen the PORT 7070
+11:21:14:71 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:21:14:72 ==> [server]: Start the "Client" connection.
+11:21:15:2 ==> [server]: "Emails" created .
+11:21:15:4 ==> [server]: "Users" created .
+11:21:15:5 ==> [server]: The end the "Client" connection.
+11:21:15:6 ==> [server]: END
+11:21:15:51 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:21:15:54 ==> [server -> clients]: Before connection.
+11:21:15:55 ==> [server -> clients]: Connection now.
+11:21:15:56 ==> [server -> clients]: That is a connection. Before sending.
+11:21:15:97 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:21:15:99 ==> [server -> clients]: data was received
+11:21:15:1 ==> [server -> router]: inlogin  That Profile SENDED
+11:21:15:4 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:21:15:7 ==> [server -> clients]: Before connection.
+11:21:15:8 ==> [server -> clients]: Connection now.
+11:21:15:8 ==> [server -> clients]: That is a connection. Before sending.
+11:21:15:41 ==> [server -> clients]: data was received
+11:21:15:41 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:21:15:44 ==> [server -> router]: inlogin  That Profile SENDED
+11:21:19:99 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:21:19:1 ==> [server -> clients]: Connection now.
+11:21:19:2 ==> [server -> clients]: Before connection.
+11:21:19:2 ==> [server -> clients]: That is a connection. Before sending.
+11:21:19:31 ==> [server -> clients]: data was received
+11:21:19:31 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:21:19:33 ==> [server -> router]: inlogin  That Profile SENDED
+11:21:19:36 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:21:19:39 ==> [server -> clients]: Before connection.
+11:21:19:40 ==> [server -> clients]: Connection now.
+11:21:19:40 ==> [server -> clients]: That is a connection. Before sending.
+11:21:19:69 ==> [server -> clients]: data was received
+11:21:19:69 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:21:19:71 ==> [server -> router]: inlogin  That Profile SENDED
+11:21:24:57 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:21:24:58 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+11:21:24:59 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:21:24:61 ==> [server -> clients]: Before connection.
+11:21:24:62 ==> [server -> clients]: Connection now.
+11:21:24:62 ==> [server -> clients]: That is a connection. Before sending.
+11:21:24:98 ==> [server -> clients]: data was received
+11:21:24:98 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:21:24:99 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:21:24:1 ==> [server -> clients]: Before connection.
+11:21:24:2 ==> [server -> clients]: That is a connection. Before sending.
+11:21:24:2 ==> [server -> clients]: Connection now.
+11:21:24:27 ==> [server -> clients]: data was received
+11:21:24:28 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:21:24:29 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:21:24:31 ==> [server -> clients]: Before connection.
+11:21:24:31 ==> [server -> clients]: Connection now.
+11:21:24:32 ==> [server -> clients]: That is a connection. Before sending.
+11:21:24:56 ==> [server -> clients]: data was received
+11:21:24:57 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:21:24:60 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:21:24:60 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:21:24:61 ==> [server -> clients]: Before connection.
+11:21:24:61 ==> [server -> clients]: Connection now.
+11:21:24:62 ==> [server -> clients]: That is a connection. Before sending.
+11:21:24:85 ==> [server -> clients]: data was save
+11:21:24:86 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:22:34:86 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:22:34:89 ==> [server -> clients]: Before connection.
+11:22:34:89 ==> [server -> clients]: That is a connection. Before sending.
+11:22:34:90 ==> [server -> clients]: Connection now.
+11:22:34:23 ==> [server -> clients]: data was received
+11:22:34:24 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:22:34:27 ==> [server -> router]: inlogin  That Profile SENDED
+11:22:34:32 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:22:34:36 ==> [server -> clients]: Before connection.
+11:22:34:36 ==> [server -> clients]: Connection now.
+11:22:34:37 ==> [server -> clients]: That is a connection. Before sending.
+11:22:34:66 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:22:34:68 ==> [server -> clients]: data was received
+11:22:34:69 ==> [server -> router]: inlogin  That Profile SENDED
+11:22:38:42 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:22:38:43 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"dsds"}
+11:22:38:44 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:22:38:46 ==> [server -> clients]: Before connection.
+11:22:38:47 ==> [server -> clients]: Connection now.
+11:22:38:48 ==> [server -> clients]: That is a connection. Before sending.
+11:22:38:75 ==> [server -> clients]: data was received
+11:22:38:75 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:22:38:76 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:22:38:78 ==> [server -> clients]: Before connection.
+11:22:38:79 ==> [server -> clients]: Connection now.
+11:22:38:79 ==> [server -> clients]: That is a connection. Before sending.
+11:22:39:4 ==> [server -> clients]: data was received
+11:22:39:4 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:22:39:5 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:22:39:8 ==> [server -> clients]: Before connection.
+11:22:39:8 ==> [server -> clients]: Connection now.
+11:22:39:9 ==> [server -> clients]: That is a connection. Before sending.
+11:22:39:33 ==> [server -> clients]: data was received
+11:22:39:33 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:22:39:37 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:22:39:38 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"dsds","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:22:39:38 ==> [server -> clients]: Before connection.
+11:22:39:39 ==> [server -> clients]: Connection now.
+11:22:39:39 ==> [server -> clients]: That is a connection. Before sending.
+11:22:39:63 ==> [server -> clients]: data was save
+11:22:39:63 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:27:11:2 ==> [server]: START
+11:27:11:3 ==> [server]: Start the "Client" connection.
+11:27:11:4 ==> [server -> listen]: Server start to listen the PORT 7070
+11:27:11:43 ==> [server]: Start the "Client" connection.
+11:27:11:43 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:27:11:75 ==> [server]: "Emails" created .
+11:27:11:77 ==> [server]: "Users" created .
+11:27:11:78 ==> [server]: The end the "Client" connection.
+11:27:11:78 ==> [server]: END
+11:31:19:53 ==> [server]: START
+11:31:19:55 ==> [server]: Start the "Client" connection.
+11:31:19:55 ==> [server -> listen]: Server start to listen the PORT 7070
+11:31:19:93 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:31:19:93 ==> [server]: Start the "Client" connection.
+11:31:19:20 ==> [server]: "Emails" created .
+11:31:19:22 ==> [server]: "Users" created .
+11:31:19:23 ==> [server]: The end the "Client" connection.
+11:31:19:23 ==> [server]: END
+11:32:0:6 ==> [server]: START
+11:32:0:8 ==> [server]: Start the "Client" connection.
+11:32:0:8 ==> [server -> listen]: Server start to listen the PORT 7070
+11:32:0:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:32:0:40 ==> [server]: Start the "Client" connection.
+11:32:0:67 ==> [server]: "Emails" created .
+11:32:0:70 ==> [server]: "Users" created .
+11:32:0:70 ==> [server]: The end the "Client" connection.
+11:32:0:72 ==> [server]: END
+11:34:43:83 ==> [server]: START
+11:34:43:84 ==> [server]: Start the "Client" connection.
+11:34:43:85 ==> [server -> listen]: Server start to listen the PORT 7070
+11:34:43:16 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:34:43:16 ==> [server]: Start the "Client" connection.
+11:34:43:43 ==> [server]: "Emails" created .
+11:34:43:45 ==> [server]: "Users" created .
+11:34:43:46 ==> [server]: The end the "Client" connection.
+11:34:43:47 ==> [server]: END
+11:34:56:16 ==> [server]: Start the "Client" connection.
+11:34:56:17 ==> [server]: START
+11:34:56:18 ==> [server -> listen]: Server start to listen the PORT 7070
+11:34:56:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:34:56:51 ==> [server]: Start the "Client" connection.
+11:34:56:78 ==> [server]: "Emails" created .
+11:34:56:80 ==> [server]: "Users" created .
+11:34:56:81 ==> [server]: END
+11:34:56:81 ==> [server]: The end the "Client" connection.
+11:35:15:68 ==> [server]: START
+11:35:15:69 ==> [server]: Start the "Client" connection.
+11:35:15:70 ==> [server -> listen]: Server start to listen the PORT 7070
+11:35:15:2 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:35:15:2 ==> [server]: Start the "Client" connection.
+11:35:15:28 ==> [server]: "Emails" created .
+11:35:15:31 ==> [server]: The end the "Client" connection.
+11:35:15:31 ==> [server]: "Users" created .
+11:35:15:31 ==> [server]: END
+11:36:42:84 ==> [server]: START
+11:36:42:85 ==> [server]: Start the "Client" connection.
+11:36:42:85 ==> [server -> listen]: Server start to listen the PORT 7070
+11:36:42:16 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:36:42:17 ==> [server]: Start the "Client" connection.
+11:36:42:44 ==> [server]: "Emails" created .
+11:36:42:46 ==> [server]: "Users" created .
+11:36:42:47 ==> [server]: The end the "Client" connection.
+11:36:42:47 ==> [server]: END
+11:36:55:55 ==> [server]: START
+11:36:55:56 ==> [server]: Start the "Client" connection.
+11:36:55:56 ==> [server -> listen]: Server start to listen the PORT 7070
+11:36:55:86 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:36:55:86 ==> [server]: Start the "Client" connection.
+11:36:55:19 ==> [server]: "Emails" created .
+11:36:55:21 ==> [server]: "Users" created .
+11:36:55:22 ==> [server]: The end the "Client" connection.
+11:36:55:22 ==> [server]: END
+11:37:44:29 ==> [server]: START
+11:37:44:30 ==> [server]: Start the "Client" connection.
+11:37:44:30 ==> [server -> listen]: Server start to listen the PORT 7070
+11:37:44:63 ==> [server]: Start the "Client" connection.
+11:37:44:63 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:37:44:1 ==> [server]: "Emails" created .
+11:37:44:5 ==> [server]: "Users" created .
+11:37:44:5 ==> [server]: The end the "Client" connection.
+11:37:44:6 ==> [server]: END
+11:38:21:45 ==> [server]: START
+11:38:21:46 ==> [server]: Start the "Client" connection.
+11:38:21:47 ==> [server -> listen]: Server start to listen the PORT 7070
+11:38:21:80 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:38:21:80 ==> [server]: Start the "Client" connection.
+11:38:21:7 ==> [server]: "Emails" created .
+11:38:21:8 ==> [server]: "Users" created .
+11:38:21:10 ==> [server]: The end the "Client" connection.
+11:38:21:10 ==> [server]: END
+11:39:51:30 ==> [server]: START
+11:39:51:31 ==> [server]: Start the "Client" connection.
+11:39:51:32 ==> [server -> listen]: Server start to listen the PORT 7070
+11:39:51:65 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:39:51:66 ==> [server]: Start the "Client" connection.
+11:39:51:94 ==> [server]: "Emails" created .
+11:39:51:96 ==> [server]: "Users" created .
+11:39:51:98 ==> [server]: The end the "Client" connection.
+11:39:51:98 ==> [server]: END
+11:40:23:30 ==> [server]: START
+11:40:23:32 ==> [server]: Start the "Client" connection.
+11:40:23:32 ==> [server -> listen]: Server start to listen the PORT 7070
+11:40:23:66 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:40:23:67 ==> [server]: Start the "Client" connection.
+11:40:23:96 ==> [server]: "Emails" created .
+11:40:23:99 ==> [server]: The end the "Client" connection.
+11:40:23:0 ==> [server]: "Users" created .
+11:40:23:0 ==> [server]: END
+11:40:54:71 ==> [server]: START
+11:40:54:72 ==> [server]: Start the "Client" connection.
+11:40:54:72 ==> [server -> listen]: Server start to listen the PORT 7070
+11:40:54:4 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:40:54:4 ==> [server]: Start the "Client" connection.
+11:40:54:46 ==> [server]: "Emails" created .
+11:40:54:48 ==> [server]: "Users" created .
+11:40:54:49 ==> [server]: The end the "Client" connection.
+11:40:54:49 ==> [server]: END
+11:41:39:6 ==> [server]: START
+11:41:39:7 ==> [server]: Start the "Client" connection.
+11:41:39:8 ==> [server -> listen]: Server start to listen the PORT 7070
+11:41:39:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:41:39:40 ==> [server]: Start the "Client" connection.
+11:41:39:66 ==> [server]: "Emails" created .
+11:41:39:68 ==> [server]: "Users" created .
+11:41:39:69 ==> [server]: The end the "Client" connection.
+11:41:39:69 ==> [server]: END
+11:42:18:46 ==> [server]: START
+11:42:18:48 ==> [server]: Start the "Client" connection.
+11:42:18:48 ==> [server -> listen]: Server start to listen the PORT 7070
+11:42:18:82 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:42:18:83 ==> [server]: Start the "Client" connection.
+11:42:18:9 ==> [server]: "Emails" created .
+11:42:18:11 ==> [server]: "Users" created .
+11:42:18:12 ==> [server]: The end the "Client" connection.
+11:42:18:12 ==> [server]: END
+11:42:21:99 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:42:21:2 ==> [server -> clients]: Before connection.
+11:42:21:3 ==> [server -> clients]: Connection now.
+11:42:21:3 ==> [server -> clients]: That is a connection. Before sending.
+11:42:21:29 ==> [server -> clients]: data was received
+11:42:21:30 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsds","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:21:33 ==> [server -> router]: inlogin  That Profile SENDED
+11:42:21:38 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:42:21:40 ==> [server -> clients]: Before connection.
+11:42:21:41 ==> [server -> clients]: Connection now.
+11:42:21:41 ==> [server -> clients]: That is a connection. Before sending.
+11:42:21:67 ==> [server -> clients]: data was received
+11:42:21:67 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsds","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:21:69 ==> [server -> router]: inlogin  That Profile SENDED
+11:42:25:37 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:42:25:38 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+11:42:25:39 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:42:25:40 ==> [server -> clients]: Before connection.
+11:42:25:41 ==> [server -> clients]: Connection now.
+11:42:25:43 ==> [server -> clients]: That is a connection. Before sending.
+11:42:25:67 ==> [server -> clients]: data was received
+11:42:25:67 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:42:25:68 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"dsds","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:25:71 ==> [server -> clients]: Before connection.
+11:42:25:72 ==> [server -> clients]: Connection now.
+11:42:25:72 ==> [server -> clients]: That is a connection. Before sending.
+11:42:25:95 ==> [server -> clients]: data was received
+11:42:25:95 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:42:25:96 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:42:25:99 ==> [server -> clients]: Before connection.
+11:42:25:99 ==> [server -> clients]: Connection now.
+11:42:25:0 ==> [server -> clients]: That is a connection. Before sending.
+11:42:25:24 ==> [server -> clients]: data was received
+11:42:25:24 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"dsds","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:42:25:30 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:42:25:30 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:42:25:30 ==> [server -> clients]: Before connection.
+11:42:25:31 ==> [server -> clients]: Connection now.
+11:42:25:31 ==> [server -> clients]: That is a connection. Before sending.
+11:42:25:55 ==> [server -> clients]: data was save
+11:42:25:56 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:42:46:23 ==> [server]: START
+11:42:46:25 ==> [server]: Start the "Client" connection.
+11:42:46:25 ==> [server -> listen]: Server start to listen the PORT 7070
+11:42:46:42 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:42:46:45 ==> [server -> clients]: That is a connection. Before sending.
+11:42:46:46 ==> [server -> clients]: Before connection.
+11:42:46:46 ==> [server -> clients]: Connection now.
+11:42:46:60 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:42:46:61 ==> [server]: Start the "Client" connection.
+11:42:46:76 ==> [server -> clients]: data was received
+11:42:46:76 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:46:80 ==> [server -> router]: inlogin  That Profile SENDED
+11:42:46:84 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:42:46:88 ==> [server -> clients]: Before connection.
+11:42:46:88 ==> [server -> clients]: Connection now.
+11:42:46:89 ==> [server -> clients]: That is a connection. Before sending.
+11:42:46:94 ==> [server]: "Emails" created .
+11:42:46:95 ==> [server]: "Users" created .
+11:42:46:95 ==> [server]: The end the "Client" connection.
+11:42:46:96 ==> [server]: END
+11:42:47:15 ==> [server -> clients]: data was received
+11:42:47:16 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:47:18 ==> [server -> router]: inlogin  That Profile SENDED
+11:42:52:71 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:42:52:72 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+11:42:52:73 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:42:52:75 ==> [server -> clients]: Before connection.
+11:42:52:75 ==> [server -> clients]: Connection now.
+11:42:52:75 ==> [server -> clients]: That is a connection. Before sending.
+11:42:52:0 ==> [server -> clients]: data was received
+11:42:52:1 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:42:52:2 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:42:52:4 ==> [server -> clients]: Before connection.
+11:42:52:4 ==> [server -> clients]: Connection now.
+11:42:52:4 ==> [server -> clients]: That is a connection. Before sending.
+11:42:52:28 ==> [server -> clients]: data was received
+11:42:52:29 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:42:52:30 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:42:52:32 ==> [server -> clients]: Before connection.
+11:42:52:32 ==> [server -> clients]: Connection now.
+11:42:52:33 ==> [server -> clients]: That is a connection. Before sending.
+11:42:52:59 ==> [server -> clients]: data was received
+11:42:52:59 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:42:52:64 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:42:52:65 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:42:52:65 ==> [server -> clients]: Before connection.
+11:42:52:66 ==> [server -> clients]: Connection now.
+11:42:52:66 ==> [server -> clients]: That is a connection. Before sending.
+11:42:52:91 ==> [server -> clients]: data was save
+11:42:52:91 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:43:14:83 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:43:14:86 ==> [server -> clients]: Before connection.
+11:43:14:87 ==> [server -> clients]: That is a connection. Before sending.
+11:43:14:87 ==> [server -> clients]: Connection now.
+11:43:14:12 ==> [server -> clients]: data was received
+11:43:14:12 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:43:14:14 ==> [server -> router]: inlogin  That Profile SENDED
+11:43:14:18 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:43:14:21 ==> [server -> clients]: Before connection.
+11:43:14:22 ==> [server -> clients]: Connection now.
+11:43:14:22 ==> [server -> clients]: That is a connection. Before sending.
+11:43:14:47 ==> [server -> clients]: data was received
+11:43:14:47 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:43:14:49 ==> [server -> router]: inlogin  That Profile SENDED
+11:43:49:90 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:43:49:91 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+11:43:49:93 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:43:49:95 ==> [server -> clients]: Before connection.
+11:43:49:95 ==> [server -> clients]: Connection now.
+11:43:49:96 ==> [server -> clients]: That is a connection. Before sending.
+11:43:49:21 ==> [server -> clients]: data was received
+11:43:49:21 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:43:49:22 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:43:49:25 ==> [server -> clients]: Before connection.
+11:43:49:25 ==> [server -> clients]: Connection now.
+11:43:49:26 ==> [server -> clients]: That is a connection. Before sending.
+11:43:49:50 ==> [server -> clients]: data was received
+11:43:49:50 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:43:49:51 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:43:49:53 ==> [server -> clients]: Before connection.
+11:43:49:54 ==> [server -> clients]: Connection now.
+11:43:49:54 ==> [server -> clients]: That is a connection. Before sending.
+11:43:49:80 ==> [server -> clients]: data was received
+11:43:49:81 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:43:49:85 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:43:49:86 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:43:49:86 ==> [server -> clients]: Before connection.
+11:43:49:86 ==> [server -> clients]: Connection now.
+11:43:49:87 ==> [server -> clients]: That is a connection. Before sending.
+11:43:50:12 ==> [server -> clients]: data was save
+11:43:50:12 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:47:19:13 ==> [server]: START
+11:47:19:15 ==> [server]: Start the "Client" connection.
+11:47:19:16 ==> [server -> listen]: Server start to listen the PORT 7070
+11:47:19:46 ==> [server]: Start the "Client" connection.
+11:47:19:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:47:19:73 ==> [server]: "Emails" created .
+11:47:19:76 ==> [server]: "Users" created .
+11:47:19:76 ==> [server]: The end the "Client" connection.
+11:47:19:77 ==> [server]: END
+11:47:33:65 ==> [server]: START
+11:47:33:67 ==> [server]: Start the "Client" connection.
+11:47:33:67 ==> [server -> listen]: Server start to listen the PORT 7070
+11:47:33:98 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:47:33:99 ==> [server]: Start the "Client" connection.
+11:47:33:25 ==> [server]: "Emails" created .
+11:47:33:27 ==> [server]: "Users" created .
+11:47:33:29 ==> [server]: The end the "Client" connection.
+11:47:33:29 ==> [server]: END
+11:47:41:36 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:47:41:39 ==> [server -> clients]: Before connection.
+11:47:41:39 ==> [server -> clients]: Connection now.
+11:47:41:40 ==> [server -> clients]: That is a connection. Before sending.
+11:47:41:66 ==> [server -> clients]: data was received
+11:47:41:67 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:47:41:70 ==> [server -> router]: inlogin  That Profile SENDED
+11:47:41:73 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:47:41:75 ==> [server -> clients]: Before connection.
+11:47:41:76 ==> [server -> clients]: Connection now.
+11:47:41:77 ==> [server -> clients]: That is a connection. Before sending.
+11:47:41:3 ==> [server -> clients]: data was received
+11:47:41:4 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:47:41:5 ==> [server -> router]: inlogin  That Profile SENDED
+11:47:45:20 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:47:45:21 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root"}
+11:47:45:22 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:47:45:25 ==> [server -> clients]: Before connection.
+11:47:45:25 ==> [server -> clients]: Connection now.
+11:47:45:26 ==> [server -> clients]: That is a connection. Before sending.
+11:47:45:50 ==> [server -> clients]: data was received
+11:47:45:51 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:47:45:52 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:47:45:54 ==> [server -> clients]: Before connection.
+11:47:45:54 ==> [server -> clients]: Connection now.
+11:47:45:55 ==> [server -> clients]: That is a connection. Before sending.
+11:47:45:79 ==> [server -> clients]: data was received
+11:47:45:80 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:47:45:81 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:47:45:82 ==> [server -> clients]: Before connection.
+11:47:45:84 ==> [server -> clients]: Connection now.
+11:47:45:84 ==> [server -> clients]: That is a connection. Before sending.
+11:47:45:16 ==> [server -> clients]: data was received
+11:47:45:17 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:47:45:21 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:47:45:21 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:47:45:22 ==> [server -> clients]: Before connection.
+11:47:45:22 ==> [server -> clients]: Connection now.
+11:47:45:23 ==> [server -> clients]: That is a connection. Before sending.
+11:47:45:47 ==> [server -> clients]: data was save
+11:47:45:47 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:48:5:73 ==> [server]: START
+11:48:5:74 ==> [server]: Start the "Client" connection.
+11:48:5:74 ==> [server -> listen]: Server start to listen the PORT 7070
+11:48:6:8 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:48:6:9 ==> [server]: Start the "Client" connection.
+11:48:6:37 ==> [server]: "Emails" created .
+11:48:6:40 ==> [server]: The end the "Client" connection.
+11:48:6:41 ==> [server]: "Users" created .
+11:48:6:41 ==> [server]: END
+11:48:6:26 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:48:6:29 ==> [server -> clients]: Before connection.
+11:48:6:30 ==> [server -> clients]: Connection now.
+11:48:6:30 ==> [server -> clients]: That is a connection. Before sending.
+11:48:6:63 ==> [server -> clients]: data was received
+11:48:6:63 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:48:6:66 ==> [server -> router]: inlogin  That Profile SENDED
+11:48:6:70 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:48:6:72 ==> [server -> clients]: Before connection.
+11:48:6:73 ==> [server -> clients]: That is a connection. Before sending.
+11:48:6:73 ==> [server -> clients]: Connection now.
+11:48:6:3 ==> [server -> clients]: data was received
+11:48:6:4 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:48:6:5 ==> [server -> router]: inlogin  That Profile SENDED
+11:48:10:2 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+11:48:10:3 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"root"}
+11:48:10:4 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+11:48:10:6 ==> [server -> clients]: Before connection.
+11:48:10:7 ==> [server -> clients]: Connection now.
+11:48:10:7 ==> [server -> clients]: That is a connection. Before sending.
+11:48:10:32 ==> [server -> clients]: data was received
+11:48:10:33 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+11:48:10:34 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:48:10:36 ==> [server -> clients]: Before connection.
+11:48:10:36 ==> [server -> clients]: Connection now.
+11:48:10:37 ==> [server -> clients]: That is a connection. Before sending.
+11:48:10:60 ==> [server -> clients]: data was received
+11:48:10:61 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+11:48:10:63 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+11:48:10:64 ==> [server -> clients]: Before connection.
+11:48:10:66 ==> [server -> clients]: Connection now.
+11:48:10:66 ==> [server -> clients]: That is a connection. Before sending.
+11:48:10:91 ==> [server -> clients]: data was received
+11:48:10:91 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:48:10:95 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+11:48:10:96 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+11:48:10:96 ==> [server -> clients]: Connection now.
+11:48:10:96 ==> [server -> clients]: Before connection.
+11:48:10:97 ==> [server -> clients]: That is a connection. Before sending.
+11:48:10:21 ==> [server -> clients]: data was save
+11:48:10:21 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+11:48:25:20 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:48:25:24 ==> [server -> clients]: Before connection.
+11:48:25:24 ==> [server -> clients]: Connection now.
+11:48:25:25 ==> [server -> clients]: That is a connection. Before sending.
+11:48:25:50 ==> [server -> clients]: data was received
+11:48:25:51 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:48:25:52 ==> [server -> router]: inlogin  That Profile SENDED
+11:48:25:56 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:48:25:58 ==> [server -> clients]: Before connection.
+11:48:25:59 ==> [server -> clients]: Connection now.
+11:48:25:59 ==> [server -> clients]: That is a connection. Before sending.
+11:48:25:96 ==> [server -> clients]: data was received
+11:48:25:96 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:48:25:98 ==> [server -> router]: inlogin  That Profile SENDED
+11:52:24:27 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:52:24:31 ==> [server -> clients]: Before connection.
+11:52:24:31 ==> [server -> clients]: Connection now.
+11:52:24:32 ==> [server -> clients]: That is a connection. Before sending.
+11:52:24:62 ==> [server -> clients]: data was received
+11:52:24:63 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:52:24:66 ==> [server -> router]: inlogin  That Profile SENDED
+11:52:24:70 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:52:24:73 ==> [server -> clients]: Before connection.
+11:52:24:74 ==> [server -> clients]: Connection now.
+11:52:24:74 ==> [server -> clients]: That is a connection. Before sending.
+11:52:24:3 ==> [server -> clients]: data was received
+11:52:24:3 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:52:24:6 ==> [server -> router]: inlogin  That Profile SENDED
+11:54:20:79 ==> [server]: START
+11:54:20:81 ==> [server]: Start the "Client" connection.
+11:54:20:82 ==> [server -> listen]: Server start to listen the PORT 7070
+11:54:20:20 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:54:20:21 ==> [server]: Start the "Client" connection.
+11:54:20:51 ==> [server]: "Emails" created .
+11:54:20:54 ==> [server]: The end the "Client" connection.
+11:54:20:55 ==> [server]: END
+11:54:20:57 ==> [server]: "Users" created .
+11:54:20:78 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:54:20:81 ==> [server -> clients]: Before connection.
+11:54:20:82 ==> [server -> clients]: Connection now.
+11:54:20:82 ==> [server -> clients]: That is a connection. Before sending.
+11:54:20:11 ==> [server -> clients]: data was received
+11:54:20:12 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:54:20:15 ==> [server -> router]: inlogin  That Profile SENDED
+11:54:20:19 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:54:20:26 ==> [server -> clients]: Before connection.
+11:54:20:27 ==> [server -> clients]: Connection now.
+11:54:20:28 ==> [server -> clients]: That is a connection. Before sending.
+11:54:20:65 ==> [server -> clients]: data was received
+11:54:20:65 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:54:20:67 ==> [server -> router]: inlogin  That Profile SENDED
+11:55:50:88 ==> [server]: START
+11:55:50:90 ==> [server]: Start the "Client" connection.
+11:55:50:92 ==> [server -> listen]: Server start to listen the PORT 7070
+11:55:51:31 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:55:51:35 ==> [server -> clients]: Before connection.
+11:55:51:36 ==> [server -> clients]: Connection now.
+11:55:51:38 ==> [server -> clients]: That is a connection. Before sending.
+11:55:51:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+11:55:51:40 ==> [server]: Start the "Client" connection.
+11:55:51:80 ==> [server]: "Emails" created .
+11:55:51:83 ==> [server]: "Users" created .
+11:55:51:85 ==> [server]: The end the "Client" connection.
+11:55:51:85 ==> [server]: END
+11:55:51:85 ==> [server -> clients]: data was received
+11:55:51:86 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:55:51:89 ==> [server -> router]: inlogin  That Profile SENDED
+11:55:51:94 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+11:55:51:98 ==> [server -> clients]: Before connection.
+11:55:51:98 ==> [server -> clients]: Connection now.
+11:55:51:99 ==> [server -> clients]: That is a connection. Before sending.
+11:55:51:29 ==> [server -> clients]: data was received
+11:55:51:29 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+11:55:51:31 ==> [server -> router]: inlogin  That Profile SENDED
+12:0:53:25 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+12:0:53:26 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+12:0:53:27 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+12:0:53:30 ==> [server -> clients]: Before connection.
+12:0:53:30 ==> [server -> clients]: Connection now.
+12:0:53:31 ==> [server -> clients]: That is a connection. Before sending.
+12:0:53:56 ==> [server -> clients]: data was received
+12:0:53:56 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+12:0:53:58 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:0:53:59 ==> [server -> clients]: Before connection.
+12:0:53:61 ==> [server -> clients]: Connection now.
+12:0:53:61 ==> [server -> clients]: That is a connection. Before sending.
+12:0:53:86 ==> [server -> clients]: data was received
+12:0:53:86 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+12:0:53:87 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+12:0:53:89 ==> [server -> clients]: Before connection.
+12:0:53:90 ==> [server -> clients]: Connection now.
+12:0:53:90 ==> [server -> clients]: That is a connection. Before sending.
+12:0:53:15 ==> [server -> clients]: data was received
+12:0:53:16 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:0:53:20 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+12:0:53:21 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:0:53:21 ==> [server -> clients]: Before connection.
+12:0:53:21 ==> [server -> clients]: Connection now.
+12:0:53:22 ==> [server -> clients]: That is a connection. Before sending.
+12:0:53:45 ==> [server -> clients]: data was save
+12:0:53:46 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+12:2:16:44 ==> [server]: START
+12:2:16:47 ==> [server]: Start the "Client" connection.
+12:2:16:48 ==> [server -> listen]: Server start to listen the PORT 7070
+12:2:16:90 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:2:16:90 ==> [server]: Start the "Client" connection.
+12:2:16:20 ==> [server]: "Emails" created .
+12:2:16:23 ==> [server]: The end the "Client" connection.
+12:2:16:24 ==> [server]: "Users" created .
+12:2:16:24 ==> [server]: END
+12:2:16:97 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:2:16:2 ==> [server -> clients]: Before connection.
+12:2:16:3 ==> [server -> clients]: Connection now.
+12:2:16:3 ==> [server -> clients]: That is a connection. Before sending.
+12:2:16:37 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:2:16:39 ==> [server -> clients]: data was received
+12:2:16:41 ==> [server -> router]: inlogin  That Profile SENDED
+12:2:16:44 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:2:16:49 ==> [server -> clients]: Before connection.
+12:2:16:49 ==> [server -> clients]: Connection now.
+12:2:16:50 ==> [server -> clients]: That is a connection. Before sending.
+12:2:16:82 ==> [server -> clients]: data was received
+12:2:16:83 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:2:16:85 ==> [server -> router]: inlogin  That Profile SENDED
+12:2:30:84 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+12:2:30:85 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Boris"}
+12:2:30:86 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+12:2:30:89 ==> [server -> clients]: Before connection.
+12:2:30:90 ==> [server -> clients]: Connection now.
+12:2:30:90 ==> [server -> clients]: That is a connection. Before sending.
+12:2:30:14 ==> [server -> clients]: data was received
+12:2:30:15 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+12:2:30:16 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:2:30:18 ==> [server -> clients]: Before connection.
+12:2:30:18 ==> [server -> clients]: Connection now.
+12:2:30:19 ==> [server -> clients]: That is a connection. Before sending.
+12:2:30:55 ==> [server -> clients]: data was received
+12:2:30:55 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+12:2:30:57 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+12:2:30:59 ==> [server -> clients]: Before connection.
+12:2:30:59 ==> [server -> clients]: Connection now.
+12:2:30:60 ==> [server -> clients]: That is a connection. Before sending.
+12:2:30:84 ==> [server -> clients]: data was received
+12:2:30:85 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:2:30:90 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+12:2:30:90 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:2:30:90 ==> [server -> clients]: Before connection.
+12:2:30:91 ==> [server -> clients]: Connection now.
+12:2:30:91 ==> [server -> clients]: That is a connection. Before sending.
+12:2:30:14 ==> [server -> clients]: data was save
+12:2:30:15 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+12:2:52:41 ==> [server -> router]: PUT  That request was received from Profile 5 =>: [object Object]
+12:2:52:42 ==> [server -> router]: PUT Body: {"typeField":"lastName","newValueofField":"Hallo word!"}
+12:2:52:43 ==> [server -> router]: PUT 3: a3570747-8485-4d1c-bfa4-755af8faabc3
+12:2:52:46 ==> [server -> clients]: Before connection.
+12:2:52:46 ==> [server -> clients]: Connection now.
+12:2:52:47 ==> [server -> clients]: That is a connection. Before sending.
+12:2:52:70 ==> [server -> clients]: data was received
+12:2:52:70 ==> [server -> router]: PUT Received data of db. Step 1/3. Length =>: 1
+12:2:52:71 ==> [server -> router]: PUT Received data of db. Step 1/3 Email ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Boris","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:2:52:74 ==> [server -> clients]: Before connection.
+12:2:52:74 ==> [server -> clients]: That is a connection. Before sending.
+12:2:52:75 ==> [server -> clients]: Connection now.
+12:2:53:1 ==> [server -> clients]: data was received
+12:2:53:1 ==> [server -> router]: PUT Received data of db. Step 2/3. Length =>: 1
+12:2:53:2 ==> [server -> router]: PUT Received data of db. Step 3/3. Length =>: {"id":5,"emails":"work80@mail2.ru","activated":false}
+12:2:53:6 ==> [server -> clients]: Before connection.
+12:2:53:6 ==> [server -> clients]: Connection now.
+12:2:53:7 ==> [server -> clients]: That is a connection. Before sending.
+12:2:53:31 ==> [server -> clients]: data was received
+12:2:53:31 ==> [server -> router]: PUT Before a change 1/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Boris","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:2:53:37 ==> [server -> router]: PUT change 2/4. Item: lastname
+        typeField: lastname
+12:2:53:37 ==> [server -> router]: PUT Now is a change 2/4: {"email":"work80@mail2.ru","firstName":"Boris","lastName":"Hallo word!","newPassword":"DHXp2;M^<j,@L7Q1","isActive":true,"isActivated":false,"sendMessage":false}
+12:2:53:38 ==> [server -> clients]: Before connection.
+12:2:53:38 ==> [server -> clients]: Connection now.
+12:2:53:38 ==> [server -> clients]: That is a connection. Before sending.
+12:2:53:61 ==> [server -> clients]: data was save
+12:2:53:61 ==> [server -> router]: PUT After a change 4/4  Before a clients/SQL
+12:4:18:94 ==> [server]: START
+12:4:18:96 ==> [server]: Start the "Client" connection.
+12:4:18:96 ==> [server -> listen]: Server start to listen the PORT 7070
+12:4:18:33 ==> [server]: Start the "Client" connection.
+12:4:18:34 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:4:18:25 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:4:18:29 ==> [server -> clients]: Before connection.
+12:4:18:29 ==> [server -> clients]: Connection now.
+12:4:18:30 ==> [server -> clients]: That is a connection. Before sending.
+12:4:18:61 ==> [server -> clients]: data was received
+12:4:18:63 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:4:18:68 ==> [server -> router]: inlogin  That Profile SENDED
+12:4:18:73 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:4:18:79 ==> [server]: "Emails" created .
+12:4:18:82 ==> [server -> clients]: Before connection.
+12:4:18:83 ==> [server -> clients]: Connection now.
+12:4:18:84 ==> [server -> clients]: That is a connection. Before sending.
+12:4:18:84 ==> [server]: "Users" created .
+12:4:18:85 ==> [server]: The end the "Client" connection.
+12:4:18:85 ==> [server]: END
+12:4:19:11 ==> [server -> clients]: data was received
+12:4:19:11 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:4:19:13 ==> [server -> router]: inlogin  That Profile SENDED
+12:5:9:34 ==> [server]: START
+12:5:9:36 ==> [server]: Start the "Client" connection.
+12:5:9:37 ==> [server -> listen]: Server start to listen the PORT 7070
+12:5:9:79 ==> [server]: Start the "Client" connection.
+12:5:9:79 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:5:9:9 ==> [server]: "Emails" created .
+12:5:9:14 ==> [server]: "Users" created .
+12:5:9:14 ==> [server]: The end the "Client" connection.
+12:5:9:15 ==> [server]: END
+12:5:9:83 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:5:9:88 ==> [server -> clients]: That is a connection. Before sending.
+12:5:9:89 ==> [server -> clients]: Before connection.
+12:5:9:90 ==> [server -> clients]: Connection now.
+12:5:9:18 ==> [server -> clients]: data was received
+12:5:9:19 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:5:9:23 ==> [server -> router]: inlogin  That Profile SENDED
+12:5:9:27 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:5:9:31 ==> [server -> clients]: Before connection.
+12:5:9:32 ==> [server -> clients]: Connection now.
+12:5:9:32 ==> [server -> clients]: That is a connection. Before sending.
+12:5:9:65 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:5:9:66 ==> [server -> clients]: data was received
+12:5:9:68 ==> [server -> router]: inlogin  That Profile SENDED
+12:9:24:82 ==> [server]: START
+12:9:24:84 ==> [server]: Start the "Client" connection.
+12:9:24:85 ==> [server -> listen]: Server start to listen the PORT 7070
+12:9:24:28 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:9:24:29 ==> [server]: Start the "Client" connection.
+12:9:24:73 ==> [server]: "Emails" created .
+12:9:24:76 ==> [server]: "Users" created .
+12:9:24:77 ==> [server]: The end the "Client" connection.
+12:9:24:78 ==> [server]: END
+12:9:24:13 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:9:24:17 ==> [server -> clients]: Connection now.
+12:9:24:17 ==> [server -> clients]: Before connection.
+12:9:24:18 ==> [server -> clients]: That is a connection. Before sending.
+12:9:24:49 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:9:24:51 ==> [server -> clients]: data was received
+12:9:24:53 ==> [server -> router]: inlogin  That Profile SENDED
+12:9:24:57 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:9:24:61 ==> [server -> clients]: Before connection.
+12:9:24:61 ==> [server -> clients]: Connection now.
+12:9:24:62 ==> [server -> clients]: That is a connection. Before sending.
+12:9:24:87 ==> [server -> clients]: data was received
+12:9:24:88 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:9:24:90 ==> [server -> router]: inlogin  That Profile SENDED
+12:9:59:66 ==> [server]: Start the "Client" connection.
+12:9:59:69 ==> [server]: START
+12:9:59:71 ==> [server -> listen]: Server start to listen the PORT 7070
+12:9:59:8 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:9:59:9 ==> [server]: Start the "Client" connection.
+12:9:59:40 ==> [server]: "Emails" created .
+12:9:59:45 ==> [server]: "Users" created .
+12:9:59:46 ==> [server]: END
+12:9:59:47 ==> [server]: The end the "Client" connection.
+12:9:59:98 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:9:59:2 ==> [server -> clients]: Before connection.
+12:9:59:2 ==> [server -> clients]: Connection now.
+12:9:59:3 ==> [server -> clients]: That is a connection. Before sending.
+12:9:59:33 ==> [server -> clients]: data was received
+12:9:59:34 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:9:59:37 ==> [server -> router]: inlogin  That Profile SENDED
+12:9:59:41 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:9:59:45 ==> [server -> clients]: Before connection.
+12:9:59:45 ==> [server -> clients]: Connection now.
+12:9:59:46 ==> [server -> clients]: That is a connection. Before sending.
+12:9:59:71 ==> [server -> clients]: data was received
+12:9:59:71 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:9:59:73 ==> [server -> router]: inlogin  That Profile SENDED
+12:10:8:32 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:10:8:36 ==> [server -> clients]: Before connection.
+12:10:8:37 ==> [server -> clients]: Connection now.
+12:10:8:38 ==> [server -> clients]: That is a connection. Before sending.
+12:10:8:76 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:10:8:77 ==> [server -> clients]: data was received
+12:10:8:80 ==> [server -> router]: inlogin  That Profile SENDED
+12:10:8:84 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:10:8:87 ==> [server -> clients]: Before connection.
+12:10:8:88 ==> [server -> clients]: Connection now.
+12:10:8:89 ==> [server -> clients]: That is a connection. Before sending.
+12:10:8:17 ==> [server -> clients]: data was received
+12:10:8:18 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:10:8:20 ==> [server -> router]: inlogin  That Profile SENDED
+12:10:56:43 ==> [server]: START
+12:10:56:45 ==> [server]: Start the "Client" connection.
+12:10:56:45 ==> [server -> listen]: Server start to listen the PORT 7070
+12:10:56:82 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:10:56:83 ==> [server]: Start the "Client" connection.
+12:10:56:15 ==> [server]: "Emails" created .
+12:10:56:17 ==> [server]: "Users" created .
+12:10:56:18 ==> [server]: The end the "Client" connection.
+12:10:56:19 ==> [server]: END
+12:10:56:98 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:10:56:2 ==> [server -> clients]: Before connection.
+12:10:56:3 ==> [server -> clients]: Connection now.
+12:10:56:3 ==> [server -> clients]: That is a connection. Before sending.
+12:10:56:32 ==> [server -> clients]: data was received
+12:10:56:33 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:10:56:36 ==> [server -> router]: inlogin  That Profile SENDED
+12:10:56:40 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:10:56:45 ==> [server -> clients]: Before connection.
+12:10:56:45 ==> [server -> clients]: Connection now.
+12:10:56:46 ==> [server -> clients]: That is a connection. Before sending.
+12:10:56:71 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:10:56:73 ==> [server -> clients]: data was received
+12:10:56:74 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:45:67 ==> [server]: START
+12:11:45:68 ==> [server]: Start the "Client" connection.
+12:11:45:69 ==> [server -> listen]: Server start to listen the PORT 7070
+12:11:45:5 ==> [server]: Start the "Client" connection.
+12:11:45:6 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:11:45:43 ==> [server]: "Emails" created .
+12:11:45:46 ==> [server]: The end the "Client" connection.
+12:11:45:48 ==> [server]: "Users" created .
+12:11:45:49 ==> [server]: END
+12:11:46:13 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:46:17 ==> [server -> clients]: Before connection.
+12:11:46:18 ==> [server -> clients]: Connection now.
+12:11:46:18 ==> [server -> clients]: That is a connection. Before sending.
+12:11:46:46 ==> [server -> clients]: data was received
+12:11:46:47 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:46:50 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:46:54 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:46:57 ==> [server -> clients]: Before connection.
+12:11:46:58 ==> [server -> clients]: Connection now.
+12:11:46:58 ==> [server -> clients]: That is a connection. Before sending.
+12:11:46:98 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:46:99 ==> [server -> clients]: data was received
+12:11:46:0 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:48:31 ==> [server]: START
+12:11:48:34 ==> [server]: Start the "Client" connection.
+12:11:48:35 ==> [server -> listen]: Server start to listen the PORT 7070
+12:11:48:77 ==> [server]: Start the "Client" connection.
+12:11:48:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:11:48:8 ==> [server]: "Emails" created .
+12:11:48:11 ==> [server]: The end the "Client" connection.
+12:11:48:11 ==> [server]: "Users" created .
+12:11:48:12 ==> [server]: END
+12:11:48:56 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:48:61 ==> [server -> clients]: Before connection.
+12:11:48:62 ==> [server -> clients]: Connection now.
+12:11:48:63 ==> [server -> clients]: That is a connection. Before sending.
+12:11:48:2 ==> [server -> clients]: data was received
+12:11:48:3 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:48:9 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:48:14 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:48:18 ==> [server -> clients]: Before connection.
+12:11:48:18 ==> [server -> clients]: That is a connection. Before sending.
+12:11:48:19 ==> [server -> clients]: Connection now.
+12:11:48:52 ==> [server -> clients]: data was received
+12:11:48:53 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:48:56 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:52:62 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:52:67 ==> [server -> clients]: Before connection.
+12:11:52:68 ==> [server -> clients]: Connection now.
+12:11:52:68 ==> [server -> clients]: That is a connection. Before sending.
+12:11:52:15 ==> [server -> clients]: data was received
+12:11:52:16 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:52:19 ==> [server -> router]: inlogin  That Profile SENDED
+12:11:52:27 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:11:52:31 ==> [server -> clients]: Before connection.
+12:11:52:33 ==> [server -> clients]: Connection now.
+12:11:52:33 ==> [server -> clients]: That is a connection. Before sending.
+12:11:52:81 ==> [server -> clients]: data was received
+12:11:52:81 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:11:52:84 ==> [server -> router]: inlogin  That Profile SENDED
+12:12:30:33 ==> [server]: START
+12:12:30:35 ==> [server]: Start the "Client" connection.
+12:12:30:36 ==> [server -> listen]: Server start to listen the PORT 7070
+12:12:30:76 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:12:30:77 ==> [server]: Start the "Client" connection.
+12:12:31:57 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:12:31:61 ==> [server -> clients]: Before connection.
+12:12:31:63 ==> [server -> clients]: That is a connection. Before sending.
+12:12:31:64 ==> [server -> clients]: Connection now.
+12:12:31:13 ==> [server]: "Emails" created .
+12:12:31:14 ==> [server]: "Users" created .
+12:12:31:15 ==> [server]: The end the "Client" connection.
+12:12:31:16 ==> [server]: END
+12:12:31:5 ==> [server -> clients]: data was received
+12:12:31:6 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:12:31:9 ==> [server -> router]: inlogin  That Profile SENDED
+12:12:31:14 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:12:31:18 ==> [server -> clients]: Before connection.
+12:12:31:18 ==> [server -> clients]: Connection now.
+12:12:31:18 ==> [server -> clients]: That is a connection. Before sending.
+12:12:31:48 ==> [server -> clients]: data was received
+12:12:31:49 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:12:31:52 ==> [server -> router]: inlogin  That Profile SENDED
+12:12:35:63 ==> [server]: START
+12:12:35:64 ==> [server]: Start the "Client" connection.
+12:12:35:65 ==> [server -> listen]: Server start to listen the PORT 7070
+12:12:35:11 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:12:35:12 ==> [server]: Start the "Client" connection.
+12:12:35:54 ==> [server]: "Emails" created .
+12:12:35:57 ==> [server]: "Users" created .
+12:12:35:58 ==> [server]: END
+12:12:35:59 ==> [server]: The end the "Client" connection.
+12:12:36:4 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:12:36:8 ==> [server -> clients]: Before connection.
+12:12:36:8 ==> [server -> clients]: Connection now.
+12:12:36:9 ==> [server -> clients]: That is a connection. Before sending.
+12:12:36:39 ==> [server -> clients]: data was received
+12:12:36:39 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:12:36:46 ==> [server -> router]: inlogin  That Profile SENDED
+12:12:36:51 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:12:36:54 ==> [server -> clients]: Connection now.
+12:12:36:55 ==> [server -> clients]: Before connection.
+12:12:36:56 ==> [server -> clients]: That is a connection. Before sending.
+12:12:36:84 ==> [server -> clients]: data was received
+12:12:36:85 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:12:36:87 ==> [server -> router]: inlogin  That Profile SENDED
+12:14:9:35 ==> [server]: START
+12:14:9:38 ==> [server]: Start the "Client" connection.
+12:14:9:38 ==> [server -> listen]: Server start to listen the PORT 7070
+12:14:9:78 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:14:9:79 ==> [server]: Start the "Client" connection.
+12:14:9:8 ==> [server]: "Emails" created .
+12:14:9:13 ==> [server]: "Users" created .
+12:14:9:14 ==> [server]: The end the "Client" connection.
+12:14:9:14 ==> [server]: END
+12:14:9:94 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:14:9:1 ==> [server -> clients]: Before connection.
+12:14:9:2 ==> [server -> clients]: Connection now.
+12:14:9:3 ==> [server -> clients]: That is a connection. Before sending.
+12:14:9:39 ==> [server -> clients]: data was received
+12:14:9:40 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:14:9:43 ==> [server -> router]: inlogin  That Profile SENDED
+12:14:9:50 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:14:9:56 ==> [server -> clients]: That is a connection. Before sending.
+12:14:9:56 ==> [server -> clients]: Before connection.
+12:14:9:57 ==> [server -> clients]: Connection now.
+12:14:9:85 ==> [server -> clients]: data was received
+12:14:9:86 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:14:9:88 ==> [server -> router]: inlogin  That Profile SENDED
+12:16:27:37 ==> [server]: START
+12:16:27:38 ==> [server]: Start the "Client" connection.
+12:16:27:39 ==> [server -> listen]: Server start to listen the PORT 7070
+12:16:27:77 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+12:16:27:77 ==> [server]: Start the "Client" connection.
+12:16:27:8 ==> [server]: "Emails" created .
+12:16:27:11 ==> [server]: The end the "Client" connection.
+12:16:27:13 ==> [server]: END
+12:16:27:13 ==> [server]: "Users" created .
+12:16:27:88 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:16:27:92 ==> [server -> clients]: Before connection.
+12:16:27:93 ==> [server -> clients]: Connection now.
+12:16:27:94 ==> [server -> clients]: That is a connection. Before sending.
+12:16:27:25 ==> [server -> clients]: data was received
+12:16:27:25 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:16:27:30 ==> [server -> router]: inlogin  That Profile SENDED
+12:16:27:33 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+12:16:27:36 ==> [server -> clients]: Before connection.
+12:16:27:36 ==> [server -> clients]: Connection now.
+12:16:27:37 ==> [server -> clients]: That is a connection. Before sending.
+12:16:27:77 ==> [server -> clients]: data was received
+12:16:27:78 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"Boris","last_name":"Hallo word!","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+12:16:27:80 ==> [server -> router]: inlogin  That Profile SENDED
