@@ -19,11 +19,12 @@ export async function handlerIdeFC(): Promise<boolean> {
   if (nameHtmlArr.length === 0) {
     return false;
   }
+  Array.from(nameHtmlArr).forEach((item, index) => {
 
-  // Here, on switcher is hang the listener at 'click'
-  Array.from(nameHtmlArr).forEach((item) => {
     (item as HTMLDivElement).removeEventListener('click', helperForHandlerSwhitches());
-    (item as HTMLDivElement).addEventListener('click', helperForHandlerSwhitches());
+    const clonedItem = item.cloneNode(true) as HTMLDivElement;
+    clonedItem.addEventListener('click', helperForHandlerSwhitches());
+    item.replaceWith(clonedItem);
   });
 
   return true;
@@ -63,7 +64,7 @@ const changeHtmlInner = (target: HTMLElement) => {
   const switchsCore = ((target).parentElement as HTMLDivElement);
   const ndArr = switchsCore.childNodes;
   // That is a filter for field in which has a content for change
-  const displayedContentOfFieldArr = Array.from(ndArr).filter((item) => ((item as HTMLElement).className).length === 0);
+  const displayedContentOfFieldArr = Array.from(ndArr).filter((item) => (item as HTMLElement).tagName.toLowerCase() === 'div' && ((item as HTMLElement).className).length === 0);
   // That is a filter for fieled for changing of content
   const elementArr = Array.from(ndArr).filter((item) => (item as HTMLElement).className.includes('switchs-rewrite'))
   Array.from(elementArr).forEach((item, index) => {
@@ -127,15 +128,17 @@ the new html's  <input>-tage */
             if (!oldFieldOfClassName) {
               throw new Error('[profile -> UI dashoard]: Something whtat wrong!')
             }
-            oldFieldOfClassName.className =
-              oldFieldOfClassName.className.replace(' active ', '');
 
+            oldFieldOfClassName.className =
+              oldFieldOfClassName.className.replace(' active ', ' ');
+            (oldFieldOfClassName as HTMLElement).click()
             // Here a content is update
             divHtml = (divHtml.parentElement as HTMLElement).querySelector('div>div:first-of-type');
             if (!divHtml) {
               throw new Error('[profile -> UI dashoard]: Something whtat wrong!')
             }
             divHtml.innerHTML = newContent;
+
             handlerIdeFC();
 
           }
