@@ -965,3 +965,247 @@
 6:49:47:48 ==> [server]: "Users" created .
 6:49:47:49 ==> [server]: The end the "Client" connection.
 6:49:47:49 ==> [server]: END
+6:54:49:37 ==> [server]: START
+6:54:49:39 ==> [server]: Start the "Client" connection.
+6:54:49:40 ==> [server -> listen]: Server start to listen the PORT 7070
+6:54:49:61 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+6:54:49:62 ==> [server -> clients]: Before connection.
+6:54:49:63 ==> [server -> clients]: Connection now.
+6:54:49:64 ==> [server -> clients]: That is a connection. Before sending.
+6:54:49:90 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:54:49:91 ==> [server]: Start the "Client" connection.
+6:54:49:3 ==> [server -> clients]: data was received
+6:54:49:4 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+6:54:49:7 ==> [server -> router]: inlogin  That Profile SENDED
+6:54:49:10 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+6:54:49:12 ==> [server -> clients]: Before connection.
+6:54:49:12 ==> [server -> clients]: That is a connection. Before sending.
+6:54:49:13 ==> [server -> clients]: Connection now.
+6:54:49:22 ==> [server]: "Emails" created .
+6:54:49:22 ==> [server]: "Users" created .
+6:54:49:23 ==> [server]: The end the "Client" connection.
+6:54:49:23 ==> [server]: END
+6:54:49:39 ==> [server -> clients]: data was received
+6:54:49:40 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+6:54:49:41 ==> [server -> router]: inlogin  That Profile SENDED
+6:55:35:66 ==> [server]: START
+6:55:35:68 ==> [server]: Start the "Client" connection.
+6:55:35:68 ==> [server -> listen]: Server start to listen the PORT 7070
+6:55:35:5 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:55:35:5 ==> [server]: Start the "Client" connection.
+6:55:35:33 ==> [server]: "Emails" created .
+6:55:35:34 ==> [server]: "Users" created .
+6:55:35:34 ==> [server]: The end the "Client" connection.
+6:55:35:35 ==> [server]: END
+6:56:46:25 ==> [server]: Start the "Client" connection.
+6:56:46:26 ==> [server]: START
+6:56:46:27 ==> [server -> listen]: Server start to listen the PORT 7070
+6:56:46:61 ==> [server]: Start the "Client" connection.
+6:56:46:61 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:56:46:92 ==> [server]: "Emails" created .
+6:56:46:93 ==> [server]: "Users" created .
+6:56:46:93 ==> [server]: The end the "Client" connection.
+6:56:46:94 ==> [server]: END
+6:56:54:24 ==> [server]: START
+6:56:54:26 ==> [server]: Start the "Client" connection.
+6:56:54:26 ==> [server -> listen]: Server start to listen the PORT 7070
+6:56:54:59 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:56:54:59 ==> [server]: Start the "Client" connection.
+6:56:54:85 ==> [server]: "Emails" created .
+6:56:54:87 ==> [server]: "Users" created .
+6:56:54:88 ==> [server]: The end the "Client" connection.
+6:56:54:88 ==> [server]: END
+6:57:1:91 ==> [server]: START
+6:57:1:92 ==> [server]: Start the "Client" connection.
+6:57:1:93 ==> [server -> listen]: Server start to listen the PORT 7070
+6:57:1:26 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:57:1:26 ==> [server]: Start the "Client" connection.
+6:57:1:52 ==> [server]: "Emails" created .
+6:57:1:54 ==> [server]: "Users" created .
+6:57:1:54 ==> [server]: The end the "Client" connection.
+6:57:1:55 ==> [server]: END
+6:57:10:70 ==> [server]: START
+6:57:10:71 ==> [server]: Start the "Client" connection.
+6:57:10:71 ==> [server -> listen]: Server start to listen the PORT 7070
+6:57:10:3 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:57:10:3 ==> [server]: Start the "Client" connection.
+6:57:10:30 ==> [server]: "Emails" created .
+6:57:10:31 ==> [server]: The end the "Client" connection.
+6:57:10:32 ==> [server]: "Users" created .
+6:57:10:33 ==> [server]: END
+6:57:40:5 ==> [server]: START
+6:57:40:7 ==> [server]: Start the "Client" connection.
+6:57:40:7 ==> [server -> listen]: Server start to listen the PORT 7070
+6:57:40:37 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:57:40:37 ==> [server]: Start the "Client" connection.
+6:57:40:63 ==> [server]: "Emails" created .
+6:57:40:65 ==> [server]: "Users" created .
+6:57:40:65 ==> [server]: The end the "Client" connection.
+6:57:40:65 ==> [server]: END
+6:57:52:40 ==> [server]: START
+6:57:52:41 ==> [server]: Start the "Client" connection.
+6:57:52:42 ==> [server -> listen]: Server start to listen the PORT 7070
+6:57:52:72 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:57:52:73 ==> [server]: Start the "Client" connection.
+6:57:52:99 ==> [server]: "Emails" created .
+6:57:53:1 ==> [server]: "Users" created .
+6:57:53:1 ==> [server]: The end the "Client" connection.
+6:57:53:2 ==> [server]: END
+6:58:3:40 ==> [server]: START
+6:58:3:42 ==> [server]: Start the "Client" connection.
+6:58:3:43 ==> [server -> listen]: Server start to listen the PORT 7070
+6:58:3:76 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:58:3:76 ==> [server]: Start the "Client" connection.
+6:58:3:2 ==> [server]: "Emails" created .
+6:58:3:4 ==> [server]: "Users" created .
+6:58:3:5 ==> [server]: The end the "Client" connection.
+6:58:3:5 ==> [server]: END
+6:58:10:91 ==> [server]: START
+6:58:10:93 ==> [server]: Start the "Client" connection.
+6:58:10:94 ==> [server -> listen]: Server start to listen the PORT 7070
+6:58:10:32 ==> [server]: Start the "Client" connection.
+6:58:10:32 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:58:10:59 ==> [server]: "Emails" created .
+6:58:10:61 ==> [server]: "Users" created .
+6:58:10:61 ==> [server]: The end the "Client" connection.
+6:58:10:62 ==> [server]: END
+6:58:30:30 ==> [server]: START
+6:58:30:32 ==> [server]: Start the "Client" connection.
+6:58:30:32 ==> [server -> listen]: Server start to listen the PORT 7070
+6:58:30:66 ==> [server]: Start the "Client" connection.
+6:58:30:66 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:58:30:92 ==> [server]: "Emails" created .
+6:58:30:94 ==> [server]: "Users" created .
+6:58:30:95 ==> [server]: The end the "Client" connection.
+6:58:30:95 ==> [server]: END
+6:58:57:35 ==> [server]: START
+6:58:57:36 ==> [server]: Start the "Client" connection.
+6:58:57:37 ==> [server -> listen]: Server start to listen the PORT 7070
+6:58:57:67 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+6:58:57:68 ==> [server]: Start the "Client" connection.
+6:58:57:94 ==> [server]: "Emails" created .
+6:58:57:95 ==> [server]: "Users" created .
+6:58:57:96 ==> [server]: The end the "Client" connection.
+6:58:57:97 ==> [server]: END
+7:0:5:54 ==> [server]: START
+7:0:5:56 ==> [server]: Start the "Client" connection.
+7:0:5:56 ==> [server -> listen]: Server start to listen the PORT 7070
+7:0:5:92 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+7:0:5:93 ==> [server]: Start the "Client" connection.
+7:0:5:21 ==> [server]: "Emails" created .
+7:0:5:22 ==> [server]: "Users" created .
+7:0:5:22 ==> [server]: The end the "Client" connection.
+7:0:5:23 ==> [server]: END
+7:0:5:13 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:5:17 ==> [server -> clients]: Before connection.
+7:0:5:17 ==> [server -> clients]: Connection now.
+7:0:5:18 ==> [server -> clients]: That is a connection. Before sending.
+7:0:5:53 ==> [server -> clients]: data was received
+7:0:5:53 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:5:56 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:5:61 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:5:62 ==> [server -> clients]: Before connection.
+7:0:5:64 ==> [server -> clients]: Connection now.
+7:0:5:64 ==> [server -> clients]: That is a connection. Before sending.
+7:0:5:92 ==> [server -> clients]: data was received
+7:0:5:92 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:5:94 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:8:49 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:8:51 ==> [server -> clients]: Before connection.
+7:0:8:52 ==> [server -> clients]: Connection now.
+7:0:8:52 ==> [server -> clients]: That is a connection. Before sending.
+7:0:8:82 ==> [server -> clients]: data was received
+7:0:8:82 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:8:84 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:8:87 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:8:89 ==> [server -> clients]: Before connection.
+7:0:8:89 ==> [server -> clients]: Connection now.
+7:0:8:90 ==> [server -> clients]: That is a connection. Before sending.
+7:0:8:16 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:8:17 ==> [server -> clients]: data was received
+7:0:8:18 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:11:92 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:11:94 ==> [server -> clients]: Connection now.
+7:0:11:95 ==> [server -> clients]: Before connection.
+7:0:11:95 ==> [server -> clients]: That is a connection. Before sending.
+7:0:11:22 ==> [server -> clients]: data was received
+7:0:11:23 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:11:24 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:11:28 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:11:29 ==> [server -> clients]: Before connection.
+7:0:11:30 ==> [server -> clients]: Connection now.
+7:0:11:30 ==> [server -> clients]: That is a connection. Before sending.
+7:0:11:58 ==> [server -> clients]: data was received
+7:0:11:58 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:11:60 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:32:0 ==> [server]: START
+7:0:32:2 ==> [server]: Start the "Client" connection.
+7:0:32:3 ==> [server -> listen]: Server start to listen the PORT 7070
+7:0:32:13 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:32:17 ==> [server -> clients]: That is a connection. Before sending.
+7:0:32:18 ==> [server -> clients]: Connection now.
+7:0:32:18 ==> [server -> clients]: Before connection.
+7:0:32:38 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+7:0:32:39 ==> [server]: Start the "Client" connection.
+7:0:32:47 ==> [server -> clients]: data was received
+7:0:32:48 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:32:51 ==> [server -> router]: inlogin  That Profile SENDED
+7:0:32:54 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:0:32:56 ==> [server -> clients]: Before connection.
+7:0:32:57 ==> [server -> clients]: Connection now.
+7:0:32:57 ==> [server -> clients]: That is a connection. Before sending.
+7:0:32:69 ==> [server]: "Emails" created .
+7:0:32:70 ==> [server]: "Users" created .
+7:0:32:70 ==> [server]: The end the "Client" connection.
+7:0:32:70 ==> [server]: END
+7:0:32:85 ==> [server -> clients]: data was received
+7:0:32:85 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:0:32:86 ==> [server -> router]: inlogin  That Profile SENDED
+7:1:46:13 ==> [server]: START
+7:1:46:15 ==> [server]: Start the "Client" connection.
+7:1:46:16 ==> [server -> listen]: Server start to listen the PORT 7070
+7:1:46:50 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+7:1:46:51 ==> [server]: Start the "Client" connection.
+7:1:46:78 ==> [server]: "Emails" created .
+7:1:46:80 ==> [server]: "Users" created .
+7:1:46:81 ==> [server]: The end the "Client" connection.
+7:1:46:82 ==> [server]: END
+7:1:46:56 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:1:46:58 ==> [server -> clients]: Before connection.
+7:1:46:60 ==> [server -> clients]: Connection now.
+7:1:46:60 ==> [server -> clients]: That is a connection. Before sending.
+7:1:46:97 ==> [server -> clients]: data was received
+7:1:46:97 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:1:46:0 ==> [server -> router]: inlogin  That Profile SENDED
+7:1:46:10 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+7:1:46:12 ==> [server -> clients]: Before connection.
+7:1:46:13 ==> [server -> clients]: Connection now.
+7:1:46:13 ==> [server -> clients]: That is a connection. Before sending.
+7:1:46:39 ==> [server -> clients]: data was received
+7:1:46:40 ==> [server -> router]: inlogin  That Profile ID =>: {"id":5,"email_id":5,"first_name":"BoriS","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"DHXp2;M^<j,@L7Q1","session_id":"a3570747-8485-4d1c-bfa4-755af8faabc3"}
+7:1:46:41 ==> [server -> router]: inlogin  That Profile SENDED
+7:2:44:90 ==> [server]: Start the "Client" connection.
+7:2:44:92 ==> [server]: START
+7:2:44:93 ==> [server -> listen]: Server start to listen the PORT 7070
+7:2:44:28 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+7:2:44:29 ==> [server]: Start the "Client" connection.
+7:2:44:56 ==> [server]: "Emails" created .
+7:2:44:57 ==> [server]: "Users" created .
+7:2:44:58 ==> [server]: The end the "Client" connection.
+7:2:44:59 ==> [server]: END

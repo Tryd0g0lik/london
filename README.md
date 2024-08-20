@@ -88,13 +88,21 @@ COOKIE при создании (первичная авторизация ) со
 
 `src\frontend\src\account\components\Pages\Profile\handlers\handlerIde.ts` \
 Далее часть функций реализовано через `document.createEleement()` и \
-`Element.innerHTML.replace(..., ....)`. Тут больше вопрос безопасности. Поэтому код расстянулся.
-- `helperForHandlerSwhitches()` - добавляет/удаялет класс `active` в блок который является \ контейнером для dashbord-а.
+`Element.innerHTML.replace(..., ....)`. Тут больше вопрос безопасности. Поэтому код расстянулся. \
+![img](./img/Screenshot_3.png)
+
+- `helperForHandlerSwhitches()` - добавляет/удаялет класс `active` в блок который является \
+контейнером для dashbord-а.
 - `handlerIdeFC()` - на событие `click` подвешивается обработчик `helperForHandlerSwhitches()`.
-- `changeHtmlInner()` запускает UI для редактирования полей. В зависимости от нахождения \ рубильника по которому произведен `click`  из поля `firstName` и (или) `lastName` получаем \ старый контент, Рубильники работают в не зависимости друг от друга. Через \ `basisRedactField()` создаем новые поля. \
+- `changeHtmlInner()` запускает UI для редактирования полей. В зависимости от нахождения \
+ рубильника по которому произведен `click`  из поля `firstName` и (или) `lastName` получаем \
+  старый контент, Рубильники работают в не зависимости друг от друга. Через \
+   `basisRedactField()` создаем новые поля. \
 Первый `click` по рубильнику публикует новое поле, Вторичный `click` (по томуже рубильнику) возвращает первоначально опубликованный UI.
-- `basisRedactField()` - В DOM-е создаётся `input` (новые поля). Старый контент/поля \ скрываю через CSS. На место старых полей встают новые. На новые поля подвешиваются новые обработчики событий `handlerEventOfInput()`.
-- `handlerEventOfInput()` запускается при нажатии `Enter`. Отправляется запрос в db ` async function put(body_: string, pathnameStr = '/api/v1/clients/add/'):` из \ `src\frontend\src\account\services\fetches.ts`. \
+- `basisRedactField()` - В DOM-е создаётся `input` (новые поля). Старый контент/поля \
+ скрываю через CSS. На место старых полей встают новые. На новые поля подвешиваются новые обработчики событий `handlerEventOfInput()`.
+- `handlerEventOfInput()` запускается при нажатии `Enter`. Отправляется запрос в db ` async function put(body_: string, pathnameStr = '/api/v1/clients/add/'):` из \
+ `src\frontend\src\account\services\fetches.ts`. \
 В зависимости от ответа сервера на display публикуется сообщение `'Сохранился', 'Не сохранился'`. С разными цветами.
 
 
