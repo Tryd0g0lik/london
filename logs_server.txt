@@ -1209,3 +1209,13 @@
 7:2:44:57 ==> [server]: "Users" created .
 7:2:44:58 ==> [server]: The end the "Client" connection.
 7:2:44:59 ==> [server]: END
+7:6:12:73 ==> [server]: START
+7:6:12:75 ==> [server]: Start the "Client" connection.
+7:6:12:75 ==> [server -> listen]: Server start to listen the PORT 7070
+7:6:12:5 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+7:6:12:6 ==> [server]: Start the "Client" connection.
+7:6:12:33 ==> [server]: "Emails" created .
+7:6:12:35 ==> [server]: "Users" created .
+7:6:12:36 ==> [server]: The end the "Client" connection.
+7:6:12:36 ==> [server]: END

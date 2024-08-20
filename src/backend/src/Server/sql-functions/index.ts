@@ -152,7 +152,7 @@ interface Propse {
  * @returns single object
  */
 export function selectOneParamQSL(props: Propse): string {
-  const selectOneParam = `SELECT * FROM ${table} WHERE  ${props.column} = '${props.value}';`;
+  const selectOneParam = `SELECT * FROM ${props.table} WHERE  ${props.column} = '${props.value}';`;
   return selectOneParam;
 }
 
