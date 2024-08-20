@@ -4,7 +4,7 @@ const { helper } = require('./validators');
 const {
   addNewLineSQL, selectSingleUserSQL,
   changeValueOneCellSQL, selectOneParamQSL,
-  changeValueAllCellSQL
+  changeValueAllCellSQL, changeEmailSQL
 } = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
@@ -24,7 +24,25 @@ export interface FieldInnerHtml {
   coockie?: string
   text?: string
   dataNamex: string
+  typeField?: string
+  newValueofField?: string | boolean
 };
+interface Props {
+  email?: string
+  emailId?: number
+  newEmail?: string
+  firstName?: string
+  lastName?: string
+  newPassword?: string
+  isActive?: boolean
+  isActivated?: boolean
+  sendMessage?: boolean
+}
+interface ClientData {
+  typeField: string
+  newValueofField: string
+  columnNameArr?: string[]
+}
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
@@ -57,49 +75,74 @@ export function getRouter(appObj: typeof Application): typeof router {
   });
   router.put('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: PUT  That request was received from Profile 5 =>: ${(req)}`);
-    const clientData = req.body as unknown as FieldInnerHtml;
-    const params = req.params.sessionId;
-    await log(`[server -> router]: PUT: ${JSON.stringify(clientData)}`);
-    // await log(`[server -> router]: PUT 2: ${JSON.stringify(params[0].sessionId)}`);
-    await log(`[server -> router]: PUT 3: ${params.sessionId}`);
-    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: params.sessionId });
+    const clientData = req.body as ClientData;
+    // await log(`[server -> router]: PUT Body: ${clientData.keys()}`);
+    const sessionId = req.params.sessionId;
+    await log(`[server -> router]: PUT Body: ${JSON.stringify(clientData)}`);
+    /* --------- Below, we is get the data of only single user --------- */
+    await log(`[server -> router]: PUT 3: ${sessionId}`);
+    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
     await log(`[server -> router]: PUT Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
-    if ((respArr.rows).length === 0) {
-      res.status(404).json({ massage: 'Not founded' });
-      return false;
-    }
+    // if ((respArr.rows).length === 0) {
+    //   res.status(404).json({ massage: 'Not founded' });
+    //   return false;
+    // }
+    sendNotFound(res, respArr.rows);
+    await log(`[server -> router]: PUT Received data of db. Step 1/3 Email ID =>: ${JSON.stringify(respArr.rows[0])}`);
+    respArr = await clients(selectOneParamQSL, { table: 'Emails', column: 'id', value: respArr.rows[0].email_id });
     await log(`[server -> router]: PUT Received data of db. Step 2/3. Length =>: ${(respArr.rows).length}`);
-    respArr = await clients(selectOneParamQSL, { table: 'emails', column: 'id', value: respArr[0].rows[0].email_id });
+    // if ((respArr.rows).length === 0) {
+    //   res.status(404).json({ massage: 'Not founded' });
+    //   return false;
+    // }
+    sendNotFound(res, respArr.rows);
+    const emailOld = respArr.rows[0].emails;
+    await log(`[server -> router]: PUT Received data of db. Step 3/3. Length =>: ${JSON.stringify(respArr.rows[0])}`);
+    respArr = await clients(selectSingleUserSQL, respArr.rows[0].emails);
     if ((respArr.rows).length === 0) {
       res.status(404).json({ massage: 'Not founded' });
       return false;
     }
-    await log(`[server -> router]: PUT Received data of db. Step 3/3. Length =>: ${(respArr.rows).length}`);
-    respArr = await clients(selectSingleUserSQL, { email: respArr[0].rows[0].emails });
-    if ((respArr.rows).length === 0) {
-      res.status(404).json({ massage: 'Not founded' });
-      return false;
-    }
-    const data = respArr[0].rows[0];
-    const props = {
-      email: data.email,
-      emailId: data.email_id,
-      newEmail: data
-      // создать замену в цикле
-      //     firstName — : string
-
-      //     lastName — : string
-
-      //     newPassword — : string
+    /* --------- Above, all data we received from one line  --------- */
+    const data = respArr.rows[0];
+    const props: Props = {
+      email: emailOld,
+      newEmail: data.emails,
+      firstName: data.first_name,
+      lastName: data.last_name,
+      newPassword: data.password,
+      isActive: data.is_active,
+      isActivated: data.is_activated,
+      sendMessage: data.send_message
     };
-    clients(changeValueAllCellSQL, { ...props });
-    // const result = await respArr.rows.filter(((item: propsForClient) => item.password === clientData.password));
-    // await log(`[server -> router]: PUT coockie: ${coockie.sessionId}`);
+    await log(`[server -> router]: PUT Before a change 1/4: ${JSON.stringify(props)}`);
+    // Below is (columnNameArr) a name of keys from the `req.body` (above).
+    const columnNameArr: Array<keyof Props> = ['newEmail', 'firstName', 'lastName', 'newPassword'];
+    columnNameArr.slice(0).forEach((item) => {
+      if ((clientData.typeField).toLowerCase() === 'email') {
+        props.newEmail = clientData.newValueofField;
+      } else if ((item.toLowerCase() === (clientData.typeField).toLowerCase()) &&
+        ((clientData.typeField).toLowerCase() !== 'email')) {
+        log(`[server -> router]: PUT change 2/4. Item: ${item.toLowerCase()}
+        typeField: ${(clientData.typeField).toLowerCase()}`);
+        (props[item] as string) = clientData.newValueofField;
+        log(`[server -> router]: PUT Now is a change 2/4: ${JSON.stringify(props)}`);
+      }
+    });
+    if ((clientData.typeField).toLowerCase() === 'email') {
+      await log(`[server -> router]: PUT After a change 3/4: ${JSON.stringify(props)}
+    Before a 'clients'/SQL`);
+      await clients(changeEmailSQL, { email: props.email, newEmail: props.newEmail }, false);
+      res.status(200).json(props);
+      return true;
+    }
+
+    await clients(changeValueAllCellSQL, { ...props }, false);
+    await log('[server -> router]: PUT After a change 4/4  Before a clients/SQL');
+    // sendNotFound(res, respArr.rows);
+    res.status(200).json(props);
+    return true;
   });
-  // router.post('/api/v1/clients/:id', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-  //   await log(`[server -> router]: inlogin  That request was received from Profile 7 =>: ${req}`);
-  //   const sessionId = req.params.id;
-  // });
 
   /**
    * This is path fro a start/zero/basis authorization's mode.
@@ -319,3 +362,12 @@ export async function reactivatorForUser(props: ChengeSingleUser): Promise<boole
   }
   return true;
 }
+
+/* -------------- */
+function sendNotFound(res: typeof Request, rows: unknown): boolean {
+  if ((rows) && (rows as propsForClient[]).length === 0) {
+    log('[server -> router]: Not founded - 404 code');
+    res.status(404).json({ massage: 'Not founded' });
+    return false;
+  }
+};

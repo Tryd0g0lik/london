@@ -19,9 +19,11 @@ const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as st
  * The entrypoint's sintax `clients(selectSingleUserSQL, clientData.email);`.\
  * This 'selectSingleUserSQL' is SQL-string from the 'server/sql-functions' and \
  * `dataJson` data mode JSON.
+ * @params `resp` booolean. Default value is a `true`. It a `true` for a POST, GET requests.
+ * If `resp` = false, it's for a PUT, DELETE requests.
  */
 export async function clients(fun: (props: propsForClient) => boolean,
-  dataJson: propsForClient): Promise<boolean> {
+  dataJson: propsForClient, resp = true): Promise<boolean> {
   lg('[server -> clients]: Before connection.');
   const client = new Client({
     user: REACT_APP_POSTGRES_USER,
@@ -35,10 +37,15 @@ export async function clients(fun: (props: propsForClient) => boolean,
     client.connect();
     lg('[server -> clients]: Connection now.');
     await lg('[server -> clients]: That is a connection. Before sending.');
-    const response = await client.query(fun(dataJson));
-    lg('[server -> clients]: data was received');
+    if (resp) {
+      const response = await client.query(fun(dataJson));
+      lg('[server -> clients]: data was received');
+      client.end();
+      return response;
+    }
+    await client.query(fun(dataJson));
+    lg('[server -> clients]: data was save');
     client.end();
-    return response;
   } catch (err: unknown) {
     client.end();
     lg(`[server -> clients]: Here procces do not be connection or save.

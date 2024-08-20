@@ -113,6 +113,17 @@ interface Put {
   lastName: string
   newPassword: string
   emailId: number
+  isActive?: boolean
+  isActivated?: boolean
+  sendMessage?: boolean
+}
+
+export function changeEmailSQL(props: Put): string {
+  const { email, newEmail } = props;
+  const changeEmail = `UPDATE Emails
+SET emails = '${newEmail}'
+WHERE emails = '${email}';`;
+  return changeEmail;
 }
 /**
  *
@@ -126,16 +137,21 @@ interface Put {
  * @returns return string
  */
 export function changeValueAllCellSQL(props: Put): string {
-  const { email, emailId, newEmail, firstName, lastName, newPassword } = props;
-  const changeValueAll = `UPDATE Emails
-SET emails = '${newEmail}'
-WHERE emails = '${email}';
-
-UPDATE Users
-SET first_name = '${firstName}',
+  const {
+    email,
+    isActive = false,
+    isActivated = false,
+    sendMessage = false,
+    firstName, lastName,
+    newPassword
+  } = props;
+  const changeValueAll = `UPDATE Users
+SET first_name =  '${firstName}',
     last_name = '${lastName}',
-    passwords = '${newPassword}',
-    email_id = ${emailId}
+    is_active = ${isActive},
+    is_activated = ${isActivated},
+    send_message = ${sendMessage},
+    password = '${newPassword}'
 WHERE email_id = (SELECT id FROM Emails WHERE emails = '${email}');`;
   return changeValueAll;
 }
