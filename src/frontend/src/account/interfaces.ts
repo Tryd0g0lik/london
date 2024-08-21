@@ -30,3 +30,10 @@ export interface FieldInnerHtml {
   text?: string
   dataNamex: string
 }
+export interface ResultType {
+  id: number;
+  firstName: string;
+  lastName: string;
+  name?: string
+  password: string
+}

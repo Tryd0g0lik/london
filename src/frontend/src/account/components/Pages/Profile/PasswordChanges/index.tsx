@@ -1,15 +1,46 @@
 import React, { useState, useEffect } from 'react';
 import { NavFC } from '../../../NavOpPages';
+import { doGetRequest } from '@Services/fetches';
+import { ResultType } from '@Interfaces';
+
 export function ProfilePAsswordChangesFC(): React.JSX.Element {
   const [fields, setFields] = useState<Array<{ __html: React.JSX.Element }> | null>(null);
-
+  const [pasw, setPasw] = useState<string | null>('Your pasword');
   useEffect(() => {
     const oneFiels = {
       __html: <label className="input input-bordered flex items-center gap-2">
-        <input type="password" className="grow" />
+        <input type="password" className="grow" placeholder={pasw as string} />
       </label>
     }
     setFields([oneFiels, oneFiels])
+
+    const result = (async (): Promise<ResultType | boolean | string> => {
+      const result = doGetRequest();
+      return result;
+    });
+    result()
+      .then((result) => {
+        if (typeof result === 'boolean') {
+          return false;
+        }
+        const answ = JSON.stringify(result);
+        return answ;
+      })
+      .then((responce): boolean => {
+        if (typeof result === 'boolean') {
+          return false;
+        }
+        else {
+          const res = (responce as unknown as ResultType).password as string;
+          setPasw(res);
+          return true;
+        }
+
+      })
+
+
+
+
   }, []);
 
   return <React.Fragment>
@@ -33,13 +64,6 @@ export function ProfilePAsswordChangesFC(): React.JSX.Element {
                 </div>
               )) : '<div></div>'
             }
-            {/* {fields && (
-              <div
-                data-namex="password"
-                className="password profile-LastName"
-                dangerouslySetInnerHTML={fields}
-              />
-            )} */}
           </div>
         </div>
       </div>

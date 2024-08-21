@@ -66,7 +66,7 @@ export async function checkerCoockieKey(): Promise<boolean> {
   }
 
   if (trueFalse) {
-    // если видим ключа 'sessionId' - coockie ,
+    // если видим ключ 'sessionId' - coockie ,
     // смотрим класс 'active'.
     // Если нету, добавляем.
     if (!(root.className).includes('active')) {

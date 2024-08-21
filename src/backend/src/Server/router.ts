@@ -65,7 +65,8 @@ export function getRouter(appObj: typeof Application): typeof router {
       message: 'OK',
       id: result.rows[0].id,
       firstName: result.rows[0].first_name,
-      lastName: result.rows[0].last_name
+      lastName: result.rows[0].last_name,
+      password: result.rows[0].password
     });
     await log('[server -> router]: inlogin  That Profile SENDED');
     return true;
@@ -83,26 +84,23 @@ export function getRouter(appObj: typeof Application): typeof router {
     await log(`[server -> router]: PUT 3: ${sessionId}`);
     let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
     await log(`[server -> router]: PUT Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
-    // if ((respArr.rows).length === 0) {
-    //   res.status(404).json({ massage: 'Not founded' });
-    //   return false;
-    // }
+    const answ = sendNotFound(res, respArr);
+    if (typeof answ === 'boolean') return;
+
     sendNotFound(res, respArr.rows);
     await log(`[server -> router]: PUT Received data of db. Step 1/3 Email ID =>: ${JSON.stringify(respArr.rows[0])}`);
     respArr = await clients(selectOneParamQSL, { table: 'Emails', column: 'id', value: respArr.rows[0].email_id });
     await log(`[server -> router]: PUT Received data of db. Step 2/3. Length =>: ${(respArr.rows).length}`);
-    // if ((respArr.rows).length === 0) {
-    //   res.status(404).json({ massage: 'Not founded' });
-    //   return false;
-    // }
+    const answ2 = sendNotFound(res, respArr);
+    if (typeof answ2 === 'boolean') return;
+
     sendNotFound(res, respArr.rows);
     const emailOld = respArr.rows[0].emails;
     await log(`[server -> router]: PUT Received data of db. Step 3/3. Length =>: ${JSON.stringify(respArr.rows[0])}`);
     respArr = await clients(selectSingleUserSQL, respArr.rows[0].emails);
-    if ((respArr.rows).length === 0) {
-      res.status(404).json({ massage: 'Not founded' });
-      return false;
-    }
+    const answ3 = sendNotFound(res, respArr);
+    if (typeof answ3 === 'boolean') return;
+
     /* --------- Above, all data we received from one line  --------- */
     const data = respArr.rows[0];
     const props: Props = {
@@ -220,18 +218,14 @@ export function getRouter(appObj: typeof Application): typeof router {
     await log(`[server -> router]: inlogin:sessionId coockie: ${coockie.sessionId}`);
     const respArr = await clients(selectSingleUserSQL, clientData.email);
     await log(`[server -> router]: inlogin:sessionId Received data where is a length =>: ${(respArr.rows).length}`);
-    if ((respArr.rows).length === 0) {
-      res.status(404).json({ massage: 'Not founded' });
-      return false;
-    }
+    const answ = sendNotFound(res, respArr);
+    if (typeof answ === 'boolean') return;
+
     const result = await respArr.rows.filter(((item: propsForClient) => item.password === clientData.password));
     await log(`[server -> router]: inlogin:sessionId Filter LENGTH =>: ${(result.length)}`);
-    if (result.length === 0) {
-      await log(`[server -> router]: inlogin:sessionId Not found. Message was sent a 404 code.
-        RESULT =>: ${result}`);
-      res.status(404).json({ massage: 'Not founded' });
-      return false;
-    }
+    const answ2 = sendNotFound(res, result);
+    if (typeof answ === 'boolean') return;
+
     await log(`[server -> router]: inlogin:sessionId Not found a password. RESULT =>: ${result}`);
     res.status(200).json({ massage: 'OK', sessionId: result[0].session_id });
     await log(`[server -> router]: inlogin:sessionId Message was sent a 200code .

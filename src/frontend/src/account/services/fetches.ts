@@ -1,6 +1,7 @@
 // import getCookie from './cookies';
 import { getCookie } from '@Services/coockieSessionId';
 import { FetchParams, FetchMethod, } from '@Interfaces'
+import { ResultType } from '@Interfaces';
 
 let env_ = process.env.REACT_APP_POSTGRES_HOST;
 const HOST = (env_ === undefined) ? 'localhost' : env_.slice(0) as string;
@@ -99,4 +100,19 @@ export async function get(body_: string,
     return dataJson
   }
   return false
+}
+
+/**
+ * This is a request to the server ba in path `/api/v1/clients/${sessionId}`
+ * @returns responce from server
+ */
+export async function doGetRequest() {
+  const sessionId = getCookie('sessionId');
+  if (sessionId === undefined) {
+    return false;
+  }
+
+  /* ---- Here is data received from the db ---- */
+  const result = await get(JSON.stringify({}), `/api/v1/clients/${sessionId}`) as ResultType;
+  return result;
 }
