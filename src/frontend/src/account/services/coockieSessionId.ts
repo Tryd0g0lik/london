@@ -25,7 +25,7 @@ export function setSessionIdInCookie(sessionId: string): void {
 
 /**
  *
- * @param cookieName entrypoint received the a key-name from coockie and check his.
+ * @param cookieName entrypoint received the a key-name from cookie and check his.
  * @returns trye/false;
  */
 export function checkCookieExists(cookieName: string): boolean {
@@ -49,15 +49,15 @@ export function createSessionId(): string {
 }
 
 /**
- * Если видим ключа 'sessionId' - coockie ,
+ * Если видим ключа 'sessionId' - cookie ,
  * Смотрим класс 'active'.
  * Если нету, добавляем.
  *
- * Если не видим ключа 'sessionId' - coockie ,
+ * Если не видим ключа 'sessionId' - cookie ,
    Смотрим класс 'active' и удаляем его.
  * @returns
  */
-export async function checkerCoockieKey(): Promise<boolean> {
+export async function checkerCookieKey(): Promise<boolean> {
 
   const trueFalse = checkCookieExists('sessionId');
   const root = document.getElementById('root');
@@ -66,7 +66,7 @@ export async function checkerCoockieKey(): Promise<boolean> {
   }
 
   if (trueFalse) {
-    // если видим ключ 'sessionId' - coockie ,
+    // если видим ключ 'sessionId' - cookie ,
     // смотрим класс 'active'.
     // Если нету, добавляем.
     if (!(root.className).includes('active')) {
@@ -77,7 +77,7 @@ export async function checkerCoockieKey(): Promise<boolean> {
 
     }
   } else {
-    // если не видим ключа 'sessionId' - coockie ,
+    // если не видим ключа 'sessionId' - cookie ,
     // смотрим класс 'active' и удаляем его.
     if ((root.className).includes('active')) {
       root.className = root.className.replace('active', '');
@@ -95,7 +95,7 @@ interface CookieOptions {
   sameSite?: 'Strict' | 'Lax' | 'None';
 }
 /**
- * COOCKIE Installing
+ * cookie Installing
  */
 function setCookie(name: string, value: string, options: CookieOptions = {}): void {
 
@@ -124,7 +124,7 @@ function setCookie(name: string, value: string, options: CookieOptions = {}): vo
 }
 
 /**
- * Searcher for coockie's key
+ * Searcher for cookie's key
  * @param name
  * @returns
  */

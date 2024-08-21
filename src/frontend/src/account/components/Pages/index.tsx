@@ -4,7 +4,7 @@ import { RegistrationPageFC } from './RegistrerPage';
 import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';
 import { ProfileFC } from './Profile';
-import { ProfilePAsswordChangesFC } from './Profile/PasswordChanges';
+import { ProfilePAsswordChangesFC } from './Profile/ProfileChanges';
 import { AuthorizatorPageFC } from './AuthorizationPage'
 // import { isElementOfType } from "react-dom/test-utils";
 

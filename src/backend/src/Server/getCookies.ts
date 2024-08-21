@@ -1,7 +1,7 @@
 // const { cookies } = require('next/headers');
 // /**
 //  * @param name Получаем Cookie клиента
-//  * @returns string coockie csrfToken
+//  * @returns string cookie csrfToken
 //  */
 // export async function GET(request: Request) {
 //   // Получаем cookie

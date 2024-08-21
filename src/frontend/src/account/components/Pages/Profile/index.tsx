@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
-import { checkerCoockieKey } from '@Services/coockieSessionId';
+import { checkerCookieKey } from '@Services/coockieSessionId';
 import { infoLoader } from './handlers/installInfo';
 import { handlerIdeFC } from './handlers/handlerIde'
 export function ProfileFC(): React.JSX.Element {
 
   useEffect((): () => void => {
     infoLoader();
-    checkerCoockieKey();
+    checkerCookieKey();
     return (): void => {
       handlerIdeFC();
     }

@@ -2,7 +2,7 @@ import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { add } from '@Services/fetches';
-import { checkerCoockieKey } from '@Services/coockieSessionId';
+import { checkerCookieKey } from '@Services/coockieSessionId';
 // import getCookie from '@Services/cookies';
 import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
@@ -45,14 +45,14 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
     return false;
   }
   // COOCKIE
-  const coockieId = createSessionId();
-  const coockie = {
-    sessionId: coockieId
+  const cookieId = createSessionId();
+  const cookie = {
+    sessionId: cookieId
   };
   const bodyStr = JSON.stringify({
     email: emails,
     password: password,
-    coockie
+    cookie
   });
   // отправляем в базу данных
   let responce = await add(bodyStr, '/api/v1/inlogin/') as { message: string, sessionId?: string };
@@ -65,10 +65,10 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
   const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
 
-  responce = await add(bodyStr, `/api/v1/inlogin/${coockie.sessionId}`) as { message: string, sessionId?: string };
+  responce = await add(bodyStr, `/api/v1/inlogin/${cookie.sessionId}`) as { message: string, sessionId?: string };
   if (typeof responce === 'boolean') {
     //It new session key is  insade to the browser
-    setSessionIdInCookie(coockie.sessionId);
+    setSessionIdInCookie(cookie.sessionId);
   } else {
     //It old session key is  insade to the browser
     setSessionIdInCookie(responce.sessionId as string);
@@ -91,7 +91,7 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
 // sessionId=30b48d52-7558-482d-9e21-07496225a462; max-age=86400;  domain=127.0.0.1 Path=/ samesite=strict
 export function PermissionPageFC(): JSX.Element {
   useEffect(() => {
-    checkerCoockieKey();
+    checkerCookieKey();
   });
   return (
     <>

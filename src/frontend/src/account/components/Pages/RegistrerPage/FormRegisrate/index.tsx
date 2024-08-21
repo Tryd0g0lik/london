@@ -1,6 +1,6 @@
 import React, { JSX, useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
-import { checkerCoockieKey } from '@Services/coockieSessionId';
+import { checkerCookieKey } from '@Services/coockieSessionId';
 import { add } from '@Services/fetches';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { messageForUser } from '@Services/messengerForm';
@@ -95,7 +95,7 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
 
 export function RegisterPageFC(): JSX.Element {
   useEffect(() => {
-    checkerCoockieKey();
+    checkerCookieKey();
   });
   return (
     <>
