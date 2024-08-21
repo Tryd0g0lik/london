@@ -35,8 +35,6 @@ export function ProfilePAsswordChangesFC(): React.JSX.Element {
           return false;
         }
         else {
-          const res = (responce as unknown as ResultType).password as string;
-
           return true;
         }
 
