@@ -114,7 +114,7 @@ COOKIE при создании (первичная авторизация ) со
 Работа с учером одного SQL-запроса `changeValueAllCellSQL(props: Put):` (SQL-запросы/функции ) из файла `src\backend\src\server\sql-functions\index.ts`.
 
 21.08
-Добавлена страница для радактирования/изменения пароля. \
+- Добавлена страница для радактирования/изменения пароля. \
 Weeb - `/profile/password_change`. \
 Файл - `src\frontend\src\account\components\Pages\Profile\ProfileChanges\index.tsx` (`useEffect`, `useState`).
 
@@ -132,6 +132,22 @@ Node. Серверная и фронтальная логика писалась
 Новое добавлялись только УСЛОВИЯ
 
 ![img](./img/Screenshot_5.png)
+
+- Добавлена страница 'Удалить'. \
+Web - `profile/profile_dalete`\
+Файл - `src\frontend\src\account\components\Pages\Remove\index.tsx` (`useEffect`)
+Обработчик клика `src\frontend\src\account\components\Pages\Remove\hamdlers\handlerRemove.ts`.
+
+Файл - `src\backend\src\server\router.ts`. \
+Код - ` router.delete('/api/v1/clients/:sessionId', ...)` \
+SQL функция - `dropTableLineSQL`.
+
+На 22.08 \
+Найти ошибку - сервер перестал видеть запрос на удаление. \
+Добавить UI CRUD
+
+
+
 
 
 Note Totall:

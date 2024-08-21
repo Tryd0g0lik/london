@@ -68,6 +68,31 @@ export async function put(body_: string,
   return false
 }
 
+export async function remove(pathnameStr = `/api/v1/clients/add`
+): Promise<object | boolean | string> {
+  const paramsCopy = {} as typeof params;
+  // Object.assign(paramsCopy, params);
+  paramsCopy['method'] = FetchMethod.DELETE;
+  paramsCopy['mode'] = params.mode;
+  paramsCopy['headers'] = {
+    'X-CSRFToken': getCookie('sessionId'),// getCookie('csrftoken') as string,
+    'Content-Type': 'application/json'
+  };
+
+
+  const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
+  const url = urlStr + pathnameStr;
+
+  const answer = await fetch(url, paramsCopy);
+
+  if (answer.ok) {
+    const dataJson = answer.json();
+    return dataJson
+  }
+  return false
+}
+
+
 /**
  *
 //  * @param nody_ для актива

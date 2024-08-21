@@ -57,7 +57,7 @@ export function NavFC(): JSX.Element {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="/profile/profile_dalete/" className="dropdown-item">
+                      <a href="/profile/profile_dalete" className="dropdown-item">
                         Удалить
                       </a>
                     </li>

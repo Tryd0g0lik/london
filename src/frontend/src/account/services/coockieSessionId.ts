@@ -137,3 +137,7 @@ export function getCookie(name: string) {
   // let matches = document.cookie.match(regMax);
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
+
+export function deleteCookie(cookieName: string): void {
+  document.cookie = `${cookieName}=; Max-Age=0; path=/;`;
+}

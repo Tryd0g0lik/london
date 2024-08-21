@@ -192,3 +192,8 @@ export function changeValueOneCellSQL(tableName: string, column: string, index: 
     WHERE id = ${index};`;
   return updateOneCell;
 }
+
+export function dropTableLineSQL(tableName: string, index: number): string {
+  const removeTable = `DROP TABLE IF EXISTS ${tableName};`;
+  return removeTable;
+}

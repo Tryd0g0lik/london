@@ -4,7 +4,7 @@ const { helper } = require('./validators');
 const {
   addNewLineSQL, selectSingleUserSQL,
   changeValueOneCellSQL, selectOneParamQSL,
-  changeValueAllCellSQL, changeEmailSQL
+  changeValueAllCellSQL, changeEmailSQL, dropTableLineSQL
 } = require('./sql-functions/index');
 const log = require('./logs/index');
 const { clients } = require('./clients');
@@ -72,8 +72,24 @@ export function getRouter(appObj: typeof Application): typeof router {
     await log('[server -> router]: inlogin:sessionId №4 That Profile SENDED');
     return true;
   });
-  router.delete('/api/v1/clients/:id', async (req: typeof Request, res: Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin  That request was received from Profile 3 =>: ${(JSON.stringify(req[0]))}`);
+  router.delete('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: DELETE  That request was received from Profile =>: ${(JSON.stringify(req))}`);
+    /* --------- Below, we is get the data of only single user --------- */
+    const sessionId = req.params.sessionId;
+    await log(`[server -> router]: DELETE  №1: ${sessionId}`);
+    const respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    await log(`[server -> router]: DELETE  №2: Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
+    const answ = sendNotFound(res, respArr.rows);
+    if (typeof answ === 'boolean') return;
+    const emailId = respArr.rows[0].email_id;
+    await clients(dropTableLineSQL, 'users', respArr.rows[0].id);
+    await log('[server -> router]: DELETE  №3: Removed from the "Users"');
+    await clients(dropTableLineSQL, 'emails', emailId);
+    await log('[server -> router]: DELETE  №4: Removed from the "Users"');
+    const props = { message: 'Removed' };
+    res.status(200).json(props);
+
+    return true;
   });
   router.put('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: PUT  That request was received from Profile 5 =>: ${(req)}`);
