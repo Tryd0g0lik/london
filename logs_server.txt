@@ -92,3 +92,25 @@
 13:45:30:62 ==> [server -> clients]: That is a connection. Before sending.
 13:45:30:88 ==> [server -> clients]: data was received
 13:45:30:88 ==> [server -> router]: Not founded - 404 code
+13:48:45:11 ==> [server]: START
+13:48:45:13 ==> [server]: Start the "Client" connection.
+13:48:45:13 ==> [server -> listen]: Server start to listen the PORT 7070
+13:48:45:27 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+13:48:45:29 ==> [server -> clients]: Before connection.
+13:48:45:29 ==> [server -> clients]: Connection now.
+13:48:45:30 ==> [server -> clients]: That is a connection. Before sending.
+13:48:45:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+13:48:45:54 ==> [server]: Start the "Client" connection.
+13:48:45:65 ==> [server -> clients]: data was received
+13:48:45:65 ==> [server -> router]: Not founded - 404 code
+13:48:45:69 ==> [server -> router]: inlogin  That request was received from Profile 1 =>: [object Object]
+13:48:45:71 ==> [server -> clients]: Before connection.
+13:48:45:71 ==> [server -> clients]: Connection now.
+13:48:45:71 ==> [server -> clients]: That is a connection. Before sending.
+13:48:45:82 ==> [server]: "Emails" created .
+13:48:45:83 ==> [server]: "Users" created .
+13:48:45:83 ==> [server]: The end the "Client" connection.
+13:48:45:83 ==> [server]: END
+13:48:45:99 ==> [server -> clients]: data was received
+13:48:45:99 ==> [server -> router]: Not founded - 404 code

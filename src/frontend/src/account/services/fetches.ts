@@ -2,7 +2,7 @@
 import { getCookie } from '@Services/coockieSessionId';
 import { FetchParams, FetchMethod, } from '@Interfaces'
 import { ResultType } from '@Interfaces';
-import { type } from '@testing-library/user-event/dist/type';
+// import { type } from '@testing-library/user-event/dist/type';
 
 let env_ = process.env.REACT_APP_POSTGRES_HOST;
 const HOST = (env_ === undefined) ? 'localhost' : env_.slice(0) as string;
