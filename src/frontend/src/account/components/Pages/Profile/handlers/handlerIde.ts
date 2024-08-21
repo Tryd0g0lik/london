@@ -35,7 +35,7 @@ export async function handlerIdeFC(): Promise<boolean> {
  * Тут, больше вопрос безопасности.
  * @returns HTMLLableElement
  */
-function basisRedactField(props: FieldInnerHtml): HTMLElement {
+export function basisRedactField(props: FieldInnerHtml): HTMLElement {
   const { dataNamex, text = '' } = props;
   const label = document.createElement('label');
   const input = document.createElement('input');
@@ -105,6 +105,7 @@ the new html's  <input>-tage */
               ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
               return false;
             }
+
             await handlerEventOfInput(event);
             // Input wich need the delete
             const target = (event.target as HTMLElement);

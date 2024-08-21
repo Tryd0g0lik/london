@@ -24,7 +24,7 @@ export async function doActiveReferences(): Promise<boolean> {
 
     // Обработчик события клика
     link.removeEventListener('click', (event) => {
-      event.preventDefault(); // Отменяем стандартное поведение ссылки
+      // Отменяем стандартное поведение ссылки
       isActive = !isActive; // Переключаем состояние активности
       link.classList.toggle('active', isActive); // Добавляем или удаляем класс 'active'
     });
@@ -49,7 +49,7 @@ export async function doActiveReferences(): Promise<boolean> {
 
     // Обработчик события клика
     link.addEventListener('click', (event) => {
-      event.preventDefault(); // Отменяем стандартное поведение ссылки
+      // event.preventDefault(); // Отменяем стандартное поведение ссылки
       isActive = !isActive; // Переключаем состояние активности
       link.classList.toggle('active', isActive); // Добавляем или удаляем класс 'active'
     });

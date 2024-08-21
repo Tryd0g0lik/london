@@ -13,12 +13,13 @@ export async function infoLoader(): Promise<boolean> {
     lastName: string;
     name: string
   }
+  /* ---- Here is data received from the db ---- */
   const result = await get(JSON.stringify({}), `/api/v1/clients/${sessionId}`) as ResultType;
   if ((typeof result) === 'boolean') {
     return false;
   }
   const profile = document.querySelector('.profile');
-  const profileALL = document.querySelectorAll('.profile > div');
+  const profileALL = document.querySelectorAll('div.profilename');
   if (profileALL === null && profile === null) {
     return false;
   };

@@ -91,12 +91,6 @@ button {
   background-color: transparent;
 }
 
-a:hover,
-a:focus,
-a:active,
-a:visited {
-  color: #000;
-}
 
 article,
 aside,
@@ -147,7 +141,6 @@ q:after {
 body {
   font-family: 'PT Sans', Arial, sans-serif;
   height: auto;
-  background: #fff;
 }
 
 body,

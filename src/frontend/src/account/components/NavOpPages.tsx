@@ -1,6 +1,7 @@
 import React, { JSX, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, } from 'react-router-dom';
 import { doActiveReferences } from '@Services/menuServise'
+
 export function NavFC(): JSX.Element {
   useEffect(() => {
     doActiveReferences();
@@ -10,6 +11,10 @@ export function NavFC(): JSX.Element {
   const handleGoHome = () => {
     navigate('/index'); // Перенаправление на /index
   };
+  // const handleGoProfileChange = () => {
+  //   navigate('/profile/profile_change'); // Перенаправление на /index
+  // };
+
   return (
     <>
       <span className="loading loading-bars loading-xs"></span>
@@ -40,13 +45,14 @@ export function NavFC(): JSX.Element {
                         Мои объявления
                       </a>
                     </li>
-                    <li className="nav-item">
-                      <a className="dropdown-item" href="/profile/profile_change/">
+                    {/* <li onClick={handleGoProfileChange} className="nav-item">
+                      <Link to={Pages.ProfileChanges}>Изменить профиль</Link> */}
+                    {/* <a className="dropdown-item" href="/profile/profile_change">
                         Изменить личные данные
-                      </a>
-                    </li>
+                      </a> */}
+                    {/* </li> */}
                     <li className="nav-item">
-                      <a href="/profile/password_change/" className="dropdown-item">
+                      <a href="/profile/password_change" className="dropdown-item">
                         Изменить пароль
                       </a>
                     </li>

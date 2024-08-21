@@ -3,7 +3,8 @@ import { Navigate, createBrowserRouter, RouterProvider, } from 'react-router-dom
 import { RegistrationPageFC } from './RegistrerPage';
 import { Pages } from '@Interfaces';
 import { HomePageFC } from './HomePage';
-import { ProfileFC } from "./Profile";
+import { ProfileFC } from './Profile';
+import { ProfilePAsswordChangesFC } from './Profile/PasswordChanges';
 import { AuthorizatorPageFC } from './AuthorizationPage'
 // import { isElementOfType } from "react-dom/test-utils";
 
@@ -27,7 +28,13 @@ const Router = createBrowserRouter([
   {
     path: Pages.Profile,
     element: <ProfileFC />
+  },
+  {
+    path: Pages.ProfilePassworChanges,
+    element: <ProfilePAsswordChangesFC />
   }
+
+
 ]);
 
 

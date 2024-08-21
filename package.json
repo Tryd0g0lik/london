@@ -4,6 +4,7 @@
   "author": "Workaholic",
   "license": "ISC",
   "version": "0.1.0",
+  "homepage": "/",
   "description": "REadme.md",
   "private": true,
   "dependencies": {
@@ -121,6 +122,5 @@
   },
   "bugs": {
     "url": "https://github.com/Tryd0g0lik/london/issues"
-  },
-  "homepage": "https://github.com/Tryd0g0lik/london#readme"
+  }
 }

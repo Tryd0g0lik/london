@@ -15,7 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/frontend'), // '../static'
     filename: 'main-[id]-[hash].js',
-
+    publicPath: '/',
     clean: true,
 
   },
@@ -51,9 +51,7 @@ module.exports = {
           'postcss-loader',
 
         ],
-        exclude: [
-          path.resolve(__dirname, 'src/frontend/src/account/styles')
-        ]
+
       },
       {
         test: /\.svg$/,
@@ -131,7 +129,7 @@ module.exports = {
     liveReload: true, // Включение live-reload
 
     compress: true,
-    historyApiFallback: true,
+    historyApiFallback: true
     // open: true, // Автоматическое открытие браузера
     // port: 8080
   },

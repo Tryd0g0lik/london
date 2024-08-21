@@ -4,6 +4,7 @@ export enum Pages {
   Regisration = '/registration',
   InLogin = '/inlogin',
   Profile = '/profile',
+  ProfilePassworChanges = '/profile/password_change'
 }
 
 export enum FetchMethod {

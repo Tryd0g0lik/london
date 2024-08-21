@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.h {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
 .nav-item ul {
   display: flex;
   flex-wrap: nowrap;
@@ -87,6 +94,8 @@ ul {
   justify-content: flex-start;
   gap: 0 10px;
   padding-left: 25px;
+  min-height: 100px;
+    max-height: 100px;
 }
 
 .profilename .input[type="checkbox"] {
@@ -110,3 +119,4 @@ ul {
 #root.active .profile .profile-FirstName>.active+div {
   display: none;
 }
+/* passwords */
