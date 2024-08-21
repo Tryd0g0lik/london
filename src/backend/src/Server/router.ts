@@ -37,6 +37,7 @@ interface Props {
   isActive?: boolean
   isActivated?: boolean
   sendMessage?: boolean
+  password?: string
 }
 interface ClientData {
   typeField: string
@@ -52,15 +53,15 @@ const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as st
 
 export function getRouter(appObj: typeof Application): typeof router {
   router.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin  That request was received from Profile 1 =>: ${req}`);
+    await log(`[server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
-    await log(`[server -> router]: inlogin  №1 =>: ${req.params.sessionId}`);
+    await log(`[server -> router]: inlogin:sessionId  №1 =>: ${req.params.sessionId}`); // получил seesionID не схожжее с db.seesionId
     const result = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
-    console.log(`[server -> router]: inlogin  №2 Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
 
-    await log(`[server -> router]: inlogin №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    await log(`[server -> router]: inlogin:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,
@@ -68,7 +69,7 @@ export function getRouter(appObj: typeof Application): typeof router {
       lastName: result.rows[0].last_name,
       password: result.rows[0].password
     });
-    await log('[server -> router]: inlogin №4 That Profile SENDED');
+    await log('[server -> router]: inlogin:sessionId №4 That Profile SENDED');
     return true;
   });
   router.delete('/api/v1/clients/:id', async (req: typeof Request, res: Response, next: typeof NextFunction) => {
@@ -96,7 +97,7 @@ export function getRouter(appObj: typeof Application): typeof router {
 
     sendNotFound(res, respArr.rows);
     const emailOld = respArr.rows[0].emails;
-    await log(`[server -> router]: PUT Received data of db. Step 3/3. Length =>: ${JSON.stringify(respArr.rows[0])}`);
+    await log(`[server -> router]: PUT Received data of db. Step 3/3. =>: ${JSON.stringify(respArr.rows[0])}`);
     respArr = await clients(selectSingleUserSQL, respArr.rows[0].emails);
     const answ3 = sendNotFound(res, respArr.rows);
     if (typeof answ3 === 'boolean') return;
@@ -111,7 +112,8 @@ export function getRouter(appObj: typeof Application): typeof router {
       newPassword: data.password,
       isActive: data.is_active,
       isActivated: data.is_activated,
-      sendMessage: data.send_message
+      sendMessage: data.send_message,
+      password: data.password
     };
     await log(`[server -> router]: PUT Before a change 1/4: ${JSON.stringify(props)}`);
     // Below is (columnNameArr) a name of keys from the `req.body` (above).

@@ -107,12 +107,38 @@ COOKIE при создании (первичная авторизация ) со
 
 
 20.08
-На сервере, редактирование контента - ДОРАБОТАТЬ `router.put('/api/v1/clients/:sessionId',...)` \
-одну функцию на все задачи. Файл `src\backend\src\server\router.ts`. \
-Работа с учером одного SQL-запроса `changeValueAllCellSQL(props: Put):` (те самые все задачи) из файла `src\backend\src\server\sql-functions\index.ts`.
+На сервере, редактирование контента - \
+Файл - `src\backend\src\server\router.ts`. \
+Код - `router.put('/api/v1/clients/:sessionId',...)` \
+Одна функция на все задачи/поля - В данный момент 2 поля - редактирование ФИО-user\
+Работа с учером одного SQL-запроса `changeValueAllCellSQL(props: Put):` (SQL-запросы/функции ) из файла `src\backend\src\server\sql-functions\index.ts`.
+
+21.08
+Добавлена страница для радактирования/изменения пароля. \
+Weeb - `/profile/password_change`. \
+Файл - `src\frontend\src\account\components\Pages\Profile\ProfileChanges\index.tsx` (`useEffect`, `useState`).
+
+Обработчик `handlerClikOfInputPsw` события клика по кнопке (для сохранения нового пароля).
+Файл - `src\frontend\src\account\components\Pages\Profile\ProfileChanges\handlers\handlersPsw.ts`.
+
+При запуске обработчика `handlerClikOfInputPsw`, через node получаем данные из двух полей `input`. \
+Из браузера получаем ключ `sessionId`. \
+Старый пароль получаем из db по запросу `get`.
+Проверка нового ключа на длину, на дублирует или не дублирует старый ключ. \
+Отправляем новый ключ в db  по запросу `put`.
+Ворма имеет различные сообщения для пользователя на разных этапах. \
+
+Node. Серверная и фронтальная логика писалась на старых функциях. \
+Новое добавлялись только УСЛОВИЯ
+
+![img](./img/Screenshot_5.png)
+
 
 Note Totall:
  - ООП хоть и не используется (в связи с тестовой работой), но многие функции работают по принципу `Полиморфизма`.
  - На формах нет validators
- - При попытки редактировать сразу 2 поля, Одно из полей не реагирует на 'Enatry' для сохранения (пос копирования htmlelement)
+ - При попытки редактировать сразу 2 поля, Одно из полей не реагирует на 'Enatry' для сохранения (пос копирования htmlelement).
+
+
+
 

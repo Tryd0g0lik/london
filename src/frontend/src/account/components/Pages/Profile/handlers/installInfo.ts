@@ -1,18 +1,13 @@
 
 import { get } from '@Services/fetches';
 import { getCookie } from '@Services/coockieSessionId';
-
+import { ResultType } from '@Interfaces';
 export async function infoLoader(): Promise<boolean> {
   const sessionId = getCookie('sessionId');
   if (sessionId === undefined) {
     return false;
   }
-  interface ResultType {
-    id: number;
-    firstName: string;
-    lastName: string;
-    name: string
-  }
+
   /* ---- Here is data received from the db ---- */
   const result = await get(JSON.stringify({}), `/api/v1/clients/${sessionId}`) as ResultType;
   if ((typeof result) === 'boolean') {
