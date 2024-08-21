@@ -56,10 +56,9 @@ export function getRouter(appObj: typeof Application): typeof router {
     const sessionId = req.params.sessionId;
     const result = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
     console.log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
-    if (result.rows.length === 0) {
-      res.status(404).json({ message: 'Not Founded' });
-      return false;
-    }
+    const resp = sendNotFound(res, result.rows);
+    if (typeof resp === 'boolean') return;
+
     await log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',

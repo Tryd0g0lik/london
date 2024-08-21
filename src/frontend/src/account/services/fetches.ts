@@ -2,6 +2,7 @@
 import { getCookie } from '@Services/coockieSessionId';
 import { FetchParams, FetchMethod, } from '@Interfaces'
 import { ResultType } from '@Interfaces';
+import { type } from '@testing-library/user-event/dist/type';
 
 let env_ = process.env.REACT_APP_POSTGRES_HOST;
 const HOST = (env_ === undefined) ? 'localhost' : env_.slice(0) as string;
@@ -31,11 +32,11 @@ export async function add(body_: string,
   Object.assign(paramsCopy, params);
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
-  const registrateTimout = setTimeout(() => {
-    return false
-  }, REACT_APP_SET_TTIMOUT as number);
+  // const registrateTimout = setTimeout(() => {
+  //   return false
+  // }, REACT_APP_SET_TTIMOUT as number);
   const answer = await fetch(url, paramsCopy);
-  clearTimeout(registrateTimout);
+  // clearTimeout(registrateTimout);
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson
@@ -45,14 +46,17 @@ export async function add(body_: string,
 export async function put(body_: string,
   pathnameStr = '/api/v1/clients/add/'
 ): Promise<object | boolean | string> {
-  params['method'] = FetchMethod.PUT;
-  params['headers'] = {
+  const paramsCopy = {} as typeof params;
+  Object.assign(paramsCopy, params);
+  paramsCopy['method'] = FetchMethod.PUT;
+
+  paramsCopy['headers'] = {
     'X-CSRFToken': getCookie('sessionId'),// getCookie('csrftoken') as string,
     'Content-Type': 'application/json'
   };
-  params['body'] = body_;
-  const paramsCopy = {}
-  Object.assign(paramsCopy, params);
+  paramsCopy['body'] = body_;
+
+
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
 
