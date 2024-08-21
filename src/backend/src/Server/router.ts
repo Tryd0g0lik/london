@@ -54,12 +54,13 @@ export function getRouter(appObj: typeof Application): typeof router {
   router.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: inlogin  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
+    await log(`[server -> router]: inlogin  №1 =>: ${req.params.sessionId}`);
     const result = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
-    console.log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    console.log(`[server -> router]: inlogin  №2 Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     const resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
 
-    await log(`[server -> router]: inlogin  That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    await log(`[server -> router]: inlogin №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,
@@ -67,7 +68,7 @@ export function getRouter(appObj: typeof Application): typeof router {
       lastName: result.rows[0].last_name,
       password: result.rows[0].password
     });
-    await log('[server -> router]: inlogin  That Profile SENDED');
+    await log('[server -> router]: inlogin №4 That Profile SENDED');
     return true;
   });
   router.delete('/api/v1/clients/:id', async (req: typeof Request, res: Response, next: typeof NextFunction) => {
