@@ -3,14 +3,14 @@ import { NavFC } from '../../../NavOpPages';
 import { doGetRequest } from '@Services/fetches';
 import { ResultType } from '@Interfaces';
 import { handlerClikOfInputPsw } from './handlers/handlersPsw';
-
+import { checkerCookieKey } from '@Services/coockieSessionId';
 // import { add } from '@Services/fetches';
 
 export function ProfilePAsswordChangesFC(): React.JSX.Element {
   const [fields, setFields] = useState<Array<{ __html: React.JSX.Element }> | null>(null);
 
   useEffect(() => {
-
+    checkerCookieKey();
     const oneFiels = {
       __html: <label className="input input-bordered flex items-center gap-2">
         <input type="password" className="grow" placeholder="Your password" />

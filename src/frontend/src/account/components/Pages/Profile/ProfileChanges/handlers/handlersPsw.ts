@@ -2,6 +2,9 @@ import { messageForUser } from '@Services/messengerForm';
 import { getCookie } from '@Services/coockieSessionId';
 import { put, get } from '@Services/fetches';
 import { ResultType } from '@Interfaces';
+
+/* --------------- Here is we working under passwords
+  It's the event's handler. ------------------ */
 export async function handlerClikOfInputPsw(event: MouseEvent): Promise<boolean> {
   if ((((event as MouseEvent).target as HTMLButtonElement).type) &&
     (((event as MouseEvent).target as HTMLButtonElement).type).toLowerCase() !== 'submit') {

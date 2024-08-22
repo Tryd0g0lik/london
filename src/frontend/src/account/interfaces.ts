@@ -31,6 +31,8 @@ export interface FetchParams {
 export interface FieldInnerHtml {
   text?: string
   dataNamex: string
+  types?: string
+  classNames?: string
 }
 export interface ResultType {
   id: number;

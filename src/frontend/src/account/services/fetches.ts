@@ -18,7 +18,15 @@ const params: FetchParams = {
   mode: 'cors' as 'cors',
 }
 
-
+/**
+ *
+ * @param body_ Here is data for db + \
+ * sessionId ` {
+    sessionId: cookieId
+  };`.
+ * @param pathnameStr '/it/is/api/path/'
+ * @returns JSON of boolesn
+ */
 export async function add(body_: string,
   pathnameStr = '/api/v1/clients/add/'
 ): Promise<object | boolean | string> {

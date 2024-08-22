@@ -3,9 +3,10 @@ import { NavFC } from '../../NavOpPages';
 // import { doGetRequest } from '@Services/fetches';
 // import { ResultType } from '@Interfaces';
 import { handlerDelete } from './hamdlers/handlerRemove';
-// import { runtime } from 'webpack';
+import { checkerCookieKey } from '@Services/coockieSessionId';
 export function ProfileRemoveFC(): React.JSX.Element {
   useEffect(() => {
+    checkerCookieKey();
     const helper = (): boolean => {
 
       const divHtml = document.querySelector('div[data-namex="passwords"]');

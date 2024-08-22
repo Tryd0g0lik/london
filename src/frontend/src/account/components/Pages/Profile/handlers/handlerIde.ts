@@ -3,6 +3,7 @@ import { FieldInnerHtml } from '@Interfaces';
 import { put } from '@Services/fetches';
 import { getCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
+import { basisRedactField } from '@Services/fields';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *
@@ -31,32 +32,6 @@ export async function handlerIdeFC(): Promise<boolean> {
 }
 
 
-/**
- * Тут, больше вопрос безопасности.
- * @returns HTMLLableElement
- */
-export function basisRedactField(props: FieldInnerHtml): HTMLElement {
-  const { dataNamex, text = '' } = props;
-  const label = document.createElement('label');
-  const input = document.createElement('input');
-
-
-  label.htmlFor = "text";
-  label.className = "input input-bordered flex items-center gap-2";
-  input.setAttribute('data-namex', dataNamex);
-  input.id = dataNamex;
-  input.name = 'text';
-  input.type = 'text';
-  input.maxLength = 50;
-  input.className = "grow";
-  input.placeholder = "text";
-  if (text.length > 0) {
-    input.placeholder = text
-  };
-  label.appendChild(input)
-
-  return label
-}
 
 
 /* --------------- The Function is for change the intarface's dashboard ------------------ */

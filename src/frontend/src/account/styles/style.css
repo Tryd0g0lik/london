@@ -127,3 +127,19 @@ ul {
 #root.active .passwords[data-namex="passwords"] {
   display: inherit;
 }
+.form-ads>div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.form-ads hr {
+  width: 90%;
+  border: 0;
+  border-top: solid 1px #514e4e;
+  ;
+}
+
+label.input.input-bordered.flex.items-center.gap-2 {
+  width: 430px;
+}
