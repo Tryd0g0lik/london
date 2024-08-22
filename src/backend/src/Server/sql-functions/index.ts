@@ -1,4 +1,18 @@
 const log = require('../logs/index');
+
+interface Put {
+  index?: number
+  email: string
+  newEmail: string
+  firstName: string
+  lastName: string
+  newPassword: string
+  emailId: number
+  isActive?: boolean
+  isActivated?: boolean
+  sendMessage?: boolean
+}
+
 export function createDatebase(): string {
   return 'CREATE DATABASE london OWNER postgres;';
 };
@@ -98,24 +112,12 @@ export function selectAllEmail(): string {
  * У нас есть email, надо получить пользователя
  * @param email: string
  */
-export function selectSingleUserSQL(email: string): string {
+export function selectSingleUserSQL(props: Put): string {
   const selectEmailId = `WITH user_email AS (
-    SELECT id FROM emails WHERE emails = '${email}'
+    SELECT id FROM emails WHERE emails = '${props.email}'
     )
     SELECT * FROM users WHERE email_id = (SELECT id FROM user_email);`;
   return selectEmailId;
-}
-
-interface Put {
-  email: string
-  newEmail: string
-  firstName: string
-  lastName: string
-  newPassword: string
-  emailId: number
-  isActive?: boolean
-  isActivated?: boolean
-  sendMessage?: boolean
 }
 
 export function changeEmailSQL(props: Put): string {
@@ -193,7 +195,9 @@ export function changeValueOneCellSQL(tableName: string, column: string, index: 
   return updateOneCell;
 }
 
-export function dropTableLineSQL(tableName: string, index: number): string {
-  const removeTable = `DROP TABLE IF EXISTS ${tableName};`;
+export function dropTableLineSQL(tableName: string, props: Put): string {
+  log(`[server -> sql]: DELETE SQL1 Index =>: ${props.index}`);
+  const removeTable = `DELETE FROM ${tableName} WHERE id = ${props.index} RETURNING *;`;
+  log(`[server -> sql]: DELETE SQL2 =>: ${removeTable}`);
   return removeTable;
 }

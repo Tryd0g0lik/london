@@ -73,18 +73,19 @@ export function getRouter(appObj: typeof Application): typeof router {
     return true;
   });
   router.delete('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: DELETE  That request was received from Profile =>: ${(JSON.stringify(req))}`);
+    await log(`[server -> router]: DELETE  That request was received from Profile =>: ${(req)}`);
     /* --------- Below, we is get the data of only single user --------- */
     const sessionId = req.params.sessionId;
-    await log(`[server -> router]: DELETE  №1: ${sessionId}`);
-    const respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
-    await log(`[server -> router]: DELETE  №2: Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
+    await log(`[server -> router]: DELETE  №1 Receive data: ${sessionId} => table:'users', column: 'session_id', value: ${sessionId}`);
+    let respArr = await clients(selectOneParamQSL, { tableName: 'users', column: 'session_id', value: sessionId });
+    await log(`[server -> router]: DELETE  №2: Length => ${JSON.stringify(respArr)}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
     const emailId = respArr.rows[0].email_id;
-    await clients(dropTableLineSQL, 'users', respArr.rows[0].id);
-    await log('[server -> router]: DELETE  №3: Removed from the "Users"');
-    await clients(dropTableLineSQL, 'emails', emailId);
+    await log(`[server -> router]: DELETE  №3: Before delete from the "Users" ID => ${respArr.rows[0].id}`);
+    respArr = await clients(dropTableLineSQL, 'users', { index: respArr.rows[0].id }, false, [respArr.rows[0].id]);
+    await log(`[server -> router]: DELETE  №3.1: Before delete from the "Emails" ID => ${emailId}`);
+    respArr = await clients(dropTableLineSQL, { table: 'emails', index: emailId }, false, [respArr.rows[0].id]);
     await log('[server -> router]: DELETE  №4: Removed from the "Users"');
     const props = { message: 'Removed' };
     res.status(200).json(props);
@@ -114,7 +115,7 @@ export function getRouter(appObj: typeof Application): typeof router {
     sendNotFound(res, respArr.rows);
     const emailOld = respArr.rows[0].emails;
     await log(`[server -> router]: PUT Received data of db. Step 3/3. =>: ${JSON.stringify(respArr.rows[0])}`);
-    respArr = await clients(selectSingleUserSQL, respArr.rows[0].emails);
+    respArr = await clients(selectSingleUserSQL, { email: respArr.rows[0].emails });
     const answ3 = sendNotFound(res, respArr.rows);
     if (typeof answ3 === 'boolean') return;
 
@@ -186,7 +187,7 @@ export function getRouter(appObj: typeof Application): typeof router {
     });
     client.connect();
 
-    const respArr = await client.query(selectSingleUserSQL(clientData.email));
+    const respArr = await client.query(selectSingleUserSQL({ email: clientData.email }));
     await log(`[server -> router]: inlogin Received data where is a length =>: ${(respArr.rows).length}`);
     if ((respArr.rows).length === 0) {
       client.end();
@@ -235,7 +236,7 @@ export function getRouter(appObj: typeof Application): typeof router {
     await log(`[server -> router]: inlogin:sessionId: ${JSON.stringify(clientData)}`);
 
     await log(`[server -> router]: inlogin:sessionId cookie: ${cookie.sessionId} email: ${clientData.email}`);
-    const respArr = await clients(selectSingleUserSQL, clientData.email);
+    const respArr = await clients(selectSingleUserSQL, { email: clientData.email });
     await log(`[server -> router]: inlogin:sessionId №1 Received data where is a length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;

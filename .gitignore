@@ -4,5 +4,6 @@ archive
 dist
 node_modules
 **/node_modules
-
+logs_server.txt
 webpack-stats.json
+package-lock.json

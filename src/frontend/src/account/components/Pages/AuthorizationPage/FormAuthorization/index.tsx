@@ -14,7 +14,7 @@ import { messageForUser } from '@Services/messengerForm';
 const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean> => {
   event.preventDefault();
 
-  if ((event.type) && !((event.type).toLowerCase() !== 'click')) {
+  if ((event.type) && ((event.type).toLowerCase() !== 'click')) {
     return false;
   };
 
