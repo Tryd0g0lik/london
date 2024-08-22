@@ -355,3 +355,136 @@
 10:24:29:5 ==> [server]: "Users" created .
 10:24:29:6 ==> [server]: The end the "Client" connection.
 10:24:29:6 ==> [server]: END
+10:26:35:31 ==> [server]: START
+10:26:35:33 ==> [server]: Start the "Client" connection.
+10:26:35:34 ==> [server -> listen]: Server start to listen the PORT 7070
+10:26:35:74 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:26:35:75 ==> [server]: Start the "Client" connection.
+10:26:35:2 ==> [server]: "Emails" created .
+10:26:35:3 ==> [server]: "Users" created .
+10:26:35:3 ==> [server]: The end the "Client" connection.
+10:26:35:4 ==> [server]: END
+10:26:45:55 ==> [server]: START
+10:26:45:57 ==> [server]: Start the "Client" connection.
+10:26:45:57 ==> [server -> listen]: Server start to listen the PORT 7070
+10:26:45:90 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:26:45:91 ==> [server]: Start the "Client" connection.
+10:26:45:18 ==> [server]: "Emails" created .
+10:26:45:20 ==> [server]: "Users" created .
+10:26:45:20 ==> [server]: The end the "Client" connection.
+10:26:45:22 ==> [server]: END
+10:27:20:48 ==> [server]: START
+10:27:20:50 ==> [server]: Start the "Client" connection.
+10:27:20:50 ==> [server -> listen]: Server start to listen the PORT 7070
+10:27:20:85 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:27:20:86 ==> [server]: Start the "Client" connection.
+10:27:20:16 ==> [server]: "Emails" created .
+10:27:20:18 ==> [server]: "Users" created .
+10:27:20:18 ==> [server]: The end the "Client" connection.
+10:27:20:19 ==> [server]: END
+10:27:20:6 ==> [server]: START
+10:27:20:8 ==> [server]: Start the "Client" connection.
+10:27:20:8 ==> [server -> listen]: Server start to listen the PORT 7070
+10:27:20:40 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:27:20:41 ==> [server]: Start the "Client" connection.
+10:27:20:75 ==> [server]: "Emails" created .
+10:27:20:76 ==> [server]: "Users" created .
+10:27:20:77 ==> [server]: The end the "Client" connection.
+10:27:20:77 ==> [server]: END
+10:27:51:90 ==> [server]: START
+10:27:51:91 ==> [server]: Start the "Client" connection.
+10:27:51:92 ==> [server -> listen]: Server start to listen the PORT 7070
+10:27:52:37 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:27:52:38 ==> [server]: Start the "Client" connection.
+10:27:52:67 ==> [server]: "Emails" created .
+10:27:52:69 ==> [server]: The end the "Client" connection.
+10:27:52:70 ==> [server]: END
+10:27:52:70 ==> [server]: "Users" created .
+10:29:3:71 ==> [server]: START
+10:29:3:73 ==> [server]: Start the "Client" connection.
+10:29:3:73 ==> [server -> listen]: Server start to listen the PORT 7070
+10:29:3:76 ==> [server]: START
+10:29:3:77 ==> [server]: Start the "Client" connection.
+10:29:3:78 ==> [server -> listen]: Server start to listen the PORT 7070
+10:29:4:14 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:29:4:14 ==> [server]: Start the "Client" connection.
+10:29:4:42 ==> [server]: "Emails" created .
+10:29:4:44 ==> [server]: "Users" created .
+10:29:4:44 ==> [server]: The end the "Client" connection.
+10:29:4:45 ==> [server]: END
+10:29:17:29 ==> [server -> router]:  That request was received from Profile 8 =>: [object Object]
+10:29:17:30 ==> [server -> router]: clientData 1: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"x6ULDxF2sbNbdbqf"}
+10:29:17:31 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"x6ULDxF2sbNbdbqf"}
+10:29:17:61 ==> [server -> router]: Before saving into the db
+10:29:17:63 ==> [server -> clients]: Before connection.
+10:29:17:64 ==> [server -> clients]: Connection now. __ 
+10:29:17:65 ==> [server -> clients]: That is a connection. Before sending.
+10:29:17:66 ==> [server -> clients]: Data: JSON: => {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","passwords":"x6ULDxF2sbNbdbqf"}
+10:29:17:91 ==> [server -> clients]: data was received
+10:29:17:96 ==> [server -> clients]: END
+10:29:17:96 ==> [server -> router]: After saving into the db
+10:29:22:80 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
+10:29:22:81 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"42f4f434-fcc2-4090-9268-7910cd5f1516"}}
+10:29:22:82 ==> [server -> router]: inlogin cookie: {"sessionId":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:23:10 ==> [server -> router]: inlogin Received data where is a length =>: 1
+10:29:23:11 ==> [server -> router]: inlogin Filter LENGTH =>: 1
+10:29:23:12 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
+10:29:23:16 ==> [server -> router]: inlogin Filter LENGTH3 =>: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:23:16 ==> [server -> sql]: inlogin Filter SQL4 =>: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:23:17 ==> [server -> router]: inlogin Filter LENGTH4 =>: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:23:18 ==> [server -> router]: inlogin That User is found: Boris
+10:29:23:18 ==> [server -> router]: inlogin That SessionID: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:23:34 ==> [server -> router]: inlogin:sessionId: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"42f4f434-fcc2-4090-9268-7910cd5f1516"}}
+10:29:23:35 ==> [server -> router]: inlogin:sessionId cookie: 42f4f434-fcc2-4090-9268-7910cd5f1516 email: work80@mail2.ru
+10:29:23:36 ==> [server -> clients]: Before connection.
+10:29:23:37 ==> [server -> clients]: Connection now. __ 
+10:29:23:38 ==> [server -> clients]: That is a connection. Before sending.
+10:29:23:39 ==> [server -> clients]: Data: JSON: => {"email":"work80@mail2.ru"}
+10:29:23:64 ==> [server -> clients]: data was received
+10:29:23:67 ==> [server -> clients]: END
+10:29:23:68 ==> [server -> router]: inlogin:sessionId №1 Received data where is a length =>: 1
+10:29:23:68 ==> [server -> router]: inlogin:sessionId №1.0  =>: {"tableName":"users","column":"session_id","index":8,"newValue":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:23:69 ==> [server -> clients]: Before connection.
+10:29:23:70 ==> [server -> router]: inlogin:sessionId №2
+      Received data where is a length =>: DB.password: x6ULDxF2sbNbdbqf
+      clientData.password x6ULDxF2sbNbdbqf
+10:29:23:71 ==> [server -> clients]: Connection now. __ 
+10:29:23:72 ==> [server -> router]: inlogin:sessionId Filter LENGTH =>: 1
+10:29:23:72 ==> [server -> clients]: That is a connection. Before sending.
+10:29:23:73 ==> [server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: [{"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}]
+10:29:23:74 ==> [server -> clients]: Data: JSON: => {"tableName":"users","column":"session_id","index":8,"newValue":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:23:75 ==> [server -> router]: inlogin:sessionId №3 Password. RESULT =>: [{"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}]
+10:29:23:76 ==> [server -> sql]: inlogin Filter SQL4 =>: undefined
+10:29:23:77 ==> [server -> router]: inlogin:sessionId Message was sent a 200code .
+      That SessionID: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:23:1 ==> [server -> clients]: Here procces do not be connection or save.
+      ERROR => ошибка синтаксиса (примерное положение: "[")
+10:29:23:3 ==> [server -> clients]: END
+10:29:25:50 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+10:29:25:51 ==> [server -> router]: inlogin:sessionId  №1 =>: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:25:52 ==> [server -> clients]: Before connection.
+10:29:25:54 ==> [server -> clients]: Connection now. __ 
+10:29:25:55 ==> [server -> clients]: That is a connection. Before sending.
+10:29:25:56 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:25:94 ==> [server -> clients]: data was received
+10:29:25:98 ==> [server -> clients]: END
+10:29:25:99 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}],"fields":[{"name":"id","tableID":150934,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150934,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150934,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150934,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150934,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150934,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150934,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150934,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150934,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150934,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+10:29:25:0 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:25:1 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
+10:29:25:11 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+10:29:25:12 ==> [server -> router]: inlogin:sessionId  №1 =>: 42f4f434-fcc2-4090-9268-7910cd5f1516
+10:29:25:13 ==> [server -> clients]: Before connection.
+10:29:25:16 ==> [server -> clients]: Connection now. __ 
+10:29:25:17 ==> [server -> clients]: That is a connection. Before sending.
+10:29:25:18 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:25:49 ==> [server -> clients]: data was received
+10:29:25:53 ==> [server -> clients]: END
+10:29:25:54 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}
+10:29:25:55 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":8,"email_id":8,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"42f4f434-fcc2-4090-9268-7910cd5f1516"}],"fields":[{"name":"id","tableID":150934,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150934,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150934,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150934,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150934,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150934,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150934,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150934,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150934,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150934,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+10:29:25:56 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
