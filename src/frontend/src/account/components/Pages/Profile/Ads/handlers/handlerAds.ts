@@ -1,13 +1,6 @@
 import React from 'react'; // { useState, SetStateAction }
 import { add } from '@Services/fetches';
 import { getCookie, checkCookieExists } from '@Services/coockieSessionId';
-let env_ = process.env.REACT_APP_POSTGRES_HOST;
-const HOST = (env_ === undefined) ? 'localhost' : env_.slice(0) as string;
-env_ = process.env.REACT_APP_SERVER_PORT;
-const PORT = (env_ === undefined) ? '7070' : env_.slice(0);
-env_ = process.env.REACT_APP_PROTOCOL_OF_URL;
-const PROTOCOL = (env_ === undefined) ? 'http' : env_.slice(0);
-env_ = undefined;
 // Create the input filed by click's event
 export function handlerAdsFC(elemHtml: HTMLLabelElement): (event: React.MouseEvent) => Promise<boolean> {
 
