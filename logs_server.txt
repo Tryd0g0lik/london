@@ -1,100 +1,240 @@
-17:19:27:89 ==> ENOENT: no such file or directory, open 'E:\OpenServer\domains\t-london\logs_server.txt'
-17:19:27:90 ==> ENOENT: no such file or directory, open 'E:\OpenServer\domains\t-london\logs_server.txt'
-17:19:27:91 ==> ENOENT: no such file or directory, open 'E:\OpenServer\domains\t-london\logs_server.txt'
-17:19:28:48 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+18:58:22:92 ==> [server]:  INSTALL START
+18:58:22:95 ==> [server -> listen]: Server start to listen the PORT 7070
+18:58:22:27 ==> [server]:  INSTALL 
+18:58:22:31 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:19:28:49 ==> [server]: Start the "Client" connection.
-17:19:28:81 ==> [server]: "Emails" created .
-17:19:28:81 ==> [server]: "Users" created .
-17:19:28:82 ==> [server]: The end the "Client" connection.
-17:19:28:82 ==> [server]: END
-17:20:37:98 ==> [server]: START
-17:20:38:0 ==> [server]: Start the "Client" connection.
-17:20:38:0 ==> [server -> listen]: Server start to listen the PORT 7070
-17:20:38:47 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+18:58:22:32 ==> [server]:  INSTALL уже существует
+18:58:22:32 ==> [server]:  INSTALL MIDDLE
+18:58:22:33 ==> [server]:  INSTALL Start the "Client" connection.
+18:58:22:77 ==> [server]:  INSTALL "Emails" created .
+18:58:22:18 ==> [server]:  INSTALL "Users" created .
+18:58:22:19 ==> [server]:  INSTALL The end the "Client" connection.
+18:58:22:21 ==> [server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "TEBLE")
+18:58:22:25 ==> [server]:  INSTALL END
+19:1:8:17 ==> [server]:  INSTALL START
+19:1:8:21 ==> [server -> listen]: Server start to listen the PORT 7070
+19:1:8:52 ==> [server]:  INSTALL 
+19:1:8:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:20:38:47 ==> [server]: Start the "Client" connection.
-17:20:38:88 ==> [server]: "Emails" created .
-17:20:38:89 ==> [server]: "Users" created .
-17:20:38:89 ==> [server]: The end the "Client" connection.
-17:20:38:90 ==> [server]: END
-17:28:18:67 ==> [server]: START
-17:28:18:69 ==> [server]: Start the "Client" connection.
-17:28:18:69 ==> [server -> listen]: Server start to listen the PORT 7070
-17:28:18:13 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:1:8:55 ==> [server]:  INSTALL уже существует
+19:1:8:56 ==> [server]:  INSTALL MIDDLE
+19:1:8:56 ==> [server]:  INSTALL Start the "Client" connection.
+19:1:8:84 ==> [server]:  INSTALL "Emails" created .
+19:1:8:85 ==> [server]:  INSTALL "Users" created .
+19:1:8:85 ==> [server]:  INSTALL The end the "Client" connection.
+19:1:8:86 ==> [server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "TEBLE")
+19:1:8:89 ==> [server]:  INSTALL END
+19:1:14:20 ==> [server]:  INSTALL START
+19:1:14:23 ==> [server -> listen]: Server start to listen the PORT 7070
+19:1:14:55 ==> [server]:  INSTALL 
+19:1:14:59 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:28:18:14 ==> [server]: Start the "Client" connection.
-17:28:18:47 ==> [server]: "Emails" created .
-17:28:18:47 ==> [server]: "Users" created .
-17:28:18:47 ==> [server]: The end the "Client" connection.
-17:28:18:48 ==> [server]: END
-17:28:32:15 ==> [server]: START
-17:28:32:16 ==> [server]: Start the "Client" connection.
-17:28:32:16 ==> [server -> listen]: Server start to listen the PORT 7070
-17:28:32:53 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:1:14:60 ==> [server]:  INSTALL уже существует
+19:1:14:60 ==> [server]:  INSTALL MIDDLE
+19:1:14:61 ==> [server]:  INSTALL Start the "Client" connection.
+19:1:14:89 ==> [server]:  INSTALL "Emails" created .
+19:1:14:91 ==> [server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "TEBLE")
+19:1:14:92 ==> [server]:  INSTALL "Users" created .
+19:1:14:92 ==> [server]:  INSTALL The end the "Client" connection.
+19:1:14:95 ==> [server]:  INSTALL END
+19:1:43:45 ==> [server]:  INSTALL START
+19:1:43:49 ==> [server -> listen]: Server start to listen the PORT 7070
+19:1:43:82 ==> [server]:  INSTALL 
+19:1:43:84 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:28:32:54 ==> [server]: Start the "Client" connection.
-17:28:32:85 ==> [server]: "Emails" created .
-17:28:32:86 ==> [server]: "Users" created .
-17:28:32:86 ==> [server]: The end the "Client" connection.
-17:28:32:86 ==> [server]: END
-17:29:2:98 ==> [server]: START
-17:29:2:10 ==> [server]: Start the "Client" connection.
-17:29:2:11 ==> [server -> listen]: Server start to listen the PORT 7070
-17:29:2:77 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:1:43:85 ==> [server]:  INSTALL уже существует
+19:1:43:86 ==> [server]:  INSTALL MIDDLE
+19:1:43:86 ==> [server]:  INSTALL Start the "Client" connection.
+19:1:43:13 ==> [server]:  INSTALL "Emails" created .
+19:1:43:15 ==> [server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "TEBLE")
+19:1:43:15 ==> [server]:  INSTALL "Users" created .
+19:1:43:16 ==> [server]:  INSTALL The end the "Client" connection.
+19:1:43:19 ==> [server]:  INSTALL END
+19:1:46:93 ==> [server]:  INSTALL START
+19:1:46:97 ==> [server -> listen]: Server start to listen the PORT 7070
+19:1:46:28 ==> [server]:  INSTALL 
+19:1:46:31 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:29:2:77 ==> [server]: Start the "Client" connection.
-17:29:2:40 ==> [server]: "Emails" created .
-17:29:2:41 ==> [server]: "Users" created .
-17:29:2:41 ==> [server]: The end the "Client" connection.
-17:29:2:42 ==> [server]: END
-17:29:28:62 ==> [server]: START
-17:29:28:63 ==> [server -> listen]: Server start to listen the PORT 7070
-17:29:28:64 ==> [server]: Start the "Client" connection.
-17:29:28:3 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:1:46:32 ==> [server]:  INSTALL уже существует
+19:1:46:32 ==> [server]:  INSTALL MIDDLE
+19:1:46:33 ==> [server]:  INSTALL Start the "Client" connection.
+19:1:46:60 ==> [server]:  INSTALL "Emails" created .
+19:1:46:61 ==> [server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ошибка синтаксиса (примерное положение: "TEBLE")
+19:1:46:62 ==> [server]:  INSTALL "Users" created .
+19:1:46:63 ==> [server]:  INSTALL The end the "Client" connection.
+19:1:46:66 ==> [server]:  INSTALL END
+19:1:50:35 ==> [server]:  INSTALL START
+19:1:50:39 ==> [server -> listen]: Server start to listen the PORT 7070
+19:1:50:71 ==> [server]:  INSTALL 
+19:1:50:74 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:29:28:4 ==> [server]: Start the "Client" connection.
-17:29:28:36 ==> [server]: "Emails" created .
-17:29:28:36 ==> [server]: "Users" created .
-17:29:28:36 ==> [server]: The end the "Client" connection.
-17:29:28:37 ==> [server]: END
-17:30:1:71 ==> [server]: START
-17:30:1:73 ==> [server]: Start the "Client" connection.
-17:30:1:73 ==> [server -> listen]: Server start to listen the PORT 7070
-17:30:1:22 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:1:50:75 ==> [server]:  INSTALL уже существует
+19:1:50:76 ==> [server]:  INSTALL MIDDLE
+19:1:50:79 ==> [server]:  INSTALL Start the "Client" connection.
+19:1:50:7 ==> [server]:  INSTALL "Emails" created .
+19:1:50:8 ==> [server]:  INSTALL "Users" created .
+19:1:50:9 ==> [server]:  INSTALL The end the "Client" connection.
+19:1:50:72 ==> [server]:  INSTALL "ads" created .
+19:1:50:73 ==> [server]:  INSTALL The end the "ads" connection.
+19:1:50:76 ==> [server]:  INSTALL END
+19:6:15:15 ==> [server]:  INSTALL START
+19:6:15:19 ==> [server -> listen]: Server start to listen the PORT 7070
+19:6:15:52 ==> [server]:  INSTALL 
+19:6:15:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:30:1:23 ==> [server]: Start the "Client" connection.
-17:30:1:56 ==> [server]: "Emails" created .
-17:30:1:57 ==> [server]: "Users" created .
-17:30:1:57 ==> [server]: The end the "Client" connection.
-17:30:1:58 ==> [server]: END
-17:30:24:11 ==> [server]: START
-17:30:24:13 ==> [server]: Start the "Client" connection.
-17:30:24:13 ==> [server -> listen]: Server start to listen the PORT 7070
-17:30:24:54 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:6:15:55 ==> [server]:  INSTALL уже существует
+19:6:15:56 ==> [server]:  INSTALL MIDDLE
+19:6:15:57 ==> [server]:  INSTALL Start the "Client" connection.
+19:6:15:85 ==> [server]:  INSTALL "Emails" created .
+19:6:15:86 ==> [server]:  INSTALL "Users" created .
+19:6:15:86 ==> [server]:  INSTALL The end the "Client" connection.
+19:6:15:87 ==> [server]:  INSTALL "ads" created .
+19:6:15:88 ==> [server]:  INSTALL The end the "ads" connection.
+19:6:15:91 ==> [server]:  INSTALL END
+19:6:24:13 ==> [server]:  INSTALL START
+19:6:24:17 ==> [server -> listen]: Server start to listen the PORT 7070
+19:6:24:47 ==> [server]:  INSTALL 
+19:6:24:50 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:30:24:55 ==> [server]: Start the "Client" connection.
-17:30:24:88 ==> [server]: "Emails" created .
-17:30:24:89 ==> [server]: "Users" created .
-17:30:24:90 ==> [server]: The end the "Client" connection.
-17:30:24:90 ==> [server]: END
-17:30:31:24 ==> [server]: START
-17:30:31:26 ==> [server]: Start the "Client" connection.
-17:30:31:26 ==> [server -> listen]: Server start to listen the PORT 7070
-17:30:31:67 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:6:24:51 ==> [server]:  INSTALL уже существует
+19:6:24:52 ==> [server]:  INSTALL MIDDLE
+19:6:24:53 ==> [server]:  INSTALL Start the "Client" connection.
+19:6:24:83 ==> [server]:  INSTALL "Emails" created .
+19:6:24:84 ==> [server]:  INSTALL "Users" created .
+19:6:24:85 ==> [server]:  INSTALL "ads" created .
+19:6:24:88 ==> [server]:  INSTALL END
+19:7:29:20 ==> [server]:  INSTALL START
+19:7:29:23 ==> [server -> listen]: Server start to listen the PORT 7070
+19:7:29:55 ==> [server]:  INSTALL 
+19:7:29:58 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:30:31:68 ==> [server]: Start the "Client" connection.
-17:30:31:99 ==> [server]: "Emails" created .
-17:30:31:0 ==> [server]: "Users" created .
-17:30:31:1 ==> [server]: The end the "Client" connection.
-17:30:31:1 ==> [server]: END
-17:30:46:26 ==> [server]: START
-17:30:46:27 ==> [server]: Start the "Client" connection.
-17:30:46:27 ==> [server -> listen]: Server start to listen the PORT 7070
-17:30:46:62 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+19:7:29:58 ==> [server]:  INSTALL уже существует
+19:7:29:59 ==> [server]:  INSTALL MIDDLE
+19:7:29:60 ==> [server]:  INSTALL Start the "Client" connection.
+19:7:29:87 ==> [server]:  INSTALL "Emails" created .
+19:7:29:89 ==> [server]:  INSTALL "Users" created .
+19:7:29:92 ==> [server]:  INSTALL "ads" created .
+19:7:29:95 ==> [server]:  INSTALL END
+19:9:4:39 ==> [server]:  INSTALL START
+19:9:4:43 ==> [server -> listen]: Server start to listen the PORT 7070
+19:9:4:76 ==> [server]:  INSTALL 
+19:9:4:79 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
      ERR-MEASSAGE: база данных "london" уже существует
-17:30:46:62 ==> [server]: Start the "Client" connection.
-17:30:46:89 ==> [server]: "Emails" created .
-17:30:46:90 ==> [server]: "Users" created .
-17:30:46:90 ==> [server]: The end the "Client" connection.
-17:30:46:90 ==> [server]: END
+19:9:4:80 ==> [server]:  INSTALL уже существует
+19:9:4:80 ==> [server]:  INSTALL MIDDLE
+19:9:4:81 ==> [server]:  INSTALL Start the "Client" connection.
+19:9:4:8 ==> [server]:  INSTALL "Emails" created .
+19:9:4:10 ==> [server]:  INSTALL "Users" created .
+19:9:4:10 ==> [server]:  INSTALL "ads" created .
+19:9:4:14 ==> [server]:  INSTALL END
+19:10:26:70 ==> [server]:  INSTALL START
+19:10:26:75 ==> [server -> listen]: Server start to listen the PORT 7070
+19:10:26:5 ==> [server]:  INSTALL 
+19:10:26:8 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+19:10:26:9 ==> [server]:  INSTALL уже существует
+19:10:26:9 ==> [server]:  INSTALL MIDDLE
+19:10:26:10 ==> [server]:  INSTALL Start the "Client" connection.
+19:10:26:38 ==> [server]:  INSTALL "Emails" created .
+19:10:26:40 ==> [server]:  INSTALL "Users" created .
+19:10:26:42 ==> [server]:  INSTALL "ads" created .
+19:10:26:45 ==> [server]:  INSTALL END
+19:11:9:64 ==> [server]:  INSTALL START
+19:11:9:68 ==> [server -> listen]: Server start to listen the PORT 7070
+19:11:9:1 ==> [server]:  INSTALL 
+19:11:9:4 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+19:11:9:5 ==> [server]:  INSTALL уже существует
+19:11:9:5 ==> [server]:  INSTALL MIDDLE
+19:11:9:6 ==> [server]:  INSTALL Start the "Client" connection.
+19:11:9:35 ==> [server]:  INSTALL "Emails" created .
+19:11:9:36 ==> [server]:  INSTALL "Users" created .
+19:11:9:37 ==> [server]:  INSTALL "ads" created .
+19:11:9:40 ==> [server]:  INSTALL END
+19:14:43:22 ==> [server]:  INSTALL START
+19:14:43:25 ==> [server -> listen]: Server start to listen the PORT 7070
+19:14:43:58 ==> [server]:  INSTALL 
+19:14:43:61 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+19:14:43:61 ==> [server]:  INSTALL уже существует
+19:14:43:62 ==> [server]:  INSTALL MIDDLE
+19:14:43:63 ==> [server]:  INSTALL Start the "Client" connection.
+19:14:43:91 ==> [server]:  INSTALL "Emails" created .
+19:14:43:92 ==> [server]:  INSTALL "Users" created .
+19:14:43:92 ==> [server]:  INSTALL "ads" created .
+19:14:43:96 ==> [server]:  INSTALL END
+19:16:45:18 ==> [server -> router]:  That request was received from Profile 8 =>: [object Object]
+19:16:45:18 ==> [server -> router]: clientData 1: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"x6ULDxF2sbNbdbqf"}
+19:16:45:19 ==> [server -> router]: clientData: {"firstName":"Boris","lastName":"root","email":"work80@mail2.ru","passwords":"x6ULDxF2sbNbdbqf"}
+19:16:45:48 ==> [server -> router]: Before saving into the db
+19:16:45:49 ==> [server -> clients]: Before connection.
+19:16:45:50 ==> [server -> clients]: Connection now. __ 
+19:16:45:51 ==> [server -> clients]: That is a connection. Before sending.
+19:16:45:52 ==> [server -> clients]: Data: JSON: => {"email":"work80@mail2.ru","firstName":"Boris","lastName":"root","passwords":"x6ULDxF2sbNbdbqf"}
+19:16:45:80 ==> [server -> clients]: data was received
+19:16:45:85 ==> [server -> clients]: END
+19:16:45:85 ==> [server -> router]: After saving into the db
+19:16:50:51 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
+19:16:50:51 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"c4270b38-1208-4440-8439-ac6754aad559"}}
+19:16:50:52 ==> [server -> router]: inlogin cookie: {"sessionId":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:50:90 ==> [server -> router]: inlogin Received data where is a length =>: 1
+19:16:50:91 ==> [server -> router]: inlogin Filter LENGTH =>: 1
+19:16:50:91 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
+19:16:50:95 ==> [server -> router]: inlogin Filter LENGTH3 =>: c4270b38-1208-4440-8439-ac6754aad559
+19:16:50:95 ==> [server -> sql]: inlogin Filter SQL4 =>: c4270b38-1208-4440-8439-ac6754aad559
+19:16:50:96 ==> [server -> router]: inlogin Filter LENGTH4 =>: c4270b38-1208-4440-8439-ac6754aad559
+19:16:50:96 ==> [server -> router]: inlogin That User is found: Boris
+19:16:50:97 ==> [server -> router]: inlogin That SessionID: c4270b38-1208-4440-8439-ac6754aad559
+19:16:50:12 ==> [server -> router]: inlogin:sessionId: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"c4270b38-1208-4440-8439-ac6754aad559"}}
+19:16:50:12 ==> [server -> router]: inlogin:sessionId cookie: c4270b38-1208-4440-8439-ac6754aad559 email: work80@mail2.ru
+19:16:50:13 ==> [server -> clients]: Before connection.
+19:16:50:14 ==> [server -> clients]: Connection now. __ 
+19:16:50:15 ==> [server -> clients]: That is a connection. Before sending.
+19:16:50:15 ==> [server -> clients]: Data: JSON: => {"email":"work80@mail2.ru"}
+19:16:50:41 ==> [server -> clients]: data was received
+19:16:50:44 ==> [server -> router]: inlogin:sessionId №1 Received data where is a length =>: 1
+19:16:50:44 ==> [server -> clients]: END
+19:16:50:45 ==> [server -> router]: inlogin:sessionId №1.0  =>: {"tableName":"users","column":"session_id","index":1,"newValue":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:50:45 ==> [server -> clients]: Before connection.
+19:16:50:46 ==> [server -> router]: inlogin:sessionId №2
+      Received data where is a length =>: DB.password: x6ULDxF2sbNbdbqf
+      clientData.password x6ULDxF2sbNbdbqf
+19:16:50:47 ==> [server -> clients]: Connection now. __ 
+19:16:50:47 ==> [server -> router]: inlogin:sessionId Filter LENGTH =>: 1
+19:16:50:48 ==> [server -> clients]: That is a connection. Before sending.
+19:16:50:48 ==> [server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: [{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}]
+19:16:50:48 ==> [server -> clients]: Data: JSON: => {"tableName":"users","column":"session_id","index":1,"newValue":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:50:49 ==> [server -> router]: inlogin:sessionId №3 Password. RESULT =>: [{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}]
+19:16:50:49 ==> [server -> sql]: inlogin Filter SQL4 =>: undefined
+19:16:50:50 ==> [server -> router]: inlogin:sessionId Message was sent a 200code .
+      That SessionID: c4270b38-1208-4440-8439-ac6754aad559
+19:16:50:73 ==> [server -> clients]: Here procces do not be connection or save.
+      ERROR => ошибка синтаксиса (примерное положение: "[")
+19:16:50:75 ==> [server -> clients]: END
+19:16:52:86 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+19:16:52:87 ==> [server -> router]: inlogin:sessionId  №1 =>: c4270b38-1208-4440-8439-ac6754aad559
+19:16:52:88 ==> [server -> clients]: Before connection.
+19:16:52:89 ==> [server -> clients]: Connection now. __ 
+19:16:52:89 ==> [server -> clients]: That is a connection. Before sending.
+19:16:52:90 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:52:15 ==> [server -> clients]: data was received
+19:16:52:17 ==> [server -> clients]: END
+19:16:52:18 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+19:16:52:18 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:52:19 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
+19:16:52:24 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+19:16:52:25 ==> [server -> router]: inlogin:sessionId  №1 =>: c4270b38-1208-4440-8439-ac6754aad559
+19:16:52:26 ==> [server -> clients]: Before connection.
+19:16:52:27 ==> [server -> clients]: Connection now. __ 
+19:16:52:28 ==> [server -> clients]: That is a connection. Before sending.
+19:16:52:29 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:52:53 ==> [server -> clients]: data was received
+19:16:52:55 ==> [server -> clients]: END
+19:16:52:56 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+19:16:52:56 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"c4270b38-1208-4440-8439-ac6754aad559"}
+19:16:52:57 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED

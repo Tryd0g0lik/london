@@ -33,18 +33,20 @@ export function handlerAdsFC(elemHtml: HTMLLabelElement): (event: React.MouseEve
     }
     (divHtml as HTMLElement).insertAdjacentHTML('afterbegin', elemHtml.outerHTML);
     // const result = await add()
-    (divHtml as HTMLElement).removeEventListener('keypress', handlerEnterofInput);
-    (divHtml as HTMLElement).addEventListener('keypress', handlerEnterofInput);
+    setTimeout(() => {
+      (divHtml as HTMLElement).removeEventListener('keypress', handlerEnterofInput);
+      (divHtml as HTMLElement).addEventListener('keypress', handlerEnterofInput);
+    }, 300);
     return true;
   };
 }
 
 async function handlerEnterofInput(event: KeyboardEvent): Promise<boolean> {
-  if ((((event).target as HTMLInputElement).type) &&
-    (((((event).target as HTMLInputElement).type).toLowerCase() !== 'imput') ||
-      !((event).target as HTMLInputElement).hasAttribute('data-namex'))) {
+  if (((event.key).toLowerCase() !== 'enter') ||
+    ((event.target as HTMLElement).tagName.toLowerCase() !== 'input')) {
     return false;
   }
+
   const target = ((event).target as HTMLInputElement);
   /* ---- This's from the input fileld (that is new 'ads'-message ) ---- */
   const inputValue = target.value;
@@ -55,13 +57,12 @@ async function handlerEnterofInput(event: KeyboardEvent): Promise<boolean> {
   const cookieSessionId = getCookie('sessionId');
 
   const pathnameStr = `/api/v1/clients/ads/${cookieSessionId}`;
-  const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
-  const url = urlStr + pathnameStr;
+
   const body_ = JSON.stringify({
     inputValues: inputValue,
-    sessionId: cookieSessionId as string
+    cookie: { sessionId: cookieSessionId as string }
   });
-  const result = await add(body_, url);
+  const result = await add(body_, pathnameStr);
   if (!result) {
     return false;
   }

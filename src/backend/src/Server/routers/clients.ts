@@ -89,7 +89,6 @@ export function routerClients(routers: typeof router): typeof router {
   routers.put('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: PUT  That request was received from Profile 5 =>: ${(req)}`);
     const clientData = req.body as ClientData;
-    // await log(`[server -> router]: PUT Body: ${clientData.keys()}`);
     const sessionId = req.params.sessionId;
     await log(`[server -> router]: PUT Body: ${JSON.stringify(clientData)}`);
     /* --------- Below, we is get the data of only single user --------- */

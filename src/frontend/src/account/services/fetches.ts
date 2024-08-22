@@ -39,11 +39,7 @@ export async function add(body_: string,
   Object.assign(paramsCopy, params);
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
-  // const registrateTimout = setTimeout(() => {
-  //   return false
-  // }, REACT_APP_SET_TTIMOUT as number);
   const answer = await fetch(url, paramsCopy);
-  // clearTimeout(registrateTimout);
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson
@@ -58,7 +54,7 @@ export async function put(body_: string,
   paramsCopy['method'] = FetchMethod.PUT;
 
   paramsCopy['headers'] = {
-    'X-CSRFToken': getCookie('sessionId'),// getCookie('csrftoken') as string,
+    'X-CSRFToken': getCookie('sessionId'),
     'Content-Type': 'application/json'
   };
   paramsCopy['body'] = body_;
@@ -79,11 +75,10 @@ export async function put(body_: string,
 export async function remove(pathnameStr = `/api/v1/clients/add`
 ): Promise<object | boolean | string> {
   const paramsCopy = {} as typeof params;
-  // Object.assign(paramsCopy, params);
   paramsCopy['method'] = FetchMethod.DELETE;
   paramsCopy['mode'] = params.mode;
   paramsCopy['headers'] = {
-    'X-CSRFToken': getCookie('sessionId'),// getCookie('csrftoken') as string,
+    'X-CSRFToken': getCookie('sessionId'),
     'Content-Type': 'application/json'
   };
 

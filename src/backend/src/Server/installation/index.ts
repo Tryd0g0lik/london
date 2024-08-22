@@ -1,6 +1,6 @@
 const http = require('http');
 const pg = require('pg');
-const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL } = require('../sql-functions/index');
+const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL, createTableAdsSQL } = require('../sql-functions/index');
 const lg = require('../logs/index');
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
@@ -26,12 +26,11 @@ function envResultBool(): boolean {
 async function connextDB(): Promise<boolean> {
   const trueFalse = envResultBool();
   if (!trueFalse) {
-    lg('[server]: "connextDB" ENV-variebles undefined');
-    const error = new Error('[server]: "connextDB" ENV-variebles undefined');
+    await lg('[server]:  INSTALL "connextDB" ENV-variebles undefined');
+    const error = new Error('[server]:  INSTALL "connextDB" ENV-variebles undefined');
     throw error;
   }
 
-  lg('[server]: Start the "Client" connection.');
   const clientDB = await new pg.Client({
     user: REACT_APP_POSTGRES_USER,
     password: REACT_APP_POSTGRES_DB_PASS,
@@ -39,40 +38,38 @@ async function connextDB(): Promise<boolean> {
     port: Number(REACT_APP_POSTGRES_PORT),
     database: 'postgres'
   });
-  clientDB.connect();
-
+  await clientDB.connect();
+  await lg('[server]:  INSTALL ');
   try {
     const sql = createDatebase();
     const resp = await clientDB.query(sql);
     console.log(`[resp1] ${resp.rows[0].message}`);
-    clientDB.end();
-    lg('[server]: The end the Client connection.');
+    await clientDB.end();
+    await lg('[server]:  INSTALL The end the Client connection.');
     return true;
   } catch (err: unknown) {
-    console.log('[server]: ERRRRor1.');
-    lg(`[server -> ERROR1]: 'createDatebase' Something that wrong!
+    console.log('[server]:  INSTALL ERRRRor1.');
+    await lg(`[server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
-    console.log('[server]: ERRRRor1.2.1 ', (String((err as ErrorEvent).message)).includes('уже существует'));
+    console.log('[server]:  INSTALL ERRRRor1.2.1 ', (String((err as ErrorEvent).message)).includes('уже существует'));
     if ((String((err as ErrorEvent).message)).includes('уже существует')) {
+      await lg('[server]:  INSTALL уже существует');
       return true;
     }
-    clientDB.end();
-    lg('[server]: The end the "Client" connection.');
-    lg('[server]: createDBTable returning FALSE.');
+    await clientDB.end();
+    await lg('[server]:  INSTALL createDBTable returning FALSE.');
     return false;
   }
 }
 
-// console.log('[server -> Client]: Start the 'Client' connection.`);
-
 async function createDBTable(): Promise<boolean> {
   const trueFalse = envResultBool();
   if (!trueFalse) {
-    lg('[server]: "createDBTable" ENV-variebles undefined');
-    const error = new Error('[server]: "connextDB" ENV-variebles undefined');
+    await lg('[server]:  INSTALL "createDBTable" ENV-variebles undefined');
+    const error = new Error('[server]:  INSTALL "connextDB" ENV-variebles undefined');
     throw error;
   }
-  lg('[server]: Start the "Client" connection.');
+  await lg('[server]:  INSTALL Start the "Client" connection.');
   const client = await new pg.Client({
     user: REACT_APP_POSTGRES_USER,
     host: REACT_APP_POSTGRES_HOST,
@@ -80,47 +77,58 @@ async function createDBTable(): Promise<boolean> {
     database: REACT_APP_POSTGRES_DB_NAME,
     password: REACT_APP_POSTGRES_DB_PASS
   });
-  client.connect();
+  await client.connect();
   try {
     /* ------ The table Email ------ */
     await client.query(createTebleEmailsSQL());
-    lg('[server]: "Emails" created .');
+    await lg('[server]:  INSTALL "Emails" created .');
   } catch (err: unknown) {
     lg(`[server -> ERROR]: 'Emails' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
     console.log(`[Emails!!!] ${(String((err as ErrorEvent).message)).includes('уже существует')}`);
     if (!(String((err as ErrorEvent).message)).includes('уже существует')) {
-      lg('[server]: "Emails" returning FALSE.');
-      return false;
+      await lg('[server]:  INSTALL "Emails" =>"уже существует"');
     }
-    lg('[server]: "Emails" was created .');
+    await lg('[server]:  INSTALL "Emails" was created .');
   };
 
   try {
     /* ------ The table Users ------ */
     await client.query(createTebleUsersSQL());
-    lg('[server]: "Users" created .');
-    client.end();
-    lg('[server]: The end the "Client" connection.');
-    return true;
+    await lg('[server]:  INSTALL "Users" created .');
   } catch (err: unknown) {
-    console.log(`[Users!!!] ${('уже существует').includes((err as ErrorEvent).message)}`);
     if ((String((err as ErrorEvent).message)).includes('уже существует')) {
-      lg('[server]: "Users" was created .');
-      return true;
-    }
-    lg(`[server -> ERROR]: 'Users' Something that wrong!
+      await lg('[server]:  INSTALL "Users" =>"уже существует"');
+    } else {
+      await lg(`[server -> ERROR]: 'Users' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
-    lg('[server]: "Emails" returning FALSE.');
-    return false;
+    }
+  };
+
+  try {
+    /* ------ The table Ads ------ */
+    await client.query(createTableAdsSQL());
+    await lg('[server]:  INSTALL "ads" created .');
+  } catch (err: unknown) {
+    console.log(`[ads!!!] INSTALL ${('уже существует').includes((err as ErrorEvent).message)}`);
+    if ((String((err as ErrorEvent).message)).includes('уже существует')) {
+      await lg('[server]:  INSTALL "ads" =>"уже существует"');
+      return true;
+    } else {
+      await lg(`[server -> ERROR]: INSTALL 'ads' Something that wrong!
+     ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
+    }
   }
+  await client.end();
+  return true;
 };
 
 export async function prymaryInstalation(): Promise<void> {
-  lg('[server]: START');
+  await lg('[server]:  INSTALL START');
   const resp = await connextDB();
   if (resp) {
+    await lg('[server]:  INSTALL MIDDLE');
     await createDBTable();
-    lg('[server]: END');
+    await lg('[server]:  INSTALL END');
   }
 }

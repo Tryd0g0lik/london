@@ -57,6 +57,15 @@ export function createTebleUsersSQL(): string {
   return creeateTUsers;
 }
 
+export function createTableAdsSQL(): string {
+  const tableAds = `CREATE TABLE IF NOT EXISTS ads (
+  id SERIAL PRIMARY KEY,
+  email_id INTEGER NOT NULL,
+  FOREIGN KEY (email_id) REFERENCES emails(id),
+  titles VARCHAR(50) DEFAULT NULL);`;
+  return tableAds;
+}
+
 // module.exports = { createDatebase, createTebleEmails, createTebleUsers };
 interface NewSqlLine {
   email: string
