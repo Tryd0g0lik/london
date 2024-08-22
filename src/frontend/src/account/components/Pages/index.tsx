@@ -7,6 +7,7 @@ import { ProfileFC } from './Profile';
 import { ProfilePAsswordChangesFC } from './Profile/ProfileChanges';
 import { AuthorizatorPageFC } from './AuthorizationPage';
 import { ProfileRemoveFC } from './Remove/index';
+import { ProfileAdsFC } from './Profile/Ads';
 // import { isElementOfType } from "react-dom/test-utils";
 
 const Router = createBrowserRouter([
@@ -37,6 +38,10 @@ const Router = createBrowserRouter([
   {
     path: Pages.ProfilePassworChanges,
     element: <ProfilePAsswordChangesFC />
+  },
+  {
+    path: Pages.Ads,
+    element: <ProfileAdsFC />
   }
 
 

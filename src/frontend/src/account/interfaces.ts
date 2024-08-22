@@ -5,7 +5,8 @@ export enum Pages {
   InLogin = '/inlogin',
   Profile = '/profile',
   ProfilePassworChanges = '/profile/password_change',
-  Delete = '/profile/profile_dalete'
+  Delete = '/profile/profile_dalete',
+  Ads = '/profile/ads'
 }
 
 export enum FetchMethod {

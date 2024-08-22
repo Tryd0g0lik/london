@@ -41,7 +41,7 @@ export function NavFC(): JSX.Element {
               <div className="dropdown-memu">
                   <ul>
                     <li className="nav-item">
-                      <a className="dropdown-item" href="/profile">
+                      <a className="dropdown-item" href="/profile/ads">
                         Мои объявления
                       </a>
                     </li>
