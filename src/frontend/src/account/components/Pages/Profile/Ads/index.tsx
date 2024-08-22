@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavFC } from '@Components/NavOpPages';
 
 export function ProfileAdsFC(): React.JSX.Element {

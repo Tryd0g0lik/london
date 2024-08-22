@@ -1154,3 +1154,23 @@
 10:51:6:78 ==> [server]: "Users" created .
 10:51:6:79 ==> [server]: The end the "Client" connection.
 10:51:6:79 ==> [server]: END
+10:55:3:27 ==> [server]: START
+10:55:3:28 ==> [server]: Start the "Client" connection.
+10:55:3:29 ==> [server -> listen]: Server start to listen the PORT 7070
+10:55:3:61 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:55:3:61 ==> [server]: Start the "Client" connection.
+10:55:3:1 ==> [server]: "Emails" created .
+10:55:3:4 ==> [server]: The end the "Client" connection.
+10:55:3:5 ==> [server]: "Users" created .
+10:55:3:5 ==> [server]: END
+10:55:5:3 ==> [server]: Start the "Client" connection.
+10:55:5:5 ==> [server]: START
+10:55:5:6 ==> [server -> listen]: Server start to listen the PORT 7070
+10:55:5:42 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+10:55:5:42 ==> [server]: Start the "Client" connection.
+10:55:5:70 ==> [server]: "Emails" created .
+10:55:5:74 ==> [server]: "Users" created .
+10:55:5:75 ==> [server]: The end the "Client" connection.
+10:55:5:75 ==> [server]: END
