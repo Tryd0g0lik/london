@@ -250,3 +250,27 @@
 19:18:54:70 ==> [server]:  INSTALL "Users" created .
 19:18:54:71 ==> [server]:  INSTALL "ads" created .
 19:18:54:74 ==> [server]:  INSTALL END
+19:20:11:56 ==> [server]:  INSTALL START
+19:20:11:59 ==> [server -> listen]: Server start to listen the PORT 7070
+19:20:11:92 ==> [server]:  INSTALL 
+19:20:11:95 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+19:20:11:96 ==> [server]:  INSTALL уже существует
+19:20:11:96 ==> [server]:  INSTALL MIDDLE
+19:20:11:97 ==> [server]:  INSTALL Start the "Client" connection.
+19:20:12:25 ==> [server]:  INSTALL "Emails" created .
+19:20:12:26 ==> [server]:  INSTALL "Users" created .
+19:20:12:27 ==> [server]:  INSTALL "ads" created .
+19:20:12:31 ==> [server]:  INSTALL END
+19:23:15:99 ==> [server]:  INSTALL START
+19:23:15:3 ==> [server -> listen]: Server start to listen the PORT 7070
+19:23:15:34 ==> [server]:  INSTALL 
+19:23:15:37 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+19:23:15:38 ==> [server]:  INSTALL уже существует
+19:23:15:38 ==> [server]:  INSTALL MIDDLE
+19:23:15:39 ==> [server]:  INSTALL Start the "Client" connection.
+19:23:15:66 ==> [server]:  INSTALL "Emails" created .
+19:23:15:67 ==> [server]:  INSTALL "Users" created .
+19:23:15:68 ==> [server]:  INSTALL "ads" created .
+19:23:15:71 ==> [server]:  INSTALL END
