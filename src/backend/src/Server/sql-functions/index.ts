@@ -11,6 +11,7 @@ interface Put {
   isActive?: boolean
   isActivated?: boolean
   sendMessage?: boolean
+  table?: string
 }
 
 export function createDatebase(): string {
@@ -195,9 +196,9 @@ export function changeValueOneCellSQL(tableName: string, column: string, index: 
   return updateOneCell;
 }
 
-export function dropTableLineSQL(tableName: string, props: Put): string {
+export function dropTableLineSQL(props: Put): string {
   log(`[server -> sql]: DELETE SQL1 Index =>: ${props.index}`);
-  const removeTable = `DELETE FROM ${tableName} WHERE id = ${props.index} RETURNING *;`;
+  const removeTable = `DELETE FROM ${props.table} WHERE id = ${props.index} RETURNING *;`;
   log(`[server -> sql]: DELETE SQL2 =>: ${removeTable}`);
   return removeTable;
 }
