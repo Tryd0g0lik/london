@@ -59,13 +59,13 @@ export async function clients(fun: (props: propsForClient) => boolean,
     await lg('[server -> clients]: Connection now. __ ');
     await lg('[server -> clients]: That is a connection. Before sending.');
     await lg(`[server -> router]: Data: JSON: => ${JSON.stringify(dataJson)}`);
-    // if (_ind !== null) {
-    //   await client.query(`DELETE FROM ${dataJson.tableName} WHERE id = ${dataJson.index} RETURNING *;`, [dataJson.index]);
-    //   lg('[server -> clients]: data was delete');
-    //   client.end();
-    //   return true;
-    // } else if (resp) {
-    if (resp) {
+    if (_ind !== null) {
+      await client.query(`DELETE FROM ${dataJson.tableName} WHERE id = ${dataJson.index} RETURNING *;`, [dataJson.index]);
+      lg('[server -> clients]: data was delete');
+      client.end();
+      return true;
+    } else if (resp) {
+      // if (resp) {
       const response = await client.query(fun(dataJson));
       await lg('[server -> clients]: data was received');
       client.end();

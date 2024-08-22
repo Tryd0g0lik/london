@@ -297,3 +297,13 @@
 9:37:17:39 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":7,"email_id":7,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"06449041-294a-4746-ba4f-bbcc196a9ac1"}
 9:37:17:40 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
 9:37:17:40 ==> [server -> clients]: END
+9:40:57:71 ==> [server]: START
+9:40:57:72 ==> [server]: Start the "Client" connection.
+9:40:57:73 ==> [server -> listen]: Server start to listen the PORT 7070
+9:40:57:14 ==> [server -> ERROR1]: 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+9:40:57:14 ==> [server]: Start the "Client" connection.
+9:40:57:57 ==> [server]: "Emails" created .
+9:40:57:59 ==> [server]: "Users" created .
+9:40:57:59 ==> [server]: The end the "Client" connection.
+9:40:57:60 ==> [server]: END
