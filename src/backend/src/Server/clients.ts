@@ -68,6 +68,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
       return true;
     } else if (resp) {
       // if (resp) {
+      await lg(`[server -> clients]: data before saving => ${JSON.stringify(dataJson)}`);
       const response = await client.query(fun(dataJson));
       await lg('[server -> clients]: data was received');
       await client.end();
@@ -79,7 +80,7 @@ export async function clients(fun: (props: propsForClient) => boolean,
   } catch (err: unknown) {
     client.end();
     await lg(`[server -> clients]: Here procces do not be connection or save.
-      ERROR => ${(err as Error).message}`);
+      ERROR => ${(err as Error).name}: ${(err as Error).message}`);
     return false;
   };
 }

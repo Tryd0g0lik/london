@@ -81,7 +81,7 @@ the new html's  <input>-tage */
               return false;
             }
 
-            await handlerEventOfInput(event);
+            await handlerEventOfInput(`/api/v1/clients/`);
             // Input wich need the delete
             const target = (event.target as HTMLElement);
             if (target.tagName.toLowerCase() !== 'input') {
@@ -198,38 +198,93 @@ const helperForHandlerSwhitches = () => {
   return handlerSwhitches;
 }
 
+interface Inpt {
+  pathname: string
+  body: {
+    typeField: string
+    newValueofField: string
+    indexMessege?: string
+    indexEmail?: string
+  }
+}
 /**
  * This is function for received data of an Input field. It sending \
  * POST-request into the server.
  * @param event
  * @returns fooald
  */
-const handlerEventOfInput = async (event: KeyboardEvent): Promise<boolean> => {
+// class Input {
+//   pathnames: string
 
-  const target = event.currentTarget as HTMLInputElement;
-  const newValueOfInput = target.value;
-  /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
-  const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('data-namex') : '';
-  const body_ = JSON.stringify({
-    typeField: atributeDataNameX as string,
-    newValueofField: newValueOfInput
-  })
-  /* --------------- Here us a cookie is to get ------------------ */
-  const sessionId = getCookie('sessionId');
+//   body: Inpt['body']
 
-  const label = (target.parentElement as HTMLElement);
-  const result = await put(body_, `/api/v1/clients/${sessionId}`)
-  if ((sessionId === undefined) || (result === false)) {
-    const p = messageForUser(1, ['Сохранился', 'Не сохранился'])
-    /* here is a not found */
+//   cookieKeyName: unknown | string
+
+
+//   constructor(props: Inpt) {
+//     const { pathname, body } = props;
+//     this.pathnames = pathname;
+//     this.body = body
+//     this.cookieKeyName = ''
+//   }
+
+//   /**
+//    * Here is only a single string/line/row  for entrypoint \
+//    * It's a name of cookie-key.
+//    * @param `object.cookieSession = mane`
+//    */
+//   set cookieSession(param: string) {
+//     const trueFalse = getCookie(param);
+//     if (trueFalse) {
+//       this.cookieKeyName = param
+//     }
+
+//   }
+//   /**
+//    *
+//    * Returns a value of cookie-key.
+//    * @param `object.cookieSession = mane`
+//    * @returns Here is only a single string
+//    */
+//   get cookieSession(): string {
+//     const cookieKeyNames = this.cookieKeyName as string;
+//     if (cookieKeyNames.length > 0) {
+//       const value = getCookie(cookieKeyNames as string);
+//       return value as string;
+//     }
+//     return '';
+//   }
+
+
+// }
+export function handlerEventOfInput(pathname: string): (event: KeyboardEvent) => Promise<boolean> {
+  return async (event: KeyboardEvent): Promise<boolean> => {
+
+    const target = event.currentTarget as HTMLInputElement;
+    const newValueOfInput = target.value;
+    /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
+    const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('data-namex') : '';
+    const body_ = JSON.stringify({
+      typeField: atributeDataNameX as string,
+      newValueofField: newValueOfInput
+    })
+    /* --------------- Here us a cookie is to get ------------------ */
+    const sessionId = getCookie('sessionId');
+
+    const label = (target.parentElement as HTMLElement);
+    const result = await put(body_, `${pathname}${sessionId}`)
+    if ((sessionId === undefined) || (result === false)) {
+      const p = messageForUser(1, ['Сохранился', 'Не сохранился'])
+      /* here is a not found */
+      label.insertAdjacentHTML('afterend', p.outerHTML);
+      return false;
+    }
+
+    /* here is found */
+    const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
     label.insertAdjacentHTML('afterend', p.outerHTML);
-    return false;
+
+
+    return true;
   }
-
-  /* here is found */
-  const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
-  label.insertAdjacentHTML('afterend', p.outerHTML);
-
-
-  return true;
 }

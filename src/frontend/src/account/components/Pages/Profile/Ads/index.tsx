@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import parse from 'html-react-parser';
 import { NavFC } from '@Components/NavOpPages';
 import { CorrectorBasisRedactField, basisRedactField } from '@Services/fields';
-import { handlerAdsFC } from './handlers/handlerAds';
+import { handlerAdsFC, loaderContents, handlerClickOfButton } from './handlers/handlerAds';
 // const line = 0;
 /* --------------- Here is we working under an ADS ------------------ */
 export function ProfileAdsFC(): React.JSX.Element {
@@ -21,27 +21,13 @@ export function ProfileAdsFC(): React.JSX.Element {
 
   // }
   useEffect(() => {
+
     /* ---- This is a row/line ---- */
     const newLabelHtml = CorrectorBasisRedactField(basisRedactField, { dataNamex: 'ads', text: 'Напиши свое доброе дело' });
-
-// const jsxContent = parse(newLabelHtml.outerHTML);
-// setNewLabel(jsxContent);
-
-    /* ---- This is a button for remote one row ---- */
-    // const oneSaveLine = {
-    //   __html: <>
-    //     <button type="submit" className="btn btn-outline btn-secondary">Сохранить</button>
-    //   </>
-    // };
     setLabelHtml(newLabelHtml);
-    // const oneRemoveLine = {
-    //   __html: <>
-    //     <button type="submit" className="btn btn-outline btn-secondary">Удалить</button>
-    //   </>
-    // };
-    // oneLebal.__html +=  as unknown as Element;
-    // setQuantity as typeof React.useState, quantity
-    // setLabelHtml([oneSaveLine])
+    handlerClickOfButton(newLabelHtml as HTMLLabelElement);
+    loaderContents();
+
   }, []);
   return <>
     <NavFC />

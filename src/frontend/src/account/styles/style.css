@@ -89,7 +89,7 @@ ul {
 }
 .profile.form {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   justify-content: flex-start;
   gap: 0 10px;
@@ -142,4 +142,18 @@ ul {
 
 label.input.input-bordered.flex.items-center.gap-2 {
   width: 430px;
+}
+.profile.form.list-ads>div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 0 15px;
+  justify-content: space-between;
+}
+
+
+.list-ads>div button {
+  color: aqua;
+  font-size: 0.8em;
 }

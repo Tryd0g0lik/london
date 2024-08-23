@@ -12,6 +12,8 @@ interface Put {
   isActivated?: boolean
   sendMessage?: boolean
   table?: string
+  titles?: string
+  emailsId?: number
 }
 
 export function createDatebase(): string {
@@ -72,6 +74,7 @@ interface NewSqlLine {
   firstName: string
   lastName: string
   passwords: string
+  titles?: string
 
 };
 
@@ -211,3 +214,30 @@ export function dropTableLineSQL(props: Put): string {
   log(`[server -> sql]: DELETE SQL2 =>: ${removeTable}`);
   return removeTable;
 }
+/* --------------- Here is process  ADS-line ------------------ */
+
+/**
+ *
+ * @param props `{
+ *  emailId,
+ *   titles,
+ *   table
+ * }`
+ * @returns string
+ */
+export function addNewAdsLineSQL(props: Put): string {
+  const {
+    emailsId,
+    titles,
+    table
+  } = props;
+  const escapedTitles = titles ? titles.replace(/'/g, "''") : '';
+  const createNewLine = `INSERT
+  INTO ${table} (id, email_id, titles)
+  values (
+    default,
+    ${emailsId},
+    '${escapedTitles}'
+  ) RETURNING * ;`;
+  return createNewLine;
+};
