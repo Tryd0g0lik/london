@@ -3,7 +3,8 @@ const { Client } = require('pg');
 
 const {
   addNewAdsLineSQL,
-  selectOneParamQSL
+  selectOneParamQSL,
+  changeAdsSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
 const { getCookie } = require('../getCookies');
@@ -68,6 +69,34 @@ export function routerClientsAds(routers: typeof router): typeof router {
     respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'email_id', value: emailId });
     log_(`[server -> router -> ads]: POST  №4 =>: ${JSON.stringify(respArr)}`);
     res.status(200).json({ message: 'OK', positions: respArr.rows });
+  });
+
+  routers.put('/api/v1/clients/ads/one/:sessionId', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
+    await log_(`[server -> router -> ads]: PUT  That request =>: ${req}`);
+    const clientData = req.body;
+    const sessionId = req.params.sessionId;
+    const newMesseges = clientData.titles;
+    const indexMesseges = Number(clientData.indexMesseges);
+    await log_(`[server -> router -> ads]: PUT №1 sessionId =>: ${sessionId}, message: =>  ${JSON.stringify(clientData)}`);
+    /* --------- Below, we is get the data of only single user --------- */
+    await log_(`[server -> router -> ads]: PUT №2: ${String(indexMesseges)}`);
+    // let respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'id', value: indexMesseges });
+    // // let respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'id', value: Number(indexMesseges) });
+    // let resp = sendNotFound(res, respArr.rows);
+    // if (typeof resp === 'boolean') {
+    //   res.status(404).json({ message: 'Not Ok' });
+    //   return false;
+    // };
+    // await log_(`[server -> router -> ads]: PUT №3 length: ${respArr.rows.length}`);
+
+    const respArr = await clients(changeAdsSQL, { index: indexMesseges, titles: newMesseges });
+    const resp = sendNotFound(res, respArr.rows);
+    if (typeof resp === 'boolean') {
+      res.status(404).json({ message: 'Not Ok' });
+      return false;
+    };
+    await log_(`[server -> router -> ads]: PUT №3 length: ${respArr.rows.length}`);
+    res.status(200).json({ message: 'OK' });
   });
   return routers;
 };

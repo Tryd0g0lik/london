@@ -79,14 +79,14 @@ the new html's  <input>-tage */
               ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
               return false;
             }
-            const newInput = new Input({
+            const inputObj = new Input({
               pathname: `/api/v1/clients/`, body: JSON.stringify({})
             })
-            newInput.cookieSession = 'sessionId';
-            const cookieValue = newInput.cookieSession;
-            const pathnames = newInput.pathnames as string;
-            const body_ = newInput.body;
-            handlerEventOfInput({ pathname: pathnames, body: body_, sessionId: cookieValue });
+            inputObj.cookieSession = 'sessionId';
+            const cookieValue = inputObj.cookieSession;
+            const pathnames = inputObj.pathnames as string;
+            const body_ = inputObj.body;
+            handlerEventOfInputPUT({ pathname: pathnames, body: body_, sessionId: cookieValue });
             // Input wich need the delete
             const target = (event.target as HTMLElement);
             if (target.tagName.toLowerCase() !== 'input') {
@@ -221,7 +221,7 @@ interface Inpt {
  * @param props it is type name 'Inpt
  * @returns `(event: KeyboardEvent) => Promise<boolean>`
  */
-export function handlerEventOfInput(props: Inpt): (event: KeyboardEvent) => Promise<boolean> {
+export function handlerEventOfInputPUT(props: Inpt): (event: KeyboardEvent) => Promise<boolean> {
   const { pathname, body, sessionId, } = props;
   return async (event: KeyboardEvent): Promise<boolean> => {
 
@@ -237,7 +237,8 @@ export function handlerEventOfInput(props: Inpt): (event: KeyboardEvent) => Prom
     // const sessionId = getCookie('sessionId');
 
     const label = (target.parentElement as HTMLElement);
-    const result = await put(body as string, `${pathname}${sessionId}`)
+    const path = `${pathname}${sessionId}`;
+    const result = await put(body as string, path)
     if ((sessionId === undefined) || (result === false)) {
       const p = messageForUser(1, ['Сохранился', 'Не сохранился'])
       /* here is a not found */

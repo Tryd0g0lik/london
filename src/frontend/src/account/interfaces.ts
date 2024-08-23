@@ -47,8 +47,9 @@ export interface Inpt {
   body: {
     typeField: string
     newValueofField: string
-    indexMessege?: string
-    indexEmail?: string
+    indexMesseges?: string
+    indexEmails?: string
+    titles?: string
   } | string
   sessionId?: string
 }

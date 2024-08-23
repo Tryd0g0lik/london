@@ -241,3 +241,10 @@ export function addNewAdsLineSQL(props: Put): string {
   ) RETURNING * ;`;
   return createNewLine;
 };
+export function changeAdsSQL(props: Put): string {
+  const { index, titles } = props;
+  const changeEmail = `UPDATE ads
+  SET titles = '${titles}'
+  WHERE id = '${index}' RETURNING *;`;
+  return changeEmail;
+}
