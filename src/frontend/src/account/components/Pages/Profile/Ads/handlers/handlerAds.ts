@@ -51,8 +51,8 @@ export function handlerAdsFC(elemHtml: HTMLLabelElement): (event: React.MouseEve
     (divHtml as HTMLElement).insertAdjacentHTML('afterbegin', elemHtml.outerHTML);
     // const result = await add()
     setTimeout(() => {
-      (divHtml as HTMLElement).removeEventListener('keypress', handlerEnterofInput);
-      (divHtml as HTMLElement).addEventListener('keypress', handlerEnterofInput);
+      // (divHtml as HTMLElement).removeEventListener('keypress', handlerEnterofInput);
+      // (divHtml as HTMLElement).addEventListener('keypress', handlerEnterofInput);
     }, 300);
     return true;
   };
@@ -61,48 +61,48 @@ export function handlerAdsFC(elemHtml: HTMLLabelElement): (event: React.MouseEve
 /***
  * for publication the new line/massage/content.
  */
-async function handlerEnterofInput(event: KeyboardEvent): Promise<boolean> {
-  if (((event.key).toLowerCase() !== 'enter') ||
-    ((event.target as HTMLElement).tagName.toLowerCase() !== 'input')) {
-    return false;
-  }
+// async function handlerEnterofInput(event: KeyboardEvent): Promise<boolean> {
+//   if (((event.key).toLowerCase() !== 'enter') ||
+//     ((event.target as HTMLElement).tagName.toLowerCase() !== 'input')) {
+//     return false;
+//   }
 
-  const target = ((event).target as HTMLInputElement);
-  /* ---- This's receive the message from the input fileld (that is new 'ads'-message ).
-   It's saving in the db ---- */
-  const inputValue = target.value;
-  const trueFalseSessionId = checkCookieExists('sessionId');
-  if (!trueFalseSessionId) {
-    throw new Error('[ads -> handlerEnterofInput]: Not  found. "sessionId" ');
-  }
-  const cookieSessionId = getCookie('sessionId');
+//   const target = ((event).target as HTMLInputElement);
+//   /* ---- This's receive the message from the input fileld (that is new 'ads'-message ).
+//    It's saving in the db ---- */
+//   const inputValue = target.value;
+//   const trueFalseSessionId = checkCookieExists('sessionId');
+//   if (!trueFalseSessionId) {
+//     throw new Error('[ads -> handlerEnterofInput]: Not  found. "sessionId" ');
+//   }
+//   const cookieSessionId = getCookie('sessionId');
 
-  const pathnameStr = `/api/v1/clients/ads/add/${cookieSessionId}`;
+//   const pathnameStr = `/api/v1/clients/ads/add/${cookieSessionId}`;
 
-  const body_ = JSON.stringify({
-    inputValues: inputValue,
-    cookie: { sessionId: cookieSessionId as string }
-  });
-  const result = await add(body_, pathnameStr) as Ads;
-  let divLable = (target.parentElement as HTMLLabelElement);
-  if (typeof result === 'boolean' || !((result).position)) {
-    const p = messageForUser(1, ['Сохранился', 'Не сохранился']);
-    (divLable.parentElement as HTMLElement).insertAdjacentHTML('beforeend', p.outerHTML);
-    return false;
-  }
-  /* ---- endSaving ---- */
-  /* ---- Here delete the input field and public the new line, below ---- */
+//   const body_ = JSON.stringify({
+//     inputValues: inputValue,
+//     cookie: { sessionId: cookieSessionId as string }
+//   });
+//   const result = await add(body_, pathnameStr) as Ads;
+//   let divLable = (target.parentElement as HTMLLabelElement);
+//   if (typeof result === 'boolean' || !((result).position)) {
+//     const p = messageForUser(1, ['Сохранился', 'Не сохранился']);
+//     (divLable.parentElement as HTMLElement).insertAdjacentHTML('beforeend', p.outerHTML);
+//     return false;
+//   }
+//   /* ---- endSaving ---- */
+//   /* ---- Here delete the input field and public the new line, below ---- */
 
-  const oneLine = (result as Ads).position;
-  const divHtml = createDivLableContainer({ titles: (oneLine as OneLine).titles, id: (oneLine as OneLine).id, email_id: (oneLine as OneLine).email_id as number });
+//   const oneLine = (result as Ads).position;
+//   const divHtml = createDivLableContainer({ titles: (oneLine as OneLine).titles, id: (oneLine as OneLine).id, email_id: (oneLine as OneLine).email_id as number });
 
-  const divClassListAds = (divLable.parentElement); //?.cloneNode(true);
-  divLable.remove();
-  (divClassListAds as HTMLElement).insertAdjacentHTML('beforeend', divHtml.outerHTML);
-  /* ---- endDeletePublic ---- */
+//   const divClassListAds = (divLable.parentElement); //?.cloneNode(true);
+//   divLable.remove();
+//   (divClassListAds as HTMLElement).insertAdjacentHTML('beforeend', divHtml.outerHTML);
+//   /* ---- endDeletePublic ---- */
 
-  return true;
-}
+//   return true;
+// }
 
 /**
  * 'data-numberx' = this is the message id of db; \
