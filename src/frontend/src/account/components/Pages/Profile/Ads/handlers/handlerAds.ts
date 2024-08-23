@@ -206,8 +206,8 @@ export function handlerClickOfButton(elemLabelHtml: HTMLLabelElement): (event: M
     if (!(parantDivHtml.hasAttribute('data-numberx')) || !(parantDivHtml.hasAttribute('data-userx'))) {
       throw new Error('[ads -> handlerClickOfButton]: Not  found. "data-numberx" ');
     }
-    const indexEmail = parantDivHtml.getAttribute('data-userx');
-    const indexMessege = parantDivHtml.getAttribute('data-numberx');
+    // const indexEmail = parantDivHtml.getAttribute('data-userx');
+    // const indexMessege = parantDivHtml.getAttribute('data-numberx');
     const oldMessage = parantDivHtml.querySelector('p');
     if (oldMessage === null) {
       throw new Error('[ads -> handlerClickOfButton]: Not  found. "p" ');
