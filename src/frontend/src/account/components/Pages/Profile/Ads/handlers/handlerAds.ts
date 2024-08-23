@@ -1,5 +1,5 @@
 import React, { KeyboardEvent } from 'react'; // { useState, SetStateAction }
-import { add, get } from '@Services/fetches';
+import { get } from '@Services/fetches';
 import { getCookie, checkCookieExists } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
 // import { handlerEventOfInput } from '../../handlers/handlerIde';
