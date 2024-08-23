@@ -1,9 +1,9 @@
 // import React from 'react';
-import { FieldInnerHtml } from '@Interfaces';
+import { FieldInnerHtml, Inpt } from '@Interfaces';
 import { put } from '@Services/fetches';
-import { getCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
 import { basisRedactField } from '@Services/fields';
+import { Input } from './oop/inputForm';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *
@@ -30,7 +30,6 @@ export async function handlerIdeFC(): Promise<boolean> {
 
   return true;
 }
-
 
 
 
@@ -80,8 +79,14 @@ the new html's  <input>-tage */
               ((event.currentTarget as HTMLElement).tagName.toLowerCase() !== 'input')) {
               return false;
             }
-
-            await handlerEventOfInput(`/api/v1/clients/`);
+            const newInput = new Input({
+              pathname: `/api/v1/clients/`, body: JSON.stringify({})
+            })
+            newInput.cookieSession = 'sessionId';
+            const cookieValue = newInput.cookieSession;
+            const pathnames = newInput.pathnames as string;
+            const body_ = newInput.body;
+            handlerEventOfInput({ pathname: pathnames, body: body_, sessionId: cookieValue });
             // Input wich need the delete
             const target = (event.target as HTMLElement);
             if (target.tagName.toLowerCase() !== 'input') {
@@ -198,6 +203,10 @@ const helperForHandlerSwhitches = () => {
   return handlerSwhitches;
 }
 
+/**
+ * `Note: Recommended work with a class `Input` from \
+ * the '`import { Input } from './oop/inputForm';`
+ *
 interface Inpt {
   pathname: string
   body: {
@@ -205,74 +214,30 @@ interface Inpt {
     newValueofField: string
     indexMessege?: string
     indexEmail?: string
-  }
+  } | string
+  sessionId?: string
 }
-/**
- * This is function for received data of an Input field. It sending \
- * POST-request into the server.
- * @param event
- * @returns fooald
+ * `
+ * @param props it is type name 'Inpt
+ * @returns `(event: KeyboardEvent) => Promise<boolean>`
  */
-// class Input {
-//   pathnames: string
-
-//   body: Inpt['body']
-
-//   cookieKeyName: unknown | string
-
-
-//   constructor(props: Inpt) {
-//     const { pathname, body } = props;
-//     this.pathnames = pathname;
-//     this.body = body
-//     this.cookieKeyName = ''
-//   }
-
-//   /**
-//    * Here is only a single string/line/row  for entrypoint \
-//    * It's a name of cookie-key.
-//    * @param `object.cookieSession = mane`
-//    */
-//   set cookieSession(param: string) {
-//     const trueFalse = getCookie(param);
-//     if (trueFalse) {
-//       this.cookieKeyName = param
-//     }
-
-//   }
-//   /**
-//    *
-//    * Returns a value of cookie-key.
-//    * @param `object.cookieSession = mane`
-//    * @returns Here is only a single string
-//    */
-//   get cookieSession(): string {
-//     const cookieKeyNames = this.cookieKeyName as string;
-//     if (cookieKeyNames.length > 0) {
-//       const value = getCookie(cookieKeyNames as string);
-//       return value as string;
-//     }
-//     return '';
-//   }
-
-
-// }
-export function handlerEventOfInput(pathname: string): (event: KeyboardEvent) => Promise<boolean> {
+export function handlerEventOfInput(props: Inpt): (event: KeyboardEvent) => Promise<boolean> {
+  const { pathname, body, sessionId, } = props;
   return async (event: KeyboardEvent): Promise<boolean> => {
 
     const target = event.currentTarget as HTMLInputElement;
+    /* The value from html-input field */
     const newValueOfInput = target.value;
+    JSON.parse(body as string).newValueofField = newValueOfInput;
     /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
     const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('data-namex') : '';
-    const body_ = JSON.stringify({
-      typeField: atributeDataNameX as string,
-      newValueofField: newValueOfInput
-    })
+    JSON.parse(body as string).typeField = atributeDataNameX as string;
+    // const body_ = body;
     /* --------------- Here us a cookie is to get ------------------ */
-    const sessionId = getCookie('sessionId');
+    // const sessionId = getCookie('sessionId');
 
     const label = (target.parentElement as HTMLElement);
-    const result = await put(body_, `${pathname}${sessionId}`)
+    const result = await put(body as string, `${pathname}${sessionId}`)
     if ((sessionId === undefined) || (result === false)) {
       const p = messageForUser(1, ['Сохранился', 'Не сохранился'])
       /* here is a not found */

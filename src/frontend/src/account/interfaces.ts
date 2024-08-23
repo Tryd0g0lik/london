@@ -41,3 +41,15 @@ export interface ResultType {
   name?: string
   password: string
 }
+
+export interface Inpt {
+  pathname: string
+  body: {
+    typeField: string
+    newValueofField: string
+    indexMessege?: string
+    indexEmail?: string
+  } | string
+  sessionId?: string
+}
+
