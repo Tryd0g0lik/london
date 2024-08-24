@@ -7,3 +7,6 @@ node_modules
 logs_server.txt
 webpack-stats.json
 package-lock.json
+docker*
+Docker*
+*Docker*
