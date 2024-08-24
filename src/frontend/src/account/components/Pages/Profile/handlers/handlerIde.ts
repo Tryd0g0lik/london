@@ -53,6 +53,7 @@ the new html's  <input>-tage */
       //'data-namex'
 
       let atributeTimeout: ReturnType<typeof setTimeout> | null = null;
+      // sub-sub-function
       const namexChecker = (item: HTMLElement, fun: (props: FieldInnerHtml) => HTMLElement): boolean => {
 
         clearTimeout(atributeTimeout!);
@@ -246,9 +247,9 @@ export function handlerEventOfInputPUT(props: Inpt): (event: KeyboardEvent) => P
       return false;
     }
 
-    /* here is found */
-    const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
-    label.insertAdjacentHTML('afterend', p.outerHTML);
+    // /* here is found */
+    // const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
+    // label.insertAdjacentHTML('afterend', p.outerHTML);
 
 
     return true;

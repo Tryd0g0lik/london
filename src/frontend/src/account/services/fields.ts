@@ -14,7 +14,12 @@ export function basisRedactField(props: FieldInnerHtml): HTMLElement {
   label.htmlFor = "text";
   label.className = "input input-bordered flex items-center gap-2";
   input.setAttribute('data-namex', dataNamex);
-  input.id = dataNamex;
+
+  /* Node!! This is attribute 'data-current'. It if we can see   `inpute[data-current='create']`, then \
+  this input-form  for process only added new line in db. If \
+  we ca see `inpute[data-current='redaction']`, then this is form only a redacting/ide content. */
+  input.setAttribute('data-current', 'create');
+  // input.id = dataNamex;
   input.name = 'text';
   input.type = 'text';
   input.maxLength = 50;
