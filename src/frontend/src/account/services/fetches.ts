@@ -10,7 +10,7 @@ const PORT = (env_ === undefined) ? '7070' : env_.slice(0);
 env_ = process.env.REACT_APP_PROTOCOL_OF_URL;
 const PROTOCOL = (env_ === undefined) ? 'http' : env_.slice(0);
 env_ = process.env.REACT_APP_SET_TTIMOUT;
-const REACT_APP_SET_TTIMOUT = (env_ === undefined) ? 2000 : env_.slice(0);
+// const REACT_APP_SET_TTIMOUT = (env_ === undefined) ? 2000 : env_.slice(0);
 env_ = undefined;
 
 const params: FetchParams = {

@@ -184,6 +184,7 @@ Note Totall:
  - На формах нет validators
  - При попытки редактировать сразу 2 поля, Одно из полей не реагирует на 'Enter' для сохранения (пос копирования htmlelement). \
  `src\frontend\src\account\components\Pages\Profile\Ads\handlers\handlerAds.ts`
+ - Меняется cookie кключ (в браузере для dwbug режима, после перезапуска серверов.). В коде закладывалась проверка наличия ключа в DB.  Проверить функционал.
 
 
 
