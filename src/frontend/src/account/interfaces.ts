@@ -54,3 +54,19 @@ export interface Inpt {
   sessionId?: string
 }
 
+export interface OneLine {
+  titles?: string
+  id: number
+  email_id: number
+}
+interface Rows {
+  rows: OneLine[]
+}
+
+
+
+export interface Ads extends Rows {
+  message: string
+  positions?: OneLine[]
+  position?: OneLine
+}

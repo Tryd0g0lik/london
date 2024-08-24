@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 // import parse from 'html-react-parser';
 import { NavFC } from '@Components/NavOpPages';
 import { CorrectorBasisRedactField, basisRedactField } from '@Services/fields';
-import { handlerAdsFC, loaderContents } from './handlers/handlerAds';
+import { handlerAdsFC } from './handlers/handlerAds';
+import { loaderContents } from './handlers/handlerDownloadAll';
 import { checkerCookieKey } from '@Services/coockieSessionId';
 // const line = 0;
 /* --------------- Here is we working under an ADS ------------------ */

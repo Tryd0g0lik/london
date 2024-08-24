@@ -152,7 +152,11 @@ label.input.input-bordered.flex.items-center.gap-2 {
   gap: 0 15px;
   justify-content: space-between;
 }
-
+.profile.form.list-ads>div div {
+  display: flex;
+  flex-wrap: no-wrap;
+  gap: 0 15px;
+}
 
 .list-ads>div button {
   color: aqua;

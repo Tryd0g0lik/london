@@ -1,6 +1,5 @@
 // import React from 'react';
-import { FieldInnerHtml } from '@Interfaces';
-
+import { FieldInnerHtml, OneLine } from '@Interfaces';
 /**
  * Тут, больше вопрос безопасности.
  * @returns HTMLLableElement
@@ -51,3 +50,32 @@ export function CorrectorBasisRedactField(fun: (props: FieldInnerHtml) => HTMLEl
   return lebalHtml;
 }
 
+/**FOr a ADs form
+ * 'data-numberx' = this is the message id of db; \
+ * 'data-userx' = this is the email id of db; \
+ * @param props
+ * @returns
+ */
+export function createDivLableContainer(props: OneLine): HTMLElement {
+  const {
+    id,
+    titles,
+    email_id
+  } = props;
+  const divHtml = document.createElement('div');
+  const p_ = document.createElement('p');
+  p_.innerText = titles as string;
+  divHtml.appendChild(p_);
+  divHtml.setAttribute('data-numberx', String(id));
+  divHtml.setAttribute('data-userx', String(email_id));
+  const bottonHml = document.createElement('button');
+  bottonHml.innerText = 'Редактировать';
+  const bottonHml2 = bottonHml.cloneNode(true);
+  (bottonHml2 as HTMLElement).innerText = 'Удалить';
+  const divHtml2 = document.createElement('div');
+  divHtml2.appendChild(bottonHml);
+  divHtml2.insertAdjacentHTML('beforeend', (bottonHml2 as HTMLElement).outerHTML);
+  divHtml.innerHTML += divHtml2.outerHTML;
+
+  return divHtml
+}
