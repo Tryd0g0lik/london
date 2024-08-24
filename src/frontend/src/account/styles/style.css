@@ -29,12 +29,13 @@ div.form {
   width: 510px;
 }
 
+
 #root.active .dropdown li {
   display: inherit;
 }
 
 /* Loader */
-
+#root.active a[href="/registration"],
 .loading {
   display: none;
 }

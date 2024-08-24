@@ -1170,3 +1170,595 @@
 20:56:43:10 ==> [server]:  INSTALL "Users" created .
 20:56:43:11 ==> [server]:  INSTALL "ads" created .
 20:56:43:15 ==> [server]:  INSTALL END
+8:6:39:85 ==> [server -> router]: inlogin  That request was received from Profile 8 =>: [object Object]
+8:6:39:87 ==> [server -> router]: inlogin: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"379a2610-865a-400c-90cb-7591df7bb928"}}
+8:6:39:88 ==> [server -> router]: inlogin cookie: {"sessionId":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:39:43 ==> [server -> router]: inlogin Received data where is a length =>: 1
+8:6:39:44 ==> [server -> router]: inlogin Filter LENGTH =>: 1
+8:6:39:45 ==> [server -> router]: inlogin Filter LENGTH2 =>: 1
+8:6:39:81 ==> [server -> router]: inlogin Filter LENGTH3 =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:39:82 ==> [server -> router]: inlogin Filter LENGTH4 =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:39:84 ==> [server -> router]: inlogin That User is found: Boris
+8:6:39:85 ==> [server -> router]: inlogin That SessionID: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:6:39:3 ==> [server -> router]: inlogin:sessionId: {"email":"work80@mail2.ru","password":"x6ULDxF2sbNbdbqf","cookie":{"sessionId":"379a2610-865a-400c-90cb-7591df7bb928"}}
+8:6:39:4 ==> [server -> router]: inlogin:sessionId cookie: 379a2610-865a-400c-90cb-7591df7bb928 email: work80@mail2.ru
+8:6:39:6 ==> [server -> clients]: Before connection.
+8:6:39:8 ==> [server -> clients]: Connection now. __ 
+8:6:39:10 ==> [server -> clients]: That is a connection. Before sending.
+8:6:39:11 ==> [server -> clients]: Data: JSON: => {"email":"work80@mail2.ru"}
+8:6:39:13 ==> [server -> clients]: data before saving => {"email":"work80@mail2.ru"}
+8:6:39:41 ==> [server -> clients]: data was received
+8:6:39:46 ==> [server -> clients]: END
+8:6:39:46 ==> [server -> router]: inlogin:sessionId №1 Received data where is a length =>: 1
+8:6:39:48 ==> [server -> router]: inlogin:sessionId №1.0  =>: {"tableName":"users","column":"session_id","index":1,"newValue":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:39:50 ==> [server -> clients]: Before connection.
+8:6:39:51 ==> [server -> router]: inlogin:sessionId №2
+      Received data where is a length =>: DB.password: x6ULDxF2sbNbdbqf
+      clientData.password x6ULDxF2sbNbdbqf
+8:6:39:54 ==> [server -> clients]: Connection now. __ 
+8:6:39:54 ==> [server -> router]: inlogin:sessionId Filter LENGTH =>: 1
+8:6:39:57 ==> [server -> clients]: That is a connection. Before sending.
+8:6:39:57 ==> [server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: [{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"379a2610-865a-400c-90cb-7591df7bb928"}]
+8:6:39:59 ==> [server -> clients]: Data: JSON: => {"tableName":"users","column":"session_id","index":1,"newValue":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:39:60 ==> [server -> router]: inlogin:sessionId №3 Password. RESULT =>: [{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"379a2610-865a-400c-90cb-7591df7bb928"}]
+8:6:39:62 ==> [server -> clients]: data before saving => {"tableName":"users","column":"session_id","index":1,"newValue":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:39:63 ==> [server -> router]: inlogin:sessionId Message was sent a 200code .
+      That SessionID: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:39:64 ==> [server -> sql]: inlogin Filter SQL4 =>: undefined
+8:6:39:83 ==> [server -> clients]: Here procces do not be connection or save.
+      ERROR => error: ошибка синтаксиса (примерное положение: "[")
+8:6:39:85 ==> [server -> clients]: END
+8:6:42:5 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+8:6:42:7 ==> [server -> router]: inlogin:sessionId  №1 =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:42:8 ==> [server -> clients]: Before connection.
+8:6:42:10 ==> [server -> clients]: Connection now. __ 
+8:6:42:11 ==> [server -> clients]: That is a connection. Before sending.
+8:6:42:12 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:42:13 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:42:45 ==> [server -> clients]: data was received
+8:6:42:50 ==> [server -> clients]: END
+8:6:42:50 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":0,"oid":null,"rows":[],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+8:6:42:50 ==> [server -> router]: Not founded - 404 code
+8:6:42:54 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+8:6:42:55 ==> [server -> router]: inlogin:sessionId  №1 =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:42:56 ==> [server -> clients]: Before connection.
+8:6:42:58 ==> [server -> clients]: Connection now. __ 
+8:6:42:59 ==> [server -> clients]: That is a connection. Before sending.
+8:6:42:60 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:42:61 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:42:84 ==> [server -> clients]: data was received
+8:6:42:89 ==> [server -> clients]: END
+8:6:42:90 ==> [server -> router]: Not founded - 404 code
+8:6:42:90 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":0,"oid":null,"rows":[],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+8:6:43:9 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:6:43:11 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:43:12 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:43:13 ==> [server -> clients]: Before connection.
+8:6:43:15 ==> [server -> clients]: Connection now. __ 
+8:6:43:16 ==> [server -> clients]: That is a connection. Before sending.
+8:6:43:18 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:43:19 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:43:42 ==> [server -> clients]: data was received
+8:6:44:82 ==> [server]:  INSTALL START
+8:6:44:86 ==> [server -> listen]: Server start to listen the PORT 7070
+8:6:44:19 ==> [server]:  INSTALL 
+8:6:44:22 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:6:44:23 ==> [server]:  INSTALL уже существует
+8:6:44:24 ==> [server]:  INSTALL MIDDLE
+8:6:44:26 ==> [server]:  INSTALL Start the "Client" connection.
+8:6:44:31 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:6:44:33 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:44:34 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:6:44:36 ==> [server -> clients]: Before connection.
+8:6:44:38 ==> [server -> clients]: Connection now. __ 
+8:6:44:40 ==> [server -> clients]: That is a connection. Before sending.
+8:6:44:41 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:44:44 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:6:44:59 ==> [server]:  INSTALL "Emails" created .
+8:6:44:60 ==> [server]:  INSTALL "Users" created .
+8:6:44:62 ==> [server]:  INSTALL "ads" created .
+8:6:44:66 ==> [server]:  INSTALL END
+8:6:44:68 ==> [server -> clients]: data was received
+8:6:45:15 ==> [server]:  INSTALL START
+8:6:45:18 ==> [server -> listen]: Server start to listen the PORT 7070
+8:6:45:51 ==> [server]:  INSTALL 
+8:6:45:54 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:6:45:55 ==> [server]:  INSTALL уже существует
+8:6:45:57 ==> [server]:  INSTALL MIDDLE
+8:6:45:58 ==> [server]:  INSTALL Start the "Client" connection.
+8:6:45:87 ==> [server]:  INSTALL "Emails" created .
+8:6:45:89 ==> [server]:  INSTALL "Users" created .
+8:6:45:91 ==> [server]:  INSTALL "ads" created .
+8:6:45:94 ==> [server]:  INSTALL END
+8:9:33:5 ==> [server]:  INSTALL START
+8:9:33:10 ==> [server -> listen]: Server start to listen the PORT 7070
+8:9:33:35 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:9:33:36 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:9:33:38 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:9:33:39 ==> [server -> clients]: Before connection.
+8:9:33:42 ==> [server -> clients]: Connection now. __ 
+8:9:33:44 ==> [server -> clients]: That is a connection. Before sending.
+8:9:33:47 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:9:33:49 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:9:33:81 ==> [server]:  INSTALL 
+8:9:33:83 ==> [server -> clients]: data was received
+8:9:33:85 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:10:57:61 ==> [server -> listen]: Server start to listen the PORT 7070
+8:10:57:63 ==> [server]:  INSTALL START
+8:10:57:16 ==> [server]:  INSTALL 
+8:10:57:21 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:10:57:23 ==> [server]:  INSTALL уже существует
+8:10:57:25 ==> [server]:  INSTALL MIDDLE
+8:10:57:27 ==> [server]:  INSTALL Start the "Client" connection.
+8:10:57:70 ==> [server]:  INSTALL "Emails" created .
+8:10:57:72 ==> [server]:  INSTALL "Users" created .
+8:10:57:74 ==> [server]:  INSTALL "ads" created .
+8:10:57:79 ==> [server]:  INSTALL END
+8:10:57:8 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:10:57:9 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:10:57:10 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:10:57:13 ==> [server -> clients]: Before connection.
+8:10:57:15 ==> [server -> clients]: Connection now. __ 
+8:10:57:17 ==> [server -> clients]: That is a connection. Before sending.
+8:10:57:18 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:10:57:20 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:10:57:47 ==> [server -> clients]: data was received
+8:12:36:51 ==> [server]:  INSTALL START
+8:12:36:56 ==> [server -> listen]: Server start to listen the PORT 7070
+8:12:36:95 ==> [server]:  INSTALL 
+8:12:36:99 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:12:36:2 ==> [server]:  INSTALL уже существует
+8:12:36:4 ==> [server]:  INSTALL MIDDLE
+8:12:36:5 ==> [server]:  INSTALL Start the "Client" connection.
+8:12:36:39 ==> [server]:  INSTALL "Emails" created .
+8:12:36:41 ==> [server]:  INSTALL "Users" created .
+8:12:36:43 ==> [server]:  INSTALL "ads" created .
+8:12:36:48 ==> [server]:  INSTALL END
+8:12:36:79 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:12:36:81 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:12:36:83 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:12:36:85 ==> [server -> clients]: Before connection.
+8:12:36:87 ==> [server -> clients]: Connection now. __ 
+8:12:36:89 ==> [server -> clients]: That is a connection. Before sending.
+8:12:36:90 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:12:36:91 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:12:36:18 ==> [server -> clients]: data was received
+8:16:14:71 ==> [server]:  INSTALL START
+8:16:14:75 ==> [server -> listen]: Server start to listen the PORT 7070
+8:16:14:8 ==> [server]:  INSTALL 
+8:16:14:11 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:16:14:12 ==> [server]:  INSTALL уже существует
+8:16:14:13 ==> [server]:  INSTALL MIDDLE
+8:16:14:15 ==> [server]:  INSTALL Start the "Client" connection.
+8:16:14:44 ==> [server]:  INSTALL "Emails" created .
+8:16:14:45 ==> [server]:  INSTALL "Users" created .
+8:16:14:47 ==> [server]:  INSTALL "ads" created .
+8:16:14:51 ==> [server]:  INSTALL END
+8:16:42:12 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:16:42:14 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:16:42:16 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:16:42:18 ==> [server -> clients]: Before connection.
+8:16:42:22 ==> [server -> clients]: Connection now. __ 
+8:16:42:25 ==> [server -> clients]: That is a connection. Before sending.
+8:16:42:27 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:16:42:29 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:16:42:58 ==> [server -> clients]: data was received
+8:16:43:55 ==> [server]:  INSTALL START
+8:16:43:60 ==> [server -> listen]: Server start to listen the PORT 7070
+8:16:43:94 ==> [server]:  INSTALL 
+8:16:43:97 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:16:43:99 ==> [server]:  INSTALL уже существует
+8:16:43:0 ==> [server]:  INSTALL MIDDLE
+8:16:43:2 ==> [server]:  INSTALL Start the "Client" connection.
+8:16:43:31 ==> [server]:  INSTALL "Emails" created .
+8:16:43:33 ==> [server]:  INSTALL "Users" created .
+8:16:43:34 ==> [server]:  INSTALL "ads" created .
+8:16:43:38 ==> [server]:  INSTALL END
+8:16:49:64 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:16:49:66 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:16:49:68 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:16:49:70 ==> [server -> clients]: Before connection.
+8:16:49:74 ==> [server -> clients]: Connection now. __ 
+8:16:49:76 ==> [server -> clients]: That is a connection. Before sending.
+8:16:49:78 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:16:49:80 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:16:50:7 ==> [server -> clients]: data was received
+8:16:50:88 ==> [server]:  INSTALL START
+8:16:50:92 ==> [server -> listen]: Server start to listen the PORT 7070
+8:16:50:26 ==> [server]:  INSTALL 
+8:16:50:29 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:16:50:31 ==> [server]:  INSTALL уже существует
+8:16:50:32 ==> [server]:  INSTALL MIDDLE
+8:16:50:34 ==> [server]:  INSTALL Start the "Client" connection.
+8:16:50:64 ==> [server]:  INSTALL "Emails" created .
+8:16:50:66 ==> [server]:  INSTALL "Users" created .
+8:16:50:68 ==> [server]:  INSTALL "ads" created .
+8:16:50:71 ==> [server]:  INSTALL END
+8:18:15:25 ==> [server -> listen]: Server start to listen the PORT 7070
+8:18:15:27 ==> [server]:  INSTALL START
+8:18:15:66 ==> [server]:  INSTALL 
+8:18:15:69 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:18:15:71 ==> [server]:  INSTALL уже существует
+8:18:15:73 ==> [server]:  INSTALL MIDDLE
+8:18:15:74 ==> [server]:  INSTALL Start the "Client" connection.
+8:18:16:3 ==> [server]:  INSTALL "Emails" created .
+8:18:16:5 ==> [server]:  INSTALL "Users" created .
+8:18:16:7 ==> [server]:  INSTALL "ads" created .
+8:18:16:11 ==> [server]:  INSTALL END
+8:18:57:4 ==> [server]:  INSTALL START
+8:18:57:7 ==> [server -> listen]: Server start to listen the PORT 7070
+8:18:57:44 ==> [server]:  INSTALL 
+8:18:57:47 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:18:57:49 ==> [server]:  INSTALL уже существует
+8:18:57:50 ==> [server]:  INSTALL MIDDLE
+8:18:57:51 ==> [server]:  INSTALL Start the "Client" connection.
+8:18:57:84 ==> [server]:  INSTALL "Emails" created .
+8:18:57:85 ==> [server]:  INSTALL "Users" created .
+8:18:57:87 ==> [server]:  INSTALL "ads" created .
+8:18:57:90 ==> [server]:  INSTALL END
+8:19:6:89 ==> [server]:  INSTALL START
+8:19:6:93 ==> [server -> listen]: Server start to listen the PORT 7070
+8:19:6:47 ==> [server]:  INSTALL 
+8:19:6:51 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:19:6:52 ==> [server]:  INSTALL уже существует
+8:19:6:53 ==> [server]:  INSTALL MIDDLE
+8:19:6:55 ==> [server]:  INSTALL Start the "Client" connection.
+8:19:6:97 ==> [server]:  INSTALL "Emails" created .
+8:19:6:99 ==> [server]:  INSTALL "Users" created .
+8:19:6:1 ==> [server]:  INSTALL "ads" created .
+8:19:6:4 ==> [server]:  INSTALL END
+8:19:43:29 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:19:43:31 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:19:43:33 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:19:43:34 ==> [server -> clients]: Before connection.
+8:19:43:37 ==> [server -> clients]: Connection now. __ 
+8:19:43:38 ==> [server -> clients]: That is a connection. Before sending.
+8:19:43:40 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:19:43:41 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:19:43:68 ==> [server -> clients]: data was received
+8:19:44:63 ==> [server]:  INSTALL START
+8:19:44:67 ==> [server -> listen]: Server start to listen the PORT 7070
+8:19:44:99 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:19:44:1 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: 379a2610-865a-400c-90cb-7591df7bb928
+8:19:44:3 ==> [server -> router -> ads]: GET ALL №2: 379a2610-865a-400c-90cb-7591df7bb928
+8:19:44:5 ==> [server]:  INSTALL 
+8:19:44:6 ==> [server -> clients]: Before connection.
+8:19:44:8 ==> [server -> clients]: Connection now. __ 
+8:19:44:10 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:19:44:11 ==> [server -> clients]: That is a connection. Before sending.
+8:19:44:13 ==> [server]:  INSTALL уже существует
+8:19:44:14 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:19:44:16 ==> [server]:  INSTALL MIDDLE
+8:19:44:17 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"379a2610-865a-400c-90cb-7591df7bb928"}
+8:19:44:18 ==> [server]:  INSTALL Start the "Client" connection.
+8:19:44:36 ==> [server -> clients]: data was received
+8:49:25:34 ==> [server]:  INSTALL START
+8:49:25:38 ==> [server -> listen]: Server start to listen the PORT 7070
+8:49:25:73 ==> [server]:  INSTALL 
+8:49:25:77 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:49:25:79 ==> [server]:  INSTALL уже существует
+8:49:25:80 ==> [server]:  INSTALL MIDDLE
+8:49:25:82 ==> [server]:  INSTALL Start the "Client" connection.
+8:49:25:14 ==> [server]:  INSTALL "Emails" created .
+8:49:25:16 ==> [server]:  INSTALL "Users" created .
+8:49:25:18 ==> [server]:  INSTALL "ads" created .
+8:49:25:22 ==> [server]:  INSTALL END
+8:49:29:0 ==> [server]:  INSTALL START
+8:49:29:5 ==> [server -> listen]: Server start to listen the PORT 7070
+8:49:29:39 ==> [server]:  INSTALL 
+8:49:29:43 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:49:29:45 ==> [server]:  INSTALL уже существует
+8:49:29:46 ==> [server]:  INSTALL MIDDLE
+8:49:29:47 ==> [server]:  INSTALL Start the "Client" connection.
+8:49:29:77 ==> [server]:  INSTALL "Emails" created .
+8:49:29:79 ==> [server]:  INSTALL "Users" created .
+8:49:29:81 ==> [server]:  INSTALL "ads" created .
+8:49:29:85 ==> [server]:  INSTALL END
+8:52:13:14 ==> [server]:  INSTALL START
+8:52:13:18 ==> [server -> listen]: Server start to listen the PORT 7070
+8:52:13:54 ==> [server]:  INSTALL 
+8:52:13:58 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:52:13:59 ==> [server]:  INSTALL уже существует
+8:52:13:60 ==> [server]:  INSTALL MIDDLE
+8:52:13:62 ==> [server]:  INSTALL Start the "Client" connection.
+8:52:13:92 ==> [server]:  INSTALL "Emails" created .
+8:52:13:94 ==> [server]:  INSTALL "Users" created .
+8:52:13:96 ==> [server]:  INSTALL "ads" created .
+8:52:13:0 ==> [server]:  INSTALL END
+8:53:57:77 ==> [server]:  INSTALL START
+8:53:57:82 ==> [server -> listen]: Server start to listen the PORT 7070
+8:53:58:13 ==> [server]:  INSTALL 
+8:53:58:17 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:53:58:19 ==> [server]:  INSTALL уже существует
+8:53:58:20 ==> [server]:  INSTALL MIDDLE
+8:53:58:21 ==> [server]:  INSTALL Start the "Client" connection.
+8:53:58:49 ==> [server]:  INSTALL "Emails" created .
+8:53:58:51 ==> [server]:  INSTALL "Users" created .
+8:53:58:53 ==> [server]:  INSTALL "ads" created .
+8:53:58:56 ==> [server]:  INSTALL END
+8:54:18:53 ==> [server]:  INSTALL START
+8:54:18:56 ==> [server -> listen]: Server start to listen the PORT 7070
+8:54:18:90 ==> [server]:  INSTALL 
+8:54:18:94 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:54:18:95 ==> [server]:  INSTALL уже существует
+8:54:18:97 ==> [server]:  INSTALL MIDDLE
+8:54:18:98 ==> [server]:  INSTALL Start the "Client" connection.
+8:54:18:26 ==> [server]:  INSTALL "Emails" created .
+8:54:18:28 ==> [server]:  INSTALL "Users" created .
+8:54:18:30 ==> [server]:  INSTALL "ads" created .
+8:54:18:33 ==> [server]:  INSTALL END
+8:54:26:71 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:54:26:73 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:54:26:74 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:54:26:76 ==> [server -> clients]: Before connection.
+8:54:26:78 ==> [server -> clients]: Connection now. __ 
+8:54:26:79 ==> [server -> clients]: That is a connection. Before sending.
+8:54:26:80 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:54:26:82 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:54:26:6 ==> [server -> clients]: data was received
+8:54:26:10 ==> [server -> clients]: END
+8:54:26:10 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:54:26:11 ==> [server -> clients]: Before connection.
+8:54:26:13 ==> [server -> clients]: Connection now. __ 
+8:54:26:15 ==> [server -> clients]: That is a connection. Before sending.
+8:54:26:17 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:54:26:19 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:54:26:40 ==> [server -> clients]: data was received
+8:54:26:46 ==> [server -> clients]: END
+8:54:26:46 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:54:26:51 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:54:26:52 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:54:26:53 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:54:26:55 ==> [server -> clients]: Before connection.
+8:54:26:57 ==> [server -> clients]: Connection now. __ 
+8:54:26:60 ==> [server -> clients]: That is a connection. Before sending.
+8:54:26:62 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:54:26:64 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:54:26:87 ==> [server -> clients]: data was received
+8:54:26:91 ==> [server -> clients]: END
+8:54:26:92 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:54:26:94 ==> [server -> clients]: Before connection.
+8:54:26:96 ==> [server -> clients]: Connection now. __ 
+8:54:26:98 ==> [server -> clients]: That is a connection. Before sending.
+8:54:26:0 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:54:26:1 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:54:26:25 ==> [server -> clients]: data was received
+8:54:26:29 ==> [server -> clients]: END
+8:54:26:29 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:13:33 ==> [server]:  INSTALL START
+8:56:13:38 ==> [server -> listen]: Server start to listen the PORT 7070
+8:56:13:77 ==> [server]:  INSTALL 
+8:56:13:80 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:56:13:82 ==> [server]:  INSTALL уже существует
+8:56:13:84 ==> [server]:  INSTALL MIDDLE
+8:56:13:85 ==> [server]:  INSTALL Start the "Client" connection.
+8:56:13:18 ==> [server]:  INSTALL "Emails" created .
+8:56:13:20 ==> [server]:  INSTALL "Users" created .
+8:56:13:22 ==> [server]:  INSTALL "ads" created .
+8:56:13:27 ==> [server]:  INSTALL END
+8:56:22:15 ==> [server]:  INSTALL START
+8:56:22:21 ==> [server -> listen]: Server start to listen the PORT 7070
+8:56:22:43 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:22:45 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:22:46 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:22:48 ==> [server -> clients]: Before connection.
+8:56:22:51 ==> [server -> clients]: Connection now. __ 
+8:56:22:53 ==> [server -> clients]: That is a connection. Before sending.
+8:56:22:60 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:22:63 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:22:67 ==> [server]:  INSTALL 
+8:56:22:72 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:56:22:75 ==> [server]:  INSTALL уже существует
+8:56:22:76 ==> [server]:  INSTALL MIDDLE
+8:56:22:78 ==> [server]:  INSTALL Start the "Client" connection.
+8:56:22:88 ==> [server -> clients]: data was received
+8:56:22:93 ==> [server -> clients]: END
+8:56:22:93 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:22:95 ==> [server -> clients]: Before connection.
+8:56:22:98 ==> [server -> clients]: Connection now. __ 
+8:56:22:99 ==> [server -> clients]: That is a connection. Before sending.
+8:56:22:1 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:22:5 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:22:13 ==> [server]:  INSTALL "Emails" created .
+8:56:22:15 ==> [server]:  INSTALL "Users" created .
+8:56:22:17 ==> [server]:  INSTALL "ads" created .
+8:56:22:20 ==> [server]:  INSTALL END
+8:56:22:27 ==> [server -> clients]: data was received
+8:56:22:33 ==> [server -> clients]: END
+8:56:22:33 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:22:36 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:22:38 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:22:40 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:22:42 ==> [server -> clients]: Before connection.
+8:56:22:45 ==> [server -> clients]: Connection now. __ 
+8:56:22:47 ==> [server -> clients]: That is a connection. Before sending.
+8:56:22:48 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:22:50 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:22:74 ==> [server -> clients]: data was received
+8:56:22:78 ==> [server -> clients]: END
+8:56:22:79 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:22:80 ==> [server -> clients]: Before connection.
+8:56:22:82 ==> [server -> clients]: Connection now. __ 
+8:56:22:84 ==> [server -> clients]: That is a connection. Before sending.
+8:56:22:86 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:22:88 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:23:10 ==> [server -> clients]: data was received
+8:56:23:14 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:23:15 ==> [server -> clients]: END
+8:56:26:93 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:26:95 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:26:96 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:26:98 ==> [server -> clients]: Before connection.
+8:56:26:0 ==> [server -> clients]: Connection now. __ 
+8:56:26:1 ==> [server -> clients]: That is a connection. Before sending.
+8:56:26:2 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:26:5 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:26:27 ==> [server -> clients]: data was received
+8:56:26:31 ==> [server -> clients]: END
+8:56:26:32 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:26:33 ==> [server -> clients]: Before connection.
+8:56:26:35 ==> [server -> clients]: Connection now. __ 
+8:56:26:37 ==> [server -> clients]: That is a connection. Before sending.
+8:56:26:38 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:26:40 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:26:61 ==> [server -> clients]: data was received
+8:56:26:64 ==> [server -> clients]: END
+8:56:26:65 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:26:67 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:26:69 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:26:70 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:26:72 ==> [server -> clients]: Before connection.
+8:56:26:75 ==> [server -> clients]: Connection now. __ 
+8:56:26:77 ==> [server -> clients]: That is a connection. Before sending.
+8:56:26:78 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:26:80 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:26:2 ==> [server -> clients]: data was received
+8:56:26:7 ==> [server -> clients]: END
+8:56:26:7 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:26:9 ==> [server -> clients]: Before connection.
+8:56:26:11 ==> [server -> clients]: Connection now. __ 
+8:56:26:12 ==> [server -> clients]: That is a connection. Before sending.
+8:56:26:14 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:26:15 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:26:36 ==> [server -> clients]: data was received
+8:56:26:41 ==> [server -> clients]: END
+8:56:26:41 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:29:65 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+8:56:29:67 ==> [server -> router]: inlogin:sessionId  №1 =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:29:69 ==> [server -> clients]: Before connection.
+8:56:29:73 ==> [server -> clients]: Connection now. __ 
+8:56:29:75 ==> [server -> clients]: That is a connection. Before sending.
+8:56:29:77 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:79 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:4 ==> [server -> clients]: data was received
+8:56:29:9 ==> [server -> clients]: END
+8:56:29:10 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+8:56:29:10 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:13 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
+8:56:29:18 ==> [server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: [object Object]
+8:56:29:19 ==> [server -> router]: inlogin:sessionId  №1 =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:29:21 ==> [server -> clients]: Before connection.
+8:56:29:24 ==> [server -> clients]: Connection now. __ 
+8:56:29:26 ==> [server -> clients]: That is a connection. Before sending.
+8:56:29:27 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:29 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:55 ==> [server -> clients]: data was received
+8:56:29:60 ==> [server -> clients]: END
+8:56:29:61 ==> [server -> router]: inlogin:sessionId  №2 Profile ID =>: {"command":"SELECT","rowCount":1,"oid":null,"rows":[{"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}],"fields":[{"name":"id","tableID":150965,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150965,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"first_name","tableID":150965,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"last_name","tableID":150965,"columnID":4,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":34,"format":"text"},{"name":"is_active","tableID":150965,"columnID":5,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_authenticated","tableID":150965,"columnID":6,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"is_activated","tableID":150965,"columnID":7,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"send_message","tableID":150965,"columnID":8,"dataTypeID":16,"dataTypeSize":1,"dataTypeModifier":-1,"format":"text"},{"name":"password","tableID":150965,"columnID":9,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"},{"name":"session_id","tableID":150965,"columnID":10,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":154,"format":"text"}],"_parsers":[null,null,null,null,null,null,null,null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"first_name":null,"last_name":null,"is_active":null,"is_authenticated":null,"is_activated":null,"send_message":null,"password":null,"session_id":null}}
+8:56:29:62 ==> [server -> router]: inlogin:sessionId №3 That Profile ID =>: {"id":1,"email_id":1,"first_name":"Boris","last_name":"root","is_active":true,"is_authenticated":false,"is_activated":false,"send_message":false,"password":"x6ULDxF2sbNbdbqf","session_id":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:29:65 ==> [server -> router]: inlogin:sessionId №4 That Profile SENDED
+8:56:38:0 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:38:3 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:38:7 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:38:9 ==> [server -> clients]: Before connection.
+8:56:38:14 ==> [server -> clients]: Connection now. __ 
+8:56:38:18 ==> [server -> clients]: That is a connection. Before sending.
+8:56:38:23 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:38:25 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:38:49 ==> [server -> clients]: data was received
+8:56:38:55 ==> [server -> clients]: END
+8:56:38:56 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:38:58 ==> [server -> clients]: Before connection.
+8:56:38:61 ==> [server -> clients]: Connection now. __ 
+8:56:38:63 ==> [server -> clients]: That is a connection. Before sending.
+8:56:38:67 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:38:70 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:38:2 ==> [server -> clients]: data was received
+8:56:38:10 ==> [server -> clients]: END
+8:56:38:11 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:38:14 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:38:17 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:38:19 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:38:22 ==> [server -> clients]: Before connection.
+8:56:38:27 ==> [server -> clients]: Connection now. __ 
+8:56:38:31 ==> [server -> clients]: That is a connection. Before sending.
+8:56:38:34 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:38:37 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:38:66 ==> [server -> clients]: data was received
+8:56:38:74 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:38:75 ==> [server -> clients]: END
+8:56:38:77 ==> [server -> clients]: Before connection.
+8:56:38:81 ==> [server -> clients]: Connection now. __ 
+8:56:38:84 ==> [server -> clients]: That is a connection. Before sending.
+8:56:38:87 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:38:93 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:38:25 ==> [server -> clients]: data was received
+8:56:38:32 ==> [server -> clients]: END
+8:56:38:33 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:43:30 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:43:31 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:43:33 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:43:34 ==> [server -> clients]: Before connection.
+8:56:43:36 ==> [server -> clients]: Connection now. __ 
+8:56:43:38 ==> [server -> clients]: That is a connection. Before sending.
+8:56:43:40 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:43:41 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:43:63 ==> [server -> clients]: data was received
+8:56:43:68 ==> [server -> clients]: END
+8:56:43:69 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:43:70 ==> [server -> clients]: Before connection.
+8:56:43:73 ==> [server -> clients]: Connection now. __ 
+8:56:43:74 ==> [server -> clients]: That is a connection. Before sending.
+8:56:43:76 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:43:78 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:43:98 ==> [server -> clients]: data was received
+8:56:43:3 ==> [server -> clients]: END
+8:56:43:4 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:56:43:6 ==> [server -> router -> ads]: GET ALL  That request =>: undefined
+8:56:43:8 ==> [server -> router -> ads]: GET ALL №1 sessionId =>: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:43:10 ==> [server -> router -> ads]: GET ALL №2: fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2
+8:56:43:12 ==> [server -> clients]: Before connection.
+8:56:43:14 ==> [server -> clients]: Connection now. __ 
+8:56:43:16 ==> [server -> clients]: That is a connection. Before sending.
+8:56:43:17 ==> [server -> clients]: Data: JSON: => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:43:19 ==> [server -> clients]: data before saving => {"table":"users","column":"session_id","value":"fcd45ddf-0ee4-499b-ad11-d8f24e3dd7d2"}
+8:56:43:41 ==> [server -> clients]: data was received
+8:56:43:45 ==> [server -> clients]: END
+8:56:43:46 ==> [server -> router -> ads]: GET ALL №3 length => 1
+8:56:43:47 ==> [server -> clients]: Before connection.
+8:56:43:49 ==> [server -> clients]: Connection now. __ 
+8:56:43:51 ==> [server -> clients]: That is a connection. Before sending.
+8:56:43:52 ==> [server -> clients]: Data: JSON: => {"table":"ads","column":"email_id","value":1}
+8:56:43:54 ==> [server -> clients]: data before saving => {"table":"ads","column":"email_id","value":1}
+8:56:43:76 ==> [server -> clients]: data was received
+8:56:43:81 ==> [server -> clients]: END
+8:56:43:81 ==> [server -> router -> ads]: POST  №4 =>: {"command":"SELECT","rowCount":36,"oid":null,"rows":[{"id":3,"email_id":1,"titles":"Hallo word!"},{"id":4,"email_id":1,"titles":"Hallo word!"},{"id":5,"email_id":1,"titles":"Hallo word!"},{"id":6,"email_id":1,"titles":"Hallo word!"},{"id":7,"email_id":1,"titles":"Hallo word!"},{"id":8,"email_id":1,"titles":"Hallo word!"},{"id":9,"email_id":1,"titles":"Hallo word!"},{"id":10,"email_id":1,"titles":"Hallo word!"},{"id":11,"email_id":1,"titles":"Boris"},{"id":12,"email_id":1,"titles":"Boris"},{"id":13,"email_id":1,"titles":"dasdasda"},{"id":14,"email_id":1,"titles":"dsds"},{"id":15,"email_id":1,"titles":"Hallo word!"},{"id":16,"email_id":1,"titles":"Hallo word!"},{"id":17,"email_id":1,"titles":"Boris"},{"id":18,"email_id":1,"titles":"Hallo word!"},{"id":19,"email_id":1,"titles":"Boris"},{"id":20,"email_id":1,"titles":"Boris"},{"id":21,"email_id":1,"titles":"Hallo word!"},{"id":22,"email_id":1,"titles":"dsd"},{"id":23,"email_id":1,"titles":"Boris"},{"id":24,"email_id":1,"titles":"Hallo word!"},{"id":25,"email_id":1,"titles":"Hallo word!"},{"id":26,"email_id":1,"titles":"Hallo word!"},{"id":27,"email_id":1,"titles":"Hallo word!"},{"id":28,"email_id":1,"titles":"Hallo word!"},{"id":29,"email_id":1,"titles":"Привет"},{"id":30,"email_id":1,"titles":"ку-ку-ку"},{"id":31,"email_id":1,"titles":"sss5"},{"id":32,"email_id":1,"titles":"33"},{"id":33,"email_id":1,"titles":"Boris - 55"},{"id":34,"email_id":1,"titles":"897"},{"id":35,"email_id":1,"titles":"888888"},{"id":36,"email_id":1,"titles":"fff 4"},{"id":1,"email_id":1,"titles":"Boris 2"},{"id":2,"email_id":1,"titles":"вв"}],"fields":[{"name":"id","tableID":150987,"columnID":1,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"email_id","tableID":150987,"columnID":2,"dataTypeID":23,"dataTypeSize":4,"dataTypeModifier":-1,"format":"text"},{"name":"titles","tableID":150987,"columnID":3,"dataTypeID":1043,"dataTypeSize":-1,"dataTypeModifier":54,"format":"text"}],"_parsers":[null,null,null],"_types":{"_types":{"arrayParser":{},"builtins":{"BOOL":16,"BYTEA":17,"CHAR":18,"INT8":20,"INT2":21,"INT4":23,"REGPROC":24,"TEXT":25,"OID":26,"TID":27,"XID":28,"CID":29,"JSON":114,"XML":142,"PG_NODE_TREE":194,"SMGR":210,"PATH":602,"POLYGON":604,"CIDR":650,"FLOAT4":700,"FLOAT8":701,"ABSTIME":702,"RELTIME":703,"TINTERVAL":704,"CIRCLE":718,"MACADDR8":774,"MONEY":790,"MACADDR":829,"INET":869,"ACLITEM":1033,"BPCHAR":1042,"VARCHAR":1043,"DATE":1082,"TIME":1083,"TIMESTAMP":1114,"TIMESTAMPTZ":1184,"INTERVAL":1186,"TIMETZ":1266,"BIT":1560,"VARBIT":1562,"NUMERIC":1700,"REFCURSOR":1790,"REGPROCEDURE":2202,"REGOPER":2203,"REGOPERATOR":2204,"REGCLASS":2205,"REGTYPE":2206,"UUID":2950,"TXID_SNAPSHOT":2970,"PG_LSN":3220,"PG_NDISTINCT":3361,"PG_DEPENDENCIES":3402,"TSVECTOR":3614,"TSQUERY":3615,"GTSVECTOR":3642,"REGCONFIG":3734,"REGDICTIONARY":3769,"JSONB":3802,"REGNAMESPACE":4089,"REGROLE":4096}},"text":{},"binary":{}},"RowCtor":null,"rowAsArray":false,"_prebuiltEmptyResultObject":{"id":null,"email_id":null,"titles":null}}
+8:59:14:70 ==> [server]:  INSTALL START
+8:59:14:75 ==> [server -> listen]: Server start to listen the PORT 7070
+8:59:14:13 ==> [server]:  INSTALL 
+8:59:14:18 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:59:14:20 ==> [server]:  INSTALL уже существует
+8:59:14:21 ==> [server]:  INSTALL MIDDLE
+8:59:14:23 ==> [server]:  INSTALL Start the "Client" connection.
+8:59:15:92 ==> [server]:  INSTALL START
+8:59:15:97 ==> [server -> listen]: Server start to listen the PORT 7070
+8:59:15:30 ==> [server]:  INSTALL 
+8:59:15:33 ==> [server -> ERROR1]: INSTALL 'createDatebase' Something that wrong!
+     ERR-MEASSAGE: база данных "london" уже существует
+8:59:15:35 ==> [server]:  INSTALL уже существует
+8:59:15:36 ==> [server]:  INSTALL MIDDLE
+8:59:15:38 ==> [server]:  INSTALL Start the "Client" connection.
+8:59:15:67 ==> [server]:  INSTALL "Emails" created .
+8:59:15:69 ==> [server]:  INSTALL "Users" created .
+8:59:15:71 ==> [server]:  INSTALL "ads" created .
+8:59:15:76 ==> [server]:  INSTALL END

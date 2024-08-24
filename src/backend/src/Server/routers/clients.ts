@@ -2,7 +2,7 @@ const { Router, Request, Response, NextFunction } = require('express');
 const { Client } = require('pg');
 const {
   addNewLineSQL, selectSingleUserSQL,
-  changeValueOneCellSQL, selectOneParamQSL,
+  changeValueOneCellSQL, selectOneParamSQL,
   changeValueAllCellSQL, changeEmailSQL, dropTableLineSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
@@ -35,7 +35,7 @@ export function routerClients(routers: typeof router): typeof router {
     await log(`[server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
     await log(`[server -> router]: inlogin:sessionId  №1 =>: ${req.params.sessionId}`); // получил seessionID не схожжее с db.sessionId
-    const result = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    const result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
@@ -56,7 +56,7 @@ export function routerClients(routers: typeof router): typeof router {
     /* --------- Below, we is get the data of only single user --------- */
     const sessionId = req.params.sessionId;
     await log(`[server -> router]: DELETE  №1 Receive data: ${sessionId} => table:'users', column: 'session_id', value: ${sessionId}`);
-    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     await log(`[server -> router]: DELETE  №2: Length => ${JSON.stringify(respArr)}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
@@ -79,14 +79,14 @@ export function routerClients(routers: typeof router): typeof router {
     await log(`[server -> router]: PUT Body: ${JSON.stringify(clientData)}`);
     /* --------- Below, we is get the data of only single user --------- */
     await log(`[server -> router]: PUT 3: ${sessionId}`);
-    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     await log(`[server -> router]: PUT Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
 
     sendNotFound(res, respArr.rows);
     await log(`[server -> router]: PUT Received data of db. Step 1/3 Email ID =>: ${JSON.stringify(respArr.rows[0])}`);
-    respArr = await clients(selectOneParamQSL, { table: 'Emails', column: 'id', value: respArr.rows[0].email_id });
+    respArr = await clients(selectOneParamSQL, { table: 'Emails', column: 'id', value: respArr.rows[0].email_id });
     await log(`[server -> router]: PUT Received data of db. Step 2/3. Length =>: ${(respArr.rows).length}`);
     const answ2 = sendNotFound(res, respArr.rows);
     if (typeof answ2 === 'boolean') return;

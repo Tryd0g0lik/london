@@ -113,19 +113,14 @@ export async function get(body_: string,
   // paramsCopy['headers'] = {
   // // 'X-CSRFToken': getCookie('csrftoken') as string,
   //   'Content-Type': 'application/json'
-  // };
+  // };"/api/v1/clients/ads/all/379a2610-865a-400c-90cb-7591df7bb928"
   // paramsCopy.mode = 'no-cors';
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
-  const registrateTimout = setTimeout(() => {
-    /* Somewhing what wrong with a feth's request */
-    return false
-  }, REACT_APP_SET_TTIMOUT as number);
   const answer = await fetch(url, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' }
   });
-  clearTimeout(registrateTimout);
   if (answer.ok) {
     const dataJson = answer.json();
     return dataJson

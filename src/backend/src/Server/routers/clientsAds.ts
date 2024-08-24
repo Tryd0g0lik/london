@@ -3,7 +3,7 @@ const { Client } = require('pg');
 
 const {
   addNewAdsLineSQL,
-  selectOneParamQSL,
+  selectOneParamSQL,
   changeAdsSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
@@ -29,7 +29,7 @@ export function routerClientsAds(routers: typeof router): typeof router {
 
     /* --------- Below, we is get the data of only single user --------- */
     await log_(`[server -> router -> ads]: POST №3: ${sessionId}`);
-    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     let resp = sendNotFound(res, respArr.rows);
     if (typeof resp === 'boolean') {
       res.status(404).json({ message: 'Not Ok' });
@@ -57,16 +57,17 @@ export function routerClientsAds(routers: typeof router): typeof router {
     await log_(`[server -> router -> ads]: GET ALL №1 sessionId =>: ${sessionId}`);
     /* --------- Below, we is get the data of only single user --------- */
     await log_(`[server -> router -> ads]: GET ALL №2: ${sessionId}`);
-    let respArr = await clients(selectOneParamQSL, { table: 'users', column: 'session_id', value: sessionId });
+    let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     const resp = sendNotFound(res, respArr.rows);
     if (typeof resp === 'boolean') {
+      await log_(`[server -> router -> ads]: GET ALL №2.1: Here you need to check the cookie key  ${sessionId}`);
       res.status(404).json({ message: 'Not Ok' });
       return false;
     };
     /* --------- Below, we is to get the all data from only the one user  --------- */
     await log_(`[server -> router -> ads]: GET ALL №3 length => ${respArr.rows.length}`);
     const emailId = respArr.rows[0].email_id;
-    respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'email_id', value: emailId });
+    respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: emailId });
     log_(`[server -> router -> ads]: POST  №4 =>: ${JSON.stringify(respArr)}`);
     res.status(200).json({ message: 'OK', positions: respArr.rows });
   });
@@ -80,8 +81,8 @@ export function routerClientsAds(routers: typeof router): typeof router {
     await log_(`[server -> router -> ads]: PUT №1 sessionId =>: ${sessionId}, message: =>  ${JSON.stringify(clientData)}`);
     /* --------- Below, we is get the data of only single user --------- */
     await log_(`[server -> router -> ads]: PUT №2: ${String(indexMesseges)}`);
-    // let respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'id', value: indexMesseges });
-    // // let respArr = await clients(selectOneParamQSL, { table: 'ads', column: 'id', value: Number(indexMesseges) });
+    // let respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'id', value: indexMesseges });
+    // // let respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'id', value: Number(indexMesseges) });
     // let resp = sendNotFound(res, respArr.rows);
     // if (typeof resp === 'boolean') {
     //   res.status(404).json({ message: 'Not Ok' });

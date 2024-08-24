@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { CorrectorBasisRedactField, basisRedactField } from '@Services/fields';
 import { handlerAdsFC, loaderContents } from './handlers/handlerAds';
+import { checkerCookieKey } from '@Services/coockieSessionId';
 // const line = 0;
 /* --------------- Here is we working under an ADS ------------------ */
 export function ProfileAdsFC(): React.JSX.Element {
@@ -11,7 +12,7 @@ export function ProfileAdsFC(): React.JSX.Element {
   const [labelHtml, setLabelHtml] = useState<HTMLElement>(p);
 
   useEffect(() => {
-
+    checkerCookieKey();
     /* ---- This is a row/line ---- */
     const newLabelHtml = CorrectorBasisRedactField(basisRedactField, { dataNamex: 'ads', text: 'Напиши свое доброе дело' });
     setLabelHtml(newLabelHtml);

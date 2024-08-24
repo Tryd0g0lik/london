@@ -177,12 +177,12 @@ interface Propse {
   table: 'users' | 'emails'
 }
 /**
- * Sitantax: `clients(selectOneParamQSL, { column: 'session_id', value: params.sessionId })`
+ * Sitantax: `clients(selectOneParamSQL, { column: 'session_id', value: params.sessionId })`
  * @param column : cell
  * @param value : value
  * @returns single object
  */
-export function selectOneParamQSL(props: Propse): string {
+export function selectOneParamSQL(props: Propse): string {
   const selectOneParam = `SELECT * FROM ${props.table} WHERE  ${props.column} = '${props.value}';`;
   return selectOneParam;
 }
