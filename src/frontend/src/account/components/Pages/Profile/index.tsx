@@ -16,6 +16,9 @@ export function ProfileFC(): React.JSX.Element {
   return <>
     <NavFC />
     <div className='profile form'>
+      <div className='myFriend form '>
+        <button type='submit' className="btn btn-outline btn-accent">Добавить в друзья</button>
+      </div>
       <div data-namex='firstName' className='profilename profile-FirstName'>
         <span>First name</span>
         <input type="checkbox" className="switchs toggle toggle-xs" defaultChecked />

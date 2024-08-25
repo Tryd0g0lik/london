@@ -31,7 +31,6 @@ export function ProfileAdsFC(): React.JSX.Element {
         <button type='submit' className="btn btn-outline btn-accent">Создать строчку</button>
     </div>
       <div className='profile form form-ads'>
-
     </div>
     </section>
     <div className='profile form list-ads'></div>

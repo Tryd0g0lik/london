@@ -35,7 +35,7 @@ div.form {
 }
 
 /* Loader */
-#root.active a[href="/registration"],
+/* #root.active a[href="/registration"], */
 .loading {
   display: none;
 }
@@ -161,4 +161,9 @@ label.input.input-bordered.flex.items-center.gap-2 {
 .list-ads>div button {
   color: aqua;
   font-size: 0.8em;
+}
+
+/* frineds */
+.profile>div.myFriend {
+  width: 100%;
 }
