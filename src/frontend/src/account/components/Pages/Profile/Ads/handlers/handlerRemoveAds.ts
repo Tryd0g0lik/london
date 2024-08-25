@@ -1,6 +1,5 @@
 import { remove } from '@Services/fetches';
 import { getCookie } from '@Services/coockieSessionId';
-import { messageForUser } from '@Services/messengerForm';
 
 export async function handlerEventRemoveAds(event: MouseEvent): Promise<boolean> {
   // let indexOneMessege: string | null = null;
