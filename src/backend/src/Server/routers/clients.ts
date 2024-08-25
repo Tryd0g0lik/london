@@ -212,18 +212,18 @@ export function routerClients(routers: typeof router): typeof router {
   routers.post('/api/v1/inlogin/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     const clientData = req.body as unknown as typeof propsForClient;
     const cookie = clientData.cookie;
-    const sessionId = req.params.sessionId;
+    const sessionInd = req.params.sessionId;
     await log(`[server -> router]: inlogin:sessionId: ${JSON.stringify(clientData)}`);
 
-    await log(`[server -> router]: inlogin:sessionId cookie: ${sessionId} email: ${clientData.email}`);
+    await log(`[server -> router]: inlogin:sessionId cookie: ${sessionInd} email: ${clientData.email}`);
     const respArr = await clients(selectSingleUserSQL, { email: clientData.email });
     await log(`[server -> router]: inlogin:sessionId №1 Received data where is a length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
-    await log(`[server -> router]: inlogin:sessionId №1.0  =>: ${JSON.stringify({ tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionId })}`);
-    clients(changeValueOneCellSQL, { tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionId });
+    await log(`[server -> router]: inlogin:sessionId №1.0  =>: ${JSON.stringify({ tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionInd })}`);
+    clients(changeValueOneCellSQL, { tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionInd });
 
-    respArr.rows[0].session_id = sessionId;
+    respArr.rows[0].session_id = sessionInd;
     await log(`[server -> router]: inlogin:sessionId №2
       Received data where is a length =>: DB.password: ${(respArr.rows[0].password)}
       clientData.password ${clientData.password}`);
@@ -233,9 +233,9 @@ export function routerClients(routers: typeof router): typeof router {
     await log(`[server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: ${JSON.stringify(respArr3)}`);
 
     await log(`[server -> router]: inlogin:sessionId №3 Password. RESULT =>: ${JSON.stringify(respArr3)}`);
-    res.status(200).json({ massage: 'OK', sessionId: sessionId });
+    res.status(200).json({ massage: 'OK', sessionId: sessionInd });
     await log(`[server -> router]: inlogin:sessionId Message was sent a 200code .
-      That SessionID: ${sessionId}`);
+      That SessionID: ${sessionInd}`);
     return false;
   });
   // routers.get('/api/v1/clients/', (req: Request, res: Response) => {

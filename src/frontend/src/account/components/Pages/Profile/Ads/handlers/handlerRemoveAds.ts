@@ -23,9 +23,7 @@ export async function handlerEventRemoveAds(event: MouseEvent): Promise<boolean>
   }
   const result = await remove(`/api/v1/clients/ads/${atribDataNumberx}`);
   if (result === false) {
-    const p = messageForUser(1, ['Сохранился', 'Не удален']);
     /* here is a not save */
-    // currentTarget.insertAdjacentHTML('afterend', p.outerHTML);
     return false;
   }
 
