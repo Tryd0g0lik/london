@@ -64,6 +64,7 @@ export function routerClients(routers: typeof router): typeof router {
     const userId = respArr.rows[0].id;
     await log(`[server -> router]: DELETE  №3: Before delete from the "Users" ID => ${userId}`);
     respArr = await clients(dropTableLineSQL, { table: 'users', index: userId }, false, true);
+    respArr = await clients(dropTableLineSQL, { table: 'ads', index: emailId }, false, true);
     await log(`[server -> router]: DELETE  №3.1: Before delete from the "Emails" ID => ${emailId}`);
     respArr = await clients(dropTableLineSQL, { table: 'emails', index: emailId }, false, true);
     await log('[server -> router]: DELETE  №4: Removed from the "Users"');
@@ -140,7 +141,7 @@ export function routerClients(routers: typeof router): typeof router {
   });
 
   /**
-   * This is path fro a start/zero/basis authorization's mode.
+   * This is path for a start/zero/basis authorization's mode.
    */
   routers.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
@@ -183,58 +184,58 @@ export function routerClients(routers: typeof router): typeof router {
       return false;
     }
     await log(`[server -> router]: inlogin Filter LENGTH2 =>: ${(result.length)}`);
-    // making the aictve status in db
+    // macking the aictve status in db
     await client.query(changeValueOneCellSQL('Users', 'is_active', result[0].id, true));
     await log(`[server -> router]: inlogin Filter LENGTH3 =>: ${(cookie.sessionId)}`);
     props.sessionId = cookie.sessionId;
-    // making the aictve status in db
-    if (((typeof (result[0].session_id) === 'string' &&
+    // endMacking the aictve status in db
+    if (((result.length === 0) || (typeof (result[0].session_id) === 'string' &&
       (result[0].session_id).length === 0) ||
       result[0].session_id === null)) {
       await client.query(changeValueOneCellSQL('Users', 'session_id', result[0].id, cookie.sessionId));
     } else {
       props.sessionId = result[0].session_id;
     }
-
-    await log(`[server -> router]: inlogin Filter LENGTH4 =>: ${(cookie.sessionId)}`);
+    await log(`[server -> router]: inlogin props.sessionId =>: ${(props.sessionId)}`);
     client.end();
     /* --------------- if we is find the use in db ---------------  */
 
     await log(`[server -> router]: inlogin That User is found: ${result[0].first_name}`);
-    await log(`[server -> router]: inlogin That SessionID: ${props.sessionId}`);
     // Response is sent
     res.status(statusCode).json(props);
   });
 
   /**
-   * From an Authorization's form with the request was received.
+   * From an Authorization's form with the request was received. HEre is \
+   * we received the 'sessionId', 'emails', 'password'
    */
   routers.post('/api/v1/inlogin/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     const clientData = req.body as unknown as typeof propsForClient;
     const cookie = clientData.cookie;
+    const sessionId = req.params.sessionId;
     await log(`[server -> router]: inlogin:sessionId: ${JSON.stringify(clientData)}`);
 
-    await log(`[server -> router]: inlogin:sessionId cookie: ${cookie.sessionId} email: ${clientData.email}`);
+    await log(`[server -> router]: inlogin:sessionId cookie: ${sessionId} email: ${clientData.email}`);
     const respArr = await clients(selectSingleUserSQL, { email: clientData.email });
     await log(`[server -> router]: inlogin:sessionId №1 Received data where is a length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
-    await log(`[server -> router]: inlogin:sessionId №1.0  =>: ${JSON.stringify({ tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: cookie.sessionId })}`);
-    clients(changeValueOneCellSQL, { tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: cookie.sessionId });
+    await log(`[server -> router]: inlogin:sessionId №1.0  =>: ${JSON.stringify({ tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionId })}`);
+    clients(changeValueOneCellSQL, { tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionId });
 
-    respArr.rows[0].session_id = cookie.sessionId;
+    respArr.rows[0].session_id = sessionId;
     await log(`[server -> router]: inlogin:sessionId №2
       Received data where is a length =>: DB.password: ${(respArr.rows[0].password)}
       clientData.password ${clientData.password}`);
-
+    /* line, bolw is a checker for password */
     const respArr3 = await (respArr.rows).filter(((item: typeof propsForClient) => item.password === clientData.password));
     await log(`[server -> router]: inlogin:sessionId Filter LENGTH =>: ${(respArr3.length)}`);
     await log(`[server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: ${JSON.stringify(respArr3)}`);
 
     await log(`[server -> router]: inlogin:sessionId №3 Password. RESULT =>: ${JSON.stringify(respArr3)}`);
-    res.status(200).json({ massage: 'OK', sessionId: respArr3[0].session_id });
+    res.status(200).json({ massage: 'OK', sessionId: sessionId });
     await log(`[server -> router]: inlogin:sessionId Message was sent a 200code .
-      That SessionID: ${respArr3[0].session_id}`);
+      That SessionID: ${sessionId}`);
     return false;
   });
   // routers.get('/api/v1/clients/', (req: Request, res: Response) => {

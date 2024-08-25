@@ -65,7 +65,7 @@ const handlerFormAuthorizator = async (event: React.MouseEvent): Promise<boolean
   const result = messageForUser(0, ['Вы вошли', 'Что-то не получилось']);
   form.insertAdjacentHTML('afterend', result.outerHTML);
 
-  responce = await add(bodyStr, `/api/v1/inlogin/${cookie.sessionId}`) as { message: string, sessionId?: string };
+  responce = await add(bodyStr, `/api/v1/inlogin/${responce.sessionId}`) as { message: string, sessionId?: string };
   if (typeof responce === 'boolean') {
     //It new session key is  insade to the browser
     setSessionIdInCookie(cookie.sessionId);

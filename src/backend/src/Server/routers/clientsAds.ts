@@ -4,7 +4,8 @@ const { Client } = require('pg');
 const {
   addNewAdsLineSQL,
   selectOneParamSQL,
-  changeAdsSQL
+  changeAdsSQL,
+  dropTableLineSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
 const { getCookie } = require('../getCookies');
@@ -98,6 +99,14 @@ export function routerClientsAds(routers: typeof router): typeof router {
     };
     await log_(`[server -> router -> ads]: PUT №3 length: ${respArr.rows.length}`);
     res.status(200).json({ message: 'OK' });
+  });
+  routers.delete('/api/v1/clients/ads/:index', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
+    await log_(`[server -> router -> ads]: DELETE  That request =>: ${req}`);
+    // const clientData = req.body;
+    const ind = req.params.index;
+    await clients(dropTableLineSQL, { table: 'ads', index: ind }, false, true);
+    const props = { message: 'Removed' };
+    res.status(200).json(props);
   });
   return routers;
 };

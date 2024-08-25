@@ -4,6 +4,7 @@ import { messageForUser } from '@Services/messengerForm';
 import { get } from '@Services/fetches';
 import { createDivLableContainer } from '@Services/fields';
 import { handlerRedactionOfButton } from './handlerRedactionAds';
+import { handlerEventRemoveAds } from './handlerRemoveAds';
 /** The download aLL positions.
  * Here is we download all positions from the db
  * @param elemLabelHtml: HTMLLabelElement. It's the input htmla-tage of entrypoint. It giving \
@@ -65,6 +66,18 @@ export async function loaderContents(elemLabelHtml: HTMLLabelElement): Promise<v
     throw new Error('[profile -> ads -> handlerClickOfButton]: Something whtat wrong! ".profile.form.list-ads"');
   };
 
-  (divHtml as HTMLDivElement).removeEventListener('click', (event: MouseEventInit) => handlerRedactionOfButton(elemLabelHtml)(event as MouseEvent));
-  (divHtml as HTMLDivElement).addEventListener('click', (event: MouseEventInit) => handlerRedactionOfButton(elemLabelHtml)(event as MouseEvent));
+  /* ---- Below is for event of redaction ---- */
+  (divHtml as HTMLDivElement).removeEventListener('click', (event: MouseEventInit) => {
+    handlerRedactionOfButton(elemLabelHtml)(event as MouseEvent);
+    handlerEventRemoveAds(event as MouseEvent);
+  });
+
+  (divHtml as HTMLDivElement).addEventListener('click', (event: MouseEventInit) => {
+    handlerRedactionOfButton(elemLabelHtml)(event as MouseEvent);
+    console.log('УДАЛИТИЬ 0');
+    handlerEventRemoveAds(event as MouseEvent);
+  });
+  /* ---- Below is for event od remove/delete a single/one line ---- */
+  // (divHtml as HTMLDivElement).removeEventListener('click', handlerEventRemoveAds);
+  // (divHtml as HTMLDivElement).addEventListener('click', handlerEventRemoveAds);
 }
