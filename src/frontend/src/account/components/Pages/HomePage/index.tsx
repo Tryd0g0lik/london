@@ -8,6 +8,8 @@ export function HomePageFC(): JSX.Element {
   });
   return (<>
     <NavFC />
-    <div className='list-frends'></div>
+    <section className='profilesAll'>
+      <div className='list-profiles'></div>
+    </section>
   </>)
 }

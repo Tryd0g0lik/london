@@ -231,6 +231,7 @@ export function addNewAdsLineSQL(props: Put): string {
     titles,
     table
   } = props;
+
   const escapedTitles = titles ? titles.replace(/'/g, "''") : '';
   const createNewLine = `INSERT
   INTO ${table} (id, email_id, titles)
@@ -247,4 +248,9 @@ export function changeAdsSQL(props: Put): string {
   SET titles = '${titles}'
   WHERE id = '${index}' RETURNING *;`;
   return changeEmail;
+}
+
+export function loaderAllProfilesSQL(): string {
+  const loaderProfiles = 'SELECT * from users';
+  return loaderProfiles;
 }

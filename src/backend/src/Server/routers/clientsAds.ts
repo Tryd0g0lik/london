@@ -12,11 +12,6 @@ const { getCookie } = require('../getCookies');
 const { checkerDubleEmails } = require('../validators');
 const { propsForClient, sendNotFound, ClientData } = require('./handlers');
 const log_ = require('../logs/index');
-const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
-const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
-const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as string | unknown) || 'london';
-const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
-const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 export function routerClientsAds(routers: typeof router): typeof router {
   /* --------- Here is add a new ads's single line  --------- */

@@ -22,6 +22,7 @@ interface Props {
   isActivated?: boolean
   sendMessage?: boolean
   password?: string
+  seessionId: string
 }
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
