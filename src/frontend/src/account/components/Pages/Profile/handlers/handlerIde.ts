@@ -1,9 +1,11 @@
 // import React from 'react';
 import { FieldInnerHtml, Inpt } from '@Interfaces';
-import { put } from '@Services/fetches';
+import { put, add } from '@Services/fetches';
 import { messageForUser } from '@Services/messengerForm';
 import { basisRedactField } from '@Services/fields';
+import { getCookie } from '@Services/coockieSessionId';
 import { Input } from './oop/inputForm';
+
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *
@@ -21,7 +23,11 @@ export async function handlerIdeFC(): Promise<boolean> {
     return false;
   }
   Array.from(nameHtmlArr).forEach((item, index) => {
-
+    if (!item.hasAttribute('data-namex')) {
+      (item as HTMLDivElement).removeEventListener('click', handlerButtonForFriends);
+      (item as HTMLDivElement).addEventListener('click', handlerButtonForFriends);
+      return false;
+    }
     (item as HTMLDivElement).removeEventListener('click', helperForHandlerSwhitches());
     const clonedItem = item.cloneNode(true) as HTMLDivElement;
     clonedItem.addEventListener('click', helperForHandlerSwhitches());
@@ -142,18 +148,6 @@ the new html's  <input>-tage */
     } else {
       (elementArr[index] as HTMLDivElement).innerHTML = '';
     }
-    /* ------ Setimeout -------
-    This's a place when we need to get an atribute 'data-namex' from
-    parent html's tage */
-
-
-
-
-    // namexChecker(item as HTMLElement);
-    // }
-
-
-
   });
 };
 
@@ -233,10 +227,7 @@ export function handlerEventOfInputPUT(props: Inpt): (event: KeyboardEvent) => P
     /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
     const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('data-namex') : '';
     JSON.parse(body as string).typeField = atributeDataNameX as string;
-    // const body_ = body;
     /* --------------- Here us a cookie is to get ------------------ */
-    // const sessionId = getCookie('sessionId');
-
     const label = (target.parentElement as HTMLElement);
     const path = `${pathname}${sessionId}`;
     const result = await put(body as string, path)
@@ -246,12 +237,40 @@ export function handlerEventOfInputPUT(props: Inpt): (event: KeyboardEvent) => P
       label.insertAdjacentHTML('afterend', p.outerHTML);
       return false;
     }
-
-    // /* here is found */
-    // const p = messageForUser(0, ['Сохранился', 'Не сохранился'])
-    // label.insertAdjacentHTML('afterend', p.outerHTML);
-
-
     return true;
   }
+}
+
+/* --------------- Below is a function/handler for button 'Добавить в друзья'   ------------------ */
+async function handlerButtonForFriends(event: MouseEvent): Promise<boolean> {
+  if ((((event).target as HTMLButtonElement).type) &&
+    (((event).target as HTMLButtonElement).type).toLowerCase() !== 'submit' &&
+    (((event).target as HTMLButtonElement).outerText) !== 'Добавить в друзья') {
+    return false;
+  }
+
+  const sessionInd = getCookie('sessionId');
+  const currentPathname = window.location.pathname;
+  const regex = /^\d+$/;
+  const arr = currentPathname.split('/');
+  if ((arr.length === 0) ||
+    !(regex.test(arr[arr.length - 1]))) {
+    return false;
+  }
+  const cookie = {
+    sessionId: sessionInd
+  };
+  const bodyStr = JSON.stringify({
+    clieetnsId: arr[arr.length - 1],
+    references: currentPathname,
+    cookie
+  });
+  // отправляем в базу данных
+  let responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
+  if (!responce) {
+    console.error('[handlerButtonForFriends]: New friend not is added');
+    return false;
+  };
+  return true;
+
 }

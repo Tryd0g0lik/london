@@ -1,6 +1,6 @@
 const http = require('http');
 const pg = require('pg');
-const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL, createTableAdsSQL } = require('../sql-functions/index');
+const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL, createTableAdsSQL, createAddFriendsSQL } = require('../sql-functions/index');
 const lg = require('../logs/index');
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
@@ -101,6 +101,19 @@ async function createDBTable(): Promise<boolean> {
       await lg('[server]:  INSTALL "Users" =>"уже существует"');
     } else {
       await lg(`[server -> ERROR]: 'Users' Something that wrong!
+     ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
+    }
+  };
+
+  try {
+    /* ------ The table Friends ------ */
+    await client.query(createAddFriendsSQL());
+    await lg('[server]:  INSTALL "Friends" created .');
+  } catch (err: unknown) {
+    if ((String((err as ErrorEvent).message)).includes('уже существует')) {
+      await lg('[server]:  INSTALL "Frineds" =>"уже существует"');
+    } else {
+      await lg(`[server -> ERROR]: 'Friends' Something that wrong!
      ERR-MEASSAGE: ${(err as ErrorEvent).message}`);
     }
   };

@@ -14,6 +14,20 @@ export function createTebleEmailsSQL(): string {
   return createTEmails;
 };
 
+export function createAddFriendsSQL(): string {
+  const getFriebds: string = `
+    CREATE TABLE IF NOT EXISTS friends (
+      id SERIAL PRIMARY KEY,
+      links VARCHAR(50) NOT NULL UNIQUE,
+      profiles_id INTEGER NOT NULL,
+      friends_id INTEGER NOT NULL,
+      FOREIGN KEY (profiles_id) REFERENCES users(id),
+      FOREIGN KEY (friends_id) REFERENCES users(id),
+      UNIQUE (profiles_id, friends_id)
+    );`;
+  return getFriebds;
+};
+
 /**
  * @param email_id: integer is the table emails's id.
  * @param first_name: string. It has default value  'NULL'.
@@ -213,15 +227,35 @@ export function addNewAdsLineSQL(props: typeof Put): string {
   ) RETURNING * ;`;
   return createNewLine;
 };
+
 export function changeAdsSQL(props: typeof Put): string {
   const { index, titles } = props;
   const changeEmail = `UPDATE ads
   SET titles = '${titles}'
   WHERE id = '${index}' RETURNING *;`;
   return changeEmail;
-}
+};
 
 export function loaderAllProfilesSQL(): string {
   const loaderProfiles = 'SELECT * from users';
   return loaderProfiles;
-}
+};
+
+/* ---- Here is add new friend ---- */
+export function addNewFriendSQL(props: typeof Put): string {
+  const {
+    references,
+    myId,
+    friendId
+  } = props;
+
+  const createNewLine = `INSERT
+  INTO friends (id, links, profiles_id, friends_id)
+  values (
+    default,
+    '${references}',
+    ${myId},
+    ${friendId}
+  ) RETURNING * ;`;
+  return createNewLine;
+};

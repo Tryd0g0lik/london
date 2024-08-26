@@ -88,7 +88,10 @@ async function handlerEnterofInput(event: KeyboardEvent): Promise<boolean> {
   /* ---- Here delete the input field and public the new line, below ---- */
 
   const oneLine = (result as Ads).position;
-  const divHtml = createDivLableContainer({ titles: (oneLine as OneLine).titles, id: (oneLine as OneLine).id, email_id: (oneLine as OneLine).email_id as number });
+  const divHtml = createDivLableContainer({
+    titles: (oneLine as OneLine).titles, id: (oneLine as OneLine).id, email_id: (oneLine as OneLine).email_id as number,
+    firstName: ''
+  });
 
   const divClassListAds = (divLable.parentElement); //?.cloneNode(true);
   divLable.remove();

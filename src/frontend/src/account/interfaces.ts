@@ -4,6 +4,7 @@ export enum Pages {
   Regisration = '/registration',
   InLogin = '/inlogin',
   Profile = '/profile',
+  Profile2 = '/profile/:profileIndex',
   ProfilePassworChanges = '/profile/password_change',
   Delete = '/profile/profile_dalete',
   Ads = '/profile/ads'

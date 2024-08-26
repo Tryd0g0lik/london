@@ -4,7 +4,8 @@ const { Props } = require('../interfaces');
 const {
   addNewLineSQL, selectSingleUserSQL,
   changeValueOneCellSQL, selectOneParamSQL,
-  changeValueAllCellSQL, changeEmailSQL, dropTableLineSQL
+  changeValueAllCellSQL, changeEmailSQL, dropTableLineSQL,
+  addNewFriendSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
 // const { getCookie } = require('../getCookies');
@@ -20,17 +21,32 @@ const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string |
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
 export function routerClients(routers: typeof router): typeof router {
-  routers.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: ${req}`);
+  /* --------- Below, is adding a new friend --------- */
+  routers.post('/api/v1/clients/:clientsId/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: ADD FRIENDS That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
+    const clientsId = req.params.clientsId;
+    const reference = req.body.references;
     // получил seessionID не схожжее с db.sessionId
-    await log(`[server -> router]: inlogin:sessionId  №1 =>: ${req.params.sessionId}`);
-    const result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
-    log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
-    const resp = sendNotFound(res, result.rows);
+    await log(`[server -> router]: ADD FRIENDS  №1 =>:${reference} / ${clientsId} / ${req.params.sessionId}`);
+    let result = await clients(selectOneParamSQL, { table: 'users', column: 'id', value: Number(clientsId) });
+    log(`[server -> router]: ADD FRIENDS  №2 Profile ID =>: ${JSON.stringify(result)}`);
+    let resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
-
-    await log(`[server -> router]: inlogin:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    const newMyFriendId = result.rows[0].id;
+    result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
+    log(`[server -> router]: ADD FRIENDS №3 ID =>: ${JSON.stringify(result)}`);
+    resp = sendNotFound(res, result.rows);
+    if (typeof resp === 'boolean') return;
+    const myInd = result.rows[0].id;
+    result = await clients(addNewFriendSQL, { references: reference, myId: myInd, friendId: newMyFriendId });
+    resp = sendNotFound(res, result.rows);
+    if (typeof resp === 'boolean') {
+      res.status(400).json({
+        message: 'Not OK'
+      });
+      return false;
+    };
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,
@@ -38,7 +54,54 @@ export function routerClients(routers: typeof router): typeof router {
       lastName: result.rows[0].last_name,
       password: result.rows[0].password
     });
+  });
+  /* --------- Below, is receiving datas for a profile page. --------- */
+  routers.get('/api/v1/clients/:clientsId/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin:clientsId  That request was received from Profile 1 =>: ${req}`);
+    const sessionId = req.params.sessionId;
+    const clientsId = req.params.clientsId;
+    // получил seessionID не схожжее с db.sessionId
+    await log(`[server -> router]: inlogin:sessionId  №1 =>:${clientsId} / ${req.params.sessionId}`);
+    const result = await clients(selectOneParamSQL, { table: 'users', column: 'id', value: Number(clientsId) });
+    log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
+    const resp = sendNotFound(res, result.rows);
+    if (typeof resp === 'boolean') return;
+
+    await log(`[server -> router]: inlogin:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    /* ---- NOTE ---- */
+    if (sessionId !== result.rows[0].session_id) {
+      res.status(200).json({
+        message: 'OK',
+        id: result.rows[0].id,
+        firstName: result.rows[0].first_name,
+        lastName: result.rows[0].last_name,
+        password: result.rows[0].password
+      });
+    } else {
+      res.status(200).json({});
+    }
     await log('[server -> router]: inlogin:sessionId №4 That Profile SENDED');
+    return true;
+  });
+  routers.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
+    await log(`[server -> router]: inlogin2:sessionId  That request was received from Profile 1 =>: ${req}`);
+    const sessionId = req.params.sessionId;
+    // получил seessionID не схожжее с db.sessionId
+    await log(`[server -> router]: inlogin2:sessionId  №1 =>: ${req.params.sessionId}`);
+    const result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
+    log(`[server -> router]: inlogin2:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
+    const resp = sendNotFound(res, result.rows);
+    if (typeof resp === 'boolean') return;
+
+    await log(`[server -> router]: inlogin2:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
+    res.status(200).json({
+      message: 'OK',
+      id: result.rows[0].id,
+      firstName: result.rows[0].first_name,
+      lastName: result.rows[0].last_name,
+      password: result.rows[0].password
+    });
+    await log('[server -> router]: inlogin2:sessionId №4 That Profile SENDED');
     return true;
   });
   routers.delete('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {

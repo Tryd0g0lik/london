@@ -32,6 +32,10 @@ const Router = createBrowserRouter([
     element: <ProfileFC />
   },
   {
+    path: Pages.Profile2,
+    element: <ProfileFC />
+  },
+  {
     path: Pages.Delete,
     element: <ProfileRemoveFC />
   },

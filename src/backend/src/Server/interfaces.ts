@@ -35,6 +35,9 @@ export interface propsForClient {
   readonly email?: string
   readonly firstName?: string
   readonly lastName?: string
+  readonly references?: string
+  readonly myId?: string
+  readonly friendId?: string
   passwords?: string
   password?: string
   cookie?: { sessionId: string }

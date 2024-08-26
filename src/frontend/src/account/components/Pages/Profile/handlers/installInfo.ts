@@ -8,8 +8,20 @@ export async function infoLoader(): Promise<boolean> {
     return false;
   }
 
+  const currentPathname = window.location.pathname;
+  const regex = /^\d+$/;
+  const arr = currentPathname.split('/');
+
+  let clientIndex = 'Null';
+  if (arr.length > 1 &&
+    regex.test(arr[arr.length - 1])) {
+    clientIndex = arr[arr.length - 1];
+  }
   /* ---- Here is data received from the db ---- */
-  const result = await get(JSON.stringify({}), `/api/v1/clients/${sessionId}`) as ResultType;
+
+  const result = await get(JSON.stringify({}), (clientIndex === 'Null')
+    ? `/api/v1/clients/${sessionId}`
+    : `/api/v1/clients/${clientIndex}/${sessionId}`) as ResultType;
   if ((typeof result) === 'boolean') {
     return false;
   }
@@ -20,7 +32,7 @@ export async function infoLoader(): Promise<boolean> {
   };
 
 
-
+  if (result.id !== undefined) {
   const index = String(result.id as number);
   const name = result.firstName as string;
   const lastName = result.lastName as string;
@@ -29,6 +41,9 @@ export async function infoLoader(): Promise<boolean> {
   (profile as HTMLDivElement).dataset.index = index;
   d.innerHTML = name;
   d2.innerHTML = lastName;
+  } else {
+    profile?.remove();
+  }
 
   return true;
 }

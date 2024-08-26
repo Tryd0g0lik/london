@@ -1,15 +1,41 @@
 import React, { useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
-import { checkerCookieKey } from '@Services/coockieSessionId';
+import { checkerCookieKey, checkCookieExists } from '@Services/coockieSessionId';
 import { infoLoader } from './handlers/installInfo';
 import { handlerIdeFC } from './handlers/handlerIde'
 export function ProfileFC(): React.JSX.Element {
 
   useEffect((): () => void => {
-    infoLoader();
-    checkerCookieKey();
+
+    const funAsync = async (): Promise<boolean> => {
+      infoLoader();
+      checkerCookieKey();
+      if (!checkCookieExists('sessionId')) {
+        return false;
+      }
+
+      const currentPathname = window.location.pathname;
+      const regex = /^\d+$/;
+      const arr = currentPathname.split('/');
+      if (arr.length === 0) {
+        return false;
+      }
+
+      if (regex.test(arr[arr.length - 1])) {
+        const divHtml = document.querySelector('.myFriend');
+        const buttonHtml = document.createElement('button');
+        buttonHtml.type = 'submit';
+        buttonHtml.className = 'btn btn-outline btn-accent';
+        buttonHtml.innerText = 'Добавить в друзья';
+        divHtml?.appendChild(buttonHtml);
+      }
+
+      return false;
+    }
+
     return (): void => {
       handlerIdeFC();
+      funAsync();
     }
   }, []);
 
@@ -17,7 +43,6 @@ export function ProfileFC(): React.JSX.Element {
     <NavFC />
     <div className='profile form'>
       <div className='myFriend form '>
-        <button type='submit' className="btn btn-outline btn-accent">Добавить в друзья</button>
       </div>
       <div data-namex='firstName' className='profilename profile-FirstName'>
         <span>First name</span>
