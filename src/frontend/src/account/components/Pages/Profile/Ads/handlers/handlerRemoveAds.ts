@@ -28,6 +28,7 @@ export async function handlerEventRemoveAds(event: MouseEvent): Promise<boolean>
 
   console.log('УДАЛИТИЬ 3', atribDataNumberx);
   divHtml.remove();
+
   return true;
 
 }
