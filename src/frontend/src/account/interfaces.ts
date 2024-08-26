@@ -55,9 +55,11 @@ export interface Inpt {
 }
 
 export interface OneLine {
+  firstName: string
   titles?: string
   id: number
   email_id: number
+  first_name?: string
 }
 interface Rows {
   rows: OneLine[]

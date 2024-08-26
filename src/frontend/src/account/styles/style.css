@@ -141,9 +141,7 @@ ul {
   ;
 }
 
-label.input.input-bordered.flex.items-center.gap-2 {
-  width: 430px;
-}
+.list-profiles .profile,
 .profile.form.list-ads>div {
   display: flex;
   flex-wrap: wrap;
@@ -151,6 +149,10 @@ label.input.input-bordered.flex.items-center.gap-2 {
   width: 100%;
   gap: 0 15px;
   justify-content: space-between;
+}
+.list-profiles .profile,
+label.input.input-bordered.flex.items-center.gap-2 {
+  width: 430px;
 }
 .profile.form.list-ads>div div {
   display: flex;

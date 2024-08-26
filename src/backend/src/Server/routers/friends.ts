@@ -17,14 +17,14 @@ export function routerFriends(routers: typeof router): typeof router {
     let respArr = await clients(loaderAllProfilesSQL);
 
     await log(`[server -> router -> friends]: GET Friend ALL Counter ${respArr.rows.length}`);
-    if ((respArr.rows.length > 0) && (sessionId.length < 5)) {
+    if ((respArr.rows.length > 0) && (sessionId.length > 5)) {
       respArr = (respArr.rows).filter((item: typeof propsForClient) => item.session_id !== sessionId);
     } else if (respArr.rows.length === 0) {
       respArr = [];
     } else {
       respArr = respArr.rows;
     }
-    await log('[server -> router -> friends]: GET Friend ALL is deforw sending');
+    await log(`[server -> router -> friends]: GET Friend ALL Before sending. Counter2 ${respArr.length}`);
     res.status(200).json({ message: 'OK', profiles: respArr });
   });
   return routers;

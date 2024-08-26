@@ -1,14 +1,8 @@
 import { get } from '@Services/fetches';
 import { getCookie, checkCookieExists } from '@Services/coockieSessionId';
-import { messageForUser } from '@Services/messengerForm';
+import { Ads, OneLine } from '@Interfaces';
 
-import { Ads } from '@Interfaces';
-
-export async function loaderProfilesAll(): Promise<boolean> {
-  const divHtml = document.querySelector('.list-profiles');
-  if (divHtml === null) {
-    throw new Error('[ads -> loaderProfilesAll]: Not found. "div.list-ads"');
-  }
+export async function loaderProfilesAll(states: React.Dispatch<React.SetStateAction<Array<OneLine>>>): Promise<boolean> {
   const trueFalseSessionId = checkCookieExists('sessionId');
   let sessionId = '0';
   if (trueFalseSessionId) {
@@ -19,9 +13,9 @@ export async function loaderProfilesAll(): Promise<boolean> {
   const body_ = JSON.stringify({});
   const result = await get(body_, pathnameStr) as unknown as Ads;
   if (typeof result === 'boolean' || !(result.profiles)) {
-    const p = messageForUser(1, ['Загрузился', 'Не загрузился']);
-    (divHtml as HTMLElement).insertAdjacentHTML('afterbegin', p.outerHTML);
     throw new Error('[ads -> loaderProfilesAll]: Not loaded. "GET" ');
   }
+  states(result.profiles);
   return true;
 }
+
