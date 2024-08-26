@@ -151,8 +151,12 @@ module.exports = {
         path.resolve(__dirname, "src/frontend/src/account/components")
       ],
       "@Services": [
-        path.relative(__dirname, "src/frontend/src/account/services")
+        path.resolve(__dirname, "src/frontend/src/account/services")
       ],
+      // "@Logs": [path.resolve(__dirname, "src/backend/src/server/logs/index.ts")],
+      // "@Interfaceback": [
+      //   path.resolve(__dirname, "src/backend/src/server/interfaces.ts"),
+      // ]
       // "@InterfacesB": path.resolve(__dirname, "src/backend/interfaces.ts"),
       // "@Logs": path.resolve(__dirname, "src/backend/src/server/logs/index.ts"),
     }

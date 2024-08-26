@@ -1,9 +1,11 @@
 const path = require("path");
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 
 module.exports = {
+  extends: path.resolve(__dirname, '../../webpack.config.js'),
 	entry: path.resolve(__dirname, "./src/index.ts"),
 	mode: process.env.MODE_ENV || "none",
 	output: {
@@ -31,7 +33,6 @@ module.exports = {
           {
             // test: /\.tsx?$/,
             loader: "ts-loader",
-            exclude: /node_modules/,
             options: {
               configFile: path.resolve(__dirname, "./tsconfig.json")
             },
@@ -52,6 +53,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".jsx", ".ts", ".js", ".svg"],
+    plugins: [new TsconfigPathsPlugin(),],
     modules: [
       path.resolve(__dirname, "../../.browserslistrc"),
       path.resolve(__dirname, "node_modules"),
@@ -59,8 +61,14 @@ module.exports = {
     ],
 
     alias: {
-      "@Logs": [path.resolve(__dirname, "src/server/logs/index.ts")],
-
+      // "@Logs": [path.resolve(__dirname, "./src/server/logs/index.ts")],
+      // "@Interfaceback": [
+      //   path.resolve(__dirname, "./src/server/interfaces.ts"),
+      // ]
+      // "@Logs": [path.resolve(__dirname, "./src/server/logs/index.ts")],
+      // "@Interfaceback": [
+      //   path.resolve(__dirname, "./src/server/interfaces.ts"),
+      // ]
     }
   },
 }

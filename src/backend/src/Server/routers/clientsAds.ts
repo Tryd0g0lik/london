@@ -1,5 +1,5 @@
-const { Router, Request: Request_, Response: Response_, NextFunction } = require('express');
-const { Client } = require('pg');
+const { Request: Request_, Response: Response_, NextFunction } = require('express');
+// const { Client } = require('pg');
 
 const {
   addNewAdsLineSQL,
@@ -8,9 +8,9 @@ const {
   dropTableLineSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
-const { getCookie } = require('../getCookies');
-const { checkerDubleEmails } = require('../validators');
-const { propsForClient, sendNotFound, ClientData } = require('./handlers');
+// const { getCookie } = require('../getCookies');
+// const { checkerDubleEmails } = require('../validators');
+const { sendNotFound } = require('./handlers');
 const log_ = require('../logs/index');
 
 export function routerClientsAds(routers: typeof router): typeof router {

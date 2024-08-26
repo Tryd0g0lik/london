@@ -1,17 +1,18 @@
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
+const { propsForClient } = require('@typeof typeof propsForClient');
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_FRONT_PORT = (process.env.REACT_APP_FRONT_PORT as string | unknown) || '8080';
 const REACT_APP_PROTOCOL_OF_URL = (process.env.REACT_APP_PROTOCOL_OF_URL as string | unknown) || 'http';
-interface propsForClient {
-  readonly email: string
-  readonly firstName: string
-  readonly lastName: string
-  readonly passwords: string
-};
+// interface typeof propsForClient {
+//   readonly email: string
+//   readonly firstName: string
+//   readonly lastName: string
+//   readonly passwords: string
+// };
 
 //  Создание активационной ссылки
-export async function activatorForUser(oneUser: propsForClient): Promise<propsForClient> {
+export async function activatorForUser(oneUser: typeof propsForClient): Promise<typeof propsForClient> {
   const us = { email: oneUser.email };
   const createActivationToken = (user: typeof us): typeof jwt => {
     return jwt.sign(user, process.env.ACTIVATION_SECRET, {
@@ -51,6 +52,6 @@ export async function activatorForUser(oneUser: propsForClient): Promise<propsFo
       console.log('Email sent:', info); // info.response
     });
   };
-  void sendMail(oneUser.email, singleActivationUrl);
+  void sendMail(oneUser.email as string, singleActivationUrl);
   return oneUser;
 }

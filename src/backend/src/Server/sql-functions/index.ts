@@ -1,20 +1,5 @@
 const log = require('../logs/index');
-
-interface Put {
-  index?: number
-  email: string
-  newEmail: string
-  firstName: string
-  lastName: string
-  newPassword: string
-  emailId: number
-  isActive?: boolean
-  isActivated?: boolean
-  sendMessage?: boolean
-  table?: string
-  titles?: string
-  emailsId?: number
-}
+const { Put, Propse, NewSqlLine } = require('../interfaces');
 
 export function createDatebase(): string {
   return 'CREATE DATABASE london OWNER postgres;';
@@ -26,7 +11,6 @@ export function createTebleEmailsSQL(): string {
       id SERIAL PRIMARY KEY,
       emails VARCHAR(50) NOT NULL UNIQUE,
       activated BOOLEAN DEFAULT FALSE);`;
-
   return createTEmails;
 };
 
@@ -69,16 +53,8 @@ export function createTableAdsSQL(): string {
 }
 
 // module.exports = { createDatebase, createTebleEmails, createTebleUsers };
-interface NewSqlLine {
-  email: string
-  firstName: string
-  lastName: string
-  passwords: string
-  titles?: string
 
-};
-
-export function addNewLineSQL(props: NewSqlLine): string {
+export function addNewLineSQL(props: typeof NewSqlLine): string {
   const {
     email,
     firstName,
@@ -125,7 +101,7 @@ export function selectAllEmail(): string {
  * У нас есть email, надо получить пользователя
  * @param email: string
  */
-export function selectSingleUserSQL(props: Put): string {
+export function selectSingleUserSQL(props: typeof Put): string {
   const selectEmailId = `WITH user_email AS (
     SELECT id FROM emails WHERE emails = '${props.email}'
     )
@@ -133,7 +109,7 @@ export function selectSingleUserSQL(props: Put): string {
   return selectEmailId;
 }
 
-export function changeEmailSQL(props: Put): string {
+export function changeEmailSQL(props: typeof Put): string {
   const { email, newEmail } = props;
   const changeEmail = `UPDATE Emails
 SET emails = '${newEmail}'
@@ -151,7 +127,7 @@ WHERE emails = '${email}';`;
  * @param newPassword: string
  * @returns return string
  */
-export function changeValueAllCellSQL(props: Put): string {
+export function changeValueAllCellSQL(props: typeof Put): string {
   const {
     email,
     isActive = false,
@@ -171,18 +147,13 @@ WHERE email_id = (SELECT id FROM Emails WHERE emails = '${email}');`;
   return changeValueAll;
 }
 
-interface Propse {
-  column: string
-  value: string
-  table: 'users' | 'emails'
-}
 /**
  * Sitantax: `clients(selectOneParamSQL, { column: 'session_id', value: params.sessionId })`
  * @param column : cell
  * @param value : value
  * @returns single object
  */
-export function selectOneParamSQL(props: Propse): string {
+export function selectOneParamSQL(props: typeof Propse): string {
   const selectOneParam = `SELECT * FROM ${props.table} WHERE  ${props.column} = '${props.value}';`;
   return selectOneParam;
 }
@@ -208,7 +179,7 @@ export function changeValueOneCellSQL(tableName: string, column: string, index: 
   return updateOneCell;
 }
 
-export function dropTableLineSQL(props: Put): string {
+export function dropTableLineSQL(props: typeof Put): string {
   log(`[server -> sql]: DELETE SQL1 Index =>: ${props.index}`);
   const removeTable = `DELETE FROM ${props.table} WHERE id = ${props.index} RETURNING *;`;
   log(`[server -> sql]: DELETE SQL2 =>: ${removeTable}`);
@@ -225,7 +196,7 @@ export function dropTableLineSQL(props: Put): string {
  * }`
  * @returns string
  */
-export function addNewAdsLineSQL(props: Put): string {
+export function addNewAdsLineSQL(props: typeof Put): string {
   const {
     emailsId,
     titles,
@@ -242,7 +213,7 @@ export function addNewAdsLineSQL(props: Put): string {
   ) RETURNING * ;`;
   return createNewLine;
 };
-export function changeAdsSQL(props: Put): string {
+export function changeAdsSQL(props: typeof Put): string {
   const { index, titles } = props;
   const changeEmail = `UPDATE ads
   SET titles = '${titles}'

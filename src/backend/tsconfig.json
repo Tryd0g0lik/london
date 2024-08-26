@@ -5,12 +5,23 @@
 		"noImplicitAny": true,
 		"module": "CommonJS",
     "strictNullChecks": false,
+    "rootDirs": [
+      "./src"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@Logs": [
-        "src/server/logs/index.ts",
-      ],
-
+      // "@Logs": [
+      //   "./src/server/logs/index.ts",
+      // ],
+      // "@Interfaceback": [
+      //   "./src/server/interfaces.ts"
+      // ],
+      // "@Logs": [
+      //   "./server/logs/index.ts",
+      // ],
+      // "@Interfaceback": [
+      //   "./server/interfaces.ts"
+      // ],
     }
 	},
 	"exclude": [
@@ -23,7 +34,7 @@
 	// 	"./src/Server/sql-functions/index.ts",
 	// ],
 	"include": [
-		"./src/server/*",
-    "./src/server/**/*",
+    "src/server/*",
+    "src/server/**/*",
   ],
 }

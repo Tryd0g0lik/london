@@ -39,16 +39,22 @@
       "@Services/*": [
         "src/frontend/src/account/services/*"
       ],
+      // "@Logs": [
+      //   "src/backend/src/server/logs/index.ts",
+      // ],
+      // "@Interfaceback": [
+      //   "src/backend/src/server/interfaces.ts"
+      // ],
     }
   },
   "exclude": [
     "./node_modules/**/*.js",
     "*.config.js",
     "**/dist",
-    "*eslintrc.*"
+    "*eslintrc.*",
+    "src/backend"
   ],
   "include": [
     "src/**/*",
-    "src/backend/src/server/**/*"
   ]
 }

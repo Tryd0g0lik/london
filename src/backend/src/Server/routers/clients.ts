@@ -1,29 +1,17 @@
 const { Router, Request, Response, NextFunction } = require('express');
 const { Client } = require('pg');
+const { Props } = require('../interfaces');
 const {
   addNewLineSQL, selectSingleUserSQL,
   changeValueOneCellSQL, selectOneParamSQL,
   changeValueAllCellSQL, changeEmailSQL, dropTableLineSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
-const { getCookie } = require('../getCookies');
+// const { getCookie } = require('../getCookies');
 const { checkerDubleEmails } = require('../validators');
 const log = require('../logs/index');
-const { propsForClient, ClientData, sendNotFound } = require('./handlers');
+const { propsForClient, sendNotFound } = require('./handlers');
 const router = Router();
-interface Props {
-  email?: string
-  emailId?: number
-  newEmail?: string
-  firstName?: string
-  lastName?: string
-  newPassword?: string
-  isActive?: boolean
-  isActivated?: boolean
-  sendMessage?: boolean
-  password?: string
-  seessionId: string
-}
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
@@ -35,7 +23,8 @@ export function routerClients(routers: typeof router): typeof router {
   routers.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: inlogin:sessionId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
-    await log(`[server -> router]: inlogin:sessionId  №1 =>: ${req.params.sessionId}`); // получил seessionID не схожжее с db.sessionId
+    // получил seessionID не схожжее с db.sessionId
+    await log(`[server -> router]: inlogin:sessionId  №1 =>: ${req.params.sessionId}`);
     const result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
@@ -102,7 +91,7 @@ export function routerClients(routers: typeof router): typeof router {
 
     /* --------- Above, all data we received from one line  --------- */
     const data = respArr.rows[0];
-    const props: Props = {
+    const props: typeof Props = {
       email: emailOld,
       newEmail: data.emails,
       firstName: data.first_name,
@@ -115,13 +104,13 @@ export function routerClients(routers: typeof router): typeof router {
     };
     await log(`[server -> router]: PUT Before a change 1/4: ${JSON.stringify(props)}`);
     // Below is (columnNameArr) a name of keys from the `req.body` (above).
-    const columnNameArr: Array<keyof Props> = ['newEmail', 'firstName', 'lastName', 'newPassword'];
+    const columnNameArr: Array<keyof typeof Props> = ['newEmail', 'firstName', 'lastName', 'newPassword'];
     columnNameArr.slice(0).forEach((item) => {
       if ((clientData.typeField).toLowerCase() === 'email') {
         props.newEmail = clientData.newValueofField;
-      } else if ((item.toLowerCase() === (clientData.typeField).toLowerCase()) &&
+      } else if (((item as string).toLowerCase() === (clientData.typeField).toLowerCase()) &&
         ((clientData.typeField).toLowerCase() !== 'email')) {
-        log(`[server -> router]: PUT change 2/4. Item: ${item.toLowerCase()}
+        log(`[server -> router]: PUT change 2/4. Item: ${(item as string).toLowerCase()}
         typeField: ${(clientData.typeField).toLowerCase()}`);
         (props[item] as string) = clientData.newValueofField;
         log(`[server -> router]: PUT Now is a change 2/4: ${JSON.stringify(props)}`);

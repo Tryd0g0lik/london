@@ -1,18 +1,12 @@
 const { Client } = require('pg');
 const { selectAllEmail } = require('../sql-functions');
-
+const { NewSqlLine } = require('../interfaces');
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
 const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as string | unknown) || 'london';
 const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
-interface NewSqlLine {
-  email: string
-  firstName: string
-  lastName: string
-  passwords: string
-};
 /**
  * Возвращает массив с одной строкой/клиентом из таблицы 'Emails'
  * @param clt 'pg.Client' софт для работы с POSTGRES.
@@ -27,7 +21,7 @@ interface NewSqlLine {
     ''''
  */
 // export async function helper(email: string, clt: typeof Client): Promise<NewSqlLine[]> {
-export async function helper(email: string): Promise<NewSqlLine[]> {
+export async function helper(email: string): Promise<Array<typeof NewSqlLine>> {
   const client = new Client({
     user: REACT_APP_POSTGRES_USER,
     host: REACT_APP_POSTGRES_HOST,

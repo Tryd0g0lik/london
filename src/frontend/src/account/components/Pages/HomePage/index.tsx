@@ -5,7 +5,10 @@ import { loaderProfilesAll } from './handlers';
 export function HomePageFC(): JSX.Element {
   useEffect(() => {
     checkerCookieKey();
-    loaderProfilesAll()
+    setTimeout(() => loaderProfilesAll(), 300);
+    return () => {
+
+    }
 
   });
   return (<>

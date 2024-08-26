@@ -1,38 +1,21 @@
 const { Router, Application, Request } = require('express');
-const { Client } = require('pg');
 const { helper } = require('./validators');
 const { routerClients } = require('./routers/clients');
 const { routerClientsAds } = require('./routers/clientsAds');
-
-const log = require('./logs/index');
+const { routerFriends } = require('./routers/friends');
+const { ChengeSingleUser } = require('./interfaces');
 
 let router = Router();
 // const jwt = require('jsonwebtoken'); // для отправки сообщщения на почту
 
-export interface FieldInnerHtml {
-  cookie?: string
-  text?: string
-  dataNamex: string
-  typeField?: string
-  newValueofField?: string | boolean
-};
-
 export function getRouter(appObj: typeof Application): typeof router {
   router = routerClients(router);
   router = routerClientsAds(router);
+  router = routerFriends(router);
   return router;
 }
 
 /* ------------------------------------------------- */
-
-interface ChengeSingleUser {
-  table: string
-  title: string
-  v: boolean | string
-  email: string
-  clt: typeof Client
-}
-
 /**
  *Для отправки писем
  *  Подаем данные на вход и он меняет true/false or folse/true
@@ -44,7 +27,7 @@ interface ChengeSingleUser {
 * @param props
 * @returns true or false
 */
-export async function reactivatorForUser(props: ChengeSingleUser): Promise<boolean> {
+export async function reactivatorForUser(props: typeof ChengeSingleUser): Promise<boolean> {
   const { table, title, v, email, clt } = props;
   // helper  Возвращает массив с одной строкой/клиентом из таблицы 'Emails'
   let result = await helper(email, clt);

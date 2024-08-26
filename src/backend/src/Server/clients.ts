@@ -1,15 +1,7 @@
 const { Client } = require('pg');
 const lg = require('./logs/index');
+const { propsForClient } = require('./interfaces');
 // const { checkerDubleEmails } = require('./validators');
-export interface propsForClient {
-  readonly index?: number
-  readonly tableName?: string
-  table?: string
-  readonly email?: string
-  readonly firstName?: string
-  readonly lastName?: string
-  passwords?: string
-};
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_POSTGRES_PORT = (process.env.REACT_APP_POSTGRES_PORT as string | unknown) || '5432';
@@ -30,8 +22,8 @@ const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as st
  * @param dataJson data in mode to JSON (!!check the all sql-functions by formats from entrypoint).
  * @returns
  */
-export async function clients(fun: (props: propsForClient) => boolean,
-  dataJson: propsForClient, resp = true, remove = false): Promise<boolean> {
+export async function clients(fun: (props: typeof propsForClient) => boolean,
+  dataJson: typeof propsForClient, resp = true, remove = false): Promise<boolean> {
   await lg('[server -> clients]: Before connection.');
   const client = new Client({
     user: REACT_APP_POSTGRES_USER,

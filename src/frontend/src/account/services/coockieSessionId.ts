@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { CookieOptions } from '@Interfaces';
 const env = process.env.REACT_APP_POSTGRES_HOST;
 const REACT_APP_POSTGRES_HOST = (env) ? env : "localhost";
 /**
@@ -87,13 +88,6 @@ export async function checkerCookieKey(): Promise<boolean> {
   return true;
 }
 
-interface CookieOptions {
-  expires?: Date | string;
-  path?: string;
-  domain?: string;
-  secure?: boolean;
-  sameSite?: 'Strict' | 'Lax' | 'None';
-}
 /**
  * cookie Installing
  */
