@@ -4,6 +4,7 @@ import { NavFC } from '../../NavOpPages';
 import { handlerDelete } from './hamdlers/handlerRemove';
 import { checkerCookieKey } from '@Services/coockieSessionId';
 export function ProfileRemoveFC(): React.JSX.Element {
+
   useEffect(() => {
     checkerCookieKey();
     const helper = (): boolean => {
@@ -12,8 +13,12 @@ export function ProfileRemoveFC(): React.JSX.Element {
       if (divHtml === null) {
         throw new Error('[ProfileRemoveFC]: Something what wrong!');
       }
-      (divHtml as HTMLElement).removeEventListener('click', handlerDelete);
-      (divHtml as HTMLElement).addEventListener('click', handlerDelete);
+      (divHtml as HTMLElement).removeEventListener('click', (event: MouseEvent) => {
+        handlerDelete(event);
+      });
+      (divHtml as HTMLElement).addEventListener('click', (event: MouseEvent) => {
+        handlerDelete(event);
+      });
       return true;
     }
     helper();

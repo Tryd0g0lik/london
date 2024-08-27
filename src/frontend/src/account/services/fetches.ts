@@ -10,7 +10,6 @@ const PORT = (env_ === undefined) ? '7070' : env_.slice(0);
 env_ = process.env.REACT_APP_PROTOCOL_OF_URL;
 const PROTOCOL = (env_ === undefined) ? 'http' : env_.slice(0);
 env_ = process.env.REACT_APP_SET_TTIMOUT;
-// const REACT_APP_SET_TTIMOUT = (env_ === undefined) ? 2000 : env_.slice(0);
 env_ = undefined;
 
 const params: FetchParams = {
@@ -95,26 +94,10 @@ export async function remove(pathnameStr = `/api/v1/clients/add`
   return false
 }
 
-
-/**
- *
-//  * @param nody_ для актива
- */
-// export async function activation(nody_: string)
-
-
 export async function get(body_: string,
   pathnameStr = '/api/v1/clients/add/'
 ): Promise<object | boolean | string> {
-  // const paramsCopy = {} as FetchParams
-  // Object.assign(paramsCopy, params);
-  // paramsCopy.method = FetchMethod.GET;
-  // // paramsCopy['body'] = body_;
-  // paramsCopy['headers'] = {
-  // // 'X-CSRFToken': getCookie('csrftoken') as string,
-  //   'Content-Type': 'application/json'
-  // };"/api/v1/clients/ads/all/379a2610-865a-400c-90cb-7591df7bb928"
-  // paramsCopy.mode = 'no-cors';
+
   const urlStr = `${PROTOCOL}://${HOST}:${PORT}`;
   const url = urlStr + pathnameStr;
   const answer = await fetch(url, {

@@ -14,7 +14,3 @@ function getCookie(name: string): string | null {
   return cookieValue;
 }
 export default getCookie;
-
-//  мер использования
-// // const csrfToken = getCookie('csrftoken');
-// // console.log(csrfToken);

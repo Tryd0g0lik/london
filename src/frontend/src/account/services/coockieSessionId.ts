@@ -20,7 +20,7 @@ export function setSessionIdInCookie(sessionId: string): void {
     sameSite: 'Strict' as 'Strict'
   }
   setCookie(cookieName, cookieValue, options);
-  // console.log('[Текущие cookies:]', `${cookieName}=${cookieValue}; max-age=${maxAge};  Domain=${REACT_APP_POSTGRES_HOST} Path=/ Samesite=strict`);
+
 }
 
 
@@ -125,10 +125,6 @@ function setCookie(name: string, value: string, options: CookieOptions = {}): vo
 export function getCookie(name: string) {
   // eslint-disable-next-line
   let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-  // const res = name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)";
-  // const reg = "(?:^|; )" + res;
-  // const regMax = new RegExp(reg);
-  // let matches = document.cookie.match(regMax);
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 

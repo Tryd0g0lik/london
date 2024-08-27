@@ -9,11 +9,9 @@ export function NavFC(): JSX.Element {
   const navigate = useNavigate();
 
   const handleGoHome = () => {
-    navigate('/index'); // Перенаправление на /index
+    // Перенаправление на /index
+    navigate('/index'); 
   };
-  // const handleGoProfileChange = () => {
-  //   navigate('/profile/profile_change'); // Перенаправление на /index
-  // };
 
   return (
     <>
