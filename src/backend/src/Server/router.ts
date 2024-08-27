@@ -6,7 +6,6 @@ const { routerFriends } = require('./routers/friends');
 const { ChengeSingleUser } = require('./interfaces');
 
 let router = Router();
-// const jwt = require('jsonwebtoken'); // для отправки сообщщения на почту
 
 export async function getRouter(appObj: typeof Application): Promise<typeof router> {
   router = await routerClients(router);

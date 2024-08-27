@@ -8,7 +8,6 @@ export function HomePageFC(): JSX.Element {
   const [profiles, setProfiles] = useState<Array<OneLine> | []>([]);
   const fetchData = async () => {
 
-    // Вызываем асинхронную функцию
     if (checkCookieExists('sessionId')) {
       const divHtmlAll = document.querySelectorAll('.list-profiles .profile');
       if (divHtmlAll && divHtmlAll.length > 0) {
@@ -27,9 +26,6 @@ export function HomePageFC(): JSX.Element {
     loaderProfilesAll(setProfiles);
 
     fetchData();
-    // return () => {
-
-    // };
 
   }, []);
 

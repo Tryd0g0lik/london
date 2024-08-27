@@ -3,7 +3,6 @@ import { NavFC } from '@Components/NavOpPages';
 import { isValidEmail } from '@Services/validators/emal_validators'
 import { add } from '@Services/fetches';
 import { checkerCookieKey } from '@Services/coockieSessionId';
-// import getCookie from '@Services/cookies';
 import { createSessionId, setSessionIdInCookie } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
 /**
