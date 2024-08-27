@@ -1,4 +1,3 @@
-const http = require('http');
 const pg = require('pg');
 const { createDatebase, createTebleEmailsSQL, createTebleUsersSQL, createTableAdsSQL, createAddFriendsSQL } = require('../sql-functions/index');
 const lg = require('../logs/index');

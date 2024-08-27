@@ -8,9 +8,7 @@ const {
   addNewFriendSQL
 } = require('../sql-functions/index');
 const { clients } = require('../clients');
-// const { getCookie } = require('../getCookies');
 const { checkerDubleEmails } = require('../validators');
-const log = require('../logs/index');
 const { propsForClient, sendNotFound } = require('./handlers');
 const router = Router();
 
@@ -23,23 +21,18 @@ const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as st
 export async function routerClients(routers: typeof router): Promise<typeof router> {
   /* --------- Below, is adding a new friend --------- */
   routers.post('/api/v1/clients/:clientsId/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: ADD FRIENDS That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
     const clientsId = req.params.clientsId;
     const reference = req.body.references;
     // получил seessionID не схожжее с db.sessionId
-    await log(`[server -> router]: ADD FRIENDS  №1 =>:${reference} / ${clientsId} / ${req.params.sessionId}`);
     let result = await clients(selectOneParamSQL, { table: 'users', column: 'id', value: Number(clientsId) });
-    log(`[server -> router]: ADD FRIENDS  №2 Profile ID =>: ${JSON.stringify(result)}`);
     let resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
     const newMyFriendId = result.rows[0].id;
     result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
     const myInd = result.rows[0].id;
-    log(`[server -> router]: ADD FRIENDS №3 ID =>: ${myInd} // ${JSON.stringify(result)}`);
     resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
-    log(`[server -> router]: ADD FRIENDS №4 ID =>:references ${reference} || myId ${myInd} || friendId ${newMyFriendId}`);
     result = await clients(addNewFriendSQL, { references: reference, myId: Number(myInd), friendId: Number(newMyFriendId) });
     resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean' || (!result.rows)) {
@@ -48,7 +41,6 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
       });
       return false;
     };
-    log(`[server -> router]: ADD FRIENDS №5 ID =>: ${result.rows.length} // ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,
@@ -59,21 +51,13 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
   });
   /* --------- Below, is receiving datas for a profile page. --------- */
   routers.get('/api/v1/clients/:clientsId/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin:clientsId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
     const clientsId = req.params.clientsId;
-    // const regex = /^\d+$/;
-    // if (!regex.test(sessionId as string) || !regex.test((typeof clientsId === 'string') ? clientsId : String(clientsId))) {
-    //   return false;
-    // }
     // получил seessionID не схожжее с db.sessionId
-    await log(`[server -> router]: inlogin:sessionId  №1 =>:${clientsId} || ${req.params.sessionId}`);
     const result = await clients(selectOneParamSQL, { table: 'users', column: 'id', value: Number(clientsId) });
-    log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
 
-    await log(`[server -> router]: inlogin:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     /* ---- NOTE ---- */
     if (sessionId !== result.rows[0].session_id) {
       res.status(200).json({
@@ -86,20 +70,15 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     } else {
       res.status(200).json({});
     }
-    await log('[server -> router]: inlogin:sessionId №4 That Profile SENDED');
     return true;
   });
   routers.get('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin2:sessionId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
     // получил seessionID не схожжее с db.sessionId
-    await log(`[server -> router]: inlogin2:sessionId  №1 =>: ${req.params.sessionId}`);
     const result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
-    log(`[server -> router]: inlogin2:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
 
-    await log(`[server -> router]: inlogin2:sessionId №3 That Profile ID =>: ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,
@@ -107,21 +86,16 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
       lastName: result.rows[0].last_name,
       password: result.rows[0].password
     });
-    await log('[server -> router]: inlogin2:sessionId №4 That Profile SENDED');
     return true;
   });
   routers.delete('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: DELETE  That request was received from Profile =>: ${(req)}`);
     /* --------- Below, we is get the data of only single user --------- */
     const sessionId = req.params.sessionId;
-    await log(`[server -> router]: DELETE  №1 Receive data: ${sessionId} => table:'users', column: 'session_id', value: ${sessionId}`);
     let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
-    await log(`[server -> router]: DELETE  №2: Length => ${JSON.stringify(respArr)}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
     const emailId = respArr.rows[0].email_id;
     const userId = respArr.rows[0].id;
-    await log(`[server -> router]: DELETE  №3: Before delete from the "Users" ID => ${userId}`);
     respArr = await clients(selectOneParamSQL, { table: 'friends', column: 'profiles_id', value: emailId });
     if (respArr.rows.length > 0) {
       (respArr.rows).forEach((item: typeof Props) => {
@@ -140,46 +114,29 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
         clients(dropTableLineSQL, { table: 'ads', index: item.id }, false, true);
       });
     };
-    // respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: emailId });
-    // if (respArr.rows.length > 0) {
-    //   (respArr.rows).forEach((item: typeof Props) => {
-    //     clients(dropTableLineSQL, { table: 'ads', index: item.id }, false, true);
-    //   });
-    // };
 
-    // respArr = await clients(dropTableLineSQL, { table: 'friends', index: userId }, false, true);
     respArr = await clients(dropTableLineSQL, { table: 'users', index: userId }, false, true);
-    // respArr = await clients(dropTableLineSQL, { table: 'ads', index: emailId }, false, true);
-    await log(`[server -> router]: DELETE  №3.1: Before delete from the "Emails" ID => ${emailId}`);
     respArr = await clients(dropTableLineSQL, { table: 'emails', index: emailId }, false, true);
-    await log('[server -> router]: DELETE  №4: Removed from the "Users"');
     const props = { message: 'Removed' };
     res.status(200).json(props);
 
     return true;
   });
   routers.put('/api/v1/clients/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: PUT  That request was received from Profile 5 =>: ${(req)}`);
     const clientData = req.body;
     const sessionId = req.params.sessionId;
-    await log(`[server -> router]: PUT Body: ${JSON.stringify(clientData)}`);
     /* --------- Below, we is get the data of only single user --------- */
-    await log(`[server -> router]: PUT 3: ${sessionId}`);
     let respArr = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
-    await log(`[server -> router]: PUT Received data of db. Step 1/3. Length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
 
     sendNotFound(res, respArr.rows);
-    await log(`[server -> router]: PUT Received data of db. Step 1/3 Email ID =>: ${JSON.stringify(respArr.rows[0])}`);
     respArr = await clients(selectOneParamSQL, { table: 'Emails', column: 'id', value: respArr.rows[0].email_id });
-    await log(`[server -> router]: PUT Received data of db. Step 2/3. Length =>: ${(respArr.rows).length}`);
     const answ2 = sendNotFound(res, respArr.rows);
     if (typeof answ2 === 'boolean') return;
 
     sendNotFound(res, respArr.rows);
     const emailOld = respArr.rows[0].emails;
-    await log(`[server -> router]: PUT Received data of db. Step 3/3. =>: ${JSON.stringify(respArr.rows[0])}`);
     respArr = await clients(selectSingleUserSQL, { email: respArr.rows[0].emails });
     const answ3 = sendNotFound(res, respArr.rows);
     if (typeof answ3 === 'boolean') return;
@@ -197,7 +154,6 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
       sendMessage: data.send_message,
       password: data.password
     };
-    await log(`[server -> router]: PUT Before a change 1/4: ${JSON.stringify(props)}`);
     // Below is (columnNameArr) a name of keys from the `req.body` (above).
     const columnNameArr: Array<keyof typeof Props> = ['newEmail', 'firstName', 'lastName', 'newPassword'];
     columnNameArr.slice(0).forEach((item) => {
@@ -205,22 +161,16 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
         props.newEmail = clientData.newValueofField;
       } else if (((item as string).toLowerCase() === (clientData.typeField).toLowerCase()) &&
         ((clientData.typeField).toLowerCase() !== 'email')) {
-        log(`[server -> router]: PUT change 2/4. Item: ${(item as string).toLowerCase()}
-        typeField: ${(clientData.typeField).toLowerCase()}`);
         (props[item] as string) = clientData.newValueofField;
-        log(`[server -> router]: PUT Now is a change 2/4: ${JSON.stringify(props)}`);
       }
     });
     if ((clientData.typeField).toLowerCase() === 'email') {
-      await log(`[server -> router]: PUT After a change 3/4: ${JSON.stringify(props)}
-    Before a 'clients'/SQL`);
       await clients(changeEmailSQL, { email: props.email, newEmail: props.newEmail }, false);
       res.status(200).json(props);
       return true;
     }
 
     await clients(changeValueAllCellSQL, { ...props }, false);
-    await log('[server -> router]: PUT After a change 4/4  Before a clients/SQL');
     res.status(200).json(props);
     return true;
   });
@@ -229,7 +179,6 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
    * This is path for a start/zero/basis authorization's mode.
    */
   routers.post('/api/v1/inlogin/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
-    await log(`[server -> router]: inlogin  That request was received from Profile 8 =>: ${req}`);
     const props = {
       message: 'OK',
       sessionId: ''
@@ -237,10 +186,8 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     /* -------------- This is activation's block ------------------ */
     const clientData = req.body as unknown as typeof propsForClient;
     const cookie = clientData.cookie;
-    await log(`[server -> router]: inlogin: ${JSON.stringify(clientData)}`);
 
     const statusCode: number = 200;
-    await log(`[server -> router]: inlogin cookie: ${JSON.stringify(cookie)}`);
 
     /* --------------- That is see the email's id ---------------  */
     const client = new Client({
@@ -253,25 +200,22 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     client.connect();
 
     const respArr = await client.query(selectSingleUserSQL({ email: clientData.email }));
-    await log(`[server -> router]: inlogin Received data where is a length =>: ${(respArr.rows).length}`);
     if ((respArr.rows).length === 0) {
       client.end();
       res.status(404).json({ massage: 'Not founded' });
       return false;
     }
+
     /* This's a password's filter */
     const result = await respArr.rows.filter(((item: typeof propsForClient) => item.password === clientData.password));
-    await log(`[server -> router]: inlogin Filter LENGTH =>: ${(result.length)}`);
     if (result.length === 0) {
-      await log(`[server -> router]: inlogin Not found a password. RESULT =>: ${result}`);
       client.end();
       res.status(404).json({ massage: 'Not founded' });
       return false;
     }
-    await log(`[server -> router]: inlogin Filter LENGTH2 =>: ${(result.length)}`);
+
     // macking the aictve status in db
     await client.query(changeValueOneCellSQL('Users', 'is_active', result[0].id, true));
-    await log(`[server -> router]: inlogin Filter LENGTH3 =>: ${(cookie.sessionId)}`);
     props.sessionId = cookie.sessionId;
     // endMacking the aictve status in db
     if (((result.length === 0) || (typeof (result[0].session_id) === 'string' &&
@@ -281,11 +225,9 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     } else {
       props.sessionId = result[0].session_id;
     }
-    await log(`[server -> router]: inlogin props.sessionId =>: ${(props.sessionId)}`);
     client.end();
     /* --------------- if we is find the use in db ---------------  */
 
-    await log(`[server -> router]: inlogin That User is found: ${result[0].first_name}`);
     // Response is sent
     res.status(statusCode).json(props);
   });
@@ -298,43 +240,23 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     const clientData = req.body as unknown as typeof propsForClient;
     const cookie = clientData.cookie;
     const sessionInd = req.params.sessionId;
-    await log(`[server -> router]: inlogin:sessionId: ${JSON.stringify(clientData)}`);
 
-    await log(`[server -> router]: inlogin:sessionId cookie: ${sessionInd} email: ${clientData.email}`);
     const respArr = await clients(selectSingleUserSQL, { email: clientData.email });
-    await log(`[server -> router]: inlogin:sessionId №1 Received data where is a length =>: ${(respArr.rows).length}`);
     const answ = sendNotFound(res, respArr.rows);
     if (typeof answ === 'boolean') return;
-    await log(`[server -> router]: inlogin:sessionId №1.0  =>: ${JSON.stringify({ tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionInd })}`);
     clients(changeValueOneCellSQL, { tableName: 'users', column: 'session_id', index: respArr.rows[0].id, newValue: sessionInd });
 
     respArr.rows[0].session_id = sessionInd;
-    await log(`[server -> router]: inlogin:sessionId №2
-      Received data where is a length =>: DB.password: ${(respArr.rows[0].password)}
-      clientData.password ${clientData.password}`);
     /* line, bolw is a checker for password */
     const respArr3 = await (respArr.rows).filter(((item: typeof propsForClient) => item.password === clientData.password));
-    await log(`[server -> router]: inlogin:sessionId Filter LENGTH =>: ${(respArr3.length)}`);
-    await log(`[server -> router]: inlogin:sessionId №2.1 Filter LENGTH =>: ${JSON.stringify(respArr3)}`);
 
-    await log(`[server -> router]: inlogin:sessionId №3 Password. RESULT =>: ${JSON.stringify(respArr3)}`);
     res.status(200).json({ massage: 'OK', sessionId: sessionInd });
-    await log(`[server -> router]: inlogin:sessionId Message was sent a 200code .
-      That SessionID: ${sessionInd}`);
     return false;
   });
-  // routers.get('/api/v1/clients/', (req: Request, res: Response) => {
-  //   log('[server -> router]: clients');
-  //   const body = JSON.stringify({ data: true });
-  //   fortune(res, body);
-  // });
 
   // registration
   routers.post('/api/v1/clients/add/', async (req: typeof Request, res: typeof Response, next: typeof NextFunction): Promise<void> => {
-    await log(`[server -> router]:  That request was received from Profile 8 =>: ${req}`);
-    await log(`[server -> router]: clientData 1: ${JSON.stringify(req.body)}`);
     const clientData = req.body as unknown as typeof propsForClient;
-    await log(`[server -> router]: clientData: ${JSON.stringify(clientData)}`);
     const props = {
       email: clientData.email,
       firstName: clientData.firstName,
@@ -345,25 +267,18 @@ export async function routerClients(routers: typeof router): Promise<typeof rout
     let statusText = 'Client added successfully';
     try {
       const result = await checkerDubleEmails(clientData.email);
-      console.log('[[server -> router]: RESULT => ', result);
       if (result) {
-        log('[server -> router]: Note: This is email already has.');
-        console.log('[server -> router]: Такой ольщователь уже существует');
         statusCode = 404;
       }
 
-      await log('[server -> router]: Before saving into the db');
       const response = await clients(addNewLineSQL, props); // Returns: propsForClient[]/false
 
       if (!response) {
-        await log(`[server -> router]: statusCODE => ${response}`);
         statusCode = 404;
       }
-      log('[server -> router]: After saving into the db');
     } catch (err: unknown) {
       statusCode = 404;
       statusText = `Client do not be added! ERROR -> ${(err as ErrorEvent).message} `;
-      log(`[server -> router]: Client do not be added ${(err as ErrorEvent).message} `);
     } finally {
       res.status(statusCode).json({
         message: statusText

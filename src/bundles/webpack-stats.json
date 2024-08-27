@@ -1141,6 +1141,11 @@
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-bda6e5c97243d24f57e1.js",
       "publicPath": "/main-main-bda6e5c97243d24f57e1.js"
     },
+    "main-main-bef6136a42afb676fb33.js": {
+      "name": "main-main-bef6136a42afb676fb33.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-bef6136a42afb676fb33.js",
+      "publicPath": "/main-main-bef6136a42afb676fb33.js"
+    },
     "main-main-bf1eeb41bc607c0862b7.js": {
       "name": "main-main-bf1eeb41bc607c0862b7.js",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main-main-bf1eeb41bc607c0862b7.js",
@@ -3821,6 +3826,16 @@
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.bf803a97ae8d34b07055.hot-update.json",
       "publicPath": "/main.bf803a97ae8d34b07055.hot-update.json"
     },
+    "main.c173633a91112a925b55.hot-update.js": {
+      "name": "main.c173633a91112a925b55.hot-update.js",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.c173633a91112a925b55.hot-update.js",
+      "publicPath": "/main.c173633a91112a925b55.hot-update.js"
+    },
+    "main.c173633a91112a925b55.hot-update.json": {
+      "name": "main.c173633a91112a925b55.hot-update.json",
+      "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.c173633a91112a925b55.hot-update.json",
+      "publicPath": "/main.c173633a91112a925b55.hot-update.json"
+    },
     "main.c1fecdd9f9f1636a3fee.hot-update.js": {
       "name": "main.c1fecdd9f9f1636a3fee.hot-update.js",
       "path": "E:\\OpenServer\\domains\\t-london\\dist\\frontend\\main.c1fecdd9f9f1636a3fee.hot-update.js",
@@ -4535,8 +4550,8 @@
   "chunks": {
     "main": [
       "css/style.css",
-      "main-main-c173633a91112a925b55.js",
-      "main.7c9313a1a9fd97a1c985.hot-update.js"
+      "main-main-bef6136a42afb676fb33.js",
+      "main.c173633a91112a925b55.hot-update.js"
     ]
   },
   "publicPath": "/",

@@ -4,14 +4,7 @@ const { propsForClient } = require('@typeof typeof propsForClient');
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
 const REACT_APP_FRONT_PORT = (process.env.REACT_APP_FRONT_PORT as string | unknown) || '8080';
 const REACT_APP_PROTOCOL_OF_URL = (process.env.REACT_APP_PROTOCOL_OF_URL as string | unknown) || 'http';
-// interface typeof propsForClient {
-//   readonly email: string
-//   readonly firstName: string
-//   readonly lastName: string
-//   readonly passwords: string
-// };
 
-//  Создание активационной ссылки
 export async function activatorForUser(oneUser: typeof propsForClient): Promise<typeof propsForClient> {
   const us = { email: oneUser.email };
   const createActivationToken = (user: typeof us): typeof jwt => {
@@ -20,7 +13,6 @@ export async function activatorForUser(oneUser: typeof propsForClient): Promise<
     });
   };
 
-  // Пример использования
   const activationToken = createActivationToken(us);
   const singleActivationUrl = `${REACT_APP_PROTOCOL_OF_URL as string}://${REACT_APP_POSTGRES_HOST as string}:${REACT_APP_FRONT_PORT as string}/activate/${activationToken}`;
   /* ------------------------------------------------------------ */

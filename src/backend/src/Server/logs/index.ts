@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs'); // .promises;
+const fs = require('fs');
 
 function logTime(): string {
   const time = new Date();
@@ -9,11 +9,11 @@ function logTime(): string {
 }
 
 function checkFile(): void {
-  // Если файл не существует, создаем его
   try {
     fs.promises.access('logs_server.txt');
   } catch {
-    fs.writeFile('logs_server.txt', ''); // Create the file if it doesn't exist
+    // Create the file if it doesn't exist
+    fs.writeFile('logs_server.txt', '');
   }
 };
 
@@ -34,9 +34,6 @@ async function calculateLines(file: unknown): Promise<number> {
 // Функция для удаления файла, если в нем более или равно 'maxLongth' строк
 // maxLongth макс число строк. По умолчанию 2000
 async function deleteFileIfLarger(): Promise<void> {
-  // fs.promise.unlink('logs_server.txt', (err: unknown) => {
-  //   if (err) throw err;
-  // });
   try {
     await fs.promises.unlink('logs_server.txt');
   } catch (err) {
