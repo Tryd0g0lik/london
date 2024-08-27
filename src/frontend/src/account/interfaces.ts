@@ -51,7 +51,7 @@ export interface Inpt {
     indexMesseges?: string
     indexEmails?: string
     titles?: string
-  } | string
+  }
   sessionId?: string
 }
 

@@ -35,7 +35,7 @@ export class Input {
   constructor(props: Inpt) {
     const { pathname, body } = props;
     this.pathnames = pathname;
-    this.body = JSON.stringify(body);
+    this.body = body;
     this.cookieKeyName = ''
   }
 

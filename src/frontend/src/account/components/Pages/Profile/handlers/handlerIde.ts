@@ -87,13 +87,13 @@ the new html's  <input>-tage */
               return false;
             }
             const inputObj = new Input({
-              pathname: `/api/v1/clients/`, body: JSON.stringify({})
+              pathname: `/api/v1/clients/`, body: {} as Inpt['body']
             })
             inputObj.cookieSession = 'sessionId';
             const cookieValue = inputObj.cookieSession;
             const pathnames = inputObj.pathnames as string;
             const body_ = inputObj.body;
-            handlerEventOfInputPUT({ pathname: pathnames, body: body_, sessionId: cookieValue });
+            handlerEventOfInputPUT({ pathname: pathnames, body: body_, sessionId: cookieValue })(event);
             // Input wich need the delete
             const target = (event.target as HTMLElement);
             if (target.tagName.toLowerCase() !== 'input') {
@@ -217,20 +217,22 @@ interface Inpt {
  * @returns `(event: KeyboardEvent) => Promise<boolean>`
  */
 export function handlerEventOfInputPUT(props: Inpt): (event: KeyboardEvent) => Promise<boolean> {
-  const { pathname, body, sessionId, } = props;
+  let { pathname, body, sessionId, } = props;
   return async (event: KeyboardEvent): Promise<boolean> => {
 
     const target = event.currentTarget as HTMLInputElement;
     /* The value from html-input field */
     const newValueOfInput = target.value;
-    JSON.parse(body as string).newValueofField = newValueOfInput;
+    const bodyNew = body
+    bodyNew.newValueofField = newValueOfInput;
+    body = { ...bodyNew };
     /* This is atribute 'data-namex' from the above. Received value of 'data-namex' */
     const atributeDataNameX = (target.hasAttribute('data-namex')) ? target.getAttribute('data-namex') : '';
-    JSON.parse(body as string).typeField = atributeDataNameX as string;
+    body.typeField = atributeDataNameX as string;
     /* --------------- Here us a cookie is to get ------------------ */
     const label = (target.parentElement as HTMLElement);
     const path = `${pathname}${sessionId}`;
-    const result = await put(body as string, path)
+    const result = await put(JSON.stringify(body), path)
     if ((sessionId === undefined) || (result === false)) {
       const p = messageForUser(1, ['Сохранился', 'Не сохранился'])
       /* here is a not found */
