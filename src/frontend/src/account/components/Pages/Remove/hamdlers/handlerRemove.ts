@@ -27,6 +27,5 @@ export async function handlerDelete(event: MouseEvent): Promise<boolean> {
     return false;
   }
   deleteCookie('sessionId');
-  // currentTarget.insertAdjacentHTML('afterend', p.outerHTML);
   return true;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavFC } from '../../NavOpPages';
-// import { doGetRequest } from '@Services/fetches';
-// import { ResultType } from '@Interfaces';
+
 import { handlerDelete } from './hamdlers/handlerRemove';
 import { checkerCookieKey } from '@Services/coockieSessionId';
 export function ProfileRemoveFC(): React.JSX.Element {

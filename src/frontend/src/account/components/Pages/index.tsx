@@ -8,7 +8,6 @@ import { ProfilePAsswordChangesFC } from './Profile/ProfileChanges';
 import { AuthorizatorPageFC } from './AuthorizationPage';
 import { ProfileRemoveFC } from './Remove/index';
 import { ProfileAdsFC } from './Profile/Ads';
-// import { isElementOfType } from "react-dom/test-utils";
 
 const Router = createBrowserRouter([
   {
@@ -53,8 +52,6 @@ const Router = createBrowserRouter([
 
 
 export function PagesFC(): React.JSX.Element {
-
-  // const [htmlReact, useUseState] = useState();
 
   return < RouterProvider router={Router} />
 }

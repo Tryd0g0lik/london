@@ -81,15 +81,6 @@ const handlerFormRegigter = async (event: React.MouseEvent): Promise<boolean> =>
   ((form as HTMLFormElement)[3] as HTMLInputElement).value = '';
   ((form as HTMLFormElement)[4] as HTMLInputElement).value = '';
 
-  // const categoryUSerNumber = Number(target.dataset.category);
-  // /* ------ */
-  // const navCategories = Array.from(document.querySelectorAll('.catalog-categories.nav.justify-content-center .nav-item a'));
-  // navCategories.forEach((item) => {
-  //   (item as HTMLElement).classList.remove('active');
-  // });
-  // (target as HTMLElement).classList.add('active');
-
-  // setUserCategory(categoryUSerNumber);
   return true;
 };
 
