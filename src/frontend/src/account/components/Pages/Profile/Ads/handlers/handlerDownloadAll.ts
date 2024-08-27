@@ -5,9 +5,6 @@ import { get } from '@Services/fetches';
 import { createDivLableContainer } from '@Services/fields';
 import { handlerRedactionOfButton } from './handlerRedactionAds';
 import { handlerEventRemoveAds } from './handlerRemoveAds';
-const REACT_APP_SERVER_PORT = (process.env.REACT_APP_SERVER_PORT as string | unknown) || '8080';
-const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
-
 /** The download aLL positions.
  * Here is we download all positions from the db
  * @param elemLabelHtml: HTMLLabelElement. It's the input htmla-tage of entrypoint. It giving \
@@ -82,7 +79,4 @@ export async function loaderContents(elemLabelHtml: HTMLLabelElement): Promise<v
     handlerEventRemoveAds(event as MouseEvent);
     window.location.pathname.replace('profile/profile_dalete', '');
   });
-  /* ---- Below is for event od remove/delete a single/one line ---- */
-  // (divHtml as HTMLDivElement).removeEventListener('click', handlerEventRemoveAds);
-  // (divHtml as HTMLDivElement).addEventListener('click', handlerEventRemoveAds);
 }
