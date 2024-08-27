@@ -42,17 +42,14 @@ export interface propsForClient {
   password?: string
   cookie?: { sessionId: string }
 };
-export interface Props {
-  email?: string
+export interface Props extends propsForClient {
   emailId?: number
   newEmail?: string
-  firstName?: string
-  lastName?: string
+  email_id?: number
   newPassword?: string
   isActive?: boolean
   isActivated?: boolean
   sendMessage?: boolean
-  password?: string
   sessionId?: string
 }
 export interface Propse {

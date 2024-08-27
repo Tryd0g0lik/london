@@ -38,6 +38,9 @@ export async function infoLoader(): Promise<boolean> {
   const lastName = result.lastName as string;
   const d = profileALL[0].querySelector('div') as HTMLElement;
   const d2 = profileALL[1].querySelector('div') as HTMLElement;
+    if (d === null || d2 === null) {
+      return false;
+    }
   (profile as HTMLDivElement).dataset.index = index;
   d.innerHTML = name;
   d2.innerHTML = lastName;

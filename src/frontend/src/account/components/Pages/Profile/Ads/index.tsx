@@ -18,8 +18,10 @@ export function ProfileAdsFC(): React.JSX.Element {
     const newLabelHtml = CorrectorBasisRedactField(basisRedactField, { dataNamex: 'ads', text: 'Напиши свое доброе дело' });
     setLabelHtml(newLabelHtml);
     // handlerClickOfButton(newLabelHtml as HTMLLabelElement);
-    loaderContents(newLabelHtml as HTMLLabelElement);
+    return () => {
+      loaderContents(newLabelHtml as HTMLLabelElement);
 
+    }
   }, []);
   return <>
     <NavFC />

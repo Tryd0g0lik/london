@@ -57,7 +57,8 @@ export async function loaderContents(elemLabelHtml: HTMLLabelElement): Promise<v
     const divHtmlMessage = createDivLableContainer({
       titles: titles,
       id: id,
-      email_id: email_id
+      email_id: email_id,
+      firstName: ''
     });
 
     (divHtml as HTMLElement).insertAdjacentElement('beforeend', divHtmlMessage);
