@@ -1,6 +1,7 @@
 const { Client } = require('pg');
 const lg = require('./logs/index');
 const { propsForClient } = require('./interfaces');
+const { selectOneParamSQL } = require('./sql-functions');
 // const { checkerDubleEmails } = require('./validators');
 
 const REACT_APP_POSTGRES_HOST = (process.env.REACT_APP_POSTGRES_HOST as string | unknown) || 'localhost';
@@ -54,6 +55,8 @@ export async function clients(fun: (props: typeof propsForClient) => boolean,
     await lg(`[server -> clients]: Data: JSON: => ${JSON.stringify(dataJson)}`);
     if (remove) {
       await lg(`[server -> clients]: DELETE data before delete => table ${dataJson.table}; id = ${dataJson.index}; remove: ${remove}`);
+      // const result = client.query(selectOneParamSQL({ table: 'friends', column: 'profiles_id', value: Number(clientsId) }));
+
       await client.query(`DELETE FROM ${dataJson.table} WHERE id = ${dataJson.index} RETURNING *;`);
       await lg('[server -> clients]: DELETE data was delete');
       await client.end();

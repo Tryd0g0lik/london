@@ -1,6 +1,6 @@
-const { Request: Request_, Response: Response_, NextFunction } = require('express');
+const { Router, Request: Request_, Response: Response_, NextFunction } = require('express');
 // const { Client } = require('pg');
-
+const router = Router();
 const {
   addNewAdsLineSQL,
   selectOneParamSQL,
@@ -13,7 +13,7 @@ const { clients } = require('../clients');
 const { sendNotFound } = require('./handlers');
 const log_ = require('../logs/index');
 
-export function routerClientsAds(routers: typeof router): typeof router {
+export async function routerClientsAds(routers: typeof router): Promise<typeof router> {
   /* --------- Here is add a new ads's single line  --------- */
   routers.post('/api/v1/clients/ads/add/:sessionId', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
     await log_(`[server -> router -> ads]: POST  That request =>: ${JSON.stringify(req.body)}`);
@@ -103,21 +103,21 @@ export function routerClientsAds(routers: typeof router): typeof router {
     const props = { message: 'Removed' };
     res.status(200).json(props);
   });
-  routers.get('/api/v1/clients/ads/:index', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
+  routers.get('/api/v1/clients/ads/one/:index', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
     await log_(`[server -> router -> ads]: GET  That request =>: ${req}`);
     // const clientData = req.body;
     const ind = req.params.index;
-    await log(`[server -> router]: GET ADS =>: ${ind}`);
+    await log_(`[server -> router]: GET ONE ADS =>: ${ind}`);
     /* --------- Below, we is get the data of only single user --------- */
     const respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: ind });
-    await log(`[server -> router]: GET ADS №2 =>: ${JSON.stringify(respArr)}`);
+    await log_(`[server -> router]: GET ONE ADS №2 =>: ${JSON.stringify(respArr)}`);
     const resp = sendNotFound(res, respArr.rows);
     if (typeof resp === 'boolean') {
       res.status(404).json({ massage: 'Not OK' });
       return false;
     };
-    await log(`[server -> router]: GET ADS №3 =>: ${JSON.stringify(resp.rows[0])}`);
-    const props = { message: 'OK', rows: resp.rows };
+    await log_(`[server -> router]: GET ONE ADS №3 =>: ${JSON.stringify(respArr.rows[0])}`);
+    const props = { message: 'OK', rows: respArr.rows };
     res.status(200).json(props);
   });
   return routers;

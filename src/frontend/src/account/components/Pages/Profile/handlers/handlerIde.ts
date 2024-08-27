@@ -276,15 +276,20 @@ async function handlerButtonForFriends(event: MouseEvent): Promise<boolean> {
     cookie
   });
   // отправляем в базу данных
-  const responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
+
   if (outerText === 'Смотреть объявления') {
     const clientsid = getClientid();
-    const resp = await get('{}', `/api/v1/clients/ads/${clientsid}`);
+    const resp = await get('{}', `/api/v1/clients/ads/one/${clientsid}`);
     if (!resp) {
       console.error('[handlerButtonForFriends]: New friend not is added');
       return false;
     };
-    const divHtnl = (event.currentTarget as HTMLDivElement).parentElement as HTMLDivElement;
+    const target = (event.target as HTMLDivElement);
+    const divHtnl = (target)
+      ? ((target.parentElement as HTMLDivElement)
+        ? (target.parentElement as HTMLDivElement).parentElement as HTMLElement
+        : null)
+      : null;
     if (divHtnl === null) {
       return false;
     }
@@ -293,21 +298,23 @@ async function handlerButtonForFriends(event: MouseEvent): Promise<boolean> {
     const pHtmlChild = document.createElement('p');
 
     divHtnlChild.className = 'ads-child';
-
-
-    Array.from(resp as Array<{
+    // @ts-ignore
+    const rows = resp.rows;
+    Array.from((rows as Array<{
       id: number
       email_id: number
       titles: string
-    }>).forEach((item) => {
+    }>)).forEach((item) => {
       // `<div data-numberx="60" data-userx="4">`
-      pHtmlChild.outerText = item.titles as string;
+      pHtmlChild.innerText = item.titles as string;
       divHtnlChild.setAttribute('data-numberx', String(item.id))
       divHtnlChild.setAttribute('data-userx', String(item.email_id));
-      divHtnl.insertAdjacentHTML('beforeend', divHtnlChild.outerHTML);
+      divHtnlChild.appendChild(pHtmlChild);
+      divHtnl.insertAdjacentHTML('afterend', divHtnlChild.outerHTML);
     });
-
+    return true;
   }
+  const responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
   // let responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
   if (!responce) {
     console.error('[handlerButtonForFriends]: New friend not is added');

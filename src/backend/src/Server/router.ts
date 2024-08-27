@@ -8,10 +8,10 @@ const { ChengeSingleUser } = require('./interfaces');
 let router = Router();
 // const jwt = require('jsonwebtoken'); // для отправки сообщщения на почту
 
-export function getRouter(appObj: typeof Application): typeof router {
-  router = routerClients(router);
-  router = routerClientsAds(router);
-  router = routerFriends(router);
+export async function getRouter(appObj: typeof Application): Promise<typeof router> {
+  router = await routerClients(router);
+  router = await routerClientsAds(router);
+  router = await routerFriends(router);
   return router;
 }
 

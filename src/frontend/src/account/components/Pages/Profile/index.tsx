@@ -59,21 +59,6 @@ export function ProfileFC(): React.JSX.Element {
       return false;
     }
 
-    // const checkSessionAndUpdateStatus = async () => {
-
-    //   const sessionExists = checkCookieExists('sessionId');
-    //   if (sessionExists) {
-    //     setStatus(divHtml);
-    //     setTimeout(() => {
-    //       handlerIdeFC();
-    //       funAsync();
-    //     }, 100);
-
-    //   } else {
-    //     setStatus(basisHtml);
-    //   }
-    // };
-    // checkSessionAndUpdateStatus();
 
     return (): void => {
       handlerIdeFC();

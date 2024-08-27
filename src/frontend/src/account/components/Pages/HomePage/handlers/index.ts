@@ -11,7 +11,7 @@ export async function loaderProfilesAll(states: React.Dispatch<React.SetStateAct
 
   const pathnameStr = `/api/v1/profiles/all/${sessionId}`;
   const body_ = JSON.stringify({});
-  const result = await get(body_, pathnameStr) as unknown as Ads;
+  const result = await get(body_, pathnameStr) as Ads;
   if (typeof result === 'boolean' || !(result.profiles)) {
     throw new Error('[ads -> loaderProfilesAll]: Not loaded. "GET" ');
   }

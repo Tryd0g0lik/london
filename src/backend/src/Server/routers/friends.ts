@@ -9,13 +9,13 @@ const { clients } = require('../clients');
 // const { checkerDubleEmails } = require('../validators');
 const log = require('../logs/index');
 const router = Router();
-export function routerFriends(routers: typeof router): typeof router {
+export async function routerFriends(routers: typeof router): Promise<typeof router> {
   routers.get('/api/v1/profiles/all/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     const sessionId = req.params.sessionId;
-    const regex = /^\d+$/;
-    if (!regex.test(sessionId as string)) {
-      return;
-    }
+    // const regex = /^\d+$/;
+    // if (!regex.test(sessionId as string)) {
+    //   return;
+    // }
     await log(`[server -> router -> friends]: GET Friend ALL sessionId =>: ${sessionId}`);
     /* --------- Below, we is get the data from all profiles --------- */
     let respArr = await clients(loaderAllProfilesSQL);

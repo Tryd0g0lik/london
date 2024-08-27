@@ -96,7 +96,6 @@ ul {
   gap: 0 10px;
   padding-left: 25px;
   min-height: 100px;
-    max-height: 100px;
 }
 
 .profilename .input[type="checkbox"] {
@@ -168,4 +167,8 @@ label.input.input-bordered.flex.items-center.gap-2 {
 /* frineds */
 .profile>div.myFriend {
   width: 100%;
+}
+.ads-child {
+  border: 1px solid #cfcfcf1c;
+  border-top: 0;
 }

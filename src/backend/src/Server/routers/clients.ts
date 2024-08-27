@@ -20,7 +20,7 @@ const REACT_APP_POSTGRES_DB_NAME = (process.env.REACT_APP_POSTGRES_DB_NAME as st
 const REACT_APP_POSTGRES_USER = (process.env.REACT_APP_POSTGRES_USER as string | unknown) || 'postgres';
 const REACT_APP_POSTGRES_DB_PASS = (process.env.REACT_APP_POSTGRES_DB_PASS as string | unknown) || '123';
 
-export function routerClients(routers: typeof router): typeof router {
+export async function routerClients(routers: typeof router): Promise<typeof router> {
   /* --------- Below, is adding a new friend --------- */
   routers.post('/api/v1/clients/:clientsId/:sessionId', async (req: typeof Request, res: typeof Response, next: typeof NextFunction) => {
     await log(`[server -> router]: ADD FRIENDS That request was received from Profile 1 =>: ${req}`);
@@ -42,7 +42,7 @@ export function routerClients(routers: typeof router): typeof router {
     log(`[server -> router]: ADD FRIENDS №4 ID =>:references ${reference} || myId ${myInd} || friendId ${newMyFriendId}`);
     result = await clients(addNewFriendSQL, { references: reference, myId: Number(myInd), friendId: Number(newMyFriendId) });
     resp = sendNotFound(res, result.rows);
-    if (typeof resp === 'boolean') {
+    if (typeof resp === 'boolean' || (!result.rows)) {
       res.status(400).json({
         message: 'Not OK'
       });
@@ -62,8 +62,12 @@ export function routerClients(routers: typeof router): typeof router {
     await log(`[server -> router]: inlogin:clientsId  That request was received from Profile 1 =>: ${req}`);
     const sessionId = req.params.sessionId;
     const clientsId = req.params.clientsId;
+    // const regex = /^\d+$/;
+    // if (!regex.test(sessionId as string) || !regex.test((typeof clientsId === 'string') ? clientsId : String(clientsId))) {
+    //   return false;
+    // }
     // получил seessionID не схожжее с db.sessionId
-    await log(`[server -> router]: inlogin:sessionId  №1 =>:${clientsId} / ${req.params.sessionId}`);
+    await log(`[server -> router]: inlogin:sessionId  №1 =>:${clientsId} || ${req.params.sessionId}`);
     const result = await clients(selectOneParamSQL, { table: 'users', column: 'id', value: Number(clientsId) });
     log(`[server -> router]: inlogin:sessionId  №2 Profile ID =>: ${JSON.stringify(result)}`);
     const resp = sendNotFound(res, result.rows);
@@ -118,8 +122,34 @@ export function routerClients(routers: typeof router): typeof router {
     const emailId = respArr.rows[0].email_id;
     const userId = respArr.rows[0].id;
     await log(`[server -> router]: DELETE  №3: Before delete from the "Users" ID => ${userId}`);
+    respArr = await clients(selectOneParamSQL, { table: 'friends', column: 'profiles_id', value: emailId });
+    if (respArr.rows.length > 0) {
+      (respArr.rows).forEach((item: typeof Props) => {
+        clients(dropTableLineSQL, { table: 'friends', index: item.id }, false, true);
+      });
+    };
+    respArr = await clients(selectOneParamSQL, { table: 'friends', column: 'friends_id', value: emailId });
+    if (respArr.rows.length > 0) {
+      (respArr.rows).forEach((item: typeof Props) => {
+        clients(dropTableLineSQL, { table: 'friends', index: item.id }, false, true);
+      });
+    };
+    respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: emailId });
+    if (respArr.rows.length > 0) {
+      (respArr.rows).forEach((item: typeof Props) => {
+        clients(dropTableLineSQL, { table: 'ads', index: item.id }, false, true);
+      });
+    };
+    // respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: emailId });
+    // if (respArr.rows.length > 0) {
+    //   (respArr.rows).forEach((item: typeof Props) => {
+    //     clients(dropTableLineSQL, { table: 'ads', index: item.id }, false, true);
+    //   });
+    // };
+
+    // respArr = await clients(dropTableLineSQL, { table: 'friends', index: userId }, false, true);
     respArr = await clients(dropTableLineSQL, { table: 'users', index: userId }, false, true);
-    respArr = await clients(dropTableLineSQL, { table: 'ads', index: emailId }, false, true);
+    // respArr = await clients(dropTableLineSQL, { table: 'ads', index: emailId }, false, true);
     await log(`[server -> router]: DELETE  №3.1: Before delete from the "Emails" ID => ${emailId}`);
     respArr = await clients(dropTableLineSQL, { table: 'emails', index: emailId }, false, true);
     await log('[server -> router]: DELETE  №4: Removed from the "Users"');

@@ -6,27 +6,30 @@ import { OneLine } from "@Interfaces";
 
 export function HomePageFC(): JSX.Element {
   const [profiles, setProfiles] = useState<Array<OneLine> | []>([]);
-  useEffect(() => {
-    checkerCookieKey();
-    const fetchData = async () => {
+  const fetchData = async () => {
 
-      await loaderProfilesAll(setProfiles); // Вызываем асинхронную функцию
-      if (checkCookieExists('sessionId')) {
-        const divHtmlAll = document.querySelectorAll('.list-profiles .profile');
-        if (divHtmlAll && divHtmlAll.length > 0) {
-          const buttonHtml = document.createElement('button');
-          buttonHtml.innerText = 'Удалить из друзей';
-          for (let i = 0; i < divHtmlAll.length; i++) {
-            divHtmlAll[i].appendChild(buttonHtml);
-          }
+    // Вызываем асинхронную функцию
+    if (checkCookieExists('sessionId')) {
+      const divHtmlAll = document.querySelectorAll('.list-profiles .profile');
+      if (divHtmlAll && divHtmlAll.length > 0) {
+        const buttonHtml = document.createElement('button');
+        buttonHtml.innerText = 'Удалить из друзей';
+        for (let i = 0; i < divHtmlAll.length; i++) {
+          divHtmlAll[i].appendChild(buttonHtml);
         }
       }
+    }
 
-    };
+  };
+  useEffect(() => {
+    checkerCookieKey();
 
+    loaderProfilesAll(setProfiles);
 
     fetchData();
+    // return () => {
 
+    // };
 
   }, []);
 

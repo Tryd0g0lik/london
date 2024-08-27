@@ -26,8 +26,10 @@ const fortune = (res: typeof http_.request,
   });
 };
 
-const router = getRouter(app);
-app.use('/', router);
+async function getPathOfrouter(): Promise<void> {
+  app.use('/', await getRouter(app));
+};
+void getPathOfrouter();
 
 app.listen(REACT_APP_SERVER_PORT, () => {
   log(`[server -> listen]: Server start to listen the PORT ${REACT_APP_SERVER_PORT as string}`);
