@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { checkerCookieKey, checkCookieExists } from '@Services/coockieSessionId';
 import { infoLoader } from './handlers/installInfo';
