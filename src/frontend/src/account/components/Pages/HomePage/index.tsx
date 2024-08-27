@@ -9,10 +9,11 @@ export function HomePageFC(): JSX.Element {
   useEffect(() => {
     checkerCookieKey();
     const fetchData = async () => {
+
       await loaderProfilesAll(setProfiles); // Вызываем асинхронную функцию
       if (checkCookieExists('sessionId')) {
         const divHtmlAll = document.querySelectorAll('.list-profiles .profile');
-        if (divHtmlAll.length > 0) {
+        if (divHtmlAll && divHtmlAll.length > 0) {
           const buttonHtml = document.createElement('button');
           buttonHtml.innerText = 'Удалить из друзей';
           for (let i = 0; i < divHtmlAll.length; i++) {
@@ -20,10 +21,12 @@ export function HomePageFC(): JSX.Element {
           }
         }
       }
+
     };
 
-    checkerCookieKey();
+
     fetchData();
+
 
   }, []);
 

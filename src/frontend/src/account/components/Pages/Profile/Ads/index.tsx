@@ -6,6 +6,7 @@ import { handlerAdsFC } from './handlers/handlerAds';
 import { loaderContents } from './handlers/handlerDownloadAll';
 import { checkerCookieKey } from '@Services/coockieSessionId';
 // const line = 0;
+let ind = 0;
 /* --------------- Here is we working under an ADS ------------------ */
 export function ProfileAdsFC(): React.JSX.Element {
   // const [labelHtml, setLabelHtml] = useState<Array<{ __html: string | React.JSX.Element }> | null>(null);
@@ -18,11 +19,16 @@ export function ProfileAdsFC(): React.JSX.Element {
     const newLabelHtml = CorrectorBasisRedactField(basisRedactField, { dataNamex: 'ads', text: 'Напиши свое доброе дело' });
     setLabelHtml(newLabelHtml);
     // handlerClickOfButton(newLabelHtml as HTMLLabelElement);
-    return () => {
+    if (ind === 0) {
       loaderContents(newLabelHtml as HTMLLabelElement);
+      ind++;
+    }
+    return () => {
+
 
     }
   }, []);
+
   return <>
     <NavFC />
     <div className='h'>

@@ -40,7 +40,7 @@ export function handlerRedactionOfButton(elemLabelHtml: HTMLLabelElement): (even
     setTimeout(() => {
       const parentDivinputHtml = document.querySelector('.profile.form.list-ads');
       if (parentDivinputHtml === null) {
-        throw new Error('[ads -> loaderContents]: Not found. "div.list-ads"');
+        throw new Error('[ads -> loaderContents]: Not found. "div2.list-ads"');
       }
 
       // @ts-ignore
