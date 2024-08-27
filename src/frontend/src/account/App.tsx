@@ -18,10 +18,3 @@ createRoot(root).render(
 
 console.log('Good lack work');
 
-// function App() {
-//   return (
-//     <></>
-//   );
-// }
-
-// export default App;
