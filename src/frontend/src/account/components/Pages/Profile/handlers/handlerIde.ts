@@ -1,11 +1,12 @@
 // import React from 'react';
-import { FieldInnerHtml, Inpt } from '@Interfaces';
-import { put, add } from '@Services/fetches';
+import { FieldInnerHtml, Inpt, Res } from '@Interfaces';
+import { put, get, add } from '@Services/fetches';
 import { messageForUser } from '@Services/messengerForm';
 import { basisRedactField } from '@Services/fields';
 import { getCookie } from '@Services/coockieSessionId';
 import { Input } from './oop/inputForm';
-
+import { getClientid } from '@Services/getClientidOfPathanme'
+import { behaviorPlugin } from '@testing-library/user-event/dist/keyboard/types';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *
@@ -250,7 +251,9 @@ async function handlerButtonForFriends(event: MouseEvent): Promise<boolean> {
     (((event).target as HTMLButtonElement).outerText) !== 'Добавить в друзья') {
     return false;
   }
-
+  const outerText = ((((event).target as HTMLButtonElement).outerText) === 'Добавить в друзья')
+    ? 'Добавить в друзья'
+    : 'Смотреть объявления';
   const sessionInd = getCookie('sessionId');
   const currentPathname = window.location.pathname;
   const regex = /^\d+$/;
@@ -262,17 +265,55 @@ async function handlerButtonForFriends(event: MouseEvent): Promise<boolean> {
   const cookie = {
     sessionId: sessionInd
   };
+  // const bodyStr = JSON.stringify({
+  //   clieetnsId: arr[arr.length - 1],
+  //   references: currentPathname,
+  //   cookie
+  // });
   const bodyStr = JSON.stringify({
     clieetnsId: arr[arr.length - 1],
     references: currentPathname,
     cookie
   });
   // отправляем в базу данных
-  let responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
+  const responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
+  if (outerText === 'Смотреть объявления') {
+    const clientsid = getClientid();
+    const resp = await get('{}', `/api/v1/clients/ads/${clientsid}`);
+    if (!resp) {
+      console.error('[handlerButtonForFriends]: New friend not is added');
+      return false;
+    };
+    const divHtnl = (event.currentTarget as HTMLDivElement).parentElement as HTMLDivElement;
+    if (divHtnl === null) {
+      return false;
+    }
+    // const divParent = document.querySelector
+    const divHtnlChild = document.createElement('div');
+    const pHtmlChild = document.createElement('p');
+
+    divHtnlChild.className = 'ads-child';
+
+
+    Array.from(resp as Array<{
+      id: number
+      email_id: number
+      titles: string
+    }>).forEach((item) => {
+      // `<div data-numberx="60" data-userx="4">`
+      pHtmlChild.outerText = item.titles as string;
+      divHtnlChild.setAttribute('data-numberx', String(item.id))
+      divHtnlChild.setAttribute('data-userx', String(item.email_id));
+      divHtnl.insertAdjacentHTML('beforeend', divHtnlChild.outerHTML);
+    });
+
+  }
+  // let responce = await add(bodyStr, `/api/v1/clients/${arr[arr.length - 1]}/${sessionInd}`) as { message: string, sessionId?: string };
   if (!responce) {
     console.error('[handlerButtonForFriends]: New friend not is added');
     return false;
   };
+
   return true;
 
 }

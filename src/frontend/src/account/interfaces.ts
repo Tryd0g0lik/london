@@ -82,3 +82,7 @@ export interface CookieOptions {
   secure?: boolean;
   sameSite?: 'Strict' | 'Lax' | 'None';
 }
+export interface Res extends Rows {
+  massege: string
+  sessionId?: string;
+}

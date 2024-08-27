@@ -35,11 +35,12 @@ export function routerClients(routers: typeof router): typeof router {
     if (typeof resp === 'boolean') return;
     const newMyFriendId = result.rows[0].id;
     result = await clients(selectOneParamSQL, { table: 'users', column: 'session_id', value: sessionId });
-    log(`[server -> router]: ADD FRIENDS №3 ID =>: ${JSON.stringify(result)}`);
+    const myInd = result.rows[0].id;
+    log(`[server -> router]: ADD FRIENDS №3 ID =>: ${myInd} // ${JSON.stringify(result)}`);
     resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') return;
-    const myInd = result.rows[0].id;
-    result = await clients(addNewFriendSQL, { references: reference, myId: myInd, friendId: newMyFriendId });
+    log(`[server -> router]: ADD FRIENDS №4 ID =>:references ${reference} || myId ${myInd} || friendId ${newMyFriendId}`);
+    result = await clients(addNewFriendSQL, { references: reference, myId: Number(myInd), friendId: Number(newMyFriendId) });
     resp = sendNotFound(res, result.rows);
     if (typeof resp === 'boolean') {
       res.status(400).json({
@@ -47,6 +48,7 @@ export function routerClients(routers: typeof router): typeof router {
       });
       return false;
     };
+    log(`[server -> router]: ADD FRIENDS №5 ID =>: ${result.rows.length} // ${JSON.stringify(result.rows[0])}`);
     res.status(200).json({
       message: 'OK',
       id: result.rows[0].id,

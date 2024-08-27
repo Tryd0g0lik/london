@@ -2,21 +2,24 @@
 import { get } from '@Services/fetches';
 import { getCookie } from '@Services/coockieSessionId';
 import { ResultType } from '@Interfaces';
+import { getClientid } from '@Services/getClientidOfPathanme'
+
 export async function infoLoader(): Promise<boolean> {
   const sessionId = getCookie('sessionId');
   if (sessionId === undefined) {
     return false;
   }
 
-  const currentPathname = window.location.pathname;
-  const regex = /^\d+$/;
-  const arr = currentPathname.split('/');
+  // const currentPathname = window.location.pathname;
+  // const regex = /^\d+$/;
+  // const arr = currentPathname.split('/');
 
-  let clientIndex = 'Null';
-  if (arr.length > 1 &&
-    regex.test(arr[arr.length - 1])) {
-    clientIndex = arr[arr.length - 1];
-  }
+  // let clientIndex = 'Null';
+  // if (arr.length > 1 &&
+  //   regex.test(arr[arr.length - 1])) {
+  //   clientIndex = arr[arr.length - 1];
+  // }
+  const clientIndex = getClientid();
   /* ---- Here is data received from the db ---- */
 
   const result = await get(JSON.stringify({}), (clientIndex === 'Null')

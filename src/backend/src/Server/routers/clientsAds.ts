@@ -103,5 +103,19 @@ export function routerClientsAds(routers: typeof router): typeof router {
     const props = { message: 'Removed' };
     res.status(200).json(props);
   });
+  routers.get('/api/v1/clients/ads/:index', async (req: typeof Request_, res: typeof Response_, next: typeof NextFunction) => {
+    await log_(`[server -> router -> ads]: GET  That request =>: ${req}`);
+    // const clientData = req.body;
+    const ind = req.params.index;
+    /* --------- Below, we is get the data of only single user --------- */
+    const respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: ind });
+    const resp = sendNotFound(res, respArr.rows);
+    if (typeof resp === 'boolean') {
+      res.status(404).json({ massage: 'Not OK' });
+      return false;
+    };
+    const props = { message: 'OK', rows: resp.rows };
+    res.status(200).json(props);
+  });
   return routers;
 };
