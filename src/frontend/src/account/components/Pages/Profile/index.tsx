@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { checkerCookieKey, checkCookieExists } from '@Services/coockieSessionId';
 import { infoLoader } from './handlers/installInfo';
-import { handlerIdeFC } from './handlers/handlerIde'
+// import { handlerIdeFC } from './handlers/handlerIde'
 const basisHtml = <>
   <div data-namex='firstName' className='profilename profile-FirstName'></div>
   <div data-namex='lastName' className='profilename profile-LastName'></div>
