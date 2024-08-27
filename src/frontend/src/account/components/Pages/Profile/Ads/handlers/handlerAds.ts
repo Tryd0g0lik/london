@@ -3,12 +3,7 @@ import { add } from '@Services/fetches';
 import { getCookie, checkCookieExists } from '@Services/coockieSessionId';
 import { messageForUser } from '@Services/messengerForm';
 import { createDivLableContainer } from '@Services/fields';
-
 import { OneLine, Ads } from '@Interfaces';
-
-
-// Create the input filed by click's event
-
 
 /**
  *
@@ -28,17 +23,13 @@ export function handlerAdsFC(elemHtml: HTMLLabelElement): (event: React.MouseEve
     }
 
     const divRootHtml = (((event.currentTarget as HTMLButtonElement).parentElement as HTMLElement));
-
-    // const numb = quantity + 1;
-    // usestate(numb)
-
     /* ---- here we look up  input field ---- */
     const divHtml = divRootHtml.querySelector('section[data-namex="ads"] + div');
     if (divHtml === null) {
       throw new Error('[ads -> handlerAdsFC]: Not  found. "form-ads" ');
     }
     (divHtml as HTMLElement).insertAdjacentHTML('afterbegin', elemHtml.outerHTML);
-    // const result = await add()
+
     setTimeout(() => {
       //@ts-ignore
       (divHtml as HTMLElement).removeEventListener('keypress', handlerEnterofInput);
