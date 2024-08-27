@@ -1,12 +1,12 @@
 // import React from 'react';
-import { FieldInnerHtml, Inpt, Res } from '@Interfaces';
+import { FieldInnerHtml, Inpt } from '@Interfaces';
 import { put, get, add } from '@Services/fetches';
 import { messageForUser } from '@Services/messengerForm';
 import { basisRedactField } from '@Services/fields';
 import { getCookie } from '@Services/coockieSessionId';
 import { Input } from './oop/inputForm';
 import { getClientid } from '@Services/getClientidOfPathanme'
-import { behaviorPlugin } from '@testing-library/user-event/dist/keyboard/types';
+// import { behaviorPlugin } from '@testing-library/user-event/dist/keyboard/types';
 /**
  * Страница "Профиль". Поля ФИО имет рубильник. Клик на рубильник - получаем сласс "active" на рубильнике-события
  *

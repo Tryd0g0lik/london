@@ -107,13 +107,16 @@ export function routerClientsAds(routers: typeof router): typeof router {
     await log_(`[server -> router -> ads]: GET  That request =>: ${req}`);
     // const clientData = req.body;
     const ind = req.params.index;
+    await log(`[server -> router]: GET ADS =>: ${ind}`);
     /* --------- Below, we is get the data of only single user --------- */
     const respArr = await clients(selectOneParamSQL, { table: 'ads', column: 'email_id', value: ind });
+    await log(`[server -> router]: GET ADS №2 =>: ${JSON.stringify(respArr)}`);
     const resp = sendNotFound(res, respArr.rows);
     if (typeof resp === 'boolean') {
       res.status(404).json({ massage: 'Not OK' });
       return false;
     };
+    await log(`[server -> router]: GET ADS №3 =>: ${JSON.stringify(resp.rows[0])}`);
     const props = { message: 'OK', rows: resp.rows };
     res.status(200).json(props);
   });
