@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavFC } from '@Components/NavOpPages';
 import { checkerCookieKey, checkCookieExists } from '@Services/coockieSessionId';
 import { infoLoader } from './handlers/installInfo';
-// import { handlerIdeFC } from './handlers/handlerIde'
+import { handlerIdeFC } from './handlers/handlerIde'
 const basisHtml = <>
   <div data-namex='firstName' className='profilename profile-FirstName'></div>
   <div data-namex='lastName' className='profilename profile-LastName'></div>
@@ -22,10 +22,10 @@ const divHtml = <>
   </div>
 </> as React.ReactNode;
 export function ProfileFC(): React.JSX.Element {
-  const [status, setStatus] = useState<React.ReactNode>(basisHtml);
+  // const [status, setStatus] = useState<React.ReactNode>(basisHtml);
 
 
-
+  const status = checkCookieExists('sessionId');
   useEffect((): () => void => {
 
     const funAsync = async (): Promise<boolean> => {
@@ -59,17 +59,26 @@ export function ProfileFC(): React.JSX.Element {
       return false;
     }
 
-    const checkSessionAndUpdateStatus = async () => {
-      const sessionExists = checkCookieExists('sessionId');
-      if (sessionExists) {
-        setStatus(divHtml);
-      } else {
-        setStatus(basisHtml);
-      }
-    };
-    checkSessionAndUpdateStatus();
+    // const checkSessionAndUpdateStatus = async () => {
+
+    //   const sessionExists = checkCookieExists('sessionId');
+    //   if (sessionExists) {
+    //     setStatus(divHtml);
+    //     setTimeout(() => {
+    //       handlerIdeFC();
+    //       funAsync();
+    //     }, 100);
+
+    //   } else {
+    //     setStatus(basisHtml);
+    //   }
+    // };
+    // checkSessionAndUpdateStatus();
+
     return (): void => {
+      handlerIdeFC();
       funAsync();
+
     }
   }, []);
 
@@ -79,7 +88,18 @@ export function ProfileFC(): React.JSX.Element {
     <div className='profile form'>
       <div className='myFriend form '>
       </div>
-      {status}
+      <div data-namex='firstName' className='profilename profile-FirstName'>
+        <span>First name</span>
+        <input type="checkbox" className="switchs toggle toggle-xs" defaultChecked />
+        <div></div>
+        <div className='switchs-rewrite'></div>
+      </div>
+      <div data-namex='lastName' className='profilename profile-LastName'>
+        <span>Last name</span>
+        <input type="checkbox" className="switchs  toggle toggle-xs" defaultChecked />
+        <div></div>
+        <div className='switchs-rewrite'></div>
+      </div>
     </div>
     <div className="form">
     </div>
