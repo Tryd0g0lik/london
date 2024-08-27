@@ -4,7 +4,6 @@ import { doGetRequest } from '@Services/fetches';
 import { ResultType } from '@Interfaces';
 import { handlerClikOfInputPsw } from './handlers/handlersPsw';
 import { checkerCookieKey } from '@Services/coockieSessionId';
-// import { add } from '@Services/fetches';
 
 export function ProfilePAsswordChangesFC(): React.JSX.Element {
   const [fields, setFields] = useState<Array<{ __html: React.JSX.Element }> | null>(null);
@@ -41,12 +40,9 @@ export function ProfilePAsswordChangesFC(): React.JSX.Element {
       })
 
     /* ---- handler  for a MouseEvent and KeyboardEvent ---- */
-    // handlerClikOfInputPsw
     const passwordsHtml = document.querySelector('div[data-namex="passwords"]');
     if (passwordsHtml !== null) {
-      // (passwordsHtml as HTMLDivElement).removeEventListener('keypress', handlerClikOfInputPsw);
       (passwordsHtml as HTMLDivElement).removeEventListener('click', handlerClikOfInputPsw);
-      // (passwordsHtml as HTMLDivElement).addEventListener('keypress', handlerClikOfInputPsw);
       (passwordsHtml as HTMLDivElement).addEventListener('click', handlerClikOfInputPsw);
     }
     // eslint-disable-next-line
