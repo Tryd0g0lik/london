@@ -1,0 +1,25 @@
+FROM node:18
+ENV REACT_APP_POSTGRES_PORT='5432'
+ENV REACT_APP_POSTGRES_USER='postgres'
+ENV REACT_APP_POSTGRES_DB_NAME='london'
+ENV REACT_APP_POSTGRES_DB_PASS='123'
+ENV REACT_APP_SERVER_PORT='7070'
+ENV REACT_APP_SERVER_SMPT='587'
+ENV REACT_APP_FRONT_PORT='8080'
+ENV REACT_APP_PROTOCOL_OF_URL='http'
+ENV REACT_APP_COOKIE_OPTIONS='Path=/ samesite=strict'
+ENV for_coockie_abowe='Secure'
+ENV REACT_APP_SET_TTIMOUT=2000
+RUN mkdir -p /www && mkdir -p /www/front
+WORKDIR /www/front
+RUN npm install -g npm@10.8.2
+COPY package*.json ./
+RUN npm ci
+RUN rm -r /www/front/src/backend
+RUN mkdir -p /www/front/src/backend
+RUN cd ./src/frontend
+RUN npm ci
+RUN cd ../..
+COPY . .
+RUN npm run build:front
+RUN tsc

@@ -1,0 +1,110 @@
+# https://docs.docker.com/reference/cli/docker/compose/
+# https://docs.docker.com/compose/compose-file/05-services/
+
+# version: "3.3"
+name: london
+services:
+  db:
+    container_name: postgres
+    image: postgres:15
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    env_file: .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "${POSTGRES_USER} -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5 # That is  five restarts
+    ports:
+      - "5432:5432"
+  front:
+    container_name: front_london
+#    image: front_image:latest
+    build:
+      dockerfile: Dockerfile.front
+      context: .
+    volumes:
+      - db_dataLondon:/www/backup/data/londonFront
+      - .:/www
+    working_dir: /www/front
+    command:
+      - bash
+      - c
+      - |
+        npm run build:front
+    depends_on:
+      - db
+#    ports:
+#      - 8080:8080
+    expose:
+      - 8080
+  server_back:
+    image: node:18.20.4
+    working_dir: /www/back
+#    voalumes:
+    ports:
+      - "7070:7070"
+    command:
+      - bash
+      - c
+      - |
+        npm run build:back
+        ["forever", "-w", "./dist/server/index.js"]
+    environment:
+      - POSTGRES_DB=london
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - REACT_APP_POSTGRES_PORT='5432'
+      - REACT_APP_POSTGRES_USER='postgres'
+      - REACT_APP_POSTGRES_DB_NAME='london'
+      - REACT_APP_POSTGRES_DB_PASS='123'
+      - REACT_APP_SERVER_PORT='7070'
+      - REACT_APP_SERVER_SMPT='587'
+      - REACT_APP_FRONT_PORT='8080'
+      - REACT_APP_PROTOCOL_OF_URL='http'
+      - REACT_APP_COOKIE_OPTIONS='Path=/ samesite=strict'
+      - for_coockie_abowe='Secure'
+      - REACT_APP_SET_TTIMOUT=2000
+ #   depends_on:
+#      - back
+  back:
+    container_name: back_london
+ #   image: back_london
+    build:
+      dockerfile: Dockerfile.back
+      context: .
+    volumes:
+      - db_dataLondon2:/www/backup/data/londonBack
+      - .:/www
+    working_dir: /www/back
+    expose:
+      - 7070
+    depends_on:
+      - db
+      - server_back
+  nginx:
+    container_name: app_nginx
+
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    image: app_nginx
+    depends_on:
+      - front
+      - back
+    volumes:
+      - db_dataLondon2:/www/backup/data/londonBack
+      - db_dataLondon:/www/backup/data/londonFront
+    restart: on-failure
+    ports:
+      - 81:81
+volumes:
+  db_data:
+    external: true
+  db_dataLondon:
+    external: true
+  db_dataLondon2:
+    external: true
