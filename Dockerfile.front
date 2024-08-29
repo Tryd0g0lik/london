@@ -12,13 +12,13 @@ ENV for_coockie_abowe='Secure'
 ENV REACT_APP_SET_TTIMOUT=2000
 RUN mkdir -p /www && mkdir -p /www/front
 WORKDIR /www/front
-RUN npm install -g npm@10.8.2
-COPY package*.json ./
-RUN npm ci
+RUN npm install -g npm@latest
+COPY package.json ./
+RUN npm i --force
 RUN rm -r /www/front/src/backend
 RUN mkdir -p /www/front/src/backend
 RUN cd ./src/frontend
-RUN npm ci
+RUN npm i --force
 RUN cd ../..
 COPY . .
 RUN npm run build:front
