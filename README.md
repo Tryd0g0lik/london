@@ -69,5 +69,3 @@ Note!!
 ```
 
 
-## Задание
-![img](./img/Screenshot_6.png)
